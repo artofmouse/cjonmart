@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/common.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+	<script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<div class="header header--sub">
+			<!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+		</div>
+		<div id="contents" class="contents">
+			<section class="section">
+				<!-- section__title-box -->
+				<div class="section__title-box">
+					<a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+					<h1 class="section__title">쇼핑찜</h1>
+				</div>
+				<!-- //section__title-box -->
+				<!-- 이용안내 -->
+				<div class="text-box text-box--gray">
+					<ul class="text-box__ul">
+						<li class="text-box__li">
+							쇼핑찜한 상품은 최대 1년, 최대 100개까지 보관됩니다.
+						</li>
+					</ul>
+				</div>
+				<!-- //이용안내 -->
+				<div id="id-group-label01" class="blind">쇼핑찜 내 상품 선택</div>
+				<div role="group" aria-labelledby="id-group-label01">
+					<div class="section__content my-action" data-js="checkbox" data-options='{"allCheckCtrl": true, "defaultChecked": false}'>
+						<div class="product__category-box product__category-box--none-mgt">
+							<!-- 결과가 있을 때 -->
+							<section class="product">
+								<h1 class="blind">전체</h1>
+								<div class="module-container">
+									<div class="module-filter">
+										<div class="module-filter__column">
+											<div class="module-filter__column-box">
+												<div class="module-filter__total">
+													총 <span class="number">155</span>개
+												</div>
+											</div>
+											<div class="module-filter__column-box">
+												<div class="form-element">
+													<label for="moduleFilter04" class="blind">상품정렬</label>
+													<select id="moduleFilter04" class="module-filter__select" data-js="resize-select">
+														<option value="" selected="">판매량순</option>
+														<option value="">상품평점순</option>
+														<option value="">높은할인율순</option>
+														<option value="">신상품순</option>
+														<option value="">낮은가격순</option>
+														<option value="">높은가격순</option>
+													</select>
+												</div>
+												<button class="module-filter__sorting-product">
+													<span class="blind">리스트형 보기</span>
+												</button>
+											</div>
+										</div>
+										<div class="module-filter__column">
+											<div class="module-filter__column-box">
+												<div class="checkbox__input" role="checkbox" data-js="checkbox__all">
+													전체선택
+													<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden">
+												</div>
+											</div>
+											<div class="module-filter__column-box">
+												<button class="module-filter__button module-filter__button--select">선택삭제</button>
+											</div>
+										</div>
+									</div>
+									<div class="module-product">
+										<ul class="module-product__ul">
+											<li class="module-product__li module-product__li--soldout">
+												<div class="module-product__image-box">
+													<div class="checkbox__input" role="checkbox" data-js="checkbox__input" aria-labelledby="my-item-label01" aria-disabled="true" title="상품선택"> <!-- 품절 시 aria-disabled=true 추가 -->
+														<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden">
+													</div>
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+														<span class="module-product__soldout">
+															<em class="blind">일시품절</em>
+														</span>
+													</a>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<div class="module-product__badge-box">
+															<span class="module-product__badge">마켓핫딜</span>
+															<span class="module-product__badge module-product__badge--type2">베스트</span>
+															<span class="module-product__badge module-product__badge--type3">신제품</span>
+														</div>
+														<p class="module-product__sub-title">
+															상품 소구문구 1줄 노출 후 상품 소구문구 1줄 노출 후
+														</p>
+														<p class="module-product__title" id="my-item-label01">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">8,900</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">8,900</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 20%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">구간할인</li>
+															<li class="module-product__category-li module-product__category-li--benefits">가격할인</li>
+															<li class="module-product__category-li module-product__category-li--benefits">쿠폰할인</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+													<a href="#" class="module-product__text-button">재입고알림</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<div class="checkbox__input"
+														role="checkbox"
+														data-js="checkbox__input"
+														aria-labelledby="my-item-label02"
+														title="상품선택"
+													> 
+														<!-- 품절 시 aria-disabled=true 추가 -->
+														<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden">
+													</div>
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<div class="module-product__badge-box">
+															<span class="module-product__badge">마켓핫딜</span>
+															<span class="module-product__badge module-product__badge--type2">베스트</span>
+															<span class="module-product__badge module-product__badge--type3">신제품</span>
+														</div>
+														<p class="module-product__sub-title">
+															상품 소구문구 1줄 노출 후 상품 소구문구 1줄 노출 후
+														</p>
+														<p class="module-product__title" id="my-item-label02"> 
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">100,000</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 60%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li module-product__category-li--benefits">사은품</li>
+															<li class="module-product__category-li module-product__category-li--benefits">덤증정</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+													<!-- 2019-03-21 수정 -->
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<div class="checkbox__input"
+														role="checkbox"
+														data-js="checkbox__input"
+														aria-labelledby="my-item-label03"
+														title="상품선택"
+													> 
+														<!-- 품절 시 aria-disabled=true 추가 -->
+														<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden">
+													</div>
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product00.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<div class="module-product__badge-box">
+															<span class="module-product__badge">마켓핫딜</span>
+															<span class="module-product__badge module-product__badge--type2">베스트</span>
+															<span class="module-product__badge module-product__badge--type3">신제품</span>
+														</div>
+														<p class="module-product__sub-title">
+															상품 소구문구 1줄 노출 후 상품 소구문구 1줄 노출 후
+														</p>
+														<p class="module-product__title" id="my-item-label03"> 
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">100,000</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 20%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li module-product__category-li--benefits">사은품</li>
+															<li class="module-product__category-li module-product__category-li--benefits">덤증정</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+													<!-- 2019-03-21 수정 -->
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<div class="checkbox__input"
+														role="checkbox"
+														data-js="checkbox__input"
+														aria-labelledby="my-item-label04"
+														title="상품선택"
+													> 
+														<!-- 품절 시 aria-disabled=true 추가 -->
+														<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden">
+													</div>
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<div class="module-product__badge-box">
+															<span class="module-product__badge">마켓핫딜</span>
+															<span class="module-product__badge module-product__badge--type2">베스트</span>
+															<span class="module-product__badge module-product__badge--type3">신제품</span>
+														</div>
+														<p class="module-product__sub-title">
+															상품 소구문구 1줄 노출 후 상품 소구문구 1줄 노출 후
+														</p>
+														<p class="module-product__title" id="my-item-label04"> 
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">100,000</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 20%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li module-product__category-li--benefits">사은품</li>
+															<li class="module-product__category-li module-product__category-li--benefits">덤증정</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+													<!-- 2019-03-21 수정 -->
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="module-button-box">
+										<button class="btn btn__more btn__more--none-border">
+											더보기(<span>20</span>/<span>40</span>)
+										</button>
+									</div>
+								</div>
+							</section>
+							<!-- //결과가 있을 때 -->
+
+							<!-- 결과가 없을 때 -->
+							<div class="inventory inventory--empty data-none">
+								<p class="inventory--empty-msg">쇼핑찜에 담긴 상품이 없습니다.</p>
+							</div>
+							<!-- //결과가 없을 때 -->
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="footer">
+			<!--
+			* footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/footer.html
+			-->
+		</div>
+	</div>
+	<!-- //#wrap -->
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/plugins/jquery.lazy.min.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+<h1>Select Menu</h1>
+
+<h2>Default</h2>
+<h3>HTML</h3>
+<pre><code class="html">&lt;select&gt;
+	&lt;option selected&gt;Option 1&lt;/option&gt;
+	&lt;option&gt;Option 2&lt;/option&gt;
+	&lt;option&gt;Option 3&lt;/option&gt;
+	&lt;option&gt;Option 4&lt;/option&gt;
+	&lt;option&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<h3>VIEW</h3>
+<select class="lg test" id="test" style="width:50%">
+	<option selected="selected">Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+	<option>Option 4</option>
+	<option>Option 5</option>
+	<option>Option 6</option>
+	<option>Option 7</option>
+	<option>Option 8</option>
+	<option>Option 9</option>
+	<option>Option 10</option>
+	<option>Option 11</option>
+	<option>Option 12</option>
+</select><strong class="text"> Large</strong><br><br>
+<select>
+	<option selected="selected">Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+	<option>Option 4</option>
+	<option>Option 5</option>
+	<option>Option 6</option>
+	<option>Option 7</option>
+	<option>Option 8</option>
+	<option>Option 9</option>
+	<option>Option 10</option>
+	<option>Option 11</option>
+	<option>Option 12</option>
+</select><strong class="text"> Default</strong><br><br>
+<select class="sm">
+	<option selected="selected">Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+	<option>Option 4</option>
+	<option>Option 5</option>
+	<option>Option 6</option>
+	<option>Option 7</option>
+	<option>Option 8</option>
+	<option>Option 9</option>
+	<option>Option 10</option>
+	<option>Option 11</option>
+	<option>Option 12</option>
+</select><strong class="text"> Small</strong>
+
+<hr>
+
+<h2>Disabled</h2>
+<h3>HTML</h3>
+<pre><code class="html">&lt;select disabled&gt;
+	&lt;option&gt;Option 1&lt;/option&gt;
+	&lt;option&gt;Option 2&lt;/option&gt;
+	&lt;option selected&gt;Option 3&lt;/option&gt;
+	&lt;option&gt;Option 4&lt;/option&gt;
+	&lt;option&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<h3>VIEW</h3>
+<select>
+	<option selected disabled>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3 Option 3 Option 3 Option 3 Option 3 Option 3 Option 3 Option 3 Option 3 Option 3</option>
+	<option>Option 4</option>
+	<option>Option 5</option>
+</select>
+
+<hr>
+
+<h2>Option Group</h2>
+<h3>HTML</h3>
+<pre><code class="html">&lt;select&gt;
+	&lt;optgroup label="group-1"&gt;
+		&lt;option&gt;Option 1-1&lt;/option&gt;
+		&lt;option&gt;Option 1-2&lt;/option&gt;
+	&lt;/optgroup&gt;
+	&lt;optgroup label="group-2"&gt;
+		&lt;option&gt;Option 2-1&lt;/option&gt;
+		&lt;option&gt;Option 2-2&lt;/option&gt;
+	&lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
+<h3>VIEW</h3>
+<select>
+	<optgroup label="group-1">
+		<option value="option1-1">Option 1-1</option>
+		<option value="option1-2">Option 1-2</option>
+	</optgroup>
+	<optgroup label="group-2">
+		<option value="option2-1">Option 2-1</option>
+		<option value="option2-2">Option 2-2</option>
+	</optgroup>
+</select>
+
+<hr>
+
+</div>
+
+</body>
+</html>

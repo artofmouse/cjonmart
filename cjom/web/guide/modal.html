@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div id="wrap">
+	<div class="guide-wrap">
+		<h1>MODAL</h1>
+		<h2>Default</h2>
+		<h3>HTML</h3>
+		<pre><code class="html">&lt;body&gt;
+	&lt;div id="wrap"&gt;
+		&lt;a href="#modal01" data-modal-open&gt;팝업오픈&lt;/a&gt;
+	&lt;div&gt;
+
+	&lt;div id="modal-wrap"&gt;
+		&lt;div class="modal" id="modal01" style="width:500px;"&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;h2 class="modal-header-title"&gt;팝업타이틀&lt;/h2&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-contents"&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;a href="#" class="btn-"&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;button type="button" class="btn-close" data-close&gt;&lt;span&gt;팝업닫기&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+		<h3>VIEW</h3>
+		<a href="#modal01" id="testBtn" data-modal-open>팝업 오픈</a>
+		<hr>
+		<h2>Double</h2>
+		<h3>HTML</h3>
+		<pre><code class="html">&lt;body&gt;
+	&lt;div id="wrap"&gt;
+		&lt;a href="#modal02" data-modal-open&gt;팝업오픈&lt;/a&gt;
+	&lt;div&gt;
+
+	&lt;div id="modal-wrap"&gt;
+		&lt;div class="modal" id="modal02" style="width:500px;"&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;h2 class="modal-header-title"&gt;팝업타이틀&lt;/h2&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-contents"&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;a  href="#modal03" class="btn-" data-modal-open&gt;다음 팝업 오픈&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;button type="button" class="btn-close" data-close&gt;&lt;span&gt;팝업닫기&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;div class="modal" id="modal03" style="width:300px;"&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;h2 class="modal-header-title"&gt;팝업타이틀&lt;/h2&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-contents"&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;a  href="#" class="btn-" &gt;확인&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;button type="button" class="btn-close" data-close&gt;&lt;span&gt;팝업닫기&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+		<h3>VIEW</h3>
+		<a href="#modal04" data-modal-open>스크롤 팝업 오픈</a>
+		<hr>
+		<h2>Contents Scroll</h2>
+		<h3>HTML</h3>
+		<pre><code class="html">&lt;body&gt;
+	&lt;div id="wrap"&gt;
+		&lt;a href="#modal01" data-modal-open&gt;팝업오픈&lt;/a&gt;
+	&lt;div&gt;
+
+	&lt;div id="modal-wrap"&gt;
+		&lt;div class="modal" id="modal01" style="width:500px;"&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;h2 class="modal-header-title"&gt;팝업타이틀&lt;/h2&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-contents"&gt;
+				&lt;div data-scroll&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;a href="#" class="btn-"&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;button type="button" class="btn-close" data-close&gt;&lt;span&gt;팝업닫기&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;style type="text/css"&gt;
+	#modal04 .scroll-wrapper {max-height:400px;}
+&lt;/style&gt;
+</code></pre>
+		<h3>VIEW</h3>
+		<a href="#modal04" data-modal-open>스크롤 팝업 오픈</a>
+		<hr>
+		<h2>JS</h2>
+		<h3>Modal Open</h3>
+		<pre><code class="js">cjom.modal.open("modalId", fadein speed);</code></pre>
+		<h3>Modal Close</h3>
+		<pre><code class="js">cjom.modal.close("modalId", fadeout speed);</code></pre>
+	</div>
+</div>
+<div id="modal-wrap">
+	<div class="modal" id="modal01" style="width:500px;">
+		<div class="modal-header">
+			<h2 class="modal-title">팝업타이틀</h2>
+		</div>
+		<div class="modal-contents">
+			<button type="button" onclick="cjom.modal.close('#modal01',0, '#testBtn')">닫기 테스트</button> <br><br>
+			test<br>
+			test<br>
+			test<br>
+			test<br>
+			test<br>
+			test<br>
+			test<br>
+			test<br>
+			<div class="btn-area">
+				<button type="button" class="btn-default">확인</button>
+			</div>
+		</div>
+		<button type="button" class="btn-modal-close" data-modal-close><span>팝업닫기</span></button>
+	</div>
+	<div class="modal" id="modal02" style="width:300px;">
+		<div class="modal-header">
+			<h2 class="modal-title">팝업타이틀2</h2>
+		</div>
+		<div class="modal-contents">
+			Z2222
+		</div>
+		<div class="modal-footer">
+			<a href="#modal03" class="btn-" data-modal-open>다음 팝업 오픈</a>
+		</div>
+		<button type="button" class="btn-modal-close" data-modal-close><span>팝업닫기</span></button>
+	</div>
+	<div class="modal" id="modal03" style="width:600px;">
+		<div class="modal-header">
+			<h2 class="modal-title">팝업타이틀3</h2>
+		</div>
+		<div class="modal-contents">
+			<div data-scroll>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+				Z2222<br>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div class="btn-area">
+				<a href="#" class="btn-default">확인</a>
+				<a href="#" class="btn-white">확인</a>
+			</div>
+			
+			
+		</div>
+		<button type="button" class="btn-modal-close" data-modal-close><span>팝업닫기</span></button>
+	</div>
+	<div class="modal" id="modal04" style="width:600px;">
+		<div class="modal-header">
+			<h2 class="modal-title">팝업타이틀3</h2>
+		</div>
+		<div class="modal-contents">
+			<div data-scroll>
+				<ul>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+					<li>안녕하세요</li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="btn-modal-close" data-modal-close><span>팝업닫기</span></button>
+	</div>
+</div>
+</body>
+</html>

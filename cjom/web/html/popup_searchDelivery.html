@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css"/>
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+	
+
+	<div id="container">
+		<div class="contents">
+			<h2 class="page-title">쿡킷</h2>
+			<div class="btn-area">
+				<a href="#daylightLocalPop" data-modal-open class="btn-default-lg">새벽배송 가능지역</a>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div id="modal-wrap">
+	<!--라인업 상품 팝업-->
+	<div class="modal" id="daylightLocalPop" style="width:500px;">
+		<div class="modal-header">
+			<h2 class="modal-title">새벽배송 가능 지역</h2>
+		</div>
+		<div class="modal-contents">
+			<div data-scroll>
+				<p class="text fc-black">주소를 모두 입력한 후 <strong>확인</strong> 버튼을 클릭해주세요.</p>
+				<ul class="address-save daylight-pop">
+					<li class="line-item">
+						<div class="column"><label for="address2">주소 <i class="required">*</i></label></div>
+						<div class="column">
+							<div class="max-column">
+								<div class="address-form">
+									<div>
+										<span class="input-text disabled"><input type="text" id="address2" title="우편번호" value="0121" disabled=""></span>
+										<button type="button" class="btn-white-sm"><span>주소검색</span></button>
+									</div>
+									<span class="input-text disabled"><input type="text" title="주소" value="서울특별시 중구 동호로 330 CJ제일제당센터" disabled=""></span>
+									<span class="input-text"><input type="text" title="상세주소" placeholder="상세주소 입력" value="11층"></span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="btn-area">
+					<a href="#" class="btn-white-md">취소</a>
+					<a href="#" class="btn-default-md">확인</a>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn-modal-close" data-modal-close><span>팝업닫기</span></button>
+	</div>
+	<!--//라인업 상품 팝업-->
+</div>
+</body>
+</html>

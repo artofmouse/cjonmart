@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Checkbox</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="item1" id="item1" checked="checked" /&gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="item1"&gt;Label name&lt;/label&gt;
+
+&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="item2" id="item2" /&gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="item2"&gt;Label name&lt;/label&gt;</code></pre>
+	<h3>VIEW</h3>
+	
+	<span class="input-checkbox">
+		<input type="checkbox" name="item1" id="item1" checked="checked"/>
+		<i></i>
+	</span>
+	<label for="item1">체크박스 1</label>
+
+	<span class="input-checkbox">
+		<input type="checkbox" name="item2" id="item2"/>
+		<i></i>
+	</span>
+	<label for="item2">체크박스 2</label>
+
+	<hr>
+
+	<h2>Disabled</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="item3" id="item3" checked="checked" disabled /&gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="item3"&gt;Label name&lt;/label&gt;
+
+&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="item4" id="item4" disabled /&gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="item4"&gt;Label name&lt;/label&gt;</code></pre>
+	<h3>VIEW</h3>
+	<span class="input-checkbox">
+		<input type="checkbox" name="item3" id="item3" checked disabled/>
+		<i></i>
+	</span>
+	<label for="item3">비활성화 체크</label>
+	<span class="input-checkbox">
+		<input type="checkbox" name="item4" id="item4" disabled/>
+		<i></i>
+	</span>
+	<label for="item4">비활성화</label>
+
+	
+	<hr>
+
+	<h2>All checked</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="checkAll" id="checkAll" data-all &gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="checkAll"&gt;전체선택&lt;/label&gt;
+
+&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="check" id="item6" /&gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="item6"&gt;체크박스 1&lt;/label&gt;
+
+&lt;span class="input-checkbox"&gt;
+	&lt;input type="checkbox" name="check" id="item7" /&gt;
+	&lt;i&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;label for="item7"&gt;체크박스 2&lt;/label&gt;</code></pre>
+	<h3>VIEW</h3>
+
+	<span class="input-checkbox">
+		<input type="checkbox" name="checkAll" id="checkAll" data-all/>
+		<i></i>
+	</span>
+	<label for="checkAll">전체선택</label>
+	
+	<span class="input-checkbox">
+		<input type="checkbox" name="check" id="item6" />
+		<i></i>
+	</span>
+	<label for="item6">체크박스 1</label>
+
+	<span class="input-checkbox">
+		<input type="checkbox" name="check" id="item7"/>
+		<i></i>
+	</span>
+	<label for="item7">체크박스 2</label>
+</div>
+<style>
+.input-checkbox {position:relative; display:inline-block; width:22px; height:22px; border-radius:2px; overflow: hidden;}
+.input-checkbox input {position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 10; opacity: 0; width:100%; height:100%; letter-spacing: 0; border: none; background: none; vertical-align: middle; -webkit-appearance: none; -ms-appearance: none;}
+.input-checkbox input[type='checkbox'] + i {display:inline-block; width:100%; height:100%; border: 1px solid #dbdbdb; border-radius:2px; box-sizing:border-box;}
+.input-checkbox input[type='checkbox']:checked + i {background-color:#0e5232; border:none;}
+.input-checkbox input[type='checkbox'] + i:before {content:''; display:inline-block; position:absolute; left:5px; top:7px; display:inline-block; width:12px; height:8px; background:url('../images/temp/@temp_icon_checkbox.png'); z-index: 10; pointer-events:none;}
+.input-checkbox + label {margin-left:3px; color:#000; font-size:15px; vertical-align:middle;}
+label + .input-checkbox {margin-left:10px;}
+
+.input-checkbox.disabled input[type='checkbox'] + i {background-color:#f8f8f8;}
+.input-checkbox.disabled input[type='checkbox']:checked + i {background-color:#9fbaad; border:none;}
+.input-checkbox.disabled + label {color:#767676;}
+
+.input-checkbox input:focus + i,
+.input-checkbox input[type='checkbox']:checked:focus + i {border:2px solid #6acef6;}
+</style>
+<script>
+$('input[type="checkbox"]:disabled').parents('.input-checkbox').addClass('disabled');
+
+$('[data-all]').on('change', function(){
+	if($('[data-all]').prop('checked')){
+		$("input[name=check]").prop("checked",true);
+	}else{
+		$("input[name=check]").prop("checked",false);
+	}
+})
+</script>
+</body>
+</html>

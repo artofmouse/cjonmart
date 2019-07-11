@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>CJ제일제당 가정간편식 전문몰</title>
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/common.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+    <script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+    <style>
+        .btn-box--btm-floating {
+            position: static;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header header--sub">
+            <!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+        </div>
+        <div id="contents" class="contents">
+            <!-- 버튼 (장바구니/바로구매/선물) -->
+            <div class="btn-box btn-box--none-margin btn-box--gift-btn3 btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style04 btn--black">장바구니</button>
+                <button class="btn btn--shape01 btn--style01">바로구매</button>
+                <button class="btn btn--shape01 btn--style10 btn--ico08">선물</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (장바구니/선물) -->
+            <div class="btn-box btn-box--none-margin btn-box--gift btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--black">장바구니</button>
+                <button class="btn btn--gift">선물</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (장바구니)-->
+            <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style01 btn--black">장바구니</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (정기배송 장바구니)-->
+            <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style01 btn--black">정기배송 장바구니</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (바로구매/선물) -->
+            <div class="btn-box btn-box--none-margin btn-box--gift btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style01">바로구매</button>
+                <button class="btn btn--shape01 btn--style10 btn--ico08">선물</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (바로구매)-->
+            <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style01">바로구매</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (재입고 알림 신청)-->
+            <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style01">재입고 알림 신청</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (재입고 알림 신청완료)-->
+            <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style04 btn--black">재입고 알림 신청완료</button>
+            </div>
+            <!-- //버튼 -->
+            <br>
+            <!-- 버튼 (견적서에 담기)-->
+            <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                <button class="btn btn--shape01 btn--style01">견적서에 담기</button>
+            </div>
+            <!-- //버튼 -->
+        </div>
+        <div class="footer">
+            <!--
+			* footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/footer.html
+			-->
+        </div>
+    </div>
+
+    <div class="modal-container" data-js="modal">
+        <!--
+			비동기통신을 이용하여 Modal 마크업을 가져온 경우 아래와 같이 실행해주세요.
+			* Modal Init
+			$('[data-js=modal]').modal();
+
+			* Modal Initialized 후 Modal 컨트롤 방법 #modal은 유니크한 ID 사용 부탁드립니다.
+
+			* Modal Open
+			$('[data-js=modal]').trigger('open', $('#modal'));
+			* Modal Close
+			$('[data-js=modal]').trigger('close', $('#modal'));
+		-->
+
+        <!-- modal popup : 체험단 후기 팝업 -->
+        <section id="modalPRO019" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">체험단 후기</h1>
+                </div>
+                <div class="modal__contents">
+
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //modal popup : 체험단 후기 팝업 -->
+
+        <!-- 무료배송 기준 -->
+        <section id="modalPRO008" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">무료배송 기준</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <section class="product-detail__inner-section">
+                            <h1 class="product-detail__h2">무료배송 기준</h1>
+                            <ol class="product-detail__ol">
+                                <li class="product-detail__ol__item">
+                                    <span class="product-detail__ol__item__number">1</span>
+                                    동일 배송 유형별 상품 <span class="point-color5">30,000원</span> 이상 구매 시<br>(단, 쿡킷은 40,000원 이상 구매 시)
+                                </li>
+                                <li class="product-detail__ol__item">
+                                    <span class="product-detail__ol__item__number">2</span>
+                                    ‘무료배송’으로 표시된 상품 구매시
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="product-detail__inner-section">
+                            <h1 class="product-detail__h2">배송 유형별 상품안내</h1>
+                            <div class="my-term-box">
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">상온</dt>
+                                    <dd class="my-term-detail__dd">[상온&실온] 표기된 상품<br>(햇반, 스팸, 생활용품 등)</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">저온</dt>
+                                    <dd class="my-term-detail__dd">[냉장],[냉동] 표기된 상품<br>(김치, 만두, 단무지 등)</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">쿡킷</dt>
+                                    <dd class="my-term-detail__dd">쿡킷 새벽배송 상품</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">선물세트</dt>
+                                    <dd class="my-term-detail__dd">명절 선물세트 상품</dd>
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //무료배송 기준 -->
+
+        <!-- CJ ONE 포인트 적립 안내 -->
+        <section id="modalPRO009" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">CJ ONE 포인트 적립 안내</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <h2 class="product-detail__h2">CJ ONE 포인트 적립금</h2>
+                        <p class="product-detail__p">쿠폰으로 할인 받으신 금액과 포인트 등으로 결제한 금액을 제외한 최종 실 결제금액 (카드,현금) 으로 포인트 적립액이
+                            적용됩니다.</p>
+                        <p class="product-detail__p">고객 등급 및 실 결제 금액에 따라 포인트는 달라질 수 있으며, 상품 상세 페이지에 노출되는 포인트와 실제 적립된
+                            포인트는 다소 차이가 있을 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //CJ ONE 포인트 적립 안내 -->
+
+        <!-- 카드혜택 안내 -->
+        <section id="modalPRO010" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">카드혜택 안내</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <h2 class="product-detail__h2">제휴카드 혜택 안내</h2>
+                        <p class="product-detail__p">CJ ONE 제휴카드에서 드리는 푸짐한 카드 혜택을 소개해드립니다. <span
+                                class="point-color1">다양한 상품을 행복한 혜택과 함께 만나보세요~</span></p>
+                        <div class="my-term-box">
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">제휴카드</dt>
+                                <dd class="my-term-detail__dd">
+                                    CJ ONE 삼성카드<br>CJ ONE 신한카드
+                                </dd>
+                            </dl>
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">할인혜택</dt>
+                                <dd class="my-term-detail__dd">
+                                    CJ ONE 포인트 더블 적립<br>
+                                    CJ ONE 브랜드 별<br>
+                                    <span class="point-color1">기본 2배~최대 5배 적립</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="color-box color-box--style06 mt15">
+                            <div class="color-box__text">
+                                <ul class="product-detail__ul product-detail__ul--type2 mt0">
+                                    <li class="product-detail__ul__item">간편결제수단(페이코,카카오,스마일페이,네이버페이 등) 사용시에는 제휴카드 더블 적립이
+                                        불가합니다.</li>
+                                    <li class="product-detail__ul__item">카드사제휴몰(롯데카드몰,신한올댓등) 경유를 통한 결제 시에는제휴카드 더블 적립이
+                                        불가합니다.</li>
+                                    <li class="product-detail__ul__item product-detail__ul__item--no-bullet">
+                                        <a class="point-color1 underline bold"
+                                            href="http://m.cjone.com/cjmmobile/benefit/coopcocardlist.do">제휴카드 혜택
+                                            안내</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //카드혜택 안내 -->
+
+        <!-- 사은품 안내 -->
+        <section id="modalPRO011" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">사은품 안내</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <p class="product-detail__p">비비고 제품 <span class="point-color1"><span
+                                    class="number">30,000</span>원 이상</span> 구매 시 사은품 1개 제공 <span
+                                class="point-color1">(소진완료)</span></p>
+                        <div class="my-term-box">
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">기간</dt>
+                                <dd class="my-term-detail__dd">
+                                    2018-11-29 ~ 2018-12-05
+                                </dd>
+                            </dl>
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">사은품</dt>
+                                <dd class="my-term-detail__dd">
+                                    <del class="basic-color2">비비고 제품 30,000원 이상 구매 시 <br>심쿵 파우치 증정</del>
+                                </dd>
+                            </dl>
+                        </div>
+                        <p class="product-detail__p mt30">전 제품 <span class="point-color1"><span
+                                    class="number">60,000</span>원 이상</span> 구매 시 사은품 2개 제공</p>
+                        <div class="my-term-box">
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">기간</dt>
+                                <dd class="my-term-detail__dd">
+                                    2018-11-29 ~ 2018-12-05
+                                </dd>
+                            </dl>
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">사은품</dt>
+                                <dd class="my-term-detail__dd">
+                                    <del class="basic-color2">전 상품 60,000원 이상 구매 시 <br>심쿵 파우치,햇반 증정</del>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="info-box info-box--bg mt15">
+                            <ul class="info-box__list">
+                                <li class="info-box__list__item info-box__list__item--type2">사은품은 최종 결제금액 기준으로 제공됩니다.
+                                </li>
+                                <li class="info-box__list__item info-box__list__item--type2">사은품은 주문번호당 1개씩 증정됩니다.</li>
+                                <li class="info-box__list__item info-box__list__item--type2">본 행사는 온라인몰 단독 행사로 매장행사와 상이할
+                                    수 있습니다.</li>
+                                <li class="info-box__list__item info-box__list__item--type2">사은품은 판매상품과 별개로 한정 운영되며 조기
+                                    소진될 수 있습니다.</li>
+                                <li class="info-box__list__item info-box__list__item--type2">반품 시 사은품도 함께 반품해주셔야 합니다.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //사은품 안내 -->
+
+        <!-- 공유하기 -->
+        <section id="modalPRO013" class="modal modal--mini modal--share" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">공유하기</h1>
+                </div>
+                <div class="modal__contents">
+                    <ul class="popup__sns_list">
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-kakaotalk.png"
+                                    alt="카카오톡">
+                                <p class="popup__sns_list__text">카카오톡</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-facebook.png"
+                                    alt="페이스북">
+                                <p class="popup__sns_list__text">페이스북</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-twi.png" alt="트위터">
+                                <p class="popup__sns_list__text">트위터</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-kakaostory.png"
+                                    alt="카카오스토리">
+                                <p class="popup__sns_list__text">카카오스토리</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-url.png"
+                                    alt="URL복사">
+                                <p class="popup__sns_list__text">URL 복사</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //공유하기 -->
+
+        <!-- 상품평 작성 -->
+        <section id="modalPRO020" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">상품평 작성</h1>
+                </div>
+                <div class="modal__contents modal__contents--with-btn">
+                    <div class="product-detail__popup-box">
+                        <div class="product-detail__popup-product-image">
+                            <img src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                        </div>
+                        <p class="product-detail__popup-product-name">[브랜드] 일이삼사오육칠팔구십일이삼사오육칠팔구십</p>
+                        <div class="product-detail__popup-rating">
+                            <div class="rating-area rating-area--wd83">
+                                <div class="rating-outer" style="width: 80%;">
+                                    <img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                        alt="별점 총 5개중 4개 선택됨">
+                                </div>
+                            </div>
+                            <span class="rating-count number">4.0</span>
+                        </div>
+                    </div>
+                    <div class="form product-detail__popup-box">
+                        <div class="form__row">
+                            <label for="label01" class="form-label form-label--block">맛</label>
+                            <div class="radio" role="radiogroup" data-js="radio" aria-labelledby="id-group-label-01">
+                                <div class="radio__group-title blind" data-js="radio__title" id="id-group-label-01">맛 후기
+                                    선택</div>
+                                <div class="radio__wrap">
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        맛있어요
+                                        <input type="radio" name="category1" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        먹을만해요
+                                        <input type="radio" name="category1" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        별로에요
+                                        <input type="radio" name="category1" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="label02" class="form-label form-label--block">추천여부</label>
+                            <div class="radio" role="radiogroup" data-js="radio" aria-labelledby="id-group-label-02">
+                                <div class="radio__group-title blind" data-js="radio__title" id="id-group-label-02">추천여부
+                                    선택</div>
+                                <div class="radio__wrap">
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        추천해요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        보통이에요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        추천하지 않아요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="label02" class="form-label form-label--block">언제 드셨어요?</label>
+                            <div class="product-detail__review-btn-scrollx">
+                                <div class="product-detail__review-btn-scrollx__inner">
+                                    <h1 id="id-group-label03" class="blind">
+                                        식사시간 선택
+                                    </h1>
+                                    <div class="" role="group" aria-labelledby="id-group-label03">
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style" role="checkbox"
+                                                data-js="checkbox__input" aria-checked="false">
+                                                아침 식사
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style" role="checkbox"
+                                                data-js="checkbox__input" aria-checked="false">
+                                                브런치
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style" role="checkbox"
+                                                data-js="checkbox__input" aria-checked="false">
+                                                점심 식사
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style" role="checkbox"
+                                                data-js="checkbox__input" aria-checked="false">
+                                                오후 간식
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style" role="checkbox"
+                                                data-js="checkbox__input" aria-checked="false">
+                                                저녁 식사
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style" role="checkbox"
+                                                data-js="checkbox__input" aria-checked="false">
+                                                야식
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="label02" class="form-label form-label--block">양은 어떠셨어요?</label>
+                            <div class="product-detail__review-btn-scrollx">
+                                <div class="product-detail__review-btn-scrollx__inner">
+                                    <h1 id="id-group-label04" class="blind">
+                                        양 선택
+                                    </h1>
+                                    <div class="" role="group" aria-labelledby="id-group-label04">
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style checkbox__input--auto"
+                                                role="checkbox" data-js="checkbox__input" aria-checked="false">
+                                                혼자 먹기 좋아요
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style checkbox__input--auto"
+                                                role="checkbox" data-js="checkbox__input" aria-checked="false">
+                                                둘이 먹기 적당해요
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style checkbox__input--auto"
+                                                role="checkbox" data-js="checkbox__input" aria-checked="false">
+                                                4인가족 넉넉해요
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox" data-js="checkbox">
+                                            <div class="checkbox__input checkbox__input--btn-style checkbox__input--auto"
+                                                role="checkbox" data-js="checkbox__input" aria-checked="false">
+                                                대가족도 충분해요
+                                                <input type="checkbox" class="checkbox__hidden"
+                                                    data-js="checkbox__hidden" tabindex="-1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form product-detail__popup-box product-detail__popup-box--last">
+                        <!-- 상품평 입력 받을 때 -->
+                        <div class="form__row">
+                            <label for="textarea01" class="form-label form-label--block">상품평 입력</label>
+                            <div class="form-element" data-js="form-ctrl">
+                                <textarea id="textarea01" class="form-element__textarea"
+                                    placeholder="상품평 내용은 최소20자 이상 입력해주세요." data-js="form-ctrl__textarea"></textarea>
+                                <div class="form-element__count" data-js="form-ctrl__count" data-max-length="400">
+                                    <span data-js="form-ctrl__count-current">0</span>/<span
+                                        data-js="form-ctrl__count-total">200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상품평 입력 받을 때 -->
+                        <p class="common-alert">상품과 무관하거나, 스팸 음란, 불법적인 내용의 상품평은 통보 없이 삭제되며 지급된 적립금은 회수 될 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="modal__btn-box btn-box btn-box--none-margin">
+                    <a href="#" class="btn btn--shape04 btn--style01">확인</a>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //상품평 작성 -->
+    </div>
+
+    <script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+    <script src="/cjom/mobile/js/plugins/slick.js"></script>
+    <script src="/cjom/mobile/js/plugins/glider.js"></script>
+    <script src="/cjom/mobile/js/plugins/jquery.lazy.min.js"></script>
+    <script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Checkbox</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="checkbox" /&gt;
+&lt;input type="checkbox" checked /&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<input type="checkbox" />
+	<br><br>
+	<input type="checkbox" checked/>
+	<hr>
+	<h2>Disabled</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="checkbox" disabled/&gt;
+&lt;input type="checkbox" disabled checked/&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<input type="checkbox" disabled />
+	<br><br>
+	<input type="checkbox" disabled  checked/>
+	<hr>
+	<h2>Label</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;label&gt;
+	&lt;input type="checkbox" /&gt;
+	Lable
+&lt;/label&gt;
+
+&lt;input type="checkbox" id="check01"/&gt;
+&lt;label for="check01"&gt;Lable&lt;/label&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<label>
+		<input type="checkbox" />
+		아이디 저장
+	</label>
+	<br><br>
+
+	<input type="checkbox" id="check01"/>
+	<label for="check01">아이디 저장</label>
+
+	<hr>
+	<h2>전체선택</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;label&gt;
+	&lt;input type="checkbox" data-all-check="all" /&gt;
+	전체선택
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="all" /&gt;
+	선택 1
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="all" /&gt;
+	선택2
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="all" /&gt;
+	선택3
+&lt;/label&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<label>
+		<input type="checkbox" data-all-check="all" id="test" />
+		전체선택
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="all" />
+		선택 1
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="all" />
+		선택2
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="all" />
+		선택3
+	</label>
+	<hr>
+	<h2>다중 전체선택</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;label&gt;
+	&lt;input type="checkbox" data-all-check="allcheck" /&gt;
+	음식 전체선택
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox"  data-all-check="allcheck2" data-child-check="allcheck" /&gt;
+	과일 전체선택
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="allcheck2" data-child-check="allcheck" /&gt;
+	사과
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="allcheck2" /&gt;
+	오렌지
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="allcheck2" /&gt;
+	감
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="allcheck" /&gt;
+	오징어
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type="checkbox" data-child-check="allcheck" /&gt;
+	카레
+&lt;/label&gt;
+
+</code></pre>
+	<h3>VIEW</h3>
+	<label>
+		<input type="checkbox" data-all-check="allcheck" />
+		음식 전체선택
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox"  data-all-check="allcheck2" data-child-check="allcheck" />
+		과일 전체선택
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="allcheck2" data-child-check="allcheck" />
+		사과
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="allcheck2" />
+		오렌지
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="allcheck2" />
+		감
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="allcheck" />
+		오징어
+	</label>
+	<br>
+	<br>
+	<label>
+		<input type="checkbox" data-child-check="allcheck" />
+		카레
+	</label>
+
+
+</div>
+</body>
+</html>

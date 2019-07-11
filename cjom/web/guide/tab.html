@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>TAB</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;ul class="tab-list" data-tab&gt;
+	&lt;li class="active"&gt;&lt;a href="#tab1"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab2"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="tab1" data-tab-content class="active"&gt;
+	tab-contents 1
+&lt;/div&gt;
+&lt;div id="tab2" data-tab-content&gt;
+	tab-contents 2
+&lt;/div&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list" data-tab>
+		<li class="active"><a href="#tab1">탭1</a></li>
+		<li><a href="#tab2">탭2</a></li>
+	</ul>
+	<div id="tab1" data-tab-content class="active">
+		tab-contents 1
+	</div>
+	<div id="tab2" data-tab-content>
+		tab-contents 2
+	</div>
+	<hr>
+
+	<h2>Default Small</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;ul class="tab-list-sm" data-tab&gt;
+	&lt;li class="active"&gt;&lt;a href="#tab1"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab2"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="tab1" data-tab-content class="active"&gt;
+	tab-contents 1
+&lt;/div&gt;
+&lt;div id="tab2" data-tab-content&gt;
+	tab-contents 2
+&lt;/div&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list-sm" data-tab>
+		<li class="active"><a href="#tab1-1">탭1</a></li>
+		<li><a href="#tab1-2">탭2</a></li>
+	</ul>
+	<div id="tab1-1" data-tab-content class="active">
+		tab-contents 1
+	</div>
+	<div id="tab1-2" data-tab-content>
+		tab-contents 2
+	</div>
+	<hr>
+
+	<h2>Length</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;ul class="tab-list column3" data-tab&gt;
+	&lt;li class="active"&gt;&lt;a href="#tab3"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab4"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab5"&gt;탭3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="tab3" data-tab-content class="active"&gt;
+	tab-contents 1
+&lt;/div&gt;
+&lt;div id="tab4" data-tab-content&gt;
+	tab-contents 2
+&lt;/div&gt;
+&lt;div id="tab5" data-tab-content&gt;
+	tab-contents 3
+&lt;/div&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list column3" data-tab>
+		<li class="active"><a href="#tab3">탭1</a></li>
+		<li><a href="#tab4">탭2</a></li>
+		<li><a href="#tab5">탭3</a></li>
+	</ul>
+	<div id="tab3" data-tab-content class="active">
+		tab-contents 1
+	</div>
+	<div id="tab4" data-tab-content>
+		tab-contents 2
+	</div>
+	<div id="tab5" data-tab-content>
+		tab-contents 3
+	</div>
+	<hr>
+	<ul class="tab-list column4" data-tab>
+		<li><a href="#tab6">탭1</a></li>
+		<li class="active"><a href="#tab7">탭2</a></li>
+		<li><a href="#tab8">탭3</a></li>
+		<li><a href="#tab9">탭4</a></li>
+	</ul>
+	<div id="tab6" data-tab-content>
+		tab-contents 1
+	</div>
+	<div id="tab7" data-tab-content class="active">
+		tab-contents 2
+	</div>
+	<div id="tab8" data-tab-content>
+		tab-contents 3
+	</div>
+	<div id="tab9" data-tab-content>
+		tab-contents 4
+	</div>
+	<hr>
+	<ul class="tab-list column5" data-tab>
+		<li><a href="#tab10">탭1</a></li>
+		<li><a href="#tab11">탭2</a></li>
+		<li class="active"><a href="#tab12">탭3</a></li>
+		<li><a href="#tab13">탭4</a></li>
+		<li><a href="#tab14">탭5</a></li>
+	</ul>
+	<div id="tab10" data-tab-content>
+		tab-contents 1
+	</div>
+	<div id="tab11" data-tab-content>
+		tab-contents 2
+	</div>
+	<div id="tab12" data-tab-content class="active">
+		tab-contents 3
+	</div>
+	<div id="tab13" data-tab-content>
+		tab-contents 4
+	</div>
+	<div id="tab14" data-tab-content>
+		tab-contents 5
+	</div>
+	<hr>
+	<h2>Type2</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;ul class="tab-list2" data-tab&gt;
+	&lt;li&gt;&lt;a href="#tab15"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab16"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab17"&gt;탭3&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="active"&gt;&lt;a href="#tab18"&gt;탭4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab19"&gt;탭5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab20"&gt;탭6&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab21"&gt;탭7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="tab15" data-tab-content&gt;
+	tab-contents 1
+&lt;/div&gt;
+&lt;div id="tab16" data-tab-content&gt;
+	tab-contents 2
+&lt;/div&gt;
+&lt;div id="tab17" data-tab-content&gt;
+	tab-contents 3
+&lt;/div&gt;
+&lt;div id="tab18" data-tab-content class="active"&gt;
+	tab-contents 4
+&lt;/div&gt;
+&lt;div id="tab19" data-tab-content&gt;
+	tab-contents 5
+&lt;/div&gt;
+&lt;div id="tab20" data-tab-content&gt;
+	tab-contents 6
+&lt;/div&gt;
+&lt;div id="tab21" data-tab-content&gt;
+	tab-contents 7
+&lt;/div&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list2" data-tab>
+		<li><a href="#tab15">탭1</a></li>
+		<li><a href="#tab16">탭2</a></li>
+		<li><a href="#tab17">탭3</a></li>
+		<li class="active"><a href="#tab18">탭4</a></li>
+	</ul>
+	<div id="tab15" data-tab-content>
+		tab-contents 1
+	</div>
+	<div id="tab16" data-tab-content>
+		tab-contents 2
+	</div>
+	<div id="tab17" data-tab-content>
+		tab-contents 3
+	</div>
+	<div id="tab18" data-tab-content class="active">
+		tab-contents 4
+	</div>
+	<hr>
+	<h2>Link Tab</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;ul class="tab-list" &gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list">
+		<li class="active"><a href="#">탭1</a></li>
+		<li><a href="#">탭2</a></li>
+	</ul>
+	<hr>
+	<h2>Type3</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;ul class="tab-default" data-tab&gt;
+	&lt;li&gt;&lt;a href="#tab15"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab16"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#tab17"&gt;탭3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="tab15" data-tab-content&gt;
+	tab-contents 1
+&lt;/div&gt;
+&lt;div id="tab16" data-tab-content&gt;
+	tab-contents 2
+&lt;/div&gt;
+&lt;div id="tab17" data-tab-content&gt;
+	tab-contents 3
+&lt;/div&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-default" data-tab>
+		<li><a href="#default1">탭1</a></li>
+		<li class="active"><a href="#default2">탭2</a></li>
+		<li><a href="#default3">탭3</a></li>
+	</ul>
+	<div id="default1" data-tab-content>
+		tab-contents 1
+	</div>
+	<div id="default2" data-tab-content>
+		tab-contents 2
+	</div>
+	<div id="default3" data-tab-content>
+		tab-contents 3
+	</div>
+	<hr>
+	<h2>Link Tab</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;ul class="tab-list" &gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list">
+		<li class="active"><a href="#">탭1</a></li>
+		<li><a href="#">탭2</a></li>
+	</ul>
+	<hr>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;ul class="tab-list2" &gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;탭3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;탭4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list2">
+		<li class="active"><a href="#">탭1</a></li>
+		<li><a href="#">탭2</a></li>
+		<li><a href="#">탭3</a></li>
+		<li><a href="#">탭4</a></li>
+	</ul>
+	<hr>
+
+	<h2>Link Tab</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;ul class="tab-list" &gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<ul class="tab-list">
+		<li class="active"><a href="#">탭1</a></li>
+		<li><a href="#">탭2</a></li>
+	</ul>
+	<hr>
+	<h2>Category</h2>
+	<h3>html</h3>
+	<pre><code class="html">&lt;ul class="category-list" &gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;카테고리1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리6&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="category-list column5"&gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;카테고리1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리6&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리7&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리8&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리9&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="category-list column6"&gt;
+	&lt;li class="active"&gt;&lt;a href="#"&gt;카테고리1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리6&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리7&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리8&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리9&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리10&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리11&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;카테고리12&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+	<h3>Column2</h3>
+	<ul class="category-list column2">
+		<li><a href="#">카테고리1</a></li>
+		<li><a href="#">카테고리2</a></li>
+		<li class="active"><a href="#">카테고리3</a></li>
+		<li><a href="#">카테고리4</a></li>
+		<li><a href="#">카테고리5</a></li>
+		<li><a href="#">카테고리6</a></li>
+		<li><a href="#">카테고리7</a></li>
+		<li><a href="#">카테고리8</a></li>
+	</ul>
+	
+	<h3>Column4</h3>
+	<ul class="category-list">
+		<li class="active"><a href="#">카테고리1</a></li>
+		<li><a href="#">카테고리2</a></li>
+		<li><a href="#">카테고리3</a></li>
+		<li><a href="#">카테고리4</a></li>
+		<li><a href="#">카테고리5</a></li>
+		<li><a href="#">카테고리6</a></li>
+		<li><a href="#">카테고리7</a></li>
+		<li><a href="#">카테고리8</a></li>
+	</ul>
+
+	<h3>Column5</h3>
+	<ul class="category-list column5">
+		<li><a href="#">카테고리1</a></li>
+		<li><a href="#">카테고리2</a></li>
+		<li><a href="#">카테고리3</a></li>
+		<li><a href="#">카테고리4</a></li>
+		<li><a href="#">카테고리5</a></li>
+		<li><a href="#">카테고리6</a></li>
+		<li class="active"><a href="#">카테고리7</a></li>
+		<li><a href="#">카테고리8</a></li>
+		<li><a href="#">카테고리9</a></li>
+		<li><a href="#">카테고리10</a></li>
+	</ul>
+
+	<h3>Column6</h3>
+	<ul class="category-list column6">
+		<li><a href="#">카테고리1</a></li>
+		<li><a href="#">카테고리2</a></li>
+		<li><a href="#">카테고리3</a></li>
+		<li><a href="#">카테고리4</a></li>
+		<li><a href="#">카테고리5</a></li>
+		<li><a href="#">카테고리6</a></li>
+		<li class="active"><a href="#">카테고리7</a></li>
+		<li><a href="#">카테고리8</a></li>
+		<li><a href="#">카테고리9</a></li>
+		<li><a href="#">카테고리10</a></li>
+		<li><a href="#">카테고리11</a></li>
+		<li><a href="#">카테고리12</a></li>
+	</ul>
+
+	<hr>
+	<h2>JS</h2>
+	<h3>Tab Open</h3>
+	<pre><code class="js">cjom.tab.open("tabId");</code></pre>
+</div>
+</body>
+</html>

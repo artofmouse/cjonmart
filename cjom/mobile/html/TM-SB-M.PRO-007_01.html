@@ -1,0 +1,2836 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>CJ제일제당 가정간편식 전문몰</title>
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/common.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+    <script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header header--sub">
+            <!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+        </div>
+        <div id="contents" class="contents">
+            <section class="sub">
+                <!-- section__title-box -->
+                <div class="section__floating-box" data-js="floating">
+                    <div data-js="floating__target-parent">
+                        <div class="section__title-box" data-js="floating__target">
+                            <a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+                            <h1 class="section__title">상품상세정보</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- //section__title-box -->
+
+                <!-- 핫딜 -->
+                <!--<div class="product-detail__hotdeal">
+                    <span class="bold">마켓핫딜</span><span class="product-detail__hotdeal__time number">12:10:30</span> 남음
+                    <span class="product-detail__hotdeal__remainder">잔여 상품 <span class="number bold">8</span>개</span>
+                </div>-->
+                <!-- //핫딜 -->
+
+                <!-- 예약상품 -->
+                <div class="product-detail__hotdeal product-detail__hotdeal--resurve">
+                    <span class="bold">[예약판매상품]</span>
+                    <span>2019년06월25일부터 순차 발송 됩니다.</span>
+                </div>
+                <!-- //예약상품 -->
+
+                <!-- 슬라이드 with video -->
+                <!-- 2019-03-20 수정 -->
+                <div class="slick-with-video-wrap">
+                    <div class="product-detail-badge-box">
+                        <!-- 2019-05-10 수정 -->
+                        <span class="product-detail-badge">
+                            <img src="/cjom/mobile/images/icon/product-badge01.png" alt="마켓핫딜">
+                        </span>
+                        <span class="product-detail-badge product-detail-badge--type2">
+                            <img src="/cjom/mobile/images/icon/product-badge02.png" alt="베스트">
+                        </span>
+                        <span class="product-detail-badge product-detail-badge--type2">
+                            <img src="/cjom/mobile/images/icon/product-badge03.png" alt="신제품">
+                        </span>
+                        <!-- 2019-05-10 수정 -->
+                    </div>
+                    <div class="slick-with-video slick-with-video--product" data-js="slick-with-video">
+                        <div class="slick" data-js="slick"
+                            data-options='{ "dots": true, "arrows": false, "autoplay": false }'>
+                            <div class="slick__dotted-absolute" data-js="slick__track">
+                                <div class="slick__item slick__item--is-video" data-js="slick__item">
+                                    <!-- video-box -->
+                                    <!-- data-subtitles : 자막 연결(jQuery selector) -->
+                                    <div data-subtitles="#subtitles1" class="video-box video-box--no-full"
+                                        data-js="video-ctrl__mp4" data-options='{"slide":true}'>
+                                        <div class="video-box__play-box">
+                                            <video style="width: 100%" data-js="video-ctrl__video" controls playsinline>
+                                                <source src="/cjom/mobile/images/temp/temp_video.mp4"
+                                                    type="video/mp4" />
+                                            </video>
+                                        </div>
+                                        <div class="video-box__cover-box is-loaded" data-js="video-ctrl__cover">
+                                            <img class="video-box__cover" src="/cjom/mobile/images/temp/new-main06.png"
+                                                alt="대체 텍스트"><!-- 커버 이미지 -->
+                                            <button class="video-box__play" type="button"
+                                                data-js="video-ctrl__play-button">
+                                                <span class="blind">동영상 재생</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- //video-box -->
+                                </div>
+                                <div class="slick__item" data-js="slick__item">
+                                    <div class="slick-img-wrap">
+                                        <img class="slick-img" src="/cjom/mobile/images/temp/temp-product05.jpg"
+                                            alt="대체 텍스트">
+                                    </div>
+                                </div>
+                                <div class="slick__item slick__item--is-video" data-js="slick__item">
+                                    <!-- video-box -->
+                                    <!-- data-subtitles : 자막 연결(jQuery selector) -->
+                                    <div data-subtitles="#subtitles2" class="video-box video-box--no-full"
+                                        data-js="video-ctrl" data-options='{"videoId": "6n1-9oSRIQw","slide":true}'>
+                                        <div class="video-box__cover-box" data-js="video-ctrl__cover">
+                                            <img class="video-box__cover" src="/cjom/mobile/images/temp/new-main06.png"
+                                                alt="대체 텍스트">
+                                            <!-- 커버 이미지 -->
+                                            <button class="video-box__play" type="button"
+                                                data-js="video-ctrl__play-button"><span class="blind">동영상
+                                                    재생</span></button>
+                                        </div>
+                                        <div class="video-box__play-box" data-js="video-ctrl__youtube">
+                                            <div data-js="video-ctrl__youtube-player"></div>
+                                        </div>
+                                    </div>
+                                    <!-- //video-box -->
+                                </div>
+                                <div class="slick__item slick__item--is-video" data-js="slick__item">
+                                    <!-- video-box -->
+                                    <!-- data-subtitles : 자막 연결(jQuery selector) -->
+                                    <div data-subtitles="#subtitles3" class="video-box video-box--no-full"
+                                        data-js="video-ctrl" data-options='{"videoId": "6n1-9oSRIQw","slide":true}'>
+                                        <div class="video-box__cover-box" data-js="video-ctrl__cover">
+                                            <img class="video-box__cover" src="/cjom/mobile/images/temp/new-main06.png"
+                                                alt="대체 텍스트">
+                                            <!-- 커버 이미지 -->
+                                            <button class="video-box__play" type="button"
+                                                data-js="video-ctrl__play-button"><span class="blind">동영상
+                                                    재생</span></button>
+                                        </div>
+                                        <div class="video-box__play-box" data-js="video-ctrl__youtube">
+                                            <div data-js="video-ctrl__youtube-player"></div>
+                                        </div>
+                                    </div>
+                                    <!-- //video-box -->
+                                </div>
+                                <div class="slick__item" data-js="slick__item">
+                                    <div class="slick-img-wrap">
+                                        <img class="slick-img" src="/cjom/mobile/images/temp/temp-product05.jpg"
+                                            alt="대체 텍스트">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 자막 -->
+                        <!-- 첫번째 슬라이드의 비디오 자막인 경우 인 경우 "is-active" class 추가 -->
+                        <div id="subtitles1" class="subtitles-toggle is-active" data-js="toggle"
+                            data-options='{"onChangeBeforeText": "자막보기", "onChangeAfterText": "자막닫기"}'>
+                            <a class="subtitles-toggle__anchor" href="#" data-js="toggle__anchor">자막보기</a>
+                            <div class="subtitles-toggle__pannel" data-js="toggle__panel">
+                                <p>버킷레시피 감자반과 냉장고를 털어라!!! 본격레시피</p>
+                                <br>
+                                <p>빨간맛 궁금해 오뎅~ <br>새로운 빨간맛 오뎅의 등장!!!</p>
+                            </div>
+                        </div>
+                        <!-- //자막 -->
+
+                        <!-- 자막 -->
+                        <div id="subtitles2" class="subtitles-toggle" data-js="toggle"
+                            data-options='{"onChangeBeforeText": "자막보기", "onChangeAfterText": "자막닫기"}'>
+                            <a class="subtitles-toggle__anchor" href="#" data-js="toggle__anchor">자막보기</a>
+                            <div class="subtitles-toggle__pannel" data-js="toggle__panel">
+                                <p>버킷레시피 감자반과 냉장고를 털어라!!! 본격레시피</p>
+                                <br>
+                                <p>빨간맛 궁금해 오뎅~ <br>새로운 빨간맛 오뎅의 등장!!!</p>
+                                <br>
+                                <p>#제일제당 #버킷레시피 #삼호어묵</p>
+                                <br>
+                                <p>
+                                    유럽 사람들이 즐겨 먹었던 무청을 이용해 만든 시래기 파스타. <br>
+                                    찬 바람이 불어 제철인 홍합과 한 겨울 먹기 좋은 시래기를 사용해서 시래기파스타를 만들어 보자!!! <br>
+                                    시래기를 이태리식으로 가공하여 색다른 맛을 느낄 수 있을 것이다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- //자막 -->
+
+                        <!-- 자막 -->
+                        <div id="subtitles3" class="subtitles-toggle" data-js="toggle"
+                            data-options='{"onChangeBeforeText": "자막보기", "onChangeAfterText": "자막닫기"}'>
+                            <a class="subtitles-toggle__anchor" href="#" data-js="toggle__anchor">자막보기</a>
+                            <div class="subtitles-toggle__pannel" data-js="toggle__panel">
+                                <p>버킷레시피 감자반과 냉장고를 털어라!!! 본격레시피</p>
+                                <br>
+                                <p>빨간맛 궁금해 오뎅~ <br>새로운 빨간맛 오뎅의 등장!!!</p>
+                                <br>
+                                <p>#제일제당 #버킷레시피 #삼호어묵</p>
+                                <br>
+                                <p>
+                                    유럽 사람들이 즐겨 먹었던 무청을 이용해 만든 시래기 파스타. <br>
+                                    찬 바람이 불어 제철인 홍합과 한 겨울 먹기 좋은 시래기를 사용해서 시래기파스타를 만들어 보자!!! <br>
+                                    시래기를 이태리식으로 가공하여 색다른 맛을 느낄 수 있을 것이다.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- //자막 -->
+                    </div>
+                </div>
+                <!-- //2019-03-20 수정 -->
+                <!-- //슬라이드 with video -->
+
+                <!-- 상품상세 상단 영역 -->
+                <div class="product-detail__top">
+                    <div class="product-detail__title">[햇반·컵반] 스팸마요덮밥 219g x 10개</div>
+                    <div class="product-detail__title-sub">원산지 : (주)국제식품진천공장 / 한국</div>
+                    <div class="product-detail__title-sub2">본 상품은 주문 후 제작 되는 방식으로 신중한 구매를 부탁드리며, 배송은 약 5일정도 소요됩니다.</div>
+
+                    <!-- 미판매 상품 일 때 노출 항목 -->
+                    <!-- <ul class="product-detail__top-info">
+						<li class="product-detail__top-info__item">
+							<div class="product-detail__top-info__item__row">
+								<div class="product-detail__top-info__dt">구분</div>
+								<div class="product-detail__top-info__dd">향미유</div>
+							</div>
+							<div class="product-detail__top-info__item__row">
+								<div class="product-detail__top-info__dt">중량</div>
+								<div class="product-detail__top-info__dd number">220ml (PET)</div>
+							</div>
+							<div class="product-detail__top-info__item__row">
+								<div class="product-detail__top-info__dt">유통기한</div>
+								<div class="product-detail__top-info__dd">제조일로부터 18개월</div>
+							</div>
+						</li>
+						<li class="product-detail__top-info__item">
+							<div class="product-detail__top-info__rating">
+								<div class="rating-area rating-area--wd83">
+									<div class="rating-outer" style="width: 0%;">
+										<img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="미판매 상품 별점 없음">
+									</div>
+								</div>
+								<span class="rating-count number underline"></span>
+								<div class="btn-box">
+									<a href="#" class="btn-share"><span class="blind">공유하기</span></a>
+									<a href="#" class="btn-like btn-like--disabled"><span class="blind">좋아요</span></a>
+								</div>
+							</div>
+						</li>
+					</ul> -->
+                    <!-- //미판매 상품 일 때 노출 항목 -->
+
+                    <!-- 쿡킷 -->
+                    <div class="component-recipe">
+                        <span class="component-recipe__time">
+                            <img src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+                            조리 15분
+                        </span>
+                        <span class="component-recipe__volume">
+                            <img src="/cjom/mobile/images/icon/ico-component-recipe02.png" alt="음식양">
+                            3인분
+                        </span>
+                    </div>
+                    <!-- //쿡킷 -->
+
+                    <ul class="product-detail__top-info" data-js="accordion" data-options='{"isInitActive": false}'>
+                        <!-- 할인 혜택이 없는 경우 -->
+                        <li class="product-detail__top-info__item">
+                            <div class="product-detail__top-info__dt">판매가</div>
+                            <div class="product-detail__top-info__dd product-detail__top-info__dd--price">
+                                <span class="number bold">4,500</span>원
+                            </div>
+                        </li>
+                        <!-- //할인 혜택이 없는 경우 -->
+                        <li class="product-detail__top-info__item" data-js="accordion__item">
+                            <div class="product-detail__top-info__dt">최종혜택가</div>
+                            <div class="product-detail__top-info__dd product-detail__top-info__dd--price">
+                                <span class="number bold">4,500</span>원&nbsp;
+                                <!-- <span class="product-detail__top-info__discount number">(10%)</span>&nbsp; -->
+                                <s class="number fs12">5,000원</s>
+                                <a href="#" class="product-detail__top-info__anchor" data-js="accordion__anchor">
+                                    <span class="blind">열기</span>
+                                </a>
+                                <p class="product-detail__top-info__dd__box">
+                                    프라임이라
+                                    <span class="point-color5">
+                                        <strong class="number">10,000</strong>원
+                                    </span> 더 할인!
+                                </p>
+                            </div>
+                            <div class="product-detail__top-info__panel" data-js="accordion__panel">
+                                <div class="product-detail__top-info__panel__box">
+                                    <ul class="product-detail__top-info__panel__list">
+                                        <li class="product-detail__top-info__panel__item">가격 할인
+                                            <span class="product-detail__top-info__panel__item__discount"><span
+                                                    class="number">- 10,000</span>원</span>
+                                        </li>
+                                        <li class="product-detail__top-info__panel__item">임직원 할인
+                                            <span class="product-detail__top-info__panel__item__discount"><span
+                                                    class="number">- 10,000</span>원</span>
+                                        </li>
+                                        <li class="product-detail__top-info__panel__item">프라임 할인
+                                            <span class="product-detail__top-info__panel__item__sub point-color1">
+                                                혜택잔여
+                                                <span class="number">7</span>회
+                                            </span>
+                                            <span class="product-detail__top-info__panel__item__discount"><span
+                                                    class="number">- 10,000</span>원</span>
+                                        </li>
+                                        <li class="product-detail__top-info__panel__item">쿠폰 할인
+                                            <span class="product-detail__top-info__panel__item__discount"><span
+                                                    class="number">- 10,000</span>원</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 2019-06-28 수정 -->
+                        <li class="product-detail__top-info__item txt-type">
+                            <div class="product-detail__top-info__dt">프라임혜택</div>
+                            <div class="product-detail__top-info__dd product-detail__top-info__dd--price">
+                                <p class="product-detail__top-info__dt__txt">
+                                    <span class="nowrap">
+                                        <strong class="number point-color1">20,000</strong>원
+                                    </span>
+                                    <span class="discount-badge number">5%</span>
+                                    더 할인!
+                                </p>
+                                <div class="btn-box pt10">
+                                    <button class="component-button--link">the프라임 가입하기</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product-detail__top-info__item">
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">구매혜택</div>
+                                <div class="product-detail__top-info__dd product-detail__top-info__dd--flex">
+                                    <p class="component-ellipsis">
+                                        더사면더할인 최대 <strong class="point-color5">30%</strong> 할인
+                                    </p>
+                                    <div class="tooltip tooltip--anchor" data-js="tooltip">
+                                        <button class="tooltip__anchore" data-js="tooltip__button">
+                                            혜택보기
+                                            <!-- <span class="blind">구매혜택 보기</span> -->
+                                        </button>
+                                        <div class="tooltip__pannel tooltip__pannel--right" data-js="tooltip__panel">
+                                            <div class="tooltip__text" style="width: 180px;">
+                                                <h1 class="tooltip__title">구매혜택</h1>
+                                                <ul class="component-ul component-ul--dot">
+                                                    <li class="component-ul__li">
+                                                        2개이상 구매시 10% 할인
+                                                        <span class="component-ul__description">
+                                                            (2019-02-21~2019-02-28)
+                                                        </span>
+                                                    </li>
+                                                    <li class="component-ul__li">
+                                                        3개이상 구매시 10% 할인
+                                                        <span class="component-ul__description">
+                                                            (2019-02-21~2019-02-28)
+                                                        </span>
+                                                    </li>
+                                                    <li class="component-ul__li">
+                                                        4개이상 구매시 10% 할인
+                                                        <span class="component-ul__description">
+                                                            (2019-02-21~2019-02-28)
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="cart-prime-tooltip__close btn--ico07"
+                                                    data-js="tooltip__button"><span class="blind">툴팁닫기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">할인쿠폰</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        쿠폰적용 제외상품
+                                        <div class="tooltip" data-js="tooltip">
+                                            <button class="tooltip__anchore" data-js="tooltip__button">
+                                                <span class="blind">쿠폰적용 제외상품</span>
+                                            </button>
+                                            <div class="tooltip__pannel tooltip__pannel--right"
+                                                data-js="tooltip__panel">
+                                                <div class="tooltip__text">
+                                                    <p class="cart-prime-tooltip__text">‘쿠폰적용 제외상품’이 있을 경우,<br>쿠폰 적용은 해당
+                                                        상품을 제외한<br>제품들에 한하여 적용이 됩니다.</p>
+                                                    <a href="#" class="cart-prime-tooltip__close btn--ico07"
+                                                        data-js="tooltip__button"><span class="blind">툴팁닫기</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">카드혜택</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        CJ ONE 제휴카드 혜택
+                                        <button data-js="modal__button" data-modal-target="#modalPRO010"
+                                            class="icon-excmark">
+                                            <span class="blind">상세 보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">포인트적립</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        CJ ONE <span class="number">750P (5%)</span>
+                                        <button data-js="modal__button" data-modal-target="#modalPRO009"
+                                            class="icon-excmark">
+                                            <span class="blind">상세 보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">배송정보</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        <span class="number">3,000</span>원 <span class="basic-color2">(3일 내 발송)</span>
+                                        <button data-js="modal__button" data-modal-target="#modalPRO008"
+                                            class="icon-excmark">
+                                            <!-- 2019-04-16 수정 -->
+                                            <span class="blind">상세 보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">배송정보</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        <span class="number">3,000</span>원 <span class="basic-color2">(3일 내 발송)</span>
+                                    </div>
+                                    <div
+                                        class="product-detail__top-info__dd__sub product-detail__top-info__dd-flex-box">
+                                        상온&amp;실온
+                                        <span class="div-line">업체직송</span>
+                                        <button data-js="modal__button" data-modal-target="#modalPRO008"
+                                            class="icon-excmark">
+                                            <!-- 2019-04-16 수정 -->
+                                            <span class="blind">상세 보기</span>
+                                        </button>
+                                    </div>
+                                    <!-- 사전예약 선물일 경우 -->
+                                    <!-- <p class="product-detail__top-info-message">(2019년 01월 07일부터 순차 발송됩니다.)</p> -->
+                                    <!-- //사전예약 선물일 경우 -->
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">배송정보</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        <span class="number">3,000</span>원 <span class="basic-color2">(3일 내 발송)</span>
+                                    </div>
+                                    <div
+                                        class="product-detail__top-info__dd__sub product-detail__top-info__dd-flex-box">
+                                        상온&amp;실온
+                                        <span class="div-line">
+                                            업체직송
+                                        </span>
+                                        <button data-js="modal__button" data-modal-target="#modalPRO008"
+                                            class="icon-excmark">
+                                            <!-- 2019-04-16 수정 -->
+                                            <span class="blind">상세 보기</span>
+                                        </button>
+                                    </div>
+                                    <!-- <p class="product-detail__top-info__dd_sub mt5">
+                                        본 상품은 예약상품으로<br>2019년 05월 22일 발송 예정입니다.
+                                    </p> -->
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">배송정보</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        <span class="point-color5">새벽배송</span>
+                                        <span class="div-line number">3,000</span>원
+                                    </div>
+                                    <div
+                                        class="product-detail__top-info__dd__sub product-detail__top-info__dd-flex-box">
+                                        냉동
+                                        <button class="div-line component-button--link">
+                                            새벽배송 가능확인
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-detail__top-info__item__row">
+                                <div class="product-detail__top-info__dt">제조사/제조국</div>
+                                <div class="product-detail__top-info__dd">
+                                    <div class="product-detail__top-info__dd-flex-box">
+                                        씨제이 제일제당(주)/한국
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- //2019-06-28 수정 -->
+                        <li class="product-detail__top-info__item">
+                            <!-- 평점 -->
+                            <div class="product-detail__top-info__rating">
+                                <!-- 2019-07-09 상품평 앵커 추가// -->
+                                <a class="review-anchor" href="#section-review-info" data-review-anchor>
+                                    <div class="rating-area rating-area--wd83">
+                                        <div class="rating-outer" style="width: 80%;">
+                                            <img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                alt="별점 총 5개중 4개 선택됨">
+                                        </div>
+                                    </div>
+                                    <div class="rating-count">
+                                        <span class="number underline">4.0</span>
+                                        <span class="regular font-12">(76건)</span>
+                                    </div>
+                                </a>
+                                <!-- //2019-07-09 상품평 앵커 추가 -->
+                                <div class="btn-box">
+                                    <button data-js="modal__button" data-modal-target="#modalPRO013"
+                                        class="btn-share"><span class="blind">공유하기</span></button>
+                                    <a href="#" class="btn-like is-active"><span class="blind">좋아요</span></a>
+                                    <!-- 좋아요 한 경우 is-active 클래스 추가 -->
+                                </div>
+                            </div>
+                            <!-- //평점 -->
+
+                            <!-- 해쉬태그 -->
+                            <ul class="product-detail__top-info__hash">
+                                <li class="product-detail__top-info__hash__item">
+                                    <a href="#">#크리스마스</a>
+                                </li>
+                                <li class="product-detail__top-info__hash__item">
+                                    <a href="#">#피자</a>
+                                </li>
+                                <li class="product-detail__top-info__hash__item">
+                                    <a href="#">#고메</a>
+                                </li>
+                                <li class="product-detail__top-info__hash__item">
+                                    <a href="#">#혼밥</a>
+                                </li>
+                                <li class="product-detail__top-info__hash__item">
+                                    <a href="#">#패키지</a>
+                                </li>
+                            </ul>
+                            <!-- //해쉬태그 -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- //상품상세 상단 영역 -->
+
+                <!-- 사은품 : 기본 -->
+                <div class="gift-select product-detail__link">
+                    <a href="#" class="gift-select__anchor" data-js="modal__button" data-modal-target="#modalPRO011">
+                        <div class="gift-select__text">전 상품 60,000원 이상 구매 시</div>
+                        <div class="gift-select__text bold">사은품 1개 증정 !</div>
+                    </a>
+                </div>
+                <!-- 사은품 : 기본 -->
+
+                <!-- 2019-04-16 수정 -->
+
+                <!-- 상품상세 하단 영역 -->
+                <div data-js="floating" data-options='{"top": 50}'>
+                    <div data-js="floating__target-parent">
+                        <div class="sc-tab-1" data-js="floating__target">
+                            <div class="floating__category">
+                                <ul class="sc-tab-1__inner is-loaded" data-js="scrollx-positioning"
+                                    data-options='{"tablemode":true}'>
+                                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item" style="">
+                                        <a class="sc-tab-1__anchor is-active" href="#section-detail-info"
+                                            data-js="floating__focus-anchor">상세정보</a>
+                                    </li>
+                                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item" style="">
+                                        <a class="sc-tab-1__anchor" href="#section-buying-info"
+                                            data-js="floating__focus-anchor">구매정보</a>
+                                    </li>
+                                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item" style="">
+                                        <a class="sc-tab-1__anchor" href="#section-delivery-info"
+                                            data-js="floating__focus-anchor">배송/교환/반품</a>
+                                    </li>
+                                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item" style="">
+                                        <a class="sc-tab-1__anchor" href="#section-review-info"
+                                            data-js="floating__focus-anchor">상품평</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 상세정보 -->
+                    <section id="section-detail-info" data-js="floating__focus-target">
+                        <h1 class="blind">상세정보</h1>
+
+                        <!-- 상품 정보 이미지 -->
+                        <div class="product-detail__section product-detail__section--pt0 product-detail__section--mt0">
+                            <dl class="product-detail__dl">
+                                <dt class="product-detail__dt">상품코드</dt>
+                                <dd class="product-detail__dd bold number">1234567890</dd>
+                            </dl>
+                            <div class="info-box info-box--bg">
+                                <p class="info-box__title--sub">주문 전, 꼭 확인해주세요!</p>
+                                <ul class="info-box__list">
+                                    <li class="info-box__list__item info-box__list__item--type2">본 상품은 주문 후 제작 되는 방식으로
+                                        신중한 구매를 부탁드리며, 배송은 약 5일정도 소요됩니다.</li>
+                                    <li class="info-box__list__item info-box__list__item--type2">신선제품의 경우, 상품가치 하락으로 이내
+                                        재판매가 불가하므로 배송중에는 취소가 불가합니다. <br><span class="point-color1">(단, 상품 불량시 교환·반품
+                                            가능)</span></li>
+                                    <li class="info-box__list__item info-box__list__item--type2">전자 상거래 등에서의 소비자 보호에 관한
+                                        법률에 의거</li>
+                                </ul>
+                            </div>
+                            <div style="background: #ddd; margin-top: 30px;">-----이미지 추가 영역 : Height 가변 (TBD)----</div>
+                        </div>
+                        <!-- //상품 정보 이미지 -->
+
+                        <!-- 상품 정보 이미지 -->
+                        <div class="product-detail__section product-detail__section--pb0">
+                            <div class="product-detail__copy">
+                                <img src="/cjom/mobile/images/sub/copyright_top.gif"
+                                    alt="CJ제일제당 온라인 공식 판매처 - 본 제품은 Cj제일제당이 관리하고 직접 배송하는 믿을 수 있는 제품입니다.">
+                                <img src="/cjom/mobile/images/sub/copyright_top_sub.jpg"
+                                    alt="믿을 수 있는 상품, 안심 포장/배송, 고객만족 서비스, 합리적인 가격 ※ 본 제품의 컨텐츠는 저작권법에 보호를 받는 저작물로서 그 저작권은 CJ제일제당에 있습니다.">
+                            </div>
+                            <!-- 2019-04-04 수정 -->
+                            <div id="productTarget1" style="height: 500px; overflow: hidden;">
+                                <!-- image -->
+                                <img src="/cjom/mobile/images/temp/temp-sns-580.jpg" alt="대체텍스트" />
+                                <!-- //image -->
+                                <!-- mp4 -->
+                                <div class="video-box video-box--no-full">
+                                    <div class="video-box__play-box" data-js="video-ctrl__mp4">
+                                        <video style="width: 100%" data-js="video-ctrl__video" controls playsinline
+                                            muted>
+                                            <source src="/cjom/mobile/images/temp/temp_video.mp4" type="video/mp4" />
+                                        </video>
+                                        <div class="video-box__cover-box is-loaded" data-js="video-ctrl__cover">
+                                            <img class="video-box__cover"
+                                                src="/cjom/mobile/images/temp/temp-product54.png" alt="대체 텍스트">
+                                            <button class="video-box__play" type="button"
+                                                data-js="video-ctrl__play-button">
+                                                <span class="blind">동영상 재생</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //mp4 -->
+
+                                <!-- youtube -->
+                                <div class="video-box video-box--no-full" data-js="video-ctrl"
+                                    data-options='{"videoId": "6n1-9oSRIQw"}'>
+                                    <div class="video-box__cover-box" data-js="video-ctrl__cover">
+                                        <img class="video-box__cover" src="/cjom/mobile/images/temp/temp-product54.png"
+                                            alt="대체 텍스트">
+                                        <button class="video-box__play" type="button"
+                                            data-js="video-ctrl__play-button"><span class="blind">동영상 재생</span></button>
+                                    </div>
+                                    <div class="video-box__play-box" data-js="video-ctrl__youtube">
+                                        <div data-js="video-ctrl__youtube-player"></div>
+                                    </div>
+                                </div>
+                                <!-- //youtube -->
+                                <!-- text -->
+                                <p>내용을 입력하세요.</p>
+                                <!-- //text -->
+                            </div>
+                            <!-- //2019-04-04 수정 -->
+                        </div>
+                        <div class="btn-box">
+                            <button class="btn btn__more btn__more--none-top-margin"
+                                data-product-more="#productTarget1">
+                                <!-- 2019-04-03 수정 -->
+                                상품 정보 더보기
+                            </button>
+                        </div>
+                        <!-- //상품 정보 이미지 -->
+
+                        <!-- 상품 정보 이미지 -->
+                        <div class="product-detail__section product-detail__section--pb0">
+                            <!-- <h2 class="product-detail__h2">햇반 라인업</h2> -->
+                            <!-- 2019-04-16 수정 -->
+                            <!-- 2019-04-04 수정 -->
+                            <div id="productTarget2" style="height: 200px; overflow: hidden;">
+                                <!-- image -->
+                                <img src="/cjom/mobile/images/temp/temp-sns-580.jpg" alt="대체텍스트" />
+                                <!-- //image -->
+                                <!-- mp4 -->
+                                <div class="video-box video-box--no-full">
+                                    <div class="video-box__play-box" data-js="video-ctrl__mp4">
+                                        <video style="width: 100%" data-js="video-ctrl__video" controls playsinline
+                                            muted>
+                                            <source src="/cjom/mobile/images/temp/temp_video.mp4" type="video/mp4" />
+                                        </video>
+                                        <div class="video-box__cover-box is-loaded" data-js="video-ctrl__cover">
+                                            <img class="video-box__cover"
+                                                src="/cjom/mobile/images/temp/temp-product54.png" alt="대체 텍스트">
+                                            <button class="video-box__play" type="button"
+                                                data-js="video-ctrl__play-button">
+                                                <span class="blind">동영상 재생</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //mp4 -->
+
+                                <!-- youtube -->
+                                <div class="video-box video-box--no-full" data-js="video-ctrl"
+                                    data-options='{"videoId": "6n1-9oSRIQw"}'>
+                                    <div class="video-box__cover-box" data-js="video-ctrl__cover">
+                                        <img class="video-box__cover" src="/cjom/mobile/images/temp/temp-product54.png"
+                                            alt="대체 텍스트">
+                                        <button class="video-box__play" type="button"
+                                            data-js="video-ctrl__play-button"><span class="blind">동영상 재생</span></button>
+                                    </div>
+                                    <div class="video-box__play-box" data-js="video-ctrl__youtube">
+                                        <div data-js="video-ctrl__youtube-player"></div>
+                                    </div>
+                                </div>
+                                <!-- //youtube -->
+                                <!-- text -->
+                                <p>내용을 입력하세요.</p>
+                                <!-- //text -->
+                            </div>
+                            <!-- //2019-04-04 수정 -->
+                        </div>
+                        <div class="btn-box">
+                            <button class="btn btn__more btn__more--none-top-margin"
+                                data-product-more="#productTarget2">
+                                <!-- 2019-04-03 수정 -->
+                                라인업 정보 더보기
+                            </button>
+                        </div>
+                        <!-- //상품 정보 이미지 -->
+
+                        <!-- 골라담기 -->
+                        <div class="product-detail__section product-detail__section--pb0">
+                            <div style="background:#ddd;min-height: 200px;">----- 공통 안내 이미지 영역 : Height 가변 ----</div>
+                            <div class="product-detail__box product-detail__box--type-text-box">
+                                하단 상품리스트를 터치하시면<br>옵션 및 구매 상세 정보를 확인하실 수 있습다.
+                            </div>
+                        </div>
+                        <ul class="product-type1 product-type1--row product-type1--product-detail">
+                            <li class="product-type1__list">
+                                <div class="product-type1__flex">
+                                    <div class="product-type1__image-box">
+                                        <a href="#" class="product-type1__image-anchor">
+                                            <img class="product-type1__image"
+                                                src="/cjom/mobile/images/temp/temp-product38.png" alt="대체 텍스트">
+                                        </a>
+                                    </div>
+                                    <div class="product-type1__text-box">
+                                        <div class="product-type1__text-badge">
+                                            <span class="product-detail__product-type-badge">상품 01</span>
+                                        </div>
+                                        <div class="product-type1__text-title">
+                                            [햇반] 흰쌀죽 270g x 12개 x 3회배송
+                                        </div>
+                                        <div class="product-type1__text-price">
+                                            <span class="product-type__text-discount number">10%</span>
+                                            <strong class="number">28,800</strong>원
+                                            <span class="product-type__text-discount-price number">11,000원</span>
+                                        </div>
+                                        <ul class="product-type1__ship">
+                                            <li class="product-type1__ship-list">상온</li>
+                                            <li class="product-type1__ship-list">정기배송</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-type1__flex">
+                                    <div class="product-type1__subcontent bold">무료배송·가격할인·쿠폰할인·덤증정</div>
+                                    <div class="product-type1__subcontent">
+                                        <button class="btn btn--shape07 btn--style01" data-js="modal__button"
+                                            data-modal-target="#modalPRO015">상품선택</button> <!-- 2019-04-16 수정 -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-type1__list product-type1__list--soldout">
+                                <div class="product-type1__flex">
+                                    <div class="product-type1__image-box">
+                                        <a href="#" class="product-type1__image-anchor">
+                                            <!-- 일시품절 일 경우 -->
+                                            <div class="product-type1__list--soldout-image">
+                                                <img src="/cjom/mobile/images/sub/ico-circle-soldout.png" alt="일시품절">
+                                            </div>
+                                            <!-- //일시품절 일 경우 -->
+                                            <img class="product-type1__image"
+                                                src="/cjom/mobile/images/temp/temp-product38.png" alt="대체 텍스트">
+                                        </a>
+                                    </div>
+                                    <div class="product-type1__text-box">
+                                        <div class="product-type1__text-badge">
+                                            <span class="product-detail__product-type-badge">상품 02</span>
+                                        </div>
+                                        <div class="product-type1__text-title">
+                                            [햇반] 흰쌀죽 270g x 12개 x 3회배송
+                                        </div>
+                                        <div class="product-type1__text-price">
+                                            <span class="product-type__text-discount number">10%</span>
+                                            <strong class="number">28,800</strong>원
+                                            <span class="product-type__text-discount-price number">11,000원</span>
+                                        </div>
+                                        <ul class="product-type1__ship">
+                                            <li class="product-type1__ship-list">상온</li>
+                                            <li class="product-type1__ship-list">정기배송</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-type1__flex">
+                                    <div class="product-type1__subcontent bold">무료배송·가격할인·쿠폰할인·덤증정</div>
+                                    <div class="product-type1__subcontent">
+                                        <button class="btn btn--shape07 btn--style01" data-js="modal__button"
+                                            data-modal-target="#modalPRO006">재입고알림</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //골라담기 -->
+
+                        <!-- 미판매 상품 일 때 : 제품특징 -->
+                        <div class="product-detail__section">
+                            <h2 class="product-detail__h2">제품의 특징</h2>
+                            <h3 class="product-detail__h3">100+ 만능요리 파기름 : 모든 볶음요리의 풍미 UP!</h3>
+                            <p class="product-detail__p">엄선된 파의 은은한 향과 맛을 요리에 더하세요! <br>계란 후라이부터 볶음밥까지 모든 볶음요리를 더욱 맛있게!
+                            </p>
+                            <h3 class="product-detail__h3">포장상태 및 보관방법</h3>
+                            <p class="product-detail__p">직사광선을 피해 실온에 보관하십시오.</p>
+                            <p class="common-alert">낮은 온도나 겨울철 보관 시 동결현상으로 기름이 뿌옇고 응고되고 침전물이 생길 수 있으나, 상온에서 일정시간 이상 보관 시
+                                원상태로 돌아오며 품질 변화는 전혀 없습니다.</p>
+                        </div>
+                        <!-- //미판매 상품 일 때 : 제품특징 -->
+
+                        <!-- 동영상 -->
+                        <div class="product-detail__section">
+                            <h2 class="product-detail__h2">동영상</h2>
+                            <div class="image-box image-box--row-type1">
+                                <a href="#" class="image-box__anchor">
+                                    <div class="image-box__image-container image-box__image-container--has-video">
+                                        <img class="image-box__image"
+                                            src="/cjom/mobile/images/temp/temp-video-cover.jpg" alt="대체 텍스트">
+                                        <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                        <span class="video-box__play-time number">
+                                            <em class="blind">상세페이지내 동영상포함</em>
+                                        </span>
+                                        <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                    </div>
+                                    <div class="image-box__text-box">
+                                        <h3 class="image-box__text">
+                                            [버킷레시피] 김자반과 냉장고를 털어라! 레시피
+                                        </h3>
+                                        <!-- <div class="image-box__text-box--bar">
+											<span class="image-box__text image-box__text--size11
+												image-box__text--color76">
+												조회수
+												<span class="number">1,200</span>
+											</span>
+										</div> -->
+                                    </div>
+                                </a>
+                                <a href="#" class="image-box__anchor">
+                                    <div class="image-box__image-container image-box__image-container--has-video">
+                                        <img class="image-box__image"
+                                            src="/cjom/mobile/images/temp/temp-video-cover.jpg" alt="대체 텍스트">
+                                        <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                        <span class="video-box__play-time number">
+                                            <em class="blind">상세페이지내 동영상포함</em>
+                                        </span>
+                                        <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                    </div>
+                                    <div class="image-box__text-box">
+                                        <h3 class="image-box__text">
+                                            [버킷레시피] 김자반과 냉장고를 털어라! 레시피
+                                        </h3>
+                                        <!-- <div class="image-box__text-box--bar">
+											<span class="image-box__text image-box__text--size11
+												image-box__text--color76">
+												조회수
+												<span class="number">1,200</span>
+											</span>
+										</div> -->
+                                    </div>
+                                </a>
+                                <a href="#" class="image-box__anchor">
+                                    <div class="image-box__image-container image-box__image-container--has-video">
+                                        <img class="image-box__image"
+                                            src="/cjom/mobile/images/temp/temp-video-cover.jpg" alt="대체 텍스트">
+                                        <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                        <span class="video-box__play-time number">
+                                            <em class="blind">상세페이지내 동영상포함</em>
+                                        </span>
+                                        <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                    </div>
+                                    <div class="image-box__text-box">
+                                        <h3 class="image-box__text">
+                                            [버킷레시피] 김자반과 냉장고를 털어라! 레시피
+                                        </h3>
+                                        <!-- <div class="image-box__text-box--bar">
+											<span class="image-box__text image-box__text--size11
+												image-box__text--color76">
+												조회수
+												<span class="number">1,200</span>
+											</span>
+										</div> -->
+                                    </div>
+                                </a>
+                            </div>
+
+                            <h2 class="product-detail__h2">the레시피</h2>
+                            <div class="product-detail__receipt">
+                                <div class="carousel product-carousel" data-js="carousel"
+                                    data-options='{ "slidesToScroll": 1, "slidesToShow": 1.176, "dragVelocity": 2, "dotNoneClick": true, "dots": false}'>
+                                    <div class="carousel__track image-box image-box--column" data-js="carousel__track">
+                                        <a href="#" class="image-box__anchor product-carousel__item">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product-500x400.jpg"
+                                                    alt="대체 텍스트">
+                                                <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                                <span class="video-box__play-time number">
+                                                    <em class="blind">상세페이지내 동영상포함</em>
+                                                </span>
+                                                <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    새콤 매콤! 매운 갈비찜
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        입맛을 싹 바꿔줄만한 얼큰한 음식
+                                                    </span>
+                                                </h3>
+                                                <div class="component-recipe component-margin__text">
+                                                    <span class="component-recipe__time">
+                                                        <img src="/cjom/mobile/images/icon/ico-component-recipe01.png"
+                                                            alt="조리시간">
+                                                        10분
+                                                    </span>
+                                                    <em>난이도</em>
+                                                    <strong>하</strong>
+                                                </div>
+                                                <!-- <div class="image-box__text-box--bar">
+													<span class="image-box__text image-box__text--size11
+														image-box__text--color76">
+														조회수
+														<span class="number">1,200</span>
+													</span>
+												</div> -->
+                                            </div>
+                                        </a>
+                                        <a href="#" class="image-box__anchor product-carousel__item">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product-500x400.jpg"
+                                                    alt="대체 텍스트">
+                                                <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                                <!-- <span class="video-box__play-time number">
+													<em class="blind">상세페이지내 동영상포함</em>
+												</span> -->
+                                                <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    새콤 매콤! 매운 갈비찜
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        입맛을 싹 바꿔줄만한 얼큰한 음식
+                                                    </span>
+                                                </h3>
+                                                <div class="component-recipe component-margin__text">
+                                                    <span class="component-recipe__time">
+                                                        <img src="/cjom/mobile/images/icon/ico-component-recipe01.png"
+                                                            alt="조리시간">
+                                                        10분
+                                                    </span>
+                                                    <em>난이도</em>
+                                                    <strong>하</strong>
+                                                </div>
+                                                <!-- <div class="image-box__text-box--bar">
+													<span class="image-box__text image-box__text--size11
+														image-box__text--color76">
+														조회수
+														<span class="number">1,200</span>
+													</span>
+												</div> -->
+                                            </div>
+                                        </a>
+                                        <a href="#" class="image-box__anchor product-carousel__item">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product-500x400.jpg"
+                                                    alt="대체 텍스트">
+                                                <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                                <!-- <span class="video-box__play-time number">
+													<em class="blind">상세페이지내 동영상포함</em>
+												</span> -->
+                                                <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    새콤 매콤! 매운 갈비찜
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        입맛을 싹 바꿔줄만한 얼큰한 음식
+                                                    </span>
+                                                </h3>
+                                                <div class="component-recipe component-margin__text">
+                                                    <span class="component-recipe__time">
+                                                        <img src="/cjom/mobile/images/icon/ico-component-recipe01.png"
+                                                            alt="조리시간">
+                                                        10분
+                                                    </span>
+                                                    <em>난이도</em>
+                                                    <strong>하</strong>
+                                                </div>
+                                                <!-- <div class="image-box__text-box--bar">
+													<span class="image-box__text image-box__text--size11
+															image-box__text--color76">
+														조회수
+														<span class="number">1,200</span>
+													</span>
+												</div> -->
+                                            </div>
+                                        </a>
+                                        <a href="#" class="image-box__anchor product-carousel__item">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product-500x400.jpg"
+                                                    alt="대체 텍스트">
+                                                <!-- 상세페이지에 동영상 있을 시 노출 -->
+                                                <span class="video-box__play-time number">
+                                                    <em class="blind">상세페이지내 동영상포함</em>
+                                                </span>
+                                                <!-- //상세페이지에 동영상 있을 시 노출 -->
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    새콤 매콤! 매운 갈비찜
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        입맛을 싹 바꿔줄만한 얼큰한 음식
+                                                    </span>
+                                                </h3>
+                                                <div class="component-recipe component-margin__text">
+                                                    <span class="component-recipe__time">
+                                                        <img src="/cjom/mobile/images/icon/ico-component-recipe01.png"
+                                                            alt="조리시간">
+                                                        10분
+                                                    </span>
+                                                    <em>난이도</em>
+                                                    <strong>하</strong>
+                                                </div>
+                                                <!-- <div class="image-box__text-box--bar">
+													<span class="image-box__text image-box__text--size11
+															image-box__text--color76">
+														조회수
+														<span class="number">1,200</span>
+													</span>
+												</div> -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel__dots carousel__dots--hide" data-js="carousel__dots"></div>
+                                    <div class="carousel__fake-box">
+                                        <div class="carousel__fake" data-js="carousel__fake"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 상품 Q&A -->
+                        <div class="product-detail__section">
+                            <h2 class="product-detail__h2">상품 Q&A</h2>
+                            <div class="product-detail__box">
+                                <p class="product-detail__box__text">상품 관련 궁금하신 사항이 있으면 궁금하신 점을 문의해 주세요.</p>
+                                <ul class="product-detail__box__list">
+                                    <li class="product-detail__box__item">고객님의 질문에 정성껏 빠르게 답변해 드리겠습니다.</li>
+                                    <li class="product-detail__box__item">작성해주신 문의내역 및 답변은 <a class="point-color1"
+                                            href="#">마이페이지 &gt; 활동정보 &gt; 1:1 문의내역</a> 메뉴에서 확인 가능합니다.</li>
+                                </ul>
+                            </div>
+                            <div class="btn-box mt15">
+                                <a href="#" class="btn btn--shape02 btn--style01">문의하기</a>
+                            </div>
+                        </div>
+                        <!-- //상품 Q&A -->
+                    </section>
+                    <!-- //상세정보 -->
+
+
+                    <!-- 구매정보 -->
+                    <section id="section-buying-info" data-js="floating__focus-target">
+                        <!-- 제품특징 -->
+                        <div class="product-detail__section">
+                            <h1 class="product-detail__h2">구매정보</h1>
+                            <div class="my-term-box product-detail__buying-info-table">
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">포장단위별 용량(중량), 수량, 크기</dt>
+                                    <dd class="my-term-detail__dd">
+                                        LA갈비 2kg
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">생산자, 수입품의 경우 수입자를 함께 표기</dt>
+                                    <dd class="my-term-detail__dd">
+                                        (주)국제식품 진천공장 충북 진천국 덕산면 신천산단4로 79
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">농수산물의 원산지 표시에 관한 법률에 따른 원산지</dt>
+                                    <dd class="my-term-detail__dd">
+                                        생산 및 유통시점에 따라 원산지 변경 전 제품이 혼용되어 발송 가능한 점 양해 부탁드립니다. 뉴질랜드산
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">제조연월일, 유통기한 또는 품질유지기한</dt>
+                                    <dd class="my-term-detail__dd">
+                                        유통기한 : 제품 별도 표시일까지(제조일로 부터 1년)
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">축산법에 따른 등급 표시, 쇠고기의 경우 이력관리에 따른 표시 유무</dt>
+                                    <dd class="my-term-detail__dd">
+                                        이력제 관리 표시 유(별도표시)
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">상품구성</dt>
+                                    <dd class="my-term-detail__dd">
+                                        쇠고기 갈비 100%(뉴질랜드산)
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">보관방법 또는 취급방법</dt>
+                                    <dd class="my-term-detail__dd">
+                                        냉동보관(-18C 이하보관)
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">소비자상담 관련 전화번호</dt>
+                                    <!-- 2019-05-10 수정 -->
+                                    <dd class="my-term-detail__dd">
+                                        1668-1953
+                                    </dd>
+                                    <!-- //2019-05-10 수정 -->
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">수입식품에 해당하는 경우 “식품위생법에 따른 수입 신고를 필함”</dt>
+                                    <dd class="my-term-detail__dd">
+                                        식품위생법에 따른 수입신고를 필함
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- //제품특징 -->
+                    </section>
+                    <!-- //구매정보 -->
+
+
+                    <!-- 배송/교환/반품 -->
+                    <section id="section-delivery-info" data-js="floating__focus-target">
+                        <h1 class="blind">배송/교환/반품</h1>
+                        <section class="product-detail__section">
+                            <h1 class="product-detail__h2">배송비안내</h1>
+                            <p class="product-detail__p">기본배송비 : 3,000원</p>
+
+                            <p class="product-detail__section-title-sub">무료배송기준</p>
+                            <ol class="product-detail__ol">
+                                <li class="product-detail__ol__item">
+                                    <span class="product-detail__ol__item__number">1</span>
+                                    동일 배송 유형별 상품 <span class="point-color5">30,000원</span> 이상 구매 시<br>(단, 쿡킷은 40,000원 이상
+                                    구매 시)
+                                </li>
+                                <li class="product-detail__ol__item">
+                                    <span class="product-detail__ol__item__number">2</span>
+                                    <span class="point-color5">‘무료배송’</span>으로 표시된 상품 구매시
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="product-detail__section">
+                            <h1 class="product-detail__h2">배송 유형별 상품안내</h1>
+                            <div class="my-term-box">
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">상온</dt>
+                                    <dd class="my-term-detail__dd">[상온&실온] 표기된 상품<br>(햇반, 스팸, 생활용품 등)</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">저온</dt>
+                                    <dd class="my-term-detail__dd">[냉장],[냉동] 표기된 상품<br>(김치, 만두, 단무지 등)</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">쿡킷</dt>
+                                    <dd class="my-term-detail__dd">쿡킷 새벽배송 상품</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">선물세트</dt>
+                                    <dd class="my-term-detail__dd">명절 선물세트 상품</dd>
+                                </dl>
+                            </div>
+                            <div class="info-box info-box--bg mt15">
+                                <ul class="info-box__list">
+                                    <li class="info-box__list__item info-box__list__item--type2">주문한 상품은 결제 완료 후 3일 이내
+                                        출고 됩니다.(토, 공휴일 제외)</li>
+                                    <li class="info-box__list__item info-box__list__item--type2">상품 출고 일은 상품/지역/업체별 상황에
+                                        따라 변경될 수 있으며, 주문량 증가 시 배송이 지연 될 수 있습니다.</li>
+                                    <li class="info-box__list__item info-box__list__item--type2">냉장, 냉동, 신선제품은 신선도 유지를
+                                        위해 제주도 및 도서 산간 지역의 배송이 제한 될 수 있습니다.</li>
+                                    <li class="info-box__list__item info-box__list__item--type2">고객님의 주소 기입 오류, 임의 수취거부
+                                        , 고객부재로 인해 반송될 경우 배송비가 청구될 수 있습니다.</li>
+                                    <li class="info-box__list__item info-box__list__item--type2">주문 수량이 많거나 BOX 제품을 동시에
+                                        구매하는 경우 안전배송을 위해 다수의 박스로 배송될 수 있으며 택배사 사정에 따라 박스별 배송 일정이 다를 수 있습니다.(마에피이지 >
+                                        주문내역/배송현황 > [배송현황] 버튼 클릭 시, 출력되는 운송장 번호로 택배 개수 확인 가능)</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="product-detail__section">
+                            <h1 class="product-detail__h2">안심포장 안내</h1>
+                            <p class="product-detail__p">비식품 상품이 배송중 포장이 손상되어 식품을 오염시키지 않도록 별도 배송합니다.
+                            </p>
+                            <p class="product-detail__p">냉장, 냉동상품은 합배송 됩니다. (주문 제품을 최대한 한 번에 받아보실 수 있도록 일부는 큰 박스로 배송됩니다.
+                                SIZE 장560*폭360* 고455)</p>
+                            <p class="product-detail__section-title-sub">제품의 신선도 유지를 위한 냉매제와 제품포장</p>
+                            <p class="product-detail__p">냉장,냉동제품의 신선도를 위해 계저절에 따라 냉매제의 수량이 달라집니다.</p>
+                            <div class="product-detail__return-img-box">
+                                <div class="product-detail__return-img-box__item">
+                                    <img src="/cjom/mobile/images/sub/img-safe-boxing-1.jpg" alt="냉장 상품시 아이스팩">
+                                </div>
+                                <div class="product-detail__return-text-box__item">
+                                    <p class="product-detail__return-img-box__text">a : 냉장상품 배송시 아이스팩</p>
+                                    <p class="product-detail__return-img-box__text">b : 냉동상품 배송시 드라이아이스</p>
+                                </div>
+                            </div>
+                            <p class="product-detail__section-title-sub">밀껍질이 함유된 자연까지 생각한 '친환경 에어캡'으로 안심 포장</p>
+                            <p class="product-detail__p">밀껍질이 25% 함유된 친환경 소재로 만든 에어캡은 특유의 색상과 질감을 가집니다. 환경까지 생각하는 CJ THE
+                                MARKET가 되겠습니다.</p>
+                        </section>
+                        <section class="product-detail__section">
+                            <h1 class="product-detail__h2">주문 변경/취소 안내</h1>
+                            <p class="product-detail__p">당사 판매정책 및 제조사 사정에 따라 사전예고 없이 상품 가격변동 혹은 품절 될 수 있으며, 이로 인한 가격
+                                보상은 불가능합니다.</p>
+                            <p class="product-detail__p">주문 후에는 주문상품 및 결제 수단 변경이 불가합니다. 주문 시 유의해주시기 바랍니다.</p>
+                            <p class="product-detail__p">상품이 ‘배송준비’를 시작하면 배송지 변경, 주문변경, 주문취소가 불가합니다.</p>
+                            <div class="my-term-box">
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">입금대기 <br>신규주문</dt>
+                                    <dd class="my-term-detail__dd">
+                                        <button data-js="modal__button" data-modal-target="#modal"
+                                            class="btn btn--shape07 btn--style02">배송지변경</button>
+                                        <button class="btn btn--shape07 btn--style02">주문취소</button>
+                                    </dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">배송준비중 <br>배송중</dt>
+                                    <dd class="my-term-detail__dd">배송지 변경, 주문변경, 주문취소 불가</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">배송완료</dt>
+                                    <dd class="my-term-detail__dd">
+                                        <button class="btn btn--shape07 btn--style02">교환신청</button>
+                                        <button class="btn btn--shape07 btn--style02">주문취소</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </section>
+                        <section class="product-detail__section product-detail__section-refund-info">
+                            <h1 class="blind">교환, 반품, 환불 안내</h1>
+                            <section class="product-detail__inner-section">
+                                <h1 class="product-detail__h2">교환/반품 기간</h1>
+                                <p class="product-detail__p">상품 수령일로부터 7일 이내 <br>(냉장/냉동, 신선식품은 상품 수령일로부터 1~2일 이내)</p>
+                            </section>
+                            <section class="product-detail__inner-section">
+                                <h1 class="product-detail__h2">교환/반품 불가 안내</h1>
+                                <p class="product-detail__p">다음의 경우 교환/반품 기간 내라도 교환/반품불가 <br>(단, 제품 불량 및 하자, 오배송 제외)</p>
+                                <ol class="product-detail__ol">
+                                    <li class="product-detail__ol__item">
+                                        <span class="product-detail__ol__item__number">1</span>
+                                        상품 수령일로부터 7일이 경과한 경우
+                                    </li>
+                                    <li class="product-detail__ol__item">
+                                        <span class="product-detail__ol__item__number">2</span>
+                                        포장을 개봉하거나 상품을 취식한 경우
+                                    </li>
+                                    <li class="product-detail__ol__item">
+                                        <span class="product-detail__ol__item__number">3</span>
+                                        패키지 상품, 묶음 상품, 특가 상품의 부분교환/반품을 원하는경우
+                                    </li>
+                                    <li class="product-detail__ol__item">
+                                        <span class="product-detail__ol__item__number">4</span>
+                                        구성품 또는 사은품을 반납하지 않은 경우
+                                    </li>
+                                    <li class="product-detail__ol__item">
+                                        <span class="product-detail__ol__item__number">5</span>
+                                        신선, 냉장, 냉동상품에 대해 시간이 경과되어 상품의 가치가 현저히 감소한 경우
+                                    </li>
+                                </ol>
+                                <p class="common-alert">제품의 하자 이외의 사유로 인한 교환/반품/취소불가</p>
+                            </section>
+                            <section class="product-detail__inner-section">
+                                <h1 class="product-detail__h2">교환/반품비</h1>
+                                <p class="product-detail__p">고객님의 단순 변심에 의한 교환/반품 시, 택배 박스단위로 배송비 부과</p>
+                                <ul class="product-detail__ul product-detail__ul--type2">
+                                    <li class="product-detail__ul__item">교환배송비 : 박스당 6,000원 (왕복)</li>
+                                    <li class="product-detail__ul__item">반품배송비 : 박스당 6,000원 (왕복), 단, 남은 결제 금액이 택배비 무료 기준
+                                        금액 이상인 경우 3,000원 (편도) 부과</li>
+                                </ul>
+                            </section>
+                            <section class="product-detail__inner-section">
+                                <h1 class="product-detail__h2">교환/반품 절차</h1>
+                                <p class="product-detail__p">교환/반품 신청 (임의반품 시, 처리불가)</p>
+                                <ul class="product-detail__ul product-detail__ul--type2">
+                                    <li class="product-detail__ul__item">[마에피이지 > 쇼핑정보 > 주문교환 / 반품 / 취소신청] 페이지에서 바로 접수
+                                        바로가기</li>
+                                    <li class="product-detail__ul__item">고객행복센터 1668-1953로 신청<br>(평일 09:00~18:00, 토 /
+                                        일 / 공휴일 휴무)</li> <!-- 2019-05-10 수정 -->
+                                    <li class="product-detail__ul__item">반품신청 접수 후 필요 시 고객님께 전화를 드리며, 전화상담 후 반품이 최종 결정
+                                        됩니다.</li>
+                                </ul>
+                                <br>
+                                <p class="product-detail__p">상품불량 및 누락 시, 교환/반품 유의사항</p>
+                                <ul class="product-detail__ul product-detail__ul--type2">
+                                    <li class="product-detail__ul__item">상품불량 및 누락 시 반드시 사진 첨부하여 교환/반품 신청</li>
+                                    <li class="product-detail__ul__item">불량 및 하자 상품은 회수 후 처리 가능하므로 보관</li>
+                                </ul>
+                                <br>
+                                <p class="product-detail__p">교환/반품 접수 후, 2~5일이내 택배기사님이 방문하여 상품 교환 및 회수 진행</p>
+                            </section>
+                            <section class="product-detail__inner-section">
+                                <h1 class="product-detail__h2">환불안내</h1>
+                                <p class="product-detail__p">반품 시, 반품된 상품이 물류센터로 입고되어 검수가 완료되면 ‘취소완료’ 처리 됩니다. 환불은 취소완료 후
+                                    영업일 기준 7일이내 처리됩니다.</p>
+                                <p class="product-detail__p">현금으로 결제하신 경우 '취소완료' 후 신청하신 환불계좌로 영업일 기준 2~3일 내 입금됩니다.</p>
+                                <p class="product-detail__p">카드로 결제하신 경우 '취소완료' 후 영업일 기준 4~7일이내 승인취소 처리 됩니다.</p>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- //배송/교환/반품 -->
+
+                    <!-- 상품평 -->
+                    <section id="section-review-info" data-js="floating__focus-target">
+                        <h1 class="blind">상품평</h1>
+                        <!-- 상품평 없을 때 -->
+                        <div class="product-detail__section">
+                            <div class="none-display none-display--type2">
+                                <p class="none-display__text">등록된 상품평이 없습니다.</p>
+                            </div>
+                            <div style="background:#ddd;min-height: 100px;">-----상품평 작성 후 혜택 내용 정책 (TBD)----</div>
+                            <div class="btn-box product-detail__review-btn">
+                                <button data-js="modal__button" data-modal-target="#modalPRO020"
+                                    class="btn btn--shape02 btn--style01">상품평쓰기</button>
+                            </div>
+                        </div>
+                        <!-- //상품평 없을 때 -->
+                        <!-- 상품평 있을 때 -->
+                        <div class="product-detail__section product-detail__section--pb0">
+                            <!-- 상품편 옵션 선택 -->
+                            <div class="form-element product-detail__review-option-select">
+                                <label for="select01" class="blind">상품평 옵션 선택</label>
+                                <select id="select01" class="form-element__select">
+                                    <option>텍스트</option>
+                                    <option>가나다라</option>
+                                    <option>마바사아</option>
+                                    <option>자차카타</option>
+                                </select>
+                            </div>
+                            <!-- //상품편 옵션 선택 -->
+                            <div class="product-detail__box product-detail__box--type-rating">
+                                <div class="product-detail__box__rating">
+                                    <span class="product-detail__box__title">평균 평점</span>
+                                    <div class="rating-area rating-area--wd83">
+                                        <div class="rating-outer" style="width: 80%;">
+                                            <img class="rating-image"
+                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                alt="별점 총 5개중 4개 선택됨">
+                                        </div>
+                                    </div>
+                                    <span class="rating-count number">4.0</span>
+                                    <!-- <span class="rating-count__people number">(100명)</span> -->
+                                </div>
+                                <div class="product-detail__box__graph-div">
+                                    <div class="product-detail__box__graph">
+                                        <div class="product-detail__box__graph-inner">
+                                            <span class="product-detail__box__title">맛있어요</span>
+                                            <span class="product-detail__box__bar">
+                                                <span class="product-detail__box__bar__inner" style="width: 87%"></span>
+                                                <span class="blind">87%</span>
+                                            </span>
+                                        </div>
+                                        <span class="product-detail__box__percent number">87%</span>
+                                    </div>
+                                    <div class="product-detail__box__graph">
+                                        <div class="product-detail__box__graph-inner">
+                                            <span class="product-detail__box__title">추천해요</span>
+                                            <span class="product-detail__box__bar">
+                                                <span class="product-detail__box__bar__inner" style="width: 60%"></span>
+                                                <span class="blind">60%</span>
+                                            </span>
+                                        </div>
+                                        <span class="product-detail__box__percent number">60%</span>
+                                    </div>
+                                </div>
+                                <!--<div class="product-detail__box__div">
+                                    <div class="component-recipe">
+                                        <span class="component-recipe__time">
+                                            <img src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+                                            저녁식사
+                                        </span>
+                                        <span class="component-recipe__volume">
+                                            <img src="/cjom/mobile/images/icon/ico-component-recipe02.png" alt="음식양">
+                                            4인가족도 넉넉해요
+                                        </span>
+                                    </div>
+                                </div>-->
+                            </div>
+                            <div id="reviewTab" class="product-detail__tab-wrap" data-js="tab">
+                                <!-- 체험단 후기 있을 경우에만 -->
+                                <ul class="border-tab product-detail__review-tab">
+                                    <li class="border-tab__li" data-js="tab__list">
+                                        <a href="#" class="border-tab__anchor" data-js="tab__anchor">
+                                            일반 상품평
+                                        </a>
+                                    </li>
+                                    <li class="border-tab__li" data-js="tab__list">
+                                        <a href="#" class="border-tab__anchor" data-js="tab__anchor">
+                                            체험단 후기
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- //체험단 후기 있을 경우에만 -->
+                                <!-- 일반 상품평 -->
+                                <section data-js="tab__panel">
+                                    <div class="btn-box product-detail__review-btn">
+                                        <button data-js="modal__button" data-modal-target="#modalPRO020"
+                                            class="btn btn--shape02 btn--style01">상품평쓰기</button><!-- 2019-04-16 수정 -->
+                                    </div>
+                                    <h1 class="blind">일반 상품평</h1>
+                                    <ul class="product-detail__review">
+                                        <li class="product-detail__review__item">
+                                            <div class="product-detail__review__rating">
+                                                <div class="rating-area">
+                                                    <div class="rating-outer" style="width: 80%;">
+                                                        <img class="rating-image"
+                                                            src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                            alt="별점 총 5개중 4개 선택됨">
+                                                    </div>
+                                                </div>
+                                                <ul class="product-detail__review__rating__ul">
+                                                    <li class="product-detail__review__rating__li">맛 <span
+                                                            class="basic-color1">맛있어요</span></li>
+                                                    <li class="product-detail__review__rating__li">추천 <span
+                                                            class="basic-color1">추천해요</span></li>
+                                                </ul>
+                                            </div>
+                                            <p class="product-detail__review__text">맛있네요!</p>
+                                            <p class="product-detail__reviewer">themark**<span
+                                                    class="div-line number">2018-12-31</span></p>
+                                        </li>
+                                        <li class="product-detail__review__item">
+                                            <div class="product-detail__review__rating">
+                                                <div class="rating-area">
+                                                    <div class="rating-outer" style="width: 80%;">
+                                                        <img class="rating-image"
+                                                            src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                            alt="별점 총 5개중 4개 선택됨">
+                                                    </div>
+                                                </div>
+                                                <ul class="product-detail__review__rating__ul">
+                                                    <li class="product-detail__review__rating__li">맛 <span
+                                                            class="basic-color1">맛있어요</span></li>
+                                                    <li class="product-detail__review__rating__li">추천 <span
+                                                            class="basic-color1">추천해요</span></li>
+                                                </ul>
+                                            </div>
+                                            <p class="product-detail__review__text">맛있네요!</p>
+                                            <p class="product-detail__reviewer">themark**<span
+                                                    class="div-line number">2018-12-31</span></p>
+                                        </li>
+                                        <li class="product-detail__review__item">
+                                            <div class="product-detail__review__rating">
+                                                <div class="rating-area">
+                                                    <div class="rating-outer" style="width: 80%;">
+                                                        <img class="rating-image"
+                                                            src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                            alt="별점 총 5개중 4개 선택됨">
+                                                    </div>
+                                                </div>
+                                                <ul class="product-detail__review__rating__ul">
+                                                    <li class="product-detail__review__rating__li">맛 <span
+                                                            class="basic-color1">맛있어요</span></li>
+                                                    <li class="product-detail__review__rating__li">추천 <span
+                                                            class="basic-color1">추천해요</span></li>
+                                                </ul>
+                                            </div>
+                                            <p class="product-detail__review__text">맛있네요!</p>
+                                            <p class="product-detail__reviewer">themark**<span
+                                                    class="div-line number">2018-12-31</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="btn-box btn-box--full-size">
+                                        <button class="btn btn__more">
+                                            더보기 <span class="number">(20/41)</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <!-- //일반 상품평 -->
+
+                                <!-- 체험단 후기 -->
+                                <section class="product-detail__experience-review" data-js="tab__panel">
+                                    <h1 class="blind">체험단 후기</h1>
+                                    <div class="image-box image-box--column">
+                                        <a href="#" class="image-box__anchor image-box__anchor--full"
+                                            data-js="modal__button" data-modal-target="#modalPRO019">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product18.png" alt="대체 텍스트">
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    [햇반]
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        누룽지탕은 바삭 누룽지에는 요리로 부드러우면서 바삭한 식감
+                                                    </span>
+                                                </h3>
+                                                <div class="image-box__text-box--bar">
+                                                    <span class="image-box__text image-box__text--size11
+														image-box__text--color76">
+                                                        themark**
+                                                    </span>
+                                                    <span class="image-box__text image-box__text--size11
+														image-box__text--color76 number">
+                                                        2018-12-31
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="image-box__anchor image-box__anchor--full"
+                                            data-js="modal__button" data-modal-target="#modalPRO019">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product18.png" alt="대체 텍스트">
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    [햇반]
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        누룽지탕은 바삭 누룽지에는 요리로 부드러우면서 바삭한 식감
+                                                    </span>
+                                                </h3>
+                                                <div class="image-box__text-box--bar">
+                                                    <span class="image-box__text image-box__text--size11
+														image-box__text--color76">
+                                                        themark**
+                                                    </span>
+                                                    <span class="image-box__text image-box__text--size11
+														image-box__text--color76 number">
+                                                        2018-12-31
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="image-box__anchor image-box__anchor--full"
+                                            data-js="modal__button" data-modal-target="#modalPRO019">
+                                            <div class="image-box__image-container">
+                                                <img class="image-box__image"
+                                                    src="/cjom/mobile/images/temp/temp-product18.png" alt="대체 텍스트">
+                                            </div>
+                                            <div class="image-box__text-box image-box__text-box--border">
+                                                <h3 class="image-box__text">
+                                                    [햇반]
+                                                    <span class="image-box__text--bold image-box__text--block">
+                                                        누룽지탕은 바삭 누룽지에는 요리로 부드러우면서 바삭한 식감
+                                                    </span>
+                                                </h3>
+                                                <div class="image-box__text-box--bar">
+                                                    <span class="image-box__text image-box__text--size11
+														image-box__text--color76">
+                                                        themark**
+                                                    </span>
+                                                    <span class="image-box__text image-box__text--size11
+														image-box__text--color76 number">
+                                                        2018-12-31
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="btn-box btn-box--full-size">
+                                        <button class="btn btn__more">
+                                            더보기 <span class="number">(20/41)</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <!-- //체험단 후기 -->
+                            </div>
+                        </div>
+                        <!-- //상품평 있을 때 -->
+                    </section>
+                    <!-- //상품평 -->
+                </div>
+                <!-- //상품상세 하단 영역 -->
+
+
+
+                <!-- 하단 공통 영역 -->
+                <!-- 관련 테마존 -->
+                <section class="product-detail__section">
+                    <h1 class="product-detail__h2">관련 테마존</h1>
+
+                    <div class="image-box image-box--image image-box--white">
+                        <a href="#" class="image-box__anchor">
+                            <img src="/cjom/mobile/images/temp/temp-product50.png" class="image-box__image"
+                                alt="대체 텍스트">
+                        </a>
+                        <a href="#" class="image-box__anchor">
+                            <img src="/cjom/mobile/images/temp/temp-product50.png" class="image-box__image"
+                                alt="대체 텍스트">
+                        </a>
+                        <a href="#" class="image-box__anchor">
+                            <img src="/cjom/mobile/images/temp/temp-product50.png" class="image-box__image"
+                                alt="대체 텍스트">
+                        </a>
+                    </div>
+                </section>
+                <!-- //관련 테마존 -->
+
+                <!-- 이벤트 링크 -->
+                <a class="product-detail__link" href="#">
+                    <span class="product-detail__link__title">햇반 브랜드관 바로가기</span>
+                </a>
+                <!-- 이벤트 링크 -->
+
+                <!-- 이벤트 링크 -->
+                <a class="product-detail__link" href="#">
+                    <span class="product-detail__link__title">카테고리
+                        <ul class="product-detail__link__category">
+                            <li class="product-detail__link__category__item">밥·면</li>
+                            <li class="product-detail__link__category__item">햇반</li>
+                        </ul>
+                    </span>
+                </a>
+                <!-- //이벤트 링크 -->
+
+                <!-- 카테고리 인기상품 & 함께 구매한 상품 -->
+                <section class="component-container component-container--none-padding">
+                    <!-- 2019-02-11 수정 -->
+                    <h1 class="blind">추천상품 리스트</h1>
+                    <section class="product-detail__inner-section">
+                        <div class="component-header">
+                            <h1 class="component-header__title">
+                                카테고리 인기상품
+                            </h1>
+                        </div>
+                        <div class="module-container module-container--scroll">
+                            <div class="module-product module-product--scroll">
+                                <ul class="module-product__ul">
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </a>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">8,900</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">8,900</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 20%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </a>
+                                            <button class="module-product__cart">
+                                                <span class="blind">장바구니 담기</span>
+                                            </button>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">100,000</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">100,000</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 60%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product00.jpg" alt="대체 텍스트">
+                                            </a>
+                                            <button class="module-product__cart">
+                                                <span class="blind">장바구니 담기</span>
+                                            </button>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">100,000</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">100,000</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 20%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </a>
+                                            <button class="module-product__cart">
+                                                <span class="blind">장바구니 담기</span>
+                                            </button>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">100,000</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">100,000</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 20%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="product-detail__inner-section">
+                        <div class="component-header">
+                            <h1 class="component-header__title">
+                                함께 구매한 상품
+                            </h1>
+                        </div>
+                        <div class="module-container module-container--scroll">
+                            <div class="module-product module-product--scroll">
+                                <ul class="module-product__ul">
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </a>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">8,900</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">8,900</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 20%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </a>
+                                            <button class="module-product__cart">
+                                                <span class="blind">장바구니 담기</span>
+                                            </button>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">100,000</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">100,000</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 60%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product00.jpg" alt="대체 텍스트">
+                                            </a>
+                                            <button class="module-product__cart">
+                                                <span class="blind">장바구니 담기</span>
+                                            </button>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">100,000</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">100,000</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 20%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="module-product__li">
+                                        <div class="module-product__image-box">
+                                            <a href="#" class="module-product__anchor module-product__anchor--image">
+                                                <img class="module-product__image"
+                                                    src="/cjom/mobile/images/common/no-image.png"
+                                                    data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </a>
+                                            <button class="module-product__cart">
+                                                <span class="blind">장바구니 담기</span>
+                                            </button>
+                                        </div>
+                                        <div class="module-product__contents-box">
+                                            <a href="#" class="module-product__anchor">
+                                                <p class="module-product__title">
+                                                    상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+                                                </p>
+                                                <div class="module-product__price-box">
+                                                    <p class="module-product__price">
+                                                        <strong class="number">100,000</strong>원
+                                                    </p>
+                                                    <p class="module-product__price--discount">
+                                                        <span class="module-product__price--discount-cash">
+                                                            <em class="number">100,000</em>원
+                                                        </span>
+                                                        <span class="module-product__price--discount-percent">
+                                                            (<span class="number">10</span>%)
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="module-product__rating-box">
+                                                    <div class="module-product__rating">
+                                                        <div class="module-product__rating-outer" style="width: 20%;">
+                                                            <img class="module-product__rating-image"
+                                                                src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                                                alt="별점 총 5개중 4개 선택됨">
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-product__rating-count number">12345</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- //카테고리 인기상품 & 함께 구매한 상품 -->
+                <!-- //하단 공통 영역 -->
+
+                <!-- 하단 스티키 영역 -->
+                <div class="sticky-bottom">
+                    <!-- 버튼 (장바구니/바로구매/선물) -->
+                    <div class="btn-box btn-box--none-margin btn-box--gift-btn3 btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style04 btn--black">장바구니</button>
+                        <button class="btn btn--shape01 btn--style01">바로구매</button>
+                        <button class="btn btn--shape01 btn--style10 btn--ico08">선물</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (장바구니/선물) -->
+                    <div class="btn-box btn-box--none-margin btn-box--gift btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--black">장바구니</button>
+                        <button class="btn btn--gift">선물</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (장바구니)-->
+                    <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style01 btn--black">장바구니</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (정기배송 장바구니)-->
+                    <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style01 btn--black">정기배송 장바구니</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (바로구매/선물) -->
+                    <div class="btn-box btn-box--none-margin btn-box--gift btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style01">바로구매</button>
+                        <button class="btn btn--shape01 btn--style10 btn--ico08">선물</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (바로구매)-->
+                    <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style01">바로구매</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (재입고 알림 신청)-->
+                    <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style01">재입고 알림 신청</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (재입고 알림 신청완료)-->
+                    <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style04 btn--black">재입고 알림 신청완료</button>
+                    </div>
+                    <!-- //버튼 -->
+
+                    <!-- 버튼 (견적서에 담기)-->
+                    <div class="btn-box btn-box--none-margin btn-box--btm-floating">
+                        <button class="btn btn--shape01 btn--style01">견적서에 담기</button>
+                    </div>
+                    <!-- //버튼 -->
+                </div>
+                <!-- //하단 스티키 영역 -->
+
+            </section>
+        </div>
+        <div class="footer">
+            <!--
+			* footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/footer.html
+			-->
+        </div>
+    </div>
+
+    <div class="modal-container" data-js="modal">
+        <!--
+			비동기통신을 이용하여 Modal 마크업을 가져온 경우 아래와 같이 실행해주세요.
+			* Modal Init
+			$('[data-js=modal]').modal();
+
+			* Modal Initialized 후 Modal 컨트롤 방법 #modal은 유니크한 ID 사용 부탁드립니다.
+
+			* Modal Open
+			$('[data-js=modal]').trigger('open', $('#modal'));
+			* Modal Close
+			$('[data-js=modal]').trigger('close', $('#modal'));
+		-->
+
+        <!-- modal popup : 체험단 후기 팝업 -->
+        <section id="modalPRO019" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">체험단 후기</h1>
+                </div>
+                <div class="modal__contents">
+
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //modal popup : 체험단 후기 팝업 -->
+
+        <!-- 무료배송 기준 -->
+        <section id="modalPRO008" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">무료배송 기준</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <section class="product-detail__inner-section">
+                            <h1 class="product-detail__h2">무료배송 기준</h1>
+                            <ol class="product-detail__ol">
+                                <li class="product-detail__ol__item">
+                                    <span class="product-detail__ol__item__number">1</span>
+                                    동일 배송 유형별 상품 <span class="point-color5">30,000원</span> 이상 구매 시<br>(단, 쿡킷은 40,000원 이상
+                                    구매 시)
+                                </li>
+                                <li class="product-detail__ol__item">
+                                    <span class="product-detail__ol__item__number">2</span>
+                                    ‘무료배송’으로 표시된 상품 구매시
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="product-detail__inner-section">
+                            <h1 class="product-detail__h2">배송 유형별 상품안내</h1>
+                            <div class="my-term-box">
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">상온</dt>
+                                    <dd class="my-term-detail__dd">[상온&실온] 표기된 상품<br>(햇반, 스팸, 생활용품 등)</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">저온</dt>
+                                    <dd class="my-term-detail__dd">[냉장],[냉동] 표기된 상품<br>(김치, 만두, 단무지 등)</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">쿡킷</dt>
+                                    <dd class="my-term-detail__dd">쿡킷 새벽배송 상품</dd>
+                                </dl>
+                                <dl class="my-term-detail">
+                                    <dt class="my-term-detail__dt">선물세트</dt>
+                                    <dd class="my-term-detail__dd">명절 선물세트 상품</dd>
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //무료배송 기준 -->
+
+        <!-- CJ ONE 포인트 적립 안내 -->
+        <section id="modalPRO009" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">CJ ONE 포인트 적립 안내</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <h2 class="product-detail__h2">CJ ONE 포인트 적립금</h2>
+                        <p class="product-detail__p">쿠폰으로 할인 받으신 금액과 포인트 등으로 결제한 금액을 제외한 최종 실 결제금액 (카드,현금) 으로 포인트 적립액이
+                            적용됩니다.</p>
+                        <p class="product-detail__p">고객 등급 및 실 결제 금액에 따라 포인트는 달라질 수 있으며, 상품 상세 페이지에 노출되는 포인트와 실제 적립된
+                            포인트는 다소 차이가 있을 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //CJ ONE 포인트 적립 안내 -->
+
+        <!-- 카드혜택 안내 -->
+        <section id="modalPRO010" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">카드혜택 안내</h1>
+                </div>
+                <div class="modal__contents">
+                    <div class="default-padding default-padding--popup">
+                        <h2 class="product-detail__h2">제휴카드 혜택 안내</h2>
+                        <p class="product-detail__p">CJ ONE 제휴카드에서 드리는 푸짐한 카드 혜택을 소개해드립니다. <span
+                                class="point-color1">다양한 상품을 행복한 혜택과 함께 만나보세요~</span></p>
+                        <div class="my-term-box">
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">제휴카드</dt>
+                                <dd class="my-term-detail__dd">
+                                    CJ ONE 삼성카드<br>CJ ONE 신한카드
+                                </dd>
+                            </dl>
+                            <dl class="my-term-detail">
+                                <dt class="my-term-detail__dt">할인혜택</dt>
+                                <dd class="my-term-detail__dd">
+                                    CJ ONE 포인트 더블 적립<br>
+                                    CJ ONE 브랜드 별<br>
+                                    <span class="point-color1">기본 2배~최대 5배 적립</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="color-box color-box--style06 mt15">
+                            <div class="color-box__text">
+                                <ul class="product-detail__ul product-detail__ul--type2 mt0">
+                                    <li class="product-detail__ul__item">간편결제수단(페이코,카카오,스마일페이,네이버페이 등) 사용시에는 제휴카드 더블 적립이
+                                        불가합니다.</li>
+                                    <li class="product-detail__ul__item">카드사제휴몰(롯데카드몰,신한올댓등) 경유를 통한 결제 시에는제휴카드 더블 적립이
+                                        불가합니다.</li>
+                                    <li class="product-detail__ul__item product-detail__ul__item--no-bullet">
+                                        <a class="point-color1 underline bold"
+                                            href="http://m.cjone.com/cjmmobile/benefit/coopcocardlist.do">제휴카드 혜택
+                                            안내</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //카드혜택 안내 -->
+
+        <!-- 공유하기 -->
+        <section id="modalPRO013" class="modal modal--mini modal--share" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">공유하기</h1>
+                </div>
+                <div class="modal__contents">
+                    <ul class="popup__sns_list">
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-kakaotalk.png"
+                                    alt="카카오톡">
+                                <p class="popup__sns_list__text">카카오톡</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-facebook.png"
+                                    alt="페이스북">
+                                <p class="popup__sns_list__text">페이스북</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-twi.png" alt="트위터">
+                                <p class="popup__sns_list__text">트위터</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-kakaostory.png"
+                                    alt="카카오스토리">
+                                <p class="popup__sns_list__text">카카오스토리</p>
+                            </a>
+                        </li>
+                        <li class="popup__sns_list__item">
+                            <a href="#">
+                                <img class="popup__sns_list__img" src="/cjom/mobile/images/icon/ico-url.png"
+                                    alt="URL복사">
+                                <p class="popup__sns_list__text">URL 복사</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //공유하기 -->
+
+        <!-- 2019-04-16 수정 -->
+
+        <!-- 사은품 안내 -->
+        <section id="modalPRO011" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">사은품 안내</h1>
+                </div>
+                <div class="modal__contents">
+                    <!-- 사은품 이벤트 -->
+                    <div class="popup__section gift__event-box">
+                        <div class="gift__event-info">
+                            <p class="gift__event-title">CJ THE MARKET 리뉴얼 기념 행사!</p>
+                            <p class="gift__event-condition">[5만원 이상 구매 시 사은품 증정]</p>
+                            <div class="gift__event-period">
+                                <span>증정기간</span>
+                                <span class="number">2018-10-31 ~ 2019-12-31</span>
+                            </div>
+                        </div>
+                        <div class="cart-item__gift-box">
+                            <!-- 사은품 1개 -->
+                            <div class="cart-item__gift">
+                                <div class="cart-item__gift-image-box">
+                                    <img class="cart-item__gift-image" src="/cjom/mobile/images/temp/temp-product02.jpg"
+                                        alt="대체 텍스트">
+                                    <span class="cart-item__image__mask"></span>
+                                </div>
+                                <div class="cart-item__gift-text">
+                                    <p class="cart-item__gift-title">[사은품] 블랙맨박스_일상선물</p>
+                                </div>
+                            </div>
+                            <!-- //사은품 1개 -->
+                            <!-- 사은품 1개 -->
+                            <div class="cart-item__gift">
+                                <div class="cart-item__gift-image-box">
+                                    <img class="cart-item__gift-image" src="/cjom/mobile/images/temp/temp-product02.jpg"
+                                        alt="대체 텍스트">
+                                    <span class="cart-item__image__mask"></span>
+                                </div>
+                                <div class="cart-item__gift-text">
+                                    <p class="cart-item__gift-title">[사은품] 블랙맨박스_일상선물</p>
+                                </div>
+                            </div>
+                            <!-- //사은품 1개 -->
+                            <!-- 사은품 1개 -->
+                            <div class="cart-item__gift">
+                                <div class="cart-item__gift-image-box">
+                                    <img class="cart-item__gift-image" src="/cjom/mobile/images/temp/temp-product02.jpg"
+                                        alt="대체 텍스트">
+                                    <span class="cart-item__image__mask"></span>
+                                </div>
+                                <div class="cart-item__gift-text">
+                                    <p class="cart-item__gift-title">[사은품] 블랙맨박스_일상선물</p>
+                                </div>
+                            </div>
+                            <!-- //사은품 1개 -->
+                        </div>
+                    </div>
+                    <!-- //사은품 이벤트 -->
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //사은품 안내 -->
+
+        <!-- 상품평 작성 -->
+        <section id="modalPRO020" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">상품평 작성</h1>
+                </div>
+                <div class="modal__contents modal__contents--with-btn">
+                    <div class="product-detail__popup-box">
+                        <div class="product-detail__popup-product-image">
+                            <img src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                        </div>
+                        <p class="product-detail__popup-product-name">[브랜드] 일이삼사오육칠팔구십일이삼사오육칠팔구십</p>
+                        <div class="product-detail__popup-rating">
+                            <div class="rating-area rating-area--wd83">
+                                <div class="rating-outer" style="width: 80%;">
+                                    <img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png"
+                                        alt="별점 총 5개중 4개 선택됨">
+                                </div>
+                            </div>
+                            <span class="rating-count number">4.0</span>
+                        </div>
+                    </div>
+                    <div class="form product-detail__popup-box">
+                        <div class="form__row">
+                            <label for="label01" class="form-label form-label--block">맛</label>
+                            <div class="radio product-detail__review-radio" role="radiogroup" data-js="radio"
+                                aria-labelledby="id-group-label-01">
+                                <div class="radio__group-title blind" data-js="radio__title" id="id-group-label-01">맛 후기
+                                    선택</div>
+                                <div class="radio__wrap">
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        맛있어요
+                                        <input type="radio" name="category1" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        먹을만해요
+                                        <input type="radio" name="category1" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        별로에요
+                                        <input type="radio" name="category1" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="label02" class="form-label form-label--block">추천여부</label>
+                            <div class="radio product-detail__review-radio" role="radiogroup" data-js="radio"
+                                aria-labelledby="id-group-label-02">
+                                <div class="radio__group-title blind" data-js="radio__title" id="id-group-label-02">추천여부
+                                    선택</div>
+                                <div class="radio__wrap">
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        추천해요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        보통이에요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        추천하지 않아요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="label02" class="form-label form-label--block">언제 드셨어요?</label>
+                            <div class="radio product-detail__review-radio" role="radiogroup" data-js="radio"
+                                aria-labelledby="id-group-label-03">
+                                <div class="radio__group-title blind" data-js="radio__title" id="id-group-label-03">추천여부
+                                    선택</div>
+                                <div class="radio__wrap">
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        아침 식사
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        브런치
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        점심 식사
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        오후 간식
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        저녁 식사
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        야식
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <label for="label02" class="form-label form-label--block">양은 어떠셨어요?</label>
+                            <div class="radio product-detail__review-radio" role="radiogroup" data-js="radio"
+                                aria-labelledby="id-group-label-04">
+                                <div class="radio__group-title blind" data-js="radio__title" id="id-group-label-04">추천여부
+                                    선택</div>
+                                <div class="radio__wrap">
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        혼자 먹기 좋아요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        둘이 먹기 적당해요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        4인가족 넉넉해요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                    <div class="radio__input" role="radio" data-js="radio__input">
+                                        대가족도 충분해요
+                                        <input type="radio" name="category2" class="radio__hidden"
+                                            data-js="radio__hidden" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form product-detail__popup-box product-detail__popup-box--last">
+                        <!-- 상품평 입력 받을 때 -->
+                        <div class="form__row">
+                            <label for="textarea01" class="blind form-label form-label--block">상품평 입력</label>
+                            <div class="form-element" data-js="form-ctrl">
+                                <textarea id="textarea01" class="form-element__textarea"
+                                    placeholder="상품평 내용은 최소20자 이상 입력해주세요." data-js="form-ctrl__textarea"></textarea>
+                                <div class="form-element__count" data-js="form-ctrl__count" data-max-length="400">
+                                    <span data-js="form-ctrl__count-current">0</span>/<span
+                                        data-js="form-ctrl__count-total">200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //상품평 입력 받을 때 -->
+                        <p class="common-alert">상품과 무관하거나, 스팸 음란, 불법적인 내용의 상품평은 통보 없이 삭제되며 지급된 적립금은 회수 될 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="modal__btn-box btn-box btn-box--none-margin">
+                    <a href="#" class="btn btn--shape04 btn--style01">확인</a>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+        </section>
+        <!-- //상품평 작성 -->
+
+        <!-- 골라담기 상세보기 -->
+        <section id="modalPRO015" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header-fixed">
+                    <div class="modal__header" data-js="tooltip">
+                        <h1 class="modal__header-title">
+                            <a class="modal__header-title__btn" href="#" data-js="tooltip__button">상품 01</a>
+                        </h1>
+                        <div class="sticky-product sticky-product--select-option sticky-product--reverse">
+                            <div class="sticky-product__content">
+                                <ul class="sticky-product__option-list">
+                                    <li class="sticky-product__option-list__item">
+                                        <a class="sticky-product__option-list__link" href="#">
+                                            <div class="sticky-product__option-list__link__image">
+                                                <img class="product-detail__image"
+                                                    src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                                <span class="module-cart__soldout">일시품절</span><!-- 2019-03-20 수정 -->
+                                            </div>
+                                            <div class="sticky-product__option-list__link__title">상품01) [고메] 치즈 크리스피 핫도그
+                                                425g</div>
+                                            <div class="sticky-product__option-list__link__price"><strong
+                                                    class="number">3,500</strong>원</div>
+                                        </a>
+                                    </li>
+                                    <li class="sticky-product__option-list__item">
+                                        <a class="sticky-product__option-list__link" href="#">
+                                            <div class="sticky-product__option-list__link__image">
+                                                <img class="product-detail__image"
+                                                    src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </div>
+                                            <div class="sticky-product__option-list__link__title">상품02) [고메] 치즈 크리스피 핫도그
+                                                425g</div>
+                                            <div class="sticky-product__option-list__link__price"><strong
+                                                    class="number">3,500</strong>원</div>
+                                        </a>
+                                    </li>
+                                    <li class="sticky-product__option-list__item">
+                                        <a class="sticky-product__option-list__link" href="#">
+                                            <div class="sticky-product__option-list__link__image">
+                                                <img class="product-detail__image"
+                                                    src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </div>
+                                            <div class="sticky-product__option-list__link__title">상품03) [고메] 치즈 크리스피 핫도그
+                                                425g</div>
+                                            <div class="sticky-product__option-list__link__price"><strong
+                                                    class="number">3,500</strong>원</div>
+                                        </a>
+                                    </li>
+                                    <li class="sticky-product__option-list__item">
+                                        <a class="sticky-product__option-list__link" href="#">
+                                            <div class="sticky-product__option-list__link__image">
+                                                <img class="product-detail__image"
+                                                    src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </div>
+                                            <div class="sticky-product__option-list__link__title">상품04) [고메] 치즈 크리스피 핫도그
+                                                425g</div>
+                                            <div class="sticky-product__option-list__link__price"><strong
+                                                    class="number">3,500</strong>원</div>
+                                        </a>
+                                    </li>
+                                    <li class="sticky-product__option-list__item">
+                                        <a class="sticky-product__option-list__link" href="#">
+                                            <div class="sticky-product__option-list__link__image">
+                                                <img class="product-detail__image"
+                                                    src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+                                            </div>
+                                            <div class="sticky-product__option-list__link__title">상품05) [고메] 치즈 크리스피 핫도그
+                                                425g</div>
+                                            <div class="sticky-product__option-list__link__price"><strong
+                                                    class="number">3,500</strong>원</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="sticky-product__mini-btn" href="#" data-js="tooltip__button"><span
+                                    class="blind">닫기</span></a> <!-- 2019-03-29 수정 -->
+                        </div>
+                        <button class="modal__close" data-js="modal__close">
+                            <span class="blind">모달 닫기 버튼</span>
+                        </button>
+                    </div>
+                    <div class="modal__contents modal__contents--with-btn">
+                        <!-- 2019-03-25 수정 -->
+                        <div>
+                            <button class="btn-floating-prev is-fixed">
+                                <span class="blind">다음상품</span>
+                            </button>
+                            <button class="btn-floating-next is-fixed">
+                                <span class="blind">이전상품</span>
+                            </button>
+                        </div>
+                        <div class="product-detail__top product-detail__top--popup product-detail__top--bdt5">
+                            <div class="product-detail__title t_center">[햇반·컵반] 스팸마요덮밥 219g x 10개</div>
+                            <div class="product-detail__price t_center">
+                                <span class="point-color5 number bold">10%</span>&nbsp;
+                                <span class="number bold">4,500</span>원&nbsp;
+                                <s class="number">5,000원</s>
+                            </div>
+                            <ul class="product-detail__top-info product-detail__top-info--mt25">
+                                <li class="product-detail__top-info__item">
+                                    <div class="product-detail__top-info__item__row">
+                                        <div class="product-detail__top-info__dt">온도·배송유형</div>
+                                        <div class="product-detail__top-info__dd">상온·정기배송</div>
+                                    </div>
+                                    <div class="product-detail__top-info__item__row">
+                                        <div class="product-detail__top-info__dt">혜택정보</div>
+                                        <div class="product-detail__top-info__dd">무료배송·가격할인·쿠폰할인·덤증정</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 이미지영역 -->
+                        <!-- 2019-03-25 수정 -->
+                        <section>
+                            <div class="component-container component-container--border">
+                                <div style="background: #ddd;min-height: 300px;">-----상품 정보 통 이미지 영역 : Height 가변----
+                                </div>
+                                <div class="btn-box">
+                                    <button class="btn btn__more btn__more--full-size">
+                                        상품 정보 더보기
+                                    </button>
+                                </div>
+                                <div class="my-term-box product-detail__buying-info-table">
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">포장단위별 용량(중량), 수량, 크기</dt>
+                                        <dd class="my-term-detail__dd">
+                                            LA갈비 2kg
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">생산자, 수입품의 경우 수입자를 함께 표기</dt>
+                                        <dd class="my-term-detail__dd">
+                                            (주)국제식품 진천공장 충북 진천국 덕산면 신천산단4로 79
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">농수산물의 원산지 표시에 관한 법률에 따른 원산지</dt>
+                                        <dd class="my-term-detail__dd">
+                                            생산 및 유통시점에 따라 원산지 변경 전 제품이 혼용되어 발송 가능한 점 양해 부탁드립니다. 뉴질랜드산
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">제조연월일, 유통기한 또는 품질유지기한</dt>
+                                        <dd class="my-term-detail__dd">
+                                            유통기한 : 제품 별도 표시일까지(제조일로 부터 1년)
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">축산법에 따른 등급 표시, 쇠고기의 경우 이력관리에 따른 표시 유무</dt>
+                                        <dd class="my-term-detail__dd">
+                                            이력제 관리 표시 유(별도표시)
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">상품구성</dt>
+                                        <dd class="my-term-detail__dd">
+                                            쇠고기 갈비 100%(뉴질랜드산)
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">보관방법 또는 취급방법</dt>
+                                        <dd class="my-term-detail__dd">
+                                            냉동보관(-18C 이하보관)
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">소비자상담 관련 전화번호</dt>
+                                        <dd class="my-term-detail__dd">
+                                            1668-1953
+                                            <!-- 2019-05-10 수정 -->
+                                        </dd>
+                                    </dl>
+                                    <dl class="my-term-detail">
+                                        <dt class="my-term-detail__dt">수입식품에 해당하는 경우 “식품위생법에 따른 수입 신고를 필함”</dt>
+                                        <dd class="my-term-detail__dd">
+                                            식품위생법에 따른 수입신고를 필함
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //2019-03-25 수정 -->
+                        <!-- //이미지영역 -->
+                    </div>
+                </div>
+                <div class="modal__btn-box btn-box btn-box--none-margin btn-box--gift-btn3">
+                    <button class="btn btn--shape01 btn--style04 point-color1">장바구니</button>
+                    <button class="btn btn--shape01 btn--style01">바로구매</button>
+                    <button class="btn btn--shape01 btn--style07 btn--ico05">선물</button>
+                </div>
+            </div>
+        </section>
+        <!-- //골라담기 상세보기 -->
+
+        <!-- 재입고알림 -->
+        <section id="modalPRO006" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">재입고알림 신청</h1>
+                </div>
+                <div class="modal__contents modal__contents--with-btn">
+                    <div class="reorder-modal">
+                        <div class="reorder-modal__section">
+                            <div class="product-view">
+                                <div class="product-view__image-box">
+                                    <img src="/cjom/mobile/images/temp/temp-product02.jpg" alt="대체 텍스트">
+                                </div>
+                                <div class="product-view__text-box">
+                                    <p class="product-view__title">[햇반] 흰쌀죽 270g x 12개</p>
+                                    <div class="product-view__price">
+                                        <span class="product-view__price-discount">57%</span>
+                                        <strong class="product-view__price-total">
+                                            12,427<em>원</em>
+                                        </strong>
+                                        <span class="product-view__price-line">28,900</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reorder-modal__section reorder-modal__section--padding">
+                            <div class="form">
+                                <div class="form__row">
+                                    <div class="radio" role="radiogroup" data-js="radio"
+                                        data-options='{"initIndex": 0}'>
+                                        <div class="radio__group-title" data-js="radio__title">알림유형</div>
+                                        <div class="radio__wrap">
+                                            <div class="radio__input" role="radio" data-js="radio__input"
+                                                data-target="#reorderSMS">
+                                                앱 PUSH
+                                                <input type="radio" name="radio01" class="radio__hidden"
+                                                    data-js="radio__hidden" />
+                                            </div>
+                                            <div class="radio__input" role="radio" data-js="radio__input"
+                                                data-target="#reorderEmail">
+                                                E-mail
+                                                <input type="radio" name="radio01" class="radio__hidden"
+                                                    data-js="radio__hidden" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <!-- 앱 PUSH -->
+                                    <div id="reorderSMS" class="reorder-modal__selected"></div>
+                                    <!-- 이메일 선택시 -->
+                                    <div id="reorderEmail" class="reorder-modal__selected">
+                                        <label for="label04" class="form-label form-label--block form-label--require">
+                                            이메일
+                                        </label>
+                                        <div class="form__email">
+                                            <div class="form__inner-row">
+                                                <div class="form__column">
+                                                    <div class="form-element">
+                                                        <input id="label04" type="text" class="form-element__input"
+                                                            title="아이디 입력">
+                                                    </div>
+                                                </div>
+                                                <div class="form__column form__column--atmark">@</div>
+                                                <div class="form__column">
+                                                    <div class="form-element">
+                                                        <label for="labeling02" class="blind">도메인 입력</label>
+                                                        <input id="labeling02" type="text" class="form-element__input"
+                                                            title="도메인 입력">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__inner-row">
+                                                <!-- 2019-03-29 수정 -->
+                                                <label for="selet-email" class="blind">이메일 직접 입력</label>
+                                                <div class="form-element">
+                                                    <select id="selet-email" class="form-element__select">
+                                                        <option selected>직접입력</option>
+                                                        <option>cj.net</option>
+                                                    </select>
+                                                </div>
+                                                <!-- //2019-03-29 수정 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 이메일 선택시 -->
+                                </div>
+                            </div>
+
+                            <div class="text-box text-box--gray">
+                                <ul class="text-box__ul">
+                                    <li class="text-box__li">
+                                        재입고알림 신청 후 30일 이내 구매 가능할 경우 알림 메시지를 발송해 드립니다.
+                                    </li>
+                                    <li class="text-box__li">
+                                        판매가 혹은 할인금액은 신청 시점과 차이가 날 수 있으며, 입고 알림을 받았더라도 구매 시점에 따라 품절이 발생할 수 있습니다.
+                                    </li>
+                                    <li class="text-box__li">
+                                        입고 알림 신청 내역은 마이페이지 > 활동정보 > 입고알림내역 메뉴에서 확인하실 수 있습니다.
+                                    </li>
+                                    <li class="text-box__li">
+                                        재입고알림 신청 후 30일 경과 시 자동 삭제됩니다.
+                                    </li>
+                                    <li class="text-box__li">
+                                        CJ THE MARKET 앱이 설치되어 있지 않으면 앱 PUSH를 받을 수 없습니다.
+                                    </li>
+                                    <li class="text-box__li">
+                                        CJ THE MARKET 앱 설치 후 PUSH 알림에 수신동의를 해야 입고알림을 정상적으로 수신할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__btn-box btn-box btn-box--col-2 btn-box--none-margin">
+                    <a href="#" class="btn btn--shape04 btn--style10">초기화</a>
+                    <a href="#" class="btn btn--shape04 btn--style01">알림신청</a>
+                </div>
+                <button class="modal__close" data-js="modal__close">
+                    <span class="blind">상세검색팝업 닫기</span>
+                </button>
+            </div>
+        </section>
+        <!-- 재입고알림 -->
+        <!-- //2019-04-16 수정 -->
+    </div>
+
+    <script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+    <script src="/cjom/mobile/js/plugins/slick.js"></script>
+    <script src="/cjom/mobile/js/plugins/glider.js"></script>
+    <script src="/cjom/mobile/js/plugins/jquery.lazy.min.js"></script>
+    <script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

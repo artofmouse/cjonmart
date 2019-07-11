@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Textarea</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;textarea placeholder="내용을 입력해주세요." maxlength="300"&gt;
+	한식간장으로 감칠맛을 더한 비비고 김자반과 국물 닭발 조화, 호불호가 갈리는맛 아니죠...
+&lt;/textarea&gt;</code></pre>
+	
+	<h3>VIEW</h3>
+	<style>
+		.test {height:100px;}
+	</style>
+	
+	<div style="height:1000px;"></div>
+	
+	<textarea id="test" placeholder="내용을 입력해주세요." class="test" maxlength="300">한식간장으로 감칠맛을 더한 비비고 김자반과 국물 닭발 조화, 호불호가 갈리는맛 아니죠...</textarea>
+	<br>
+	<textarea placeholder="내용을 입력해주세요." style="height:100px;" maxlength="300"></textarea>
+	<br>
+	<textarea disabled placeholder="내용을 입력해주세요." style="height:300px;" ></textarea>
+	
+	<button type="button" class="btn-default" onclick="cjom.textarea.error('#test', '비밀번호를 입력 하세요.')"><span>오류 발생</span></button>
+	<button type="button" class="btn-default" onclick="cjom.textarea.error('#test')"><span>오류 제거</span></button><br><br>
+	
+	
+	<div style="height:5000px;">
+	
+	</div>
+</div>
+</body>
+</html>

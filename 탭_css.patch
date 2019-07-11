@@ -1,0 +1,234 @@
+Index: cjom/web/css/ui.cjom.front.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/css/ui.cjom.front.css	(revision 1043)
++++ cjom/web/css/ui.cjom.front.css	(date 1548218363957)
+@@ -7,7 +7,7 @@
+ 
+ /* tab */
+ .tab-list{overflow:hidden;}
+-.tab-list li{position:relative;float:left; width: 50%; box-sizing:border-box;text-align:center;}
++.tab-list li{position:relative;float:left; width: 50%; box-sizing:border-box; text-align:center;}
+ .tab-list li + li:before{content:""; position:absolute; top:50%; left:0; display:block; width:1px; height:16px; margin:-8px 0 0 -1px; background:#eee;}
+ .tab-list a{position:relative; display:block; border-bottom:1px solid #0e5232;  line-height:60px; font-size:16px; color:#767676; z-index:3;}
+ .tab-list .active a{border:1px solid #0e5232; border-bottom:none; font-weight:bold; color:#0e5232;}
+@@ -15,29 +15,29 @@
+ .tab-list[data-tab="4"] li{width:25%}
+ .tab-list[data-tab="5"] li{width:20%}
+ .tab-list[data-tab="6"] li{width:16.6%}
+-.tab-list[data-tab="7"],
+-.tab-list[data-tab="8"]{padding:1px 0 0 1px;}
+-.tab-list[data-tab="7"] li,
+-.tab-list[data-tab="8"] li{width:25%;}
+-.tab-list[data-tab="7"] li:before.active,
+-.tab-list[data-tab="8"] li:before{display:none}
+-.tab-list[data-tab="7"] li a,
+-.tab-list[data-tab="8"] li a{border:1px solid #eee; margin:-1px 0 0 -1px;}
+-.tab-list[data-tab="7"] .active a,
+-.tab-list[data-tab="8"] .active a{background:#0e5232; color:#fff;}
++.tab-list2{position:relative; overflow:hidden;}
++.tab-list2:before{content:''; content:''; position:absolute; top:0; left:0; display:block; width:100%; height:1px; background:red;}
++.tab-list2:after{content:''; content:''; position:absolute; top:0; left:0; display:block; width:1px; height:1000%; background:red;}
++.tab-list2 li{float:left; width:25%; box-sizing:border-box; border-bottom:1px solid #eee; border-right:1px solid #eee;}
++.tab-list2 li a{display:block; line-height:60px; font-size:16px; color:#767676; text-align:center;}
++.tab-list2 .active{position:relative; border-color:#0e5232}
++.tab-list2 .active:before{content:''; position:absolute; top:-1px; left:0; display:block; width:100%; height:1px; background:#0e5232;}
++.tab-list2 .active:after{content:''; position:absolute; top:0; left:0; display:block; width:1px; height:100%; background:#0e5232; z-index:2;}
++.tab-list2 .active a{position:relative;font-weight:bold; background:#0e5232; color:#fff;}
+ .tab-contents{display:none}
+ .tab-contents.active{display:block;}
+ 
+ /* modal */
+ .modal{position:fixed; top:0; left:0; display:none; width:100%; height:100%;}
+-.modal-dailog{position:absolute; top:50%; left:50%; display:none; background:#fff; padding:0 40px; transform: translate(-50%, -50%)}
++.modal-dailog{position:absolute; top:50%; left:50%; display:none; margin: 20px 0; background:#fff; padding:0 40px; transform: translate(-50%, -50%)}
+ .modal-header-title{margin:0; padding:31px 0 21px; border-bottom:1px solid #0e5232; font-size:30px; color:#0e5232;}
+-.modal-contents{padding-bottom:30px;}
++.modal-contents{overflow-y:auto; padding-bottom:30px;}
+ .modal-footer{padding-bottom:40px;}
+ .btn-close{position:absolute; top:23px; right:20px; width:60px; height:60px; background:url(/cjom/web/images/icon/ico_close.png) no-repeat center;}
+ .btn-close span{position:relative; display:block; text-indent:-99999px;}
+ .modal.active{display:block;}
+ .dimmed{position:absolute; top:0; left:0; width:100%; height:100%;background: rgba(0,0,0,.5)}
++#wrap.modal-open {position:fixed; top:0; left:0; width:100%;}
+ 
+ /* input */
+ .input,
+Index: cjom/web/guide/popup.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/guide/popup.html	(revision 1032)
++++ cjom/web/guide/popup.html	(date 1548211478307)
+@@ -16,50 +16,52 @@
+ 	<!-- //guide -->
+ </head>
+ <body>
+-<div class="guide-wrap">
+-	<h1>POPUP</h1>
+-	<h2>Default</h2>
+-	<h3>html</h3>
+-	<pre><code class="html">&lt;ul class="tab-list" data-tab&gt;
+-    &lt;li class="active"&gt;&lt;a href="#tab1"&gt;탭1&lt;/a&gt;&lt;/li&gt;
+-    &lt;li&gt;&lt;a href="#tab2"&gt;탭2&lt;/a&gt;&lt;/li&gt;
+-&lt;/ul&gt;
+-&lt;div class="tab-container"&gt;
+-    &lt;div class="tab-contents" id="tab1"&gt;
+-        1
+-    &lt;/div&gt;
+-    &lt;div class="tab-contents" id="tab2"&gt;
+-        2
+-    &lt;/div&gt;
+-&lt;/div&gt;
+-</code></pre>
+-	<h3>view</h3>
+-	<a href="#modal01" data-modal-open>팝업오픈</a>
+-	<hr>
+-	<pre><code class="js">
+-tab: function () {
+-    $("[data-tab] a").off("click.tab").on("click.tab", function(e){
+-        e.preventDefault();
+-        var id = $(this).attr("href").split("#")[1];
+-        common.tabOpen(id);
+-    });
++<div id="wrap">
++	<div class="guide-wrap">
++		<h1>POPUP</h1>
++		<h2>Default</h2>
++		<h3>html</h3>
++		<pre><code class="html">&lt;ul class="tab-list" data-tab&gt;
++	    &lt;li class="active"&gt;&lt;a href="#tab1"&gt;탭1&lt;/a&gt;&lt;/li&gt;
++	    &lt;li&gt;&lt;a href="#tab2"&gt;탭2&lt;/a&gt;&lt;/li&gt;
++	&lt;/ul&gt;
++	&lt;div class="tab-container"&gt;
++	    &lt;div class="tab-contents" id="tab1"&gt;
++	        1
++	    &lt;/div&gt;
++	    &lt;div class="tab-contents" id="tab2"&gt;
++	        2
++	    &lt;/div&gt;
++	&lt;/div&gt;
++	</code></pre>
++		<h3>view</h3>
++		<a href="#modal01" data-modal-open>팝업오픈</a>
++		<hr>
++		<pre><code class="js">
++	tab: function () {
++	    $("[data-tab] a").off("click.tab").on("click.tab", function(e){
++	        e.preventDefault();
++	        var id = $(this).attr("href").split("#")[1];
++	        common.tabOpen(id);
++	    });
+ 
+-    $("[data-tab]").each(function(){
+-        if($(this).find("li").hasClass("active")){
+-            var id = $(this).find(".active a").attr("href").split("#")[1];
+-            common.tabOpen(id);
+-        }
+-    });
+-},
+-tabOpen : function(id){
+-    $('a[href="#' +id + '"]').parent("li").addClass("active").siblings("li").removeClass("active");
+-    $("#"+id).addClass("active").siblings(".tab-contents").removeClass("active");
++	    $("[data-tab]").each(function(){
++	        if($(this).find("li").hasClass("active")){
++	            var id = $(this).find(".active a").attr("href").split("#")[1];
++	            common.tabOpen(id);
++	        }
++	    });
++	},
++	tabOpen : function(id){
++	    $('a[href="#' +id + '"]').parent("li").addClass("active").siblings("li").removeClass("active");
++	    $("#"+id).addClass("active").siblings(".tab-contents").removeClass("active");
+ 
+-}
+-</code></pre>
+-	<h2>비동기</h2>
+-	<pre><code class="js">cjom.tab();</code></pre>
++	}
++	</code></pre>
++		<h2>비동기</h2>
++		<pre><code class="js">cjom.tab();</code></pre>
+ 
++	</div>
+ </div>
+ <div class="modal">
+ 	<div class="modal-dailog" id="modal01" style="width:500px;">
+@@ -67,7 +69,20 @@
+ 			<h2 class="modal-header-title">팝업타이틀</h2>
+ 		</div>
+ 		<div class="modal-contents">
+-ZXZXXzXZXZXzXXZXZ
++ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>
++			ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>
++			ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>ZXZXXzXZXZXzXXZXZ<br>
++
++
++
++
++
++
++
++
++
++
++
+ 		</div>
+ 		<div class="modal-footer">
+ 			<a href="#modal02" class="btn-"  data-modal-open>두번째 모달 오픈</a>
+Index: cjom/web/guide/tab.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/guide/tab.html	(revision 1031)
++++ cjom/web/guide/tab.html	(date 1548204611127)
+@@ -132,7 +132,44 @@
+         </div>
+     </div>
+     <hr>
+-    <ul class="tab-list" data-tab="7">
++    <h2>Type2</h2>
++    <h3>html</h3>
++    <pre><code class="html">
++&lt;ul class="tab-list2" data-tab&gt;
++    &lt;li&gt;&lt;a href="#tab15"&gt;탭1&lt;/a&gt;&lt;/li&gt;
++    &lt;li&gt;&lt;a href="#tab16"&gt;탭2&lt;/a&gt;&lt;/li&gt;
++    &lt;li&gt;&lt;a href="#tab17"&gt;탭3&lt;/a&gt;&lt;/li&gt;
++    &lt;li class="active"&gt;&lt;a href="#tab18"&gt;탭4&lt;/a&gt;&lt;/li&gt;
++    &lt;li&gt;&lt;a href="#tab19"&gt;탭5&lt;/a&gt;&lt;/li&gt;
++    &lt;li&gt;&lt;a href="#tab20"&gt;탭6&lt;/a&gt;&lt;/li&gt;
++    &lt;li&gt;&lt;a href="#tab21"&gt;탭7&lt;/a&gt;&lt;/li&gt;
++&lt;/ul&gt;
++&lt;div class="tab-container"&gt;
++    &lt;div class="tab-contents" id="tab15"&gt;
++        1
++    &lt;/div&gt;
++    &lt;div class="tab-contents" id="tab16"&gt;
++        2
++    &lt;/div&gt;
++    &lt;div class="tab-contents" id="tab17"&gt;
++        3
++    &lt;/div&gt;
++    &lt;div class="tab-contents" id="tab18"&gt;
++        4
++    &lt;/div&gt;
++    &lt;div class="tab-contents" id="tab19"&gt;
++        5
++    &lt;/div&gt;
++    &lt;div class="tab-contents" id="tab20"&gt;
++        6
++    &lt;/div&gt;
++    &lt;div class="tab-contents" id="tab21"&gt;
++        7
++    &lt;/div&gt;
++&lt;/div&gt;
++</code></pre>
++    <h3>view</h3>
++    <ul class="tab-list2" data-tab>
+         <li><a href="#tab15">탭1</a></li>
+         <li><a href="#tab16">탭2</a></li>
+         <li><a href="#tab17">탭3</a></li>

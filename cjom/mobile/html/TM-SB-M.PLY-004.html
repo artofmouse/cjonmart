@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/common.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+	<script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="header header--sub">
+			<!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+		</div>
+		<div id="contents" class="contents">
+			<section class="play-cook"><!-- 수정 2019-02-11 -->
+				<!-- section__title-box -->
+				<div class="section__floating-box" data-js="floating">
+					<div data-js="floating__target-parent">
+						<div class="section__title-box" data-js="floating__target">
+							<a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+							<h1 class="section__title">the레시피</h1>
+						</div>
+					</div>
+				</div>
+				<!-- //section__title-box -->
+
+				<div data-js="tab">
+					<!-- 탭 -->
+					<div class="sc-tab-1">
+						<ul class="sc-tab-1__inner" data-js="scrollx-positioning" data-options='{"tablemode":true,"minimum":4}'>
+							<li class="sc-tab-1__item" data-js="tab__list scrollx-positioning__item">
+								<a class="sc-tab-1__anchor" href="#" data-js="tab__anchor">조리법별</a>
+							</li>
+							<li class="sc-tab-1__item" data-js="tab__list scrollx-positioning__item">
+								<a class="sc-tab-1__anchor" href="#" data-js="tab__anchor">재료별</a>
+							</li>
+							<li class="sc-tab-1__item" data-js="tab__list scrollx-positioning__item">
+								<a class="sc-tab-1__anchor" href="#" data-js="tab__anchor">나라별</a>
+							</li>
+							<li class="sc-tab-1__item" data-js="tab__list scrollx-positioning__item">
+								<a class="sc-tab-1__anchor" href="#" data-js="tab__anchor">브랜드별</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 조리법별 -->
+					<div data-js="tab__panel">
+						<!-- 리스트탑 -->
+						<!-- 19-02-13 sorting 최신 공통 변경 요망 -->
+						<!-- 2019-05-08 수정 -->
+						<div class="component-sorting">
+							<div class="play-cook-filter-tab">
+								<div class="product-detail__review-btn-scrollx">
+									<ul class="product-detail__review-btn-scrollx__inner">
+										<li class="scroll-x__item">
+											<input id="chk_0_0" class="checkbox-btn" type="checkbox" checked><label class="checkbox-btn__label" for="chk_0_0">전체</label>
+										</li>
+										<li class="scroll-x__item">
+											<input id="chk_0_1" class="checkbox-btn" type="checkbox"><label class="checkbox-btn__label" for="chk_0_1">국/탕/찌개/전골</label>
+										</li>
+										<li class="scroll-x__item">
+											<input id="chk_0_2" class="checkbox-btn" type="checkbox"><label class="checkbox-btn__label" for="chk_0_2">전채요리</label>
+										</li>
+										<li class="scroll-x__item">
+											<input id="chk_0_3" class="checkbox-btn" type="checkbox" checked><label class="checkbox-btn__label" for="chk_0_3">밑반찬</label>
+										</li>
+										<li class="scroll-x__item">
+											<input id="chk_0_4" class="checkbox-btn" type="checkbox"><label class="checkbox-btn__label" for="chk_0_4">찜/구이/볶음</label>
+										</li>
+										<li class="scroll-x__item">
+											<input id="chk_0_5" class="checkbox-btn" type="checkbox"><label class="checkbox-btn__label" for="chk_0_5">일품요리</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="product__state">
+								<div class="product__state-box">
+									<div class="product__state-text">
+										총<span class="product__state-text-color">155</span>개
+									</div>
+								</div>
+								<div class="product__state-box">
+									<label for="select01" class="blind">리스트 정렬 선택</label>
+									<select id="select01" class="product__sorting-select">
+											<option>최신순</option>
+											<option>인기순</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- 2019-05-08 수정 -->
+						<!-- //19-02-13 sorting 최신 공통 변경 요망 -->
+						<!-- //리스트탑 -->
+
+						<!-- play-cook-list -->
+						<ul class="play-cook-list play-cook-list--default-padding">
+							<!-- play-cook-list__item : 연관상품 노출형 -->
+							<li class="play-cook-list__item">
+								<!-- 레시피/꿀팁 -->
+								<div class="product__category-box__contents product__category-box__contents--white">
+									<div class="image-box image-box--column image-box--white">
+										<a href="#" class="image-box__anchor image-box__anchor--no-padding">
+											<div class="image-box__image-container crop_img_ctrl_wrap">
+													<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+											</div>
+											<div class="image-box__text-box image-box__text-box--bottom-padding">
+													<h3 class="image-box__text image-box__text--size15">
+														요리로 먼저 찾아온 봄! 향기 가득한 식탁 <br>
+														<strong class="image-box__text__tit">김치브리또와 참나물 떡꼬치</strong>
+													</h3>
+													<div class="component-recipe component-margin__text">
+														<span class="component-recipe__time">
+															<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+															10분
+														</span>
+														<em>난이도</em>
+														<strong>하</strong>
+													</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- //레시피/꿀팁 -->
+
+								<!-- 연관상품 -->
+								<div class="module-container component-margin__contents">
+									<div class="module-product module-product--list module-product--list-small module-product--is-top-border">
+										<ul class="module-product__ul">
+											<li class="module-product__li module-product__li--soldout">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+														<span class="module-product__soldout">
+															<em class="blind">일시품절</em>
+														</span>
+													</a>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">8,900</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">8,900</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 20%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+													<a href="#" class="module-product__text-button">재입고알림</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">100,000</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 60%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product00.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //연관상품 -->
+							</li>
+							<!-- //play-cook-list__item : 연관상품 노출형 -->
+
+							<!-- play-cook-list__item : 기본형 -->
+							<li class="play-cook-list__item play-cook-list__item--type-default"><!-- play-cook-list__item--type-default 추가 2019-02-12 -->
+								<div class="image-box image-box--column image-box--column-2col image-box--white"><!-- image-box--minus-mt-15 삭제 2019-02-12 -->
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+											<!-- 상세페이지에 동영상 있을 시 노출 -->
+											<span class="video-box__play-time number">
+												<em class="blind">상세페이지내 동영상포함</em>
+											</span>
+											<!-- //상세페이지에 동영상 있을 시 노출 -->
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+							<!-- //play-cook-list__item : 기본형 -->
+
+							<!-- play-cook-list__item : 연관상품 노출형 -->
+							<li class="play-cook-list__item">
+								<!-- 레시피/꿀팁 -->
+								<div class="product__category-box__contents product__category-box__contents--white">
+									<div class="image-box image-box--column image-box--white">
+										<a href="#" class="image-box__anchor image-box__anchor--no-padding">
+											<div class="image-box__image-container crop_img_ctrl_wrap">
+													<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+													<!-- 상세페이지에 동영상 있을 시 노출 -->
+													<span class="video-box__play-time number">
+														<em class="blind">상세페이지내 동영상포함</em>
+													</span>
+													<!-- //상세페이지에 동영상 있을 시 노출 -->
+											</div>
+											<div class="image-box__text-box image-box__text-box--bottom-padding">
+													<h3 class="image-box__text image-box__text--size15">
+														요리로 먼저 찾아온 봄! 향기 가득한 식탁 <br>
+														<strong class="image-box__text__tit">김치브리또와 참나물 떡꼬치</strong>
+													</h3>
+													<div class="component-recipe component-margin__text">
+														<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+															10분
+														</span>
+														<em>난이도</em>
+														<strong>하</strong>
+													</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- //레시피/꿀팁 -->
+
+								<!-- 연관상품 -->
+								<div class="module-container component-margin__contents">
+									<div class="module-product module-product--list module-product--list-small module-product--is-top-border">
+										<ul class="module-product__ul">
+											<li class="module-product__li module-product__li--soldout">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+														<span class="module-product__soldout">
+															<em class="blind">일시품절</em>
+														</span>
+													</a>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">8,900</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">8,900</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 20%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+													<a href="#" class="module-product__text-button">재입고알림</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+															<p class="module-product__price--discount">
+																<span class="module-product__price--discount-cash">
+																	<em class="number">100,000</em>원
+																</span>
+																<span class="module-product__price--discount-percent">
+																	(<span class="number">10</span>%)
+																</span>
+															</p>
+														</div>
+														<div class="module-product__rating-box">
+															<div class="module-product__rating">
+																<div class="module-product__rating-outer" style="width: 60%;">
+																	<img class="module-product__rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+																</div>
+															</div>
+															<div class="module-product__rating-count number">12345</div>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product00.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다 상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+												</div>
+											</li>
+											<li class="module-product__li">
+												<div class="module-product__image-box">
+													<a href="#" class="module-product__anchor module-product__anchor--image">
+														<img class="module-product__image" src="/cjom/mobile/images/common/no-image.png" data-src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+													<button class="module-product__cart">
+														<span class="blind">장바구니 담기</span>
+													</button>
+												</div>
+												<div class="module-product__contents-box">
+													<a href="#" class="module-product__anchor">
+														<p class="module-product__title">
+															상품명 2줄까지 노출후
+														</p>
+														<div class="module-product__price-box">
+															<p class="module-product__price">
+																<strong class="number">100,000</strong>원
+															</p>
+														</div>
+														<ul class="module-product__category-box">
+															<li class="module-product__category-li module-product__category-li--benefits">무료배송</li>
+															<li class="module-product__category-li">상온 실온</li>
+															<li class="module-product__category-li">업체직송</li>
+														</ul>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- //연관상품 -->
+							</li>
+							<!-- //play-cook-list__item : 연관상품 노출형 -->
+
+							<!-- play-cook-list__item : 기본형 -->
+							<li class="play-cook-list__item play-cook-list__item--type-default"><!-- play-cook-list__item--type-default 추가 2019-02-12 -->
+									<div class="image-box image-box--column image-box--column-2col image-box--white"><!-- image-box--minus-mt-15 삭제 2019-02-12 -->
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+											<!-- 상세페이지에 동영상 있을 시 노출 -->
+											<span class="video-box__play-time number">
+												<em class="blind">상세페이지내 동영상포함</em>
+											</span>
+											<!-- //상세페이지에 동영상 있을 시 노출 -->
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor">
+										<div class="image-box__image-container crop_img_ctrl_wrap">
+											<img class="image-box__image crop_img_ctrl_wrap_img" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box">
+											<h3 class="image-box__text image-box__text--size13">
+												전통의 맛 그대로
+												<span class="image-box__text--bold image-box__text--block">밤 ＆ 치즈 베이컨롤</span>
+											</h3>
+											<div class="component-recipe component-margin__text">
+												<span class="component-recipe__time">
+											<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+													10분
+												</span>
+												<em>난이도</em>
+												<strong>하</strong>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+							<!-- //play-cook-list__item : 기본형 -->
+						</ul>
+						<!-- //play-cook-list -->
+
+						<!-- 2019-02-08 수정 -->
+						<div class="btn-container">
+							<button class="btn btn__more">
+								더보기(<span>20</span>/<span>40</span>)
+							</button>
+						</div>
+						<!-- 2019-02-08 수정 -->
+					</div>
+					<!-- //조리법별 -->
+
+					<!-- 재료별 -->
+					<div data-js="tab__panel">
+						----조리법별과 동일----
+					</div>
+					<!-- //재료별 -->
+
+					<!-- 나라별 -->
+					<div data-js="tab__panel">
+						----조리법별과 동일----
+					</div>
+					<!-- //나라별 -->
+
+					<!-- 나라별 -->
+					<div data-js="tab__panel">
+						----조리법별과 동일----
+					</div>
+					<!-- //나라별 -->
+				</div>
+
+
+
+			</section>
+		</div>
+		<div class="footer">
+			<!--
+			* footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/footer.html
+			-->
+		</div>
+	</div>
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/plugins/glider.js"></script>
+	<script src="/cjom/mobile/js/plugins/jquery.lazy.min.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

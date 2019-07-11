@@ -1,0 +1,9 @@
+.product-detail__top-info__item__row{ display:block; }
+.product-detail__top-info__dd{ position: relative; float:left; width:calc(100% - 80px); box-sizing:border-box; padding-left:10px; font-size:13px }
+.product-detail__top-info__dd-flex-box { display: flex; align-items: center; }
+.product-detail__top-info__dt__txt{ display: flex; align-items: center; }
+.product-detail__top-info__item.txt-type{ position:relative }
+.product-detail__top-info__item.txt-type .discount-badge{  }
+.product-detail__top-info__dd__box{ margin-top:10px; display: block; max-width: 163px; padding:5px 10px; border:1px solid #eee; font-size:12px }
+.product-detail__top-info__anchor{ position: absolute; top: 0; right: 0; width:20px; height:20px; background:url(/cjom/mobile/images/icon/ico-arrow-down-24x14.png) no-repeat center; background-size:12px 7px }
+.product-detail__top-info__anchor.is-active + .product-detail__top-info__dd__box { display: none; }

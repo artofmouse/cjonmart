@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+
+
+<div class="guide-wrap">
+	<h1>Input File</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="file" name="file1" accept=".gif, .jpg, .png" /&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" enctype="multipart/form-data">
+		<input type="file" name="file1" accept=".gif, .jpg, .png" />
+		<input type="submit" class="btn-white-sm" value="SUBMIT TEST">
+
+	</form>
+	<hr>
+
+	<h2>File List</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;div class="file-list"&gt;
+	&lt;input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" /&gt;
+	&lt;input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" /&gt;
+	&lt;input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" /&gt;
+&lt;/div&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="file-list">
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+	</div>
+
+	<hr>
+
+	<h2>File List 2</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;div class="file-list"  data-multiple&gt;
+	&lt;input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일"/&gt;
+	&lt;input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" /&gt;
+	&lt;input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" /&gt;
+&lt;/div&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="file-list" data-multiple>
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+		<input type="file" accept=".gif, .jpg, .png" title="이미지 첨부파일" />
+	</div>
+
+	<hr>
+	<h2>File (text type)</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="file" data-type="text" style="width:500px;" placeholder="첨부파일" title="사업자등록증 이미지첨부 파일"&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<input type="file" data-type="text" style="width:500px;" placeholder="첨부파일" title="사업자등록증 이미지첨부 파일">
+
+</div>
+
+
+</body>
+</html>

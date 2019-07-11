@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+	<style>
+	[class*='title'] {margin: 0; background:none;}
+	[class^='fc'] {font-size:18px; font-weight: 700;}
+	</style>
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Font</h1>
+	<h2>Title</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;h1 class="page-title"&gt;페이지 타이틀&lt;/p&gt;
+&lt;h2 class="cont-title"&gt;중 타이틀&lt;/h2&gt;
+&lt;h3 class="sub-title"&gt;소 타이틀&lt;/h3&gt;
+&lt;h3 class="sub-title2"&gt;소 타이틀2&lt;/h3&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<h1 class="page-title">페이지 타이틀 / 34px / #000</h1>
+	<h2 class="cont-title">중 타이틀 / 26px / #000</h2>
+	<h2 class="sub-title">소 타이틀 / 20px / #000</h2>
+	<h2 class="sub-title2">소 타이틀 / 18px / #000</h2>
+</code></pre>
+<hr>
+	<h2>Contents</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;p class="text"&gt;본문내용 / 레귤러 15 / -50 / #555555&lt;/p&gt;
+&lt;p class="sub-text"&gt;서브텍스트 / 레귤러 14 / -50 / #555555&lt;/p&gt;
+&lt;a href="#" class="underline"&gt;밑줄이 들어갑니다&lt;/a&gt;
+&lt;p class="noti-text"&gt;공지 아이콘이 들어가는 문구입니다.&lt;/p&gt;
+&lt;div class="center-box"&gt;
+	&lt;p class="noti-text"&gt;공지 아이콘이 센터로 들어갈경우&lt;/p&gt;
+&lt;/div&gt;
+	</code></pre>
+
+	<h3>VIEW</h3>
+	<p class="text">본문내용 / 레귤러 15 / -50 / #555555 </p>
+	<p class="sub-text">서브텍스트 / 레귤러 14 / -50 / #555555 </p>
+	<a href="#" class="underline">밑줄이 들어갑니다</a>
+	<h3>공지 아이콘이 왼쪽 정렬 일때</h3>
+	<p class="noti-text">공지 아이콘이 들어가는 문구입니다.</p>
+	<h3>공지 아이콘이 중앙 정렬 일때</h3>
+	<div class="center-box">
+		<p class="noti-text">공지 아이콘이 센터로 들어갈경우</p>
+	</div>
+	<h3>* 텍스트</h3>
+	<p class="info-text">텍스트를 입력합니다.</p>
+<hr>
+	<h2>Size</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;p class="fs-14"&gt;14px&lt;/p&gt;
+&lt;p class="fs-14-space"&gt;14px + 행간 24px&lt;/p&gt;
+&lt;p class="fs-15"&gt;15px&lt;/p&gt;
+&lt;p class="fs-15-space"&gt;15px + 행간 25px&lt;/p&gt;</code></pre>
+	<h3>VIEW</h3>
+	<p class="fs-14">14px</p>
+	<p class="fs-15">15px</p>
+	<p class="fs-14-space">14px + 행간 24px</p>
+	<p class="fs-15-space">15px + 행간 25px</p>
+</code></pre>
+<hr>
+	<h2>Color</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;p class="fc-lightgreen"&gt;fc-lightgreen&lt;/p&gt;
+&lt;p class="fc-orange"&gt;fc-orange&lt;/p&gt;
+&lt;p class="fc-red"&gt;fc-red&lt;/p&gt;
+&lt;p class="fc-brown"&gt;fc-brown&lt;/p&gt;
+&lt;p class="fc-black"&gt;fc-black&lt;/p&gt;
+&lt;p class="fc-gray"&gt;fc-gray&lt;/p&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<p class="fc-lightgreen">fc-lightgreen</p>
+	<p class="fc-orange">fc-orange</p>
+	<p class="fc-red">fc-red</p>
+	<p class="fc-brown">fc-brown</p>
+	<p class="fc-black">fc-black</p>
+	<p class="fc-gray">fc-gray</p>
+	<p class="fc-lightgray">fc-lightgray</p>
+</code></pre>
+<hr>
+	<h2>Bullet</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;h4 class="desc-title"&gt;타이틀 영역&lt;/h4&gt;
+
+&lt;ul class="desc-list"&gt;
+	&lt;li&gt;CJ THE MARKET의 장바구니는&lt;/li&gt;
+	&lt;li&gt;CJ THE MARKET의 장바구니는&lt;/li&gt;
+	&lt;li&gt;CJ THE MARKET의 장바구니는&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="desc-list2"&gt;
+	&lt;li&gt;CJ THE MARKET의 장바구니는&lt;/li&gt;
+	&lt;li&gt;CJ THE MARKET의 장바구니는&lt;/li&gt;
+	&lt;li&gt;CJ THE MARKET의 장바구니는&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol class="desc-list-number"&gt;
+	&lt;li&gt;프라임 회원 가입 선물 (CJ제일제당 패키지, 기프티콘)&lt;/li&gt;
+	&lt;li&gt;매월 원원데이, 투투데이 프라임 전용 특별 할인&lt;/li&gt;
+	&lt;li&gt;매월 프라임 쿠폰 발급&lt;/li&gt;
+	&lt;li&gt;프라임 회원 전용 특가매장 프라임몰 이용&lt;/li&gt;
+	&lt;li&gt;매월 최대 8회 올리브마켓 상품 5% 할인&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+	<h3>title</h3>
+	<h4 class="desc-title">타이틀 영역</h4>
+
+	<h3>type1</h3>
+	<ul class="desc-list text">
+		<li>CJ THE MARKET의 장바구니는 일반(상온&#38;실온/냉장&냉동/김치/신선식품), 알뜰, 선물세트 3종으로 구성되어 있으며, 장바구니별, 상품유형별 배송비가 부과됩니다.
+(3만원 이상 무료배송, 3만원 미만 3,000원의 배송비가 부과)</li>
+		<li>장바구니에 담긴 각 상품별 쿠폰은 다운받아 주문 결제단계에서 사용하실 수 있습니다. 단, 특가상품, 정기배송, 친환경제품, 대용량 식자재 상품 등 일부 상품에는 쿠폰이 적용되지 않습니다.</li>
+		<li>장바구니 안에 “쿠폰적용 제외상품”이 있을 경우, 쿠폰 적용은 해당 상품을 제외한 제품들에 한하여 적용됩니다. <br>
+(ex. 총 주문 금액 : 39,540원 쿠폰 적용 제외상품 가격 12,000원 인 경우, 3만원 이상 사용 가능한 쿠폰은 사용 불가)</li>
+	</ul>
+
+	<h3>type2</h3>
+	<ul class="desc-list2">
+		<li>CJ THE MARKET의 장바구니는 일반(상온&#38;실온/냉장&냉동/김치/신선식품), 알뜰, 선물세트 3종으로 구성되어 있으며, 장바구니별, 상품유형별 배송비가 부과됩니다.
+			(3만원 이상 무료배송, 3만원 미만 3,000원의 배송비가 부과)</li>
+		<li>장바구니에 담긴 각 상품별 쿠폰은 다운받아 주문 결제단계에서 사용하실 수 있습니다. 단, 특가상품, 정기배송, 친환경제품, 대용량 식자재 상품 등 일부 상품에는 쿠폰이 적용되지 않습니다.</li>
+		<li>장바구니 안에 “쿠폰적용 제외상품”이 있을 경우, 쿠폰 적용은 해당 상품을 제외한 제품들에 한하여 적용됩니다. <br>
+			(ex. 총 주문 금액 : 39,540원 쿠폰 적용 제외상품 가격 12,000원 인 경우, 3만원 이상 사용 가능한 쿠폰은 사용 불가)</li>
+	</ul>
+
+	<h3>Number</h3>
+	<ol class="desc-list-number">
+		<li>프라임 회원 가입 선물 (CJ제일제당 패키지, 기프티콘)</li>
+		<li>매월 원원데이, 투투데이 프라임 전용 특별 할인</li>
+		<li>매월 프라임 쿠폰 발급</li>
+		<li>프라임 회원 전용 특가매장 프라임몰 이용</li>
+		<li>매월 최대 8회 올리브마켓 상품 5% 할인</li>
+	</ol>
+
+<hr>
+	<h2>Align</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;p class="agl"&gt;왼쪽정렬&lt;/p&gt;
+&lt;p class="agc"&gt;가운데정렬&lt;/p&gt;
+&lt;p class="agr"&gt;오른쪽정렬&lt;/p&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<div class="agl">왼쪽정렬</div>
+	<div class="agc">가운데정렬</div>
+	<div class="agr">오른쪽정렬</div>
+	<hr>
+	<h2>text box</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;div class="info-box"&gt;
+	&lt;strong class="title"&gt;타이틀영역&lt;/strong&gt;
+	&lt;ul class="desc-list mt10"&gt;
+		&lt;li&gt;텍스트 설명 리스트&lt;/li&gt;
+		&lt;li&gt;텍스트 설명 리스트&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="line-box"&gt;
+	&lt;p class="text"&gt;.line-box&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="line-box2"&gt;
+	&lt;p class="text"&gt;.line-box2&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="line-gray-box"&gt;
+	&lt;h2 class="title"&gt;Title &lt;span&gt;span&lt;/span&gt;&lt;/h2&gt;
+	&lt;p class="account-text"&gt;account-text&lt;/p&gt;
+	&lt;p class="desc"&gt;dsec&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="line-gray-box type2"&gt;
+	&lt;h2 class="title"&gt;Title &lt;span&gt;span&lt;/span&gt;&lt;/h2&gt;
+	&lt;p class="account-text"&gt;account-text&lt;/p&gt;
+	&lt;p class="desc"&gt;dsec&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+	<h3>VIEW</h3>
+	<div class="info-box">
+		<strong class="title">타이틀영역</strong>
+		<ul class="desc-list mt10">
+			<li>텍스트 설명 리스트</li>
+			<li>텍스트 설명 리스트</li>
+			<li>텍스트 설명 리스트</li>
+		</ul>
+	</div>
+	<br>
+	<div class="line-box">
+		<p class="text">.line-box</p>
+	</div>
+	<br>
+	<div class="line-box2">
+		<p class="text">.line-box2</p>
+	</div>
+	<br>
+	<div class="line-gray-box">
+		<h2 class="title">Title <span>span</span></h2>
+		<p class="account-text">account-text</p>
+		<p class="desc">dsec</p>
+	</div>
+</div>
+
+</body>
+</html>

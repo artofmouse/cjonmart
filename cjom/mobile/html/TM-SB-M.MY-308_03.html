@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>CJ제일제당 가정간편식 전문몰</title>
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/common.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<div class="header header--sub">
+			<!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+		</div>
+		<div id="contents" class="contents">
+			<section class="section">
+				<!-- section__title-box -->
+				<div class="section__title-box">
+					<a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+					<h1 class="section__title">나의 참여현황</h1>
+				</div>
+				<!-- //section__title-box -->
+
+				<div class="section__content my-action">
+					<!-- 2019-04-17 추가// -->
+					<div class="section__regular-delivery section__regular-delivery--pb20 section__regular-delivery--mt0">
+						<div class="period-select">
+							<div class="period-select__box">
+								<a class="period-select__btn" href="#">1개월</a>
+								<a class="period-select__btn" href="#">3개월</a>
+								<a class="period-select__btn" href="#">6개월</a>
+								<a class="period-select__btn period-pick__btn is-active" href="#">기간설정</a>
+							</div>
+							<!-- 기간 설정 선택 시 노출 -->
+							<!-- 2019-03-29 수정 -->
+							<div class="form period-select__box">
+								<label for="input-select-period" class="blind">기간</label>
+								<div class="form__cal-box">
+									<div class="form__column">
+										<input id="input-select-period"
+												type="text"
+												class="form-element__input form-element__cal"
+												data-js="modal-datepicker"
+												data-modal-id="#modalDate"
+												readonly="true"
+												title="시작날짜선택하기" /> <!-- 2019-04-08 수정 -->
+									</div>
+									<div class="form__column">
+										<input
+												type="text"
+												class="form-element__input form-element__cal"
+												data-js="modal-datepicker"
+												data-modal-id="#modalDate"
+												readonly="true"
+												title="마지막날짜선택하기" /> <!-- 2019-04-08 수정 -->
+									</div>
+								</div>
+							</div>
+							<!-- //2019-03-29 수정 -->
+							<!-- //기간 설정 선택 시 노출 -->
+
+							<div class="mt10">
+								<button class="btn btn--shape02 btn--style01">조회</button>
+							</div>
+						</div>
+					</div>
+					<!-- //2019-04-17 추가 -->
+					<!-- 19-02-13 sorting 최신 공통 변경 요망 -->
+					<div class="component-sorting">
+						<div class="product__state">
+							<div class="product__state-box">
+								<div class="product__state-text">
+									총<span class="product__state-text-color">155</span>개
+								</div>
+							</div>
+							<div class="product__state-box">
+								<a href="#" class="component-button--link">당첨자 공지 보기</a>
+							</div>
+						</div>
+					</div>
+					<!-- //19-02-13 sorting 최신 공통 변경 요망 -->
+					<!-- 유형3 - 쿠킹클래스 -->
+					<div class="inventory my-join">
+						<div class="inventory-box inventory-box--type1">
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell">
+									<div class="state-box state-box-progress">참여완료</div>
+									<div class="my-join__title">
+										<a href="#">여러분의 맛있는 식탁 설문조사 이벤트</a>
+									</div>
+									<div class="my-join__date"><span class="my-join__date--name">이벤트 기간</span> 2018-10-01 ~ 2018-10-31</div>
+									<div class="my-join__date"><span class="my-join__date--name">당첨자 발표</span> 2018-10-11</div>
+								</div>
+								<a class="inventory-box__cell inventory-box__cell--link" href="#"><span class="blind">이동</span></a>
+							</div>
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell inventory-box__cell--state">이벤트 진행중</div>
+							</div>
+						</div>
+						<div class="inventory-box inventory-box--type1">
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell">
+									<div class="state-box state-box-progress">참여완료</div>
+									<div class="my-join__title">
+										<a href="#">여러분의 맛있는 식탁 설문조사 이벤트</a>
+									</div>
+									<div class="my-join__date"><span class="my-join__date--name">이벤트 기간</span> 2018-10-01 ~ 2018-10-31</div>
+									<div class="my-join__date"><span class="my-join__date--name">당첨자 발표</span> 2018-10-11</div>
+								</div>
+								<a class="inventory-box__cell inventory-box__cell--link" href="#"><span class="blind">이동</span></a>
+							</div>
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell inventory-box__cell--close">이벤트 종료</div>
+							</div>
+						</div>
+						<div class="inventory-box inventory-box--type1">
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell">
+									<div class="state-box state-box-winning">당첨</div>
+									<div class="my-join__title">
+										<a href="#">다가오는 크리스마스, 직접 만든 쿠키로 마음을 전해보세요!</a>
+									</div>
+									<div class="my-join__date"><span class="my-join__date--name">이벤트 기간</span> <span class="number">2018-10-01 ~ 2018-10-31</span></div>
+									<div class="my-join__date"><span class="my-join__date--name">당첨자 발표</span> <span class="number">2018-10-11</span></div>
+								</div>
+								<a class="inventory-box__cell inventory-box__cell--link" href="#"><span class="blind">이동</span></a>
+							</div>
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell inventory-box__cell--close">이벤트 종료</div>
+							</div>
+						</div>
+						<div class="inventory-box inventory-box--type1">
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell">
+									<div class="state-box state-box-fail">미당첨</div>
+									<div class="my-join__title">
+										<a href="#">다가오는 크리스마스, 직접 만든 쿠키로 마음을 전해보세요!</a>
+									</div>
+									<div class="my-join__date"><span class="my-join__date--name">이벤트 기간</span> <span class="number">2018-10-01 ~ 2018-10-31</span></div>
+									<div class="my-join__date"><span class="my-join__date--name">당첨자 발표</span> <span class="number">2018-10-11</span></div>
+								</div>
+								<a class="inventory-box__cell inventory-box__cell--link" href="#"><span class="blind">이동</span></a>
+							</div>
+							<div class="inventory-box__inner inventory-box__cell-box">
+								<div class="inventory-box__cell inventory-box__cell--close">이벤트 종료</div>
+							</div>
+						</div>
+					</div>
+					<!-- //유형3 - 쿠킹클래스 -->
+
+					<!-- 2019-02-08 수정 -->
+					<div class="btn-container">
+						<button class="btn btn__more">
+							더보기(<span>20</span>/<span>40</span>)
+						</button>
+					</div>
+					<!-- 2019-02-08 수정 -->
+					<div class="reorder-modal__section--padding">
+						<div class="text-box text-box--gray">
+							<ul class="text-box__ul">
+								<li class="text-box__li">
+									참여내역은 최대 3개월까지만 조회 가능합니다.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //결과 있을 때 -->
+
+					<!-- 결과가 없을 때 -->
+					<div class="inventory inventory--empty data-none">
+						<p class="inventory--empty-msg">참여내역이 없습니다.</p>
+						<a class="btn btn--shape13 btn--style01" href="../main.html">이벤트 보러가기</a>
+					</div>
+					<!-- //결과가 없을 때 -->
+
+				</div>
+			</section>
+		</div>
+		<div class="footer">
+			<!--
+			* footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/footer.html
+			-->
+		</div>
+	</div>
+	<!-- //#wrap -->
+
+	<div class="modal-container" data-js="modal">
+		<!--
+				비동기통신을 이용하여 Modal 마크업을 가져온 경우 아래와 같이 실행해주세요.
+				* Modal Init
+				$('[data-js=modal]').modal();
+
+				* Modal Initialized 후 Modal 컨트롤 방법 #modal은 유니크한 ID 사용 부탁드립니다.
+
+				* Modal Open
+				$('[data-js=modal]').trigger('open', $('#modal'));
+				* Modal Close
+				$('[data-js=modal]').trigger('close', $('#modal'));
+		-->
+
+		<!-- Modal Default 풀 팝업 -->
+		<!-- 후기쓰기 -->
+		<section id="modal" class="modal" data-js="modal__element">
+				<div class="modal__mask" data-js="modal__mask"></div>
+				<div class="modal__container modal__container--white" data-js="modal__container">
+					<div class="modal__header">
+						<h1 class="modal__header-title">후기쓰기</h1>
+					</div>
+					<div class="modal__contents modal__contents--with-btn">
+						<div class="default-padding default-padding--popup">
+							<!-- 후기 종류 선택 -->
+							<div class="radio" role="radiogroup" data-js="radio">
+								<div class="radio__group-title blind" data-js="radio__title">후기 종류 선택</div>
+								<div class="radio__wrap radio__wrap--type1">
+										<div class="radio__input" role="radio" data-js="radio__input">
+											일반후기
+											<input type="radio" name="category1" class="radio__hidden" data-js="radio__hidden"
+												tabindex="-1" />
+										</div>
+										<div class="radio__input" role="radio" data-js="radio__input">
+											신제품 체험단후기
+											<input type="radio" name="category2" class="radio__hidden" data-js="radio__hidden"
+												tabindex="-1" />
+										</div>
+								</div>
+							</div>
+							<!-- //후기 종류 선택 -->
+
+							<!-- "브랜드" or "신제품 체험단" 선택 -->
+							<div class="form-element form-element--mt10">
+								<label class="blind" for="brandselect01">
+									브랜드 선택
+									<!-- 신제품 체험단 선택 -->
+								</label>
+								<select id="brandselect01" class="form-element__select">
+										<option>브랜드a</option>
+										<!-- <option>~~~체험단</option> -->
+								</select>
+								<span class="form-element__error">에러메세지가 노출됩니다.</span>
+							</div>
+							<!-- //"브랜드" or "신제품 체험단" 선택 -->
+
+							<!-- 제목 -->
+							<h2 class="product-detail__h2">제목<img class="ico-essential" src="/cjom/mobile/images/common/ico-essential.png" alt="필수입력"></h2>
+							<div class="form-element" data-js="form-ctrl">
+								<label for="input-0" class="blind">제목 입력</label>
+								<input id="input-0" type="text" class="form-element__input" placeholder="제목을 입력해주세요." data-js="form-ctrl__input">
+								<span class="form-element__error">에러메세지가 노출됩니다.</span>
+								<button class="form-element__delete" data-js="form-ctrl__delete">
+										<span class="blind">필드 내용 삭제</span>
+								</button>
+							</div>
+							<!-- //제목 -->
+
+
+							<!-- 후기 -->
+							<h2 class="product-detail__h2">후기<img class="ico-essential" src="/cjom/mobile/images/common/ico-essential.png" alt="필수입력"></h2>
+							<div class="form-element form-element--textarea" data-js="form-ctrl">
+								<label for="textarea-0" class="blind">후기 입력</label>
+								<textarea id="textarea-0" class="form-element__textarea" rows="10" placeholder="후기 내용은 최대 500자 이내로 입력해주세요." data-js="form-ctrl__textarea"></textarea>
+								<div class="form-element__count" data-js="form-ctrl__count" data-max-length="400">
+										<span data-js="form-ctrl__count-current">0</span>/<span data-js="form-ctrl__count-total">400</span>
+								</div>
+								<span class="form-element__error">에러메세지가 노출됩니다.</span>
+							</div>
+							<!-- //후기 -->
+
+							<!-- 사진등록 -->
+							<h2 class="product-detail__h2">사진등록<img class="ico-essential" src="/cjom/mobile/images/common/ico-essential.png" alt="필수입력"></h2>
+							<div class="form-element form-element" data-js="form-ctrl">
+								<ul class="image-list">
+									<li class="image-list__item">
+										<input id="input-file-0" class="blind" class="" type="file">
+										<label for="input-file-0" class="image-list__label image-list__label--in-img">
+											<span class="blind">사진등록</span>
+											<img class="image-list__label__image" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체택스트">
+										</label>
+										<button class="image-list__close"><span class="blind">삭제</span></button>
+									</li>
+									<li class="image-list__item">
+										<input id="input-file-1" class="blind" class="" type="file">
+										<label for="input-file-1" class="image-list__label">
+											<span class="blind">사진등록</span>
+											<img class="image-list__label__image" src="/cjom/mobile/images/temp/temp-product19.png" alt="대체택스트">
+										</label>
+										<button class="image-list__close"><span class="blind">삭제</span></button>
+									</li>
+									<li class="image-list__item">
+										<input id="input-file-2" class="blind" class="" type="file">
+										<label for="input-file-2" class="image-list__label">
+											<span class="blind">사진등록</span>
+										</label>
+									</li>
+								</ul>
+								<span class="form-element__error">에러메세지가 노출됩니다.</span>
+								<span class="form-element__alert">최대 3장까지 10MB 미만의 jpg, jpeg, png 포맷만 가능합니다.</span>
+							</div>
+							<!-- //사진등록 -->
+
+							<!-- 유투브 URL -->
+							<h2 class="product-detail__h2">유투브 URL</h2>
+							<div class="form-element" data-js="form-ctrl">
+								<label for="input-1" class="blind">유투브 URL 입력</label>
+								<input id="input-1" type="text" class="form-element__input" placeholder="http://" data-js="form-ctrl__input">
+								<span class="form-element__error">에러메세지가 노출됩니다.</span>
+								<span class="form-element__alert">유투브에 후기영상이 있다면 주소를 입력해주세요.</span>
+								<button class="form-element__delete" data-js="form-ctrl__delete">
+										<span class="blind">필드 내용 삭제</span>
+								</button>
+							</div>
+							<!-- //유투브 URL -->
+
+							<!-- SNS URL -->
+							<h2 class="product-detail__h2">SNS URL</h2>
+							<div class="form-element" data-js="form-ctrl">
+								<label for="input-2" class="blind">SNS URL 입력</label>
+								<input id="input-2" type="text" class="form-element__input" placeholder="http://" data-js="form-ctrl__input">
+								<span class="form-element__error">에러메세지가 노출됩니다.</span>
+								<span class="form-element__alert">더 자세한 후기를 작성하셨다면 SNS 주소를 입력해주세요.</span>
+								<button class="form-element__delete" data-js="form-ctrl__delete">
+										<span class="blind">필드 내용 삭제</span>
+								</button>
+							</div>
+							<!-- //SNS URL -->
+
+
+							<div class="color-box color-box--style06 mt30">
+								<div class="color-box__text">
+									<ul class="product-detail__ul product-detail__ul--type2 mt0">
+										<li class="product-detail__ul__item">이용후기는 본인이 직접 찍은 사진 혹은 동영상과 함께 작성 및 등록하여 다른 이용자와 정보를 공유하는 게시판입니다.</li>
+										<li class="product-detail__ul__item">회원님이 등록한 게시물은 향후 해당 사이트의 국내, 국외 홍보활동 등을 위하여 사용될 수 있습니다.</li>
+										<li class="product-detail__ul__item">초상권, 저작권 등 권리를 침해하거나 욕설, 비방 등의 부적절한 내용의 경우 사전 통보 없이 해당 게시물을 삭제할 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 하단 버튼 -->
+					<div class="modal__btn-box btn-box btn-box--col-2 btn-box--none-margin">
+						<a href="#" class="btn btn--shape04 btn--style10">취소</a>
+						<a href="#" class="btn btn--shape04 btn--style01">등록/수정</a>
+					</div>
+					<!-- //하단 버튼 -->
+
+					<button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+				</div>
+		</section>
+		<!-- //후기쓰기 -->
+		<!-- //Modal Default 풀 팝업 -->
+	</div>
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+
+	<!-- 팝업 오픈
+	<script>
+	$(window).load(function(){
+		$('[data-js=modal]').trigger('open', $('#modal'));
+	});
+	</script>-->
+	<!-- //팝업 오픈 -->
+</body>
+
+</html>

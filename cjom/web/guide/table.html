@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+	<style>
+		.table-list{max-width:1000px}
+	</style>
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Table</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;div class="table-default"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;Table Caption&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col width="32%" /&gt;
+			&lt;col /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;제공자&lt;/th&gt;
+				&lt;td&gt;CJ ONE (씨제이올리브네트웍스㈜)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;제공받는자&lt;/th&gt;
+				&lt;td&gt;씨제이제일제당㈜ (CJ THE MARKET)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;제공받는 자의 이용 목적&lt;/th&gt;
+				&lt;td&gt;웹사이트 로그인, CJ ONE 포인트 적립 및 사용, 기타 CJ ONE 멤버십 관련한 서비스 제공 씨제이제일제당㈜ 의 '개인정보 수집 및 활용'에 따른 이용&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;제공하는 개인정보항목&lt;/th&gt;
+				&lt;td&gt;회원번호, 아이디, 비밀번호, 이름, 아이핀 CI, 생년월일, 성별, 휴대전화번호, 이메일주소, CJ ONE 회원등급&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;보유 및 이용기간&lt;/th&gt;
+				&lt;td&gt;씨제이제일제당㈜ 서비스 이용약관 철회 또는 CJ ONE 회원탈퇴 후 즉시 삭제&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="table-default">
+		<table>
+			<caption>Table Caption</caption>
+			<colgroup>
+				<col style="width:300p" />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">제공자</th>
+					<td>CJ ONE (씨제이올리브네트웍스㈜)</td>
+				</tr>
+				<tr>
+					<th scope="row">제공받는자</th>
+					<td>씨제이제일제당㈜ (CJ THE MARKET)</td>
+				</tr>
+				<tr>
+					<th scope="row">제공받는 자의 이용 목적</th>
+					<td>웹사이트 로그인, CJ ONE 포인트 적립 및 사용, 기타 CJ ONE 멤버십 관련한 서비스 제공 씨제이제일제당㈜ 의 '개인정보 수집 및 활용'에 따른 이용</td>
+				</tr>
+				<tr>
+					<th scope="row">제공하는 개인정보항목</th>
+					<td>회원번호, 아이디, 비밀번호, 이름, 아이핀 CI, 생년월일, 성별, 휴대전화번호, 이메일주소, CJ ONE 회원등급</td>
+				</tr>
+				<tr>
+					<th scope="row">보유 및 이용기간</th>
+					<td>씨제이제일제당㈜ 서비스 이용약관 철회 또는 CJ ONE 회원탈퇴 후 즉시 삭제</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<hr>
+
+	<h2>List Table</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;div class="table-col"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;Table Caption&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col width="197px" /&gt;
+			&lt;col width="136px" /&gt;
+			&lt;col /&gt;
+			&lt;col width="130px" /&gt;
+			&lt;col width="265px" /&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th scope="col"&gt;구분&lt;/th&gt;
+			&lt;th scope="col"&gt;일자&lt;/th&gt;
+			&lt;th scope="col"&gt;기간 및 내용&lt;/th&gt;
+			&lt;th scope="col"&gt;결제금액&lt;/th&gt;
+			&lt;th scope="col"&gt;선택&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td class="agl"&gt;가입 축하 선물&lt;/td&gt;
+			&lt;td&gt;&lt;em class="num"&gt;2018-12-01&lt;/em&gt;&lt;/td&gt;
+			&lt;td class="agl"&gt;[가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지]&lt;/td&gt;
+			&lt;td class="agr"&gt;무료&lt;/td&gt;
+			&lt;td&gt;
+				&lt;a href="#" class="link-underline fc-gray"&gt;&lt;span&gt;모바일 영수증&lt;/span&gt;&lt;/a&gt;
+				&lt;a href="#" class="link-underline fc-gray"&gt;&lt;span&gt;카페테리아 영수증&lt;/span&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class="agl"&gt;
+				&lt;span class="fc-red"&gt;[만료]&lt;/span&gt;
+				프라임회원
+			&lt;/td&gt;
+			&lt;td&gt;&lt;em class="num"&gt;2018-12-01&lt;/em&gt;&lt;/td&gt;
+			&lt;td class="agl"&gt;[가입선물 오늘 뭐먹지]&lt;/td&gt;
+			&lt;td class="agr"&gt;1000,000원&lt;/td&gt;
+			&lt;td&gt;
+				&lt;a href="#" class="link-underline fc-gray"&gt;&lt;span&gt;모바일 영수증&lt;/span&gt;&lt;/a&gt;
+				&lt;a href="#" class="link-underline fc-gray"&gt;&lt;span&gt;카페테리아 영수증&lt;/span&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class="agl"&gt;
+				&lt;span class="fc-red"&gt;[만료]&lt;/span&gt;
+				프라임회원
+			&lt;/td&gt;
+			&lt;td&gt;&lt;em class="num"&gt;2018-12-01&lt;/em&gt;&lt;/td&gt;
+			&lt;td class="agl"&gt;[가입선물 오늘 뭐먹지]&lt;/td&gt;
+			&lt;td class="agr"&gt;1000,000원&lt;/td&gt;
+			&lt;td&gt;
+				&lt;a href="#" class="link-underline fc-gray"&gt;&lt;span&gt;배송조회&lt;/span&gt;&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+	</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="table-col">
+		<table>
+			<caption>Table Caption</caption>
+			<colgroup>
+				<col style="width:197px" />
+				<col style="width:136px" />
+				<col />
+				<col style="width:130px" />
+				<col style="width:265px" />
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">일자</th>
+				<th scope="col">기간 및 내용</th>
+				<th scope="col">결제금액</th>
+				<th scope="col">선택</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td class="agl">가입 축하 선물</td>
+				<td><em class="num">2018-12-01</em></td>
+				<td class="agl">[가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지][가입선물 오늘 뭐먹지]</td>
+				<td class="agr">무료</td>
+				<td>
+					<a href="#" class="link-underline fc-gray"><span>모바일 영수증</span></a>
+					<a href="#" class="link-underline fc-gray"><span>카페테리아 영수증</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="agl">
+					<span class="fc-red">[만료]</span>
+					프라임회원
+				</td>
+				<td><em class="num">2018-12-01</em></td>
+				<td class="agl">[가입선물 오늘 뭐먹지]</td>
+				<td class="agr">1000,000원</td>
+				<td>
+					<a href="#" class="link-underline fc-gray"><span>모바일 영수증</span></a>
+					<a href="#" class="link-underline fc-gray"><span>카페테리아 영수증</span></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="agl">
+					<span class="fc-red">[만료]</span>
+					프라임회원
+				</td>
+				<td><em class="num">2018-12-01</em></td>
+				<td class="agl">[가입선물 오늘 뭐먹지]</td>
+				<td class="agr">1000,000원</td>
+				<td>
+					<a href="#" class="link-underline fc-gray"><span>배송조회</span></a>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h2>List Accordion Table</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;ul class="table-list"&gt;
+	&lt;li class="row"&gt;
+		&lt;div class="table-accordion"&gt;
+			&lt;div class="column date"&gt;
+				&lt;strong class="title"&gt;기간&lt;/strong&gt;
+				&lt;a href="#accor3" class="cont" data-accordion&gt;
+					&lt;span class="btn-target" &gt;2018-11&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="column auto"&gt;
+				&lt;strong class="title"&gt;구매 혜택 횟수&lt;/strong&gt;
+				&lt;p class="cont"&gt;당월2회 / 잔여1회&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class="column price"&gt;
+				&lt;strong class="title"&gt;판매금액&lt;/strong&gt;
+				&lt;p class="cont agr"&gt;1,192,0000원&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class="column price"&gt;
+				&lt;strong class="title"&gt;나의 구매 금액&lt;/strong&gt;
+				&lt;p class="cont agr"&gt;1000000원&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class="column price"&gt;
+				&lt;strong class="title"&gt;할인 받은 금액&lt;/strong&gt;
+				&lt;p class="cont agr fc-lightgreen"&gt;1000000원&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div id="accor3" class="accordion-wrap"&gt;
+			&lt;ul class="table-list" &gt;
+				&lt;li class="row"&gt;
+					&lt;div class="column date"&gt;
+						&lt;strong class="title"&gt;주문번호&lt;/strong&gt;
+						&lt;p class="cont"&gt;
+							20181022005574&lt;br&gt;
+							2018-10-22
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="column auto"&gt;
+						&lt;strong class="title"&gt;제품명&lt;/strong&gt;
+						&lt;p class="cont agl"&gt;
+							비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="column price"&gt;
+						&lt;strong class="title"&gt;판매금액&lt;/strong&gt;
+						&lt;p class="cont agr"&gt;
+							1000000원
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="column price"&gt;
+						&lt;strong class="title"&gt;나의 구매 금액&lt;/strong&gt;
+						&lt;p class="cont agr"&gt;
+							12,000원
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="column price"&gt;
+						&lt;strong class="title"&gt;할인 받은 금액&lt;/strong&gt;
+						&lt;p class="cont agr fc-lightgreen"&gt;
+							12,000원
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</code></pre>
+
+	<h3>VIEW</h3>
+	<ul class="table-list">
+		<li class="row">
+			<div class="table-accordion">
+				<div class="column date">
+					<strong class="title">기간</strong>
+					<a href="#acoor1" class="cont" data-accordion>
+						<span class="btn-target" >2018-11</span>
+					</a>
+				</div>
+				<div class="column auto">
+					<strong class="title">구매 혜택 횟수</strong>
+					<p class="cont">당월2회 / 잔여1회</p>
+				</div>
+				<div class="column price">
+					<strong class="title">판매금액</strong>
+					<p class="cont agr">1,192,0000원</p>
+				</div>
+				<div class="column price">
+					<strong class="title">나의 구매 금액</strong>
+					<p class="cont agr">1000000원</p>
+				</div>
+				<div class="column price">
+					<strong class="title">할인 받은 금액</strong>
+					<p class="cont agr fc-lightgreen">1000000원</p>
+				</div>
+			</div>
+			<div id="acoor1" class="accordion-wrap">
+				<ul class="table-list" >
+					<li class="row">
+						<div class="column date">
+							<strong class="title">주문번호</strong>
+							<p class="cont">
+								20181022005574<br>
+								2018-10-22
+							</p>
+						</div>
+						<div class="column auto">
+							<strong class="title">제품명</strong>
+							<p class="cont agl">
+								비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">판매금액</strong>
+							<p class="cont agr">
+								1000000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">나의 구매 금액</strong>
+							<p class="cont agr">
+								12,000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">할인 받은 금액</strong>
+							<p class="cont agr fc-lightgreen">
+								12,000원
+							</p>
+						</div>
+					</li>
+					<li class="row">
+						<div class="column">
+							<strong class="title date">주문번호</strong>
+							<p class="cont">
+								20181022005574<br>
+								2018-10-22
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">제품명</strong>
+							<p class="cont agl">
+								비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">판매금액</strong>
+							<p class="cont agr">
+								1000000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">나의 구매 금액</strong>
+							<p class="cont agr">
+								12,000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">할인 받은 금액</strong>
+							<p class="cont agr fc-lightgreen">
+								12,000원
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="row">
+			<div class="table-accordion">
+				<div class="column date">
+					<strong class="title">기간</strong>
+					<a href="#accor2" class="cont" data-accordion>
+						<span class="btn-target" >2018-11</span>
+					</a>
+				</div>
+				<div class="column auto">
+					<strong class="title">구매 혜택 횟수</strong>
+					<p class="cont">당월2회 / 잔여1회</p>
+				</div>
+				<div class="column price">
+					<strong class="title">판매금액</strong>
+					<p class="cont agr">1,192,0000원</p>
+				</div>
+				<div class="column price">
+					<strong class="title">나의 구매 금액</strong>
+					<p class="cont agr">1000000원</p>
+				</div>
+				<div class="column price">
+					<strong class="title">할인 받은 금액</strong>
+					<p class="cont agr fc-lightgreen">1000000원</p>
+				</div>
+			</div>
+			<div id="accor2" class="accordion-wrap">
+				<ul class="table-list" >
+					<li class="row">
+						<div class="column date">
+							<strong class="title">주문번호</strong>
+							<p class="cont">
+								20181022005574<br>
+								2018-10-22
+							</p>
+						</div>
+						<div class="column auto">
+							<strong class="title">제품명</strong>
+							<p class="cont">
+								비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">판매금액</strong>
+							<p class="cont agr">
+								1000000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">나의 구매 금액</strong>
+							<p class="cont agr">
+								12,000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">할인 받은 금액</strong>
+							<p class="cont agr fc-lightgreen">
+								12,000원
+							</p>
+						</div>
+					</li>
+					<li class="row">
+						<div class="column date">
+							<strong class="title">주문번호</strong>
+							<p class="cont">
+								20181022005574<br>
+								2018-10-22
+							</p>
+						</div>
+						<div class="column auto">
+							<strong class="title">제품명</strong>
+							<p class="cont agl">
+								비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">판매금액</strong>
+							<p class="cont agr">
+								1000000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">나의 구매 금액</strong>
+							<p class="cont agr">
+								12,000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">할인 받은 금액</strong>
+							<p class="cont agr fc-lightgreen">
+								12,000원
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="row">
+			<div class="table-accordion">
+				<div class="column date">
+					<strong class="title">기간</strong>
+					<a href="#accor3" class="cont" data-accordion>
+						<span class="btn-target" >2018-11</span>
+					</a>
+				</div>
+				<div class="column auto">
+					<strong class="title">구매 혜택 횟수</strong>
+					<p class="cont">당월2회 / 잔여1회</p>
+				</div>
+				<div class="column price">
+					<strong class="title">판매금액</strong>
+					<p class="cont agr">1,192,0000원</p>
+				</div>
+				<div class="column price">
+					<strong class="title">나의 구매 금액</strong>
+					<p class="cont agr">1000000원</p>
+				</div>
+				<div class="column price">
+					<strong class="title">할인 받은 금액</strong>
+					<p class="cont agr fc-lightgreen">1000000원</p>
+				</div>
+			</div>
+			<div id="accor3" class="accordion-wrap">
+				<ul class="table-list" >
+					<li class="row">
+						<div class="column date">
+							<strong class="title">주문번호</strong>
+							<p class="cont">
+								20181022005574<br>
+								2018-10-22
+							</p>
+						</div>
+						<div class="column auto">
+							<strong class="title">제품명</strong>
+							<p class="cont agl">
+								비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">판매금액</strong>
+							<p class="cont agr">
+								1000000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">나의 구매 금액</strong>
+							<p class="cont agr">
+								12,000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">할인 받은 금액</strong>
+							<p class="cont agr fc-lightgreen">
+								12,000원
+							</p>
+						</div>
+					</li>
+					<li class="row">
+						<div class="column date">
+							<strong class="title">주문번호</strong>
+							<p class="cont">
+								20181022005574<br>
+								2018-10-22
+							</p>
+						</div>
+						<div class="column auto">
+							<strong class="title">제품명</strong>
+							<p class="cont agl">
+								비비고 새우가리비멸볶음밥 2인 + 깍두기 볶음밥 2인 + 비비고 왕교자 420gx2 오늘 외 6건
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">판매금액</strong>
+							<p class="cont agr">
+								1000000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">나의 구매 금액</strong>
+							<p class="cont agr">
+								12,000원
+							</p>
+						</div>
+						<div class="column price">
+							<strong class="title">할인 받은 금액</strong>
+							<p class="cont agr fc-lightgreen">
+								12,000원
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</li>
+
+	</ul>
+
+<hr>
+
+	<h2>Form Table</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;div class="table-form"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;Table Caption&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col width="18%"/&gt;
+			&lt;col /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="col"&gt;현재 비밀번호 &lt;i class="required"&gt;*&lt;/i&gt;&lt;/th&gt;
+				&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="col"&gt;새 비밀번호 &lt;i class="required"&gt;*&lt;/i&gt;&lt;/th&gt;
+				&lt;td&gt;&lt;input type="text"&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="table-form" style="margin-top:50px;">
+		<em class="table-comment">* 필수 입력 항목</em>
+		<table>
+			<caption>Table Caption</caption>
+			<colgroup>
+				<col style="width:19%"/>
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="col">select <i class="required">*</i></th>
+					<td>
+						<select style="width:226px;">
+							<option value="">Select Option</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col">default <i class="required">*</i></th>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<th scope="col">column-full <i class="required">*</i></th>
+					<td>
+						<div class="cols">
+							<input type="text" placeholder="column-1">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col">column-full 2 <i class="required">*</i></th>
+					<td>
+						<div class="cols cols-2">
+							<input type="text" placeholder="column-1">
+							<input type="text" placeholder="column-2">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col">column-full 4 <i class="required">*</i></th>
+					<td>
+						<div class="cols cols-4">
+							<input type="text" placeholder="column-1">
+							<input type="text" placeholder="column-2">
+							<input type="text" placeholder="column-3">
+							<input type="text" placeholder="column-4">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col">file</th>
+					<td>
+						<div class="file-list">
+							<input type="file">
+							<input type="file">
+							<input type="file">
+						</div>
+						<p class="sub-text mt10">*  최대 3장까지 10MB 미만의 JPG, JPEG, PNG 포맷만 가능합니다.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<hr>
+
+	<h2>List - No Data</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;ul class="table-list"&gt;
+	&lt;li class="row"&gt;
+		&lt;div class="table-accordion"&gt;
+			&lt;div class="column date"&gt;
+				&lt;strong class="title"&gt;기간&lt;/strong&gt;
+			&lt;/div&gt;
+			&lt;div class="column auto"&gt;
+				&lt;strong class="title"&gt;구매 혜택 횟수&lt;/strong&gt;
+			&lt;/div&gt;
+			&lt;div class="column price"&gt;
+				&lt;strong class="title"&gt;판매금액&lt;/strong&gt;
+			&lt;/div&gt;
+			&lt;div class="column price"&gt;
+				&lt;strong class="title"&gt;나의 구매 금액&lt;/strong&gt;
+			&lt;/div&gt;
+			&lt;div class="column price"&gt;
+				&lt;strong class="title"&gt;할인 받은 금액&lt;/strong&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="nodata"&gt;
+			&lt;div class="inner"&gt;
+				누적 구매 혜택 내역이 없습니다.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="table-col"&gt;
+	&lt;table&gt;
+		&lt;caption&gt;Table Caption&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col width="197px" /&gt;
+			&lt;col width="135px" /&gt;
+			&lt;col /&gt;
+			&lt;col width="130px" /&gt;
+			&lt;col width="265px" /&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th scope="col"&gt;구분&lt;/th&gt;
+			&lt;th scope="col"&gt;일자&lt;/th&gt;
+			&lt;th scope="col"&gt;기간 및 내용&lt;/th&gt;
+			&lt;th scope="col"&gt;결제금액&lt;/th&gt;
+			&lt;th scope="col"&gt;선택&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td colspan="5"&gt;
+				&lt;div class="nodata"&gt;
+					&lt;div class="inner"&gt;
+						누적 구매 혜택 내역이 없습니다.
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+	</code></pre>
+
+	<h3>List Table VIEW</h3>
+	<ul class="table-list">
+		<li class="row">
+			<div class="table-accordion">
+				<div class="column date">
+					<strong class="title">기간</strong>
+				</div>
+				<div class="column auto">
+					<strong class="title">구매 혜택 횟수</strong>
+				</div>
+				<div class="column price">
+					<strong class="title">판매금액</strong>
+				</div>
+				<div class="column price">
+					<strong class="title">나의 구매 금액</strong>
+				</div>
+				<div class="column price">
+					<strong class="title">할인 받은 금액</strong>
+				</div>
+			</div>
+			<div class="nodata">
+				<div class="inner">
+					누적 구매 혜택 내역이 없습니다.
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	<h3>Table VIEW</h3>
+	<div class="table-col">
+		<table>
+			<caption>Table Caption</caption>
+			<colgroup>
+				<col style="width:197px" />
+				<col style="width:135px" />
+				<col />
+				<col style="width:130px" />
+				<col style="width:265px" />
+			</colgroup>
+			<thead>
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">일자</th>
+				<th scope="col">기간 및 내용</th>
+				<th scope="col">결제금액</th>
+				<th scope="col">선택</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td colspan="5">
+					<div class="nodata">
+						<div class="inner">
+							누적 구매 혜택 내역이 없습니다.
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

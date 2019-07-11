@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/common.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+	<script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="header header--sub">
+			<!--
+        * 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+        * /cjom/mobile/include/sub-header.html
+        -->
+		</div>
+		<div id="contents" class="contents">
+			<section class="sub">
+				<!-- section__title-box -->
+				<div class="section__floating-box" data-js="floating">
+					<div data-js="floating__target-parent">
+						<div class="section__title-box" data-js="floating__target">
+							<a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+							<h1 class="section__title">가정의 달 선물 신청</h1>
+						</div>
+					</div>
+				</div>
+				<!-- //section__title-box -->
+
+				<section class="component-container component-container--none-top">
+					<div class="component-header component-header--border component-header--none-horizon">
+						<h1 class="component-header__title">신청자 정보</h1>
+					</div>
+					<dl class="regular-delivery__dl regular-delivery__dl--none-top">
+						<dt class="regular-delivery__dt">
+							주문자
+						</dt>
+						<dd class="regular-delivery__dd">
+							홍길동
+						</dd>
+						<dt class="regular-delivery__dt">
+							소속
+						</dt>
+						<dd class="regular-delivery__dd number">
+							CJ올리브네트웍스
+						</dd>
+					</dl>
+
+					<div class="info-box info-box--bg mt20">
+						<ul class="info-box__list">
+							<li class="info-box__list__item info-box__list__item--type2">선물은 상품 종류에 상관 없이 1인당 4개 까지 신청 가능하며 배송지도 4개 까지 설정 할수 있습니다. (배송지 탭에서 설정 하실 수 있습니다.)</li>
+							<li class="info-box__list__item info-box__list__item--type2">신청하신 선물 중 1개는 회사가 부담해 드리며, 추가 주문건은 익월 개인 급여에서 공제됩니다.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="component-container component-container--none-top component-container--horizon">
+					<div class="component-header component-header--border component-header--none-horizon">
+						<h1 class="component-header__title">배송지 정보</h1>
+					</div>
+					<div class="component-description component-margin__title order-delivery">
+						<div class="order-delivery__header">
+							<span class="box-table__text1">여러곳으로 상품보내기</span>
+							<div class="form-element">
+								<label for="input02" class="form-label blind">배송지 갯수 선택하기</label>
+								<select id="input02" class="form-element__select form-element__select--round" style="width: 70px;">
+									<option>1곳</option>
+									<option>2곳</option>
+									<option>3곳</option>
+									<option>4곳</option>
+									<option>5곳</option>
+									<option>6곳</option>
+								</select>
+							</div>
+						</div>
+						<!-- 배송지 1곳 : 배송지 추가 시 반복 될 영역 -->
+						<div class="order-delivery__place-panel order-delivery__place-panel--none-bottom">
+							<div class="sc-tab-2 order-delivery__location" data-js="tab">
+								<ul class="border-tab">
+									<li class="border-tab__li" data-js="tab__list">
+										<a href="#" class="border-tab__anchor" data-js="tab__anchor">
+											배송지 선택
+										</a>
+									</li>
+									<li class="border-tab__li" data-js="tab__list">
+										<a href="#" class="border-tab__anchor" data-js="tab__anchor">
+											새주소 입력
+										</a>
+									</li>
+								</ul>
+								<div data-js="tab__panel">
+									<div class="order-delivery__info-box">
+										<div class="order-delivery__info-name"><span class="order-delivery__name">김재이</span><span class="order-delivery__info-comment">(기본배송지)</span></div>
+										<div class="order-delivery__info">서울 중고 동호로 330 CJ제일제당 센터 11층</div>
+										<div class="order-delivery__info"><span class="order-delivery__info-phone number">010-1234-1234</span><span class="order-delivery__info-phone number">010-1234-1234</span></div>
+									</div>
+									<div class="order-delivery__comment-box">
+										<div class="form-element">
+											<label for="input03" class="form-label blind">배송 요청사항 선택</label>
+											<select id="input03" class="form-element__select order-delivery__comment">
+												<option>배송 요청사항 선택</option>
+												<option>부재시 경비실에 맡겨주세요.</option>
+												<option>부재시 문앞에 놓아주세요.</option>
+												<option>파손의 위험이 있는 상품이오니, 배송 시 주의해주세요.</option>
+												<option>배송전에 연락주세요.</option>
+												<option>택배함에 넣어주세요.</option>
+												<option>직접입력</option>
+											</select>
+										</div>
+										<!-- 배송 요청사항 선택 : 직접입력 시 노출 -->
+										<div class="form-element" data-js="form-ctrl">
+											<label for="input04" class="form-label blind">배송 요청사항 직접입력</label>
+											<input id="input04" type="text" class="form-element__input"
+													placeholder="한글 최대 30자" data-js="form-ctrl__input" maxlength="30">
+											<button class="form-element__delete" data-js="form-ctrl__delete">
+												<span class="blind">필드 내용 삭제</span>
+											</button>
+										</div>
+									</div>
+									<!-- //배송 요청사항 선택 : 직접입력 시 노출 -->
+									<button data-js="modal__button" data-modal-target="#modalORD102" class="btn btn--shape02 btn--style01">다른배송지 보기</button>
+								</div>
+								<div data-js="tab__panel">
+									<div class="order-delivery__checkbox order-delivery__checkbox--same" data-js="checkbox">
+										<div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+											주문자와 동일
+											<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden"/>
+										</div>
+									</div>
+									<div class="form">
+										<div class="form__row">
+											<label for="label01" class="form-label form-label--block form-label--require">
+												받는분
+											</label>
+											<div class="form-element" data-js="form-ctrl">
+												<input id="label01" type="text" class="form-element__input"
+													data-js="form-ctrl__input" placeholder="한글 최대 30자" maxlength="30">
+												<button class="form-element__delete" data-js="form-ctrl__delete">
+													<span class="blind">필드 내용 삭제</span>
+												</button>
+											</div>
+										</div>
+										<div class="form__row">
+											<label for="label02" class="form-label form-label--block form-label--require">
+												주소
+											</label>
+											<div class="form__address">
+												<div class="form__inner-row">
+													<div class="form__column">
+														<div class="form-element">
+															<input id="label02" type="text" class="form-element__input" title="우편번호" disabled>
+														</div>
+													</div>
+													<div class="form__column">
+														<button class="btn btn--shape02 btn--style05">주소검색</button>
+													</div>
+												</div>
+												<div class="form__inner-row">
+													<div class="form-element">
+														<input type="text" class="form-element__input" title="주소" disabled>
+													</div>
+												</div>
+												<div class="form__inner-row">
+													<div class="form-element">
+														<input type="text" class="form-element__input" title="상세주소">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form__row">
+											<label for="label03" class="form-label form-label--block form-label--require">
+												연락처 1
+											</label>
+											<div class="form__phone">
+												<div class="form__column">
+													<div class="form-element">
+														<select id="label03" class="form-element__select" title="연락처 앞자리">
+															<option>010</option>
+															<option>011</option>
+															<option>016</option>
+														</select>
+													</div>
+												</div>
+												<div class="form__column">
+													<div class="form-element">
+														<input type="number" class="form-element__input" title="연락처 중간자리" maxlength="4">
+													</div>
+												</div>
+												<div class="form__column">
+													<div class="form-element">
+														<input type="number" class="form-element__input" title="연락처 뒷자리" maxlength="4">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form__row">
+											<label for="label04" class="form-label form-label--block">
+												연락처 2
+											</label>
+											<div class="form__phone">
+												<div class="form__column">
+													<div class="form-element">
+														<select id="label04" class="form-element__select" title="연락처 앞자리">
+															<option>02</option>
+															<option>031</option>
+															<option>032</option>
+														</select>
+													</div>
+												</div>
+												<div class="form__column">
+													<div class="form-element">
+														<input type="number" class="form-element__input" title="연락처 중간자리" maxlength="4">
+													</div>
+												</div>
+												<div class="form__column">
+													<div class="form-element">
+														<input type="number" class="form-element__input" title="연락처 뒷자리" maxlength="4">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-delivery__checkbox order-delivery__checkbox--basic" data-js="checkbox">
+											<div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+												기본 배송지로 등록
+												<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden"/>
+											</div>
+										</div>
+										<!-- 배송 요청사항 선택 : 직접입력 시 노출 -->
+										<div class="form__row">
+											<label for="label05" class="form-label blind">
+												배송 요청사항 선택
+											</label>
+											<div class="form__inner-row">
+												<div class="form-element">
+													<select id="label05" class="form-element__select">
+														<option>배송 요청사항 선택</option>
+														<option>부재시 경비실에 맡겨주세요.</option>
+														<option>부재시 문앞에 놓아주세요.</option>
+														<option>파손의 위험이 있는 상품이오니, 배송 시 주의해주세요.</option>
+														<option>배송전에 연락주세요.</option>
+														<option>택배함에 넣어주세요.</option>
+														<option>직접입력</option>
+													</select>
+												</div>
+											</div>
+											<div class="form__inner-row">
+												<label for="label06" class="form-label blind">배송 요청사항 선택</label>
+												<div class="form-element" data-js="form-ctrl">
+													<input id="label06" type="text" class="form-element__input"
+														placeholder="한글 최대 30자" data-js="form-ctrl__input" maxlength="30">
+													<button class="form-element__delete" data-js="form-ctrl__delete">
+														<span class="blind">필드 내용 삭제</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<!-- //배송 요청사항 선택 : 직접입력 시 노출 -->
+									</div>
+								</div>
+							</div>
+							<div class="cart-box">
+								<div class="cart-box__title-box">
+									<div class="cart-box__title-column">
+										<h2 class="cart-box__title bold">가정의 달 선물</h2>
+									</div>
+								</div>
+								<div class="module-cart">
+									<ul class="module-cart__ul">
+										<li class="module-cart__li module-cart__li--soldout">
+											<div class="module-cart__product">
+												<div class="module-cart__image-box">
+													<a href="#" class="module-cart__anchor module-cart__anchor--image">
+														<img class="module-cart__image" src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+														<!-- 일시품절인 경우 -->
+														<span class="module-cart__soldout">일시품절</span>
+														<!-- 일시품절인 경우 -->
+													</a>
+												</div>
+												<div class="module-cart__contents-box">
+													<a href="#" class="module-cart__anchor">
+														<p class="module-cart__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+													</a>
+													<div class="module-cart__price-box">
+														<div class="module-cart__price-inner"></div>
+														<div class="counting-number" data-js="numberCounting">
+															<button class="counting-number__button counting-number__button--minus" data-js="numberCounting__minus">
+																<span class="counting__ico counting__ico--minus"></span>
+																<span class="blind">상품수량 1개 제거</span>
+															</button>
+															<input type="number" class="counting-number__input number" data-js="numberCounting__input" title="수량입력" value="1">
+															<button class="counting-number__button counting-number__button--plus" data-js="numberCounting__plus">
+																<span class="counting__ico counting__ico--plus"></span>
+																<span class="blind">상품수량 1개 추가</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="module-cart__li">
+											<div class="module-cart__product">
+												<div class="module-cart__image-box">
+													<a href="#" class="module-cart__anchor module-cart__anchor--image">
+														<img class="module-cart__image" src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+												</div>
+												<div class="module-cart__contents-box">
+													<a href="#" class="module-cart__anchor">
+														<p class="module-cart__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+													</a>
+													<div class="module-cart__price-box">
+														<div class="module-cart__price-inner"></div>
+														<div class="counting-number" data-js="numberCounting">
+															<button class="counting-number__button counting-number__button--minus" data-js="numberCounting__minus">
+																<span class="counting__ico counting__ico--minus"></span>
+																<span class="blind">상품수량 1개 제거</span>
+															</button>
+															<input type="number" class="counting-number__input number" data-js="numberCounting__input" title="수량입력" value="1">
+															<button class="counting-number__button counting-number__button--plus" data-js="numberCounting__plus">
+																<span class="counting__ico counting__ico--plus"></span>
+																<span class="blind">상품수량 1개 추가</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="module-cart__li">
+											<div class="module-cart__product">
+												<div class="module-cart__image-box">
+													<a href="#" class="module-cart__anchor module-cart__anchor--image">
+														<img class="module-cart__image" src="/cjom/mobile/images/temp/temp-product05.jpg" alt="대체 텍스트">
+													</a>
+												</div>
+												<div class="module-cart__contents-box">
+													<a href="#" class="module-cart__anchor">
+														<p class="module-cart__title">
+															상품명 2줄까지 노출후 말 줄임표 됩니다
+														</p>
+													</a>
+													<div class="module-cart__price-box">
+														<div class="module-cart__price-inner">
+															
+														</div>
+														<div class="counting-number" data-js="numberCounting">
+															<button class="counting-number__button counting-number__button--minus" data-js="numberCounting__minus">
+																<span class="counting__ico counting__ico--minus"></span>
+																<span class="blind">상품수량 1개 제거</span>
+															</button>
+															<input type="number" class="counting-number__input number" data-js="numberCounting__input" title="수량입력" value="1">
+															<button class="counting-number__button counting-number__button--plus" data-js="numberCounting__plus">
+																<span class="counting__ico counting__ico--plus"></span>
+																<span class="blind">상품수량 1개 추가</span>
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- //배송지 1곳 : 배송지 추가 시 반복 될 영역 -->
+					</div>
+				</section>
+
+				<section class="component-container component-container--none-top">
+					<div class="component-header component-header--border component-header--none-horizon">
+						<h1 class="component-header__title">신청자 정보</h1>
+					</div>
+					<dl class="regular-delivery__dl regular-delivery__dl--none-top">
+						<dt class="regular-delivery__dt">
+							총 주문수량
+						</dt>
+						<dd class="regular-delivery__dd">
+							<span class="number">4</span>개 <span class="basic-color2">(선물포함)</span>
+						</dd>
+					</dl>
+					<div class="plus-box mt20">
+						<div class="plus-box__column">
+							<p class="plus-box__title">회사지원(무료)</p>
+							<p class="plus-box__sub"><strong class="number">1</strong>개</p>
+						</div>
+						<div class="plus-box__column">
+							<p class="plus-box__title">급여공제</p>
+							<p class="plus-box__sub"><strong class="number">3</strong>개</p>
+						</div>
+					</div>
+					<span class="form-element__alert">신청하신 상품 1개는 회사가 지원 드리며 추가 건은 익월 개인급여에서 공제됩니다.</span>
+				</section>
+
+				<section class="component-container component-container--none-top">
+					<div class="agree-box agree-box--single">
+							<div class="agree-box__container">
+									<div class="checkbox" data-js="checkbox">
+											<div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+												개인정보 제공 및 위탁 동의(필수)
+												<input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" checked />
+											</div>
+									</div>
+									<div class="info-box info-box--bg mt15">
+											<ul class="info-box__list">
+												<li class="info-box__list__item info-box__list__item--type2 order-agree__terms-info">
+													개인정보 제공 및 위탁 동의
+													<button class="btn info-box__list__item-link" data-js="modal__button" data-modal-target="#modalPRE01">
+															약관보기
+													</button>
+												</li>
+											</ul>
+									</div>
+							</div>
+					</div>
+				</section>
+
+
+				<div class="sticky-bottom">
+					<a href="#" class="btn btn--shape04 btn--style01">신청하기</a>
+				</div>
+			</section>
+		</div>
+		<div class="footer">
+			<!--
+            * footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+            * /cjom/mobile/include/footer.html
+            -->
+		</div>
+	</div>
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

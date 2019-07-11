@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import "reset.css";
+@import "layout.css";
+@import "library.css";
+@import "common.css";
+
+/* 오늘 뭐 먹지 */
+.today-what-eat .visual {height:530px;background:#0f5333 url('/cjom/web/images/contents/today_what/bg_visual.jpg') no-repeat 50% 0;}
+.today-what-eat .hach {padding-top:430px;text-align:center;}
+.today-what-eat .hach li {display:inline-block;margin:0 5px 10px;padding:0 20px;height:35px;line-height:33px;font-size:16px;color:#fff;border:1px solid #fff; box-sizing:border-box; border-radius:20px;}
+.today-what-eat .hach li a {font-size:16px;color:#fff;}
+
+.today-eat {border-top:1px solid #ccc;padding-bottom:60px;}
+.today-eat:first-child {border-top:0;}
+.today-eat h3 {height:160px;padding-top:60px;text-align:center;}
+.today-eat h3 .day {display:block;font-size:40px;line-height:42px;font-weight:normal;}
+.today-eat h3 .title {display:block;margin-top:20px;font-size:50px;line-height:56px;}
+.today-eat h3 .title em {color:#e60060;}
+.today-eat .main-thumb {position:relative;text-align:center;height:477px;background:url('/cjom/web/images/common/no_image.jpg') no-repeat 50%;}
+.today-eat .main-thumb img {width:1200px;height:477px;}
+.today-eat .main-thumb .label {display:block;position:absolute;left:50px;top:10px;width:153px;height:155px;text-indent:-999999em;background:url('/cjom/web/images/contents/today_what/label_sale.png') no-repeat 0 0;}
+.today-eat .coupon-slider {overflow:hidden;height:340px;margin:25px 40px;padding:0 85px;}
+.today-eat .coupon-slider .coupon-box {width:250px !important;margin-left:8px;}
+.today-eat .coupon-slider .coupon-box .product-item .thumb {width:250px;height:250px;}
+.today-eat .coupon-slider .coupon-box .product-item .thumb img {width:250px;height:250px;}
+.today-eat .btn-buy {display:block;width:360px;height:78px;line-height:75px;margin:15px auto 0;border-radius:40px;}
+.today-eat .btn-buy span {font-size:30px;}
+
+.today-eat .coupon-slider .slick-prev,
+.today-eat .coupon-slider .slick-next {z-index:1; position:absolute; top:50%; width:40px; height:70px; font-size:0; background:url('/cjom/web/images/common/icon-slider3.png') no-repeat -15% 0; border-radius:0; transform:translateY(-90%)}
+.today-eat .coupon-slider .slick-prev {left:10px;}
+.today-eat .coupon-slider .slick-next {right:10px;background-position:115% 0;}
+.today-eat .coupon-slider .slick-disabled{background-position-y:-70px;}
+.today-eat .coupon-slider .slick-util-group {position:static;}

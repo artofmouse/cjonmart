@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+	<style>
+		#btnTop {
+			position: static;
+			margin-left: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Top Button</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;footer id="footer"&gt;
+
+	//footer 안에 위치
+	&lt;div id="btnTop"&gt;
+		&lt;a href="#header" title="상단으로 이동"&gt;Top&lt;/a&gt;
+	&lt;/div&gt;
+
+&lt;/footer&gt;</code></pre>
+	<h3>VIEW</h3>
+
+
+			<!-- 미니배너 -->
+		<div class="wing-bnr-wrap mini-banner">
+			<div class="wing-bnr" data-options='{}'>
+				<div data-slider='{"count":true, "dots":false}'>
+					<div class="banner-item"><a href="#"><img src="/cjom/web/images/temp/@mini_banner.jpg" alt="기프트 햇바컵반 생일패키지"></a></div>
+					<div class="banner-item"><a href="#"><img src="/cjom/web/images/temp/@mini_banner.jpg" alt="기프트 햇바컵반 생일패키지"></a></div>
+					<div class="banner-item"><a href="#"><img src="/cjom/web/images/temp/@mini_banner.jpg" alt="기프트 햇바컵반 생일패키지"></a></div>
+				</div>
+			</div>
+		</div>
+		<!-- //미니배너 -->
+
+		<!-- 퀵배너
+		* 접힌상태일 때 클래스 : minimize
+		* 펼친상태일 때 클래스 : maximize
+		-->
+		<div class="wing-bnr-wrap quick-banner">
+			<div class="wing-bnr minimize" data-options='{}'>
+				<a href="#" class="customer-service"><span>고객상담톡</span></a>
+				<a href="#" class="btn-cart-count">장바구니
+					<span class="count">99</span>
+					<span class="blind">개 담김</span>
+				</a>
+				<div class="recent-product">
+					<button type="button" class="btn-spread">최근 본 정보</button>
+					<h3 class="recent-title">최근 본 쇼핑정보 <strong class="number">3</strong></h3>
+					<div class="recent-filter">
+						총 <strong class="fc-lightgreen">10</strong>개
+						<div class="right-item">
+							<button type="button" class="filter">상품만보기</button>
+							<button type="button" class="filter">전체보기</button>
+						</div>
+					</div>
+					<div class="product-edit">
+						<label>
+							<input type="checkbox" title="전체선택">
+							전체선택
+						</label>
+						<button type="button" class="btn-delete">선택삭제</button>
+					</div>
+					<div class="product-list-scroll">
+						<div class="product-list-row-sm" data-slider='{"accessibility":false, "rows":3 , "count":true, "arrows":true, "dots":false}'>
+							<div class="product-item">
+								<div class="inner">
+									<input type="checkbox">
+									<a href="#">
+										<div class="thumb">
+											<img src="/cjom/web/images/temp/@temp_product.jpg" alt="햇반">
+										</div>
+										<p class="title">컵반,옐로우커리 덮밥 280x3개
+											최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄
+										</p>
+										<div class="price-info">
+											<span class="price"><strong class="num">123,000</strong>원</span>
+										</div>
+									</a>
+									<div class="btn-box">
+										<div class="car-ab"><button type="button" class="btn-white-xs btn-cart"><span>장바구니</span></button></div>
+										<button type="button" class="item-delete">삭제</button>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="inner">
+									<input type="checkbox">
+									<a href="#">
+										<div class="thumb">
+											<img src="/cjom/web/images/temp/@temp_product.jpg" alt="햇반">
+										</div>
+										<p class="title">컵반,옐로우커리 덮밥 280x3개 최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄
+										</p>
+										<div class="price-info">
+											<span class="price"><strong class="num">123,000</strong>원</span>
+										</div>
+									</a>
+									<div class="btn-box">
+										<div class="car-ab"><button type="button" class="btn-white-xs btn-cart"><span>장바구니</span></button></div>
+										<button type="button" class="item-delete">삭제</button>
+									</div>
+								</div>
+							</div>
+							<div class="event-item">
+								<div class="inner">
+									<input type="checkbox">
+									<a href="#">
+										<p class="title"><em class="category">[이벤트]</em> 미우새 먹방 따라잡기미우새 먹방 따라잡기미우새따라잡기미우새 먹방 따라잡기미우새 먹방 따라잡기미우새 먹방 따라잡기</p>
+										<div class="datetime">2018-10-10 ~ 2019-10-10</div>
+									</a>
+									<button type="button" class="item-delete">삭제</button>
+								</div>
+							</div>
+							<div class="event-item">
+								<div class="inner">
+									<input type="checkbox">
+									<a href="#">
+										<p class="title"><em class="category">[이벤트]</em> 미우새 먹방 따라잡기</p>
+										<div class="datetime">2018-10-10 ~ 2019-10-10</div>
+									</a>
+									<button type="button" class="item-delete">삭제</button>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="inner">
+									<input type="checkbox">
+									<a href="#">
+										<div class="thumb">
+											<img src="/cjom/web/images/temp/@temp_product.jpg" alt="햇반">
+										</div>
+										<p class="title">컵반,옐로우커리 덮밥 280x3개
+											최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄
+										</p>
+										<div class="price-info">
+											<span class="price"><strong class="num">123,000</strong>원</span>
+										</div>
+									</a>
+									<div class="btn-box">
+										<div class="car-ab"><button type="button" class="btn-white-xs btn-cart"><span>장바구니</span></button></div>
+										<button type="button" class="item-delete">삭제</button>
+									</div>
+								</div>
+							</div>
+							<div class="product-item">
+								<div class="inner">
+									<input type="checkbox">
+									<a href="#">
+										<div class="thumb">
+											<img src="/cjom/web/images/temp/@temp_product.jpg" alt="햇반">
+										</div>
+										<p class="title">컵반,옐로우커리 덮밥 280x3개
+											최대2줄최대2줄최대2줄최대2줄최대2줄최대2줄
+										</p>
+										<div class="price-info">
+											<span class="price"><strong class="num">123,000</strong>원</span>
+										</div>
+									</a>
+									<div class="btn-box">
+										<div class="car-ab"><button type="button" class="btn-white-xs btn-cart"><span>장바구니</span></button></div>
+										<button type="button" class="item-delete">삭제</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn-fold"></button>
+				</div>
+				<a href="#" class="top">TOP</a>
+
+			</div>
+		</div>
+		<!-- //퀵배너 -->
+
+		<!-- 챗봇 레이어 팝업 -->
+		<article class="lay_chatbot_wrap">
+			<div class="lay_chatbot_frame">
+				<section class="chatbot_conts">
+					<iframe src="https://dev-cjthemarket.oli-va.com/"></iframe>
+				</section>
+				<div class="close">
+					<button type="button" class="btn_chatbot_close"><span class="hide">닫기</span></button>
+				</div>
+			</div>
+			<article class="lay_wrap modal_chatbot" style="display:none;">
+				<h1 class="hide"><span class="blind">챗봇 창 닫기</span></h1>
+				<section class="lay_conts">
+					<div class="laypop_cont">
+						<p>챗봇 창을 닫으시면, <br>기존 채팅 내용이 초기화됩니다.<br>챗봇 창을 닫으시겠습니까?</p>
+					</div>
+					<div class="btn_wrap laypop">
+						<button type="button" class="btn-default-sm ui_closeCancel">취소</button>
+						<button type="button" class="btn-white-sm ui_closeConfirm">확인</button>
+					</div>
+				</section>
+			</article>
+			<div class="dimmed" style="display:none;"></div>
+		</article>
+		<!-- //챗봇 레이어 팝업 -->
+	<div id="footer">
+
+	</div>
+
+	<a href="topButton_test.html" target="_blank" style="display:block; margin-top:30px; font-size:14px;">Test page 보기</a>
+
+	<hr>
+
+
+</div>
+
+</body>
+</html>

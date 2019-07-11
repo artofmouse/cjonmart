@@ -1,0 +1,580 @@
+@charset 'utf-8';
+
+/* COMMON */
+.main__section {
+    margin-top: 10px;
+    padding: 0 15px;
+    background-color: #fff;
+}
+
+.main__section-header {
+    padding: 20px 0 15px;
+}
+
+.main__section-header--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__section-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main__section--none-horizon {
+    padding: 0;
+}
+
+.main__section--none-horizon .main__section-header {
+    padding: 20px 15px 15px;
+}
+
+.main__section .module-product--scroll .module-product__li {
+    padding: 0 15px 0 0;
+}
+
+.main__section-contents {
+    padding-bottom: 20px;
+}
+
+.main__more-button {
+    width: 100%;
+    height: 41px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 14px;/* 2019-07-04 메인 핫딜더보기 폰트사이즈수정 */
+    line-height: 20px;
+    color: #0076d1;
+}
+
+.main__more-button:after {
+    margin-left: 5px;
+    width: 6px;
+    height: 9px;
+    background: url(/cjom/mobile/images/icon/ico-main-more.png) no-repeat 0 0;
+    background-size: 6px auto;
+    display: block;
+    content: '';
+}
+
+.main__more-button--link {
+    width: auto;
+    height: auto;
+    border-top: none;
+    background: none;
+    font-size: 13px;/* 2019-07-04 메인 더보기 폰트사이즈수정 */
+}
+
+.main__menu-list {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.main__menu-list ~ .module-container,
+.main__brand-menu ~ .module-container {
+    margin-top: 25px;
+}
+
+.main__menu-list__anchor {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #555;
+}
+
+.main__menu-list__anchor:before {
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+    border: 1px solid #eee;
+    display: block;
+    box-sizing: border-box;
+    content:'';
+}
+
+.main__menu-list__icon {
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #eee;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    background-color: #fff;
+    display: block;
+    box-sizing: border-box;
+}
+
+.main__menu-list__anchor.is-active {
+    font-weight: 700;
+    color: #000;
+}
+
+.main__menu-list__anchor.is-active:before {
+    border:1px solid #00893d;
+}
+
+
+/* MAIN VISUAL */
+
+.main__visual {
+    position: relative;
+    overflow: hidden;
+}
+
+.main__visual-item {
+    position: relative;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.main__visual-item img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main__visual-contents {
+    padding: 30px 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main__visual-title {
+    color: #025232;
+}
+
+.main__visual-title-text-regular {
+    line-height: 20px;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.main__visual-title-text-bold {
+    margin-top: 8px;
+    display: block;
+    font-size: 26px;
+    line-height: 20px;
+}
+
+.main__visual-text {
+    margin-top: 18px;
+    font-size: 19px;
+    color: #ac8b4d;
+}
+
+.main__visual-link {
+    margin-top: 20px;
+    width: 82.5px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ad8c4d;
+    border-radius: 12.5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    color: #ad8c4d;
+}
+/* 2019-07-04 메인 KV 넘버링수정 시작 */
+.main__visual-status {
+    padding-left: 15px;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-family: 'roboto';
+    color: #fff;
+}
+/* 2019-07-04 메인 KV 넘버링수정 끝 */
+.main__visual-status__current {}
+
+.main__visual-status__total {
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main__visual-status__total em {
+    font-style: normal;
+}
+/* 2019-07-04 메인 KV 넘버링수정 시작 */
+.main__visual-status__all {
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: url(/cjom/mobile/images/icon/ico-main-slide-all.png) no-repeat center;
+    background-size: 10px;
+    position: absolute;
+}
+/* 2019-07-04 메인 KV 넘버링수정 끝 */
+
+/* // MAIN VISUAL */
+
+
+/* MAIN LINE BANNER */
+
+.main__banner {
+    display: block;
+}
+
+.main__banner--divider {
+    margin: 10px 0;
+}
+
+
+/* MAIN SHORTCUTS */
+
+.main__shortcuts {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__shortcuts__li {
+    width: 20%;
+    border-left: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.main__shortcuts__li:first-child {
+    border-left-color: transparent;
+}
+
+.main__shortcuts__a {
+    padding-bottom: 5px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.main__shortcuts__a:before {
+    width: 50px;
+    height: 50px;
+    background: url(/cjom/mobile/images/icon/ico-main-shortcuts.png) no-repeat 0 0;
+    background-size: auto 50px;
+    display: block;
+    content: '';
+}
+
+.main__shortcuts__a--type2:before {
+    background-position: -50px 0;
+}
+
+.main__shortcuts__a--type3:before {
+    background-position: -100px 0;
+}
+
+.main__shortcuts__a--type4:before {
+    background-position: -150px 0;
+}
+
+.main__shortcuts__a--type5:before {
+    background-position: -200px 0;
+}
+
+
+/* MAIN HOTDEAL */
+
+.main__timer {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    color: #00893d;
+}
+
+.main__timer-colon {
+    padding: 0 9px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.main__timer-number {
+    font-size: 21px;
+    font-family: inherit;
+}
+
+.main__section-header--hotdeal {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    text-align: center;
+}
+
+.main__section-header--hotdeal .main__section-title {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.main__section .module-product--column {
+    margin: 0 -15px;
+}
+
+
+
+
+
+/* 플레이쿡 */
+
+.main__play-cook .video-box,
+.main__play-cook .subtitles-toggle {
+    margin: 0;
+}
+
+.main__play-cook-image-box {
+    position: relative;
+}
+
+.main__play-cook-header {
+    padding: 11px 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__play-cook-title {
+    width: calc( 100% - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 44px;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.main__play-cook-share {
+    width: 20px;
+    height: 20px;
+    background: url(/cjom/mobile/images/icon/ico-share-40x40.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+.main__play-cook .module-product--list .module-product__li {
+    padding: 15px 0;
+}
+
+.main__play-cook .module-product--list .module-product__cart {
+    right: 0;
+}
+
+
+/* 쿡킷 */
+
+.main__cookit .module-product--list .module-product__li {
+    padding: 15px 0;
+}
+
+.main__cookit .module-product--list .module-product__cart {
+    right: 0;
+}
+
+.main__cookit .module-product--list .component-recipe {
+    margin-top: 6px;
+}
+
+/* 건강솔루션 */
+.main__menu-list--health .main__menu-list__anchor:before {
+    background-image: url(/cjom/mobile/images/icon/ico-main-health.png);
+}
+.main__menu-list--health .main__menu-list__anchor:nth-child(2):before {
+    background-position: -50px 0;
+}
+.main__menu-list--health .main__menu-list__anchor:nth-child(3):before {
+    background-position: -100px 0;
+}
+.main__menu-list--health .main__menu-list__anchor:nth-child(4):before {
+    background-position: -150px 0;
+}
+
+
+/* 브랜드 */
+
+.main__brand .scroll-x__item {
+    text-align: center;
+}
+
+.main__brand .main__menu-list__icon {
+    margin: 0 auto 10px;
+}
+.main__brand .main__menu-list__anchor.is-active .main__menu-list__icon {
+    border-color: #00893d;
+}
+.main__brand .main__menu-list__anchor:before {
+    display: none;
+}
+
+.main__brand-menu {
+    overflow: hidden;
+}
+
+.main__brand-menu .main__menu-list__anchor {
+    width: 65px;
+}
+
+
+/* 추천테마 */
+
+.main__section .main__theme .module-product--scroll .module-product__li {
+    padding: 15px 15px 20px 0;
+}
+
+
+/* 선물하기 */
+
+.main__gift {}
+
+.main__gift-shortcuts {
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__gift-shortcuts__anchor {
+    padding: 8px 0;
+    width: calc( 100% / 3);
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main__gift-shortcuts__anchor:nth-child(1),
+.main__gift-shortcuts__anchor:nth-child(4) {
+    border-left-color: transparent;
+}
+
+.main__gift-shortcuts__anchor:nth-child(1),
+.main__gift-shortcuts__anchor:nth-child(2),
+.main__gift-shortcuts__anchor:nth-child(3) {
+    border-top-color: transparent;
+}
+
+.main__gift-shortcuts__icon {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-position: center;
+    display: block;
+}
+
+
+/* 쿠폰혜택 */
+.main-coupon__anchor {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-coupon__anchor:first-child {
+    padding-top: 0;
+}
+
+.main-coupon__anchor~.main-coupon__anchor {
+    border-top: 1px solid #eee
+}
+
+.main-coupon__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-size: 60px;
+    display: block;
+}
+
+.main-coupon__dl {
+    margin-left: 10px;
+}
+
+.main-coupon__dt {
+    color: #00893d;
+}
+
+.main-coupon__dt,
+.main-coupon__dd {
+    line-height: 20px;
+}
+
+
+/* 공지사항 */
+
+.main-notice__anchor {
+    padding: 15px 30px 15px 10px;
+    display: block;
+    border-bottom: 1px solid #eee;
+    background: url(/cjom/mobile/images/icon/ico-all-menus-2depth-icon.png) no-repeat right center;
+    background-size: 20px;
+}
+
+.main-notice__anchor:first-child {
+    border-top: 1px solid #aaa;/* 2019-07-04 메인 공지사항 라인컬러수정 */
+}
+
+.main-notice__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    max-height: 18px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.main-kv-list {
+    margin-bottom: -30px;
+}
+.main-kv-list__li{
+    margin:10px 0;
+}
+.main-kv-list__li:last-child{
+    margin:10px 0 0 0;
+}
+.main-kv-list__anchor {
+    display: block;
+}
+.main__section-contents--none-bottom {
+    padding-bottom: 0;
+}
+/* 2019-07-04 메인 KV 넘버링수정 시작 */
+.swiper-pagination{width:30px;height:30px;bottom:0;right:0px;line-height:30px;vertical-align:middle;color:#d0d0d0!important;position: absolute;z-index:102;padding-left:8px;font-size:14px;}
+.swiper-pagination-current{color:#fff;}
+/* 2019-07-04 메인 KV 넘버링수정 끝 */

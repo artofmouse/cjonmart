@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Datepicker</h1>
+	
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" data-class="datepicker" data-calendar='{"setDate":"2019-12-25", "minDate":"2019-12-02","maxDate":"2019-12-27"}' id="setDateTest" data-disabled-date='["2019-12-12","2019-12-14","2019-12-16"]' placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요."/&gt;</code></pre>
+	<pre><code class="js">$("#setDateTest").datepicker('setDate', "2019-12-07"); // 날짜 설정
+$("#setDateTest").datepicker('option', 'minDate', "2011-12-07"); // 최소날짜 설정
+$("#setDateTest").datepicker('option', 'maxDate', "2011-12-07"); // 최대날짜 설정
+$("#setDateTest").datepicker("option", "disabled", true); // datepicker disable
+$("#setDateTest").datepicker("option", "disabled", false); // datepicker enabled</code></pre>
+
+	<h3>HTML</h3>
+	<pre><code class="js">$("#setDateTest").on("beforeShow", function(){
+	console.log('beforeShow');
+})
+$("#setDateTest").on("afterAdjustDate", function(){
+	console.log('afterAdjustDate');
+})
+$("#setDateTest").on("onSelect", function(){
+	console.log('onSelect');
+})</code></pre>
+	
+	<h3>VIEW</h3>
+
+	<input type="text" data-class="datepicker" data-calendar='{"setDate":"2019-12-25", "minDate":"2019-12-02","maxDate":"2019-12-27"}' id="setDateTest" data-disabled-date='["2019-12-12","2019-12-14","2019-12-16"]' placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요."/>
+	
+	<br>
+	<br>
+
+	<button type="button" class="btn-default-sm" onclick='$("#setDateTest").datepicker("setDate", "2019-12-07")'>setDate</button>
+	<button type="button" class="btn-default-sm" onclick='$("#setDateTest").datepicker("option", "minDate", "2019-12-05")'>minDate</button>
+	<button type="button" class="btn-default-sm" onclick='$("#setDateTest").datepicker("option", "maxDate", "2019-12-09")'>maxDate</button>
+	<button type="button" class="btn-default-sm" onclick='$("#setDateTest").attr("data-disabled-date", "[2019-12-06, 2019-12-07]" )'>disabledDateSet</button>
+	
+	<div style="margin-top:5px;">
+		<button type="button" class="btn-default-sm" onclick='$("#setDateTest").datepicker("option", "disabled", true);'>datepicker disabled</button>
+		<button type="button" class="btn-default-sm" onclick='$("#setDateTest").datepicker("option", "disabled", false);'>datepicker enabled</button>
+	</div>
+	
+	<h2>Button Type</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;span class="datepicker-btn"&gt;
+	&lt;input type="date" data-calendar placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요." readonly&gt;
+	&lt;button type="button" class="btn-default-sm"&gt;날짜 선택&lt;/button&gt;
+&lt;/span&gt;</code></pre>
+	<h3>VIEW</h3>
+	<span class="datepicker-btn">
+		<input type="date" data-calendar disabled placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요." readonly>
+		<button type="button" class="btn-default-sm">날짜 선택</button>
+	</span>
+
+	<h2>Option (Today)</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" data-class="datepicker" data-calendar='{"showButtonPanel":true}' placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요."/&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" data-class="datepicker" data-select-check data-calendar='{"showButtonPanel":true}' placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요."/>
+	<input type="text" data-class="datepicker" data-select-check="!" data-calendar='{"showButtonPanel":true}' placeholder="2019-01-01" title="날짜를 선택 또는 예시대로 입력해주세요."/>
+
+	<hr>
+
+	<h2>From To</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" data-class="datepicker" data-calendar='{"from":"ex1", "setDate":"2019-12-25", "minDate":"2019-12-05", "maxDate":"2019-12-27"}' placeholder="2019-01-01" title="기간조회 시작일 선택"/&gt;
+&lt;span class="dash"&gt;&lt;/span&gt;
+&lt;input type="text" data-class="datepicker" data-calendar='{"to":"ex1", "setDate":"2019-12-25", "minDate":"2019-12-05", "maxDate":"2019-12-27"}' placeholder="2019-01-01" title="기간조회 종료일 선택"&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;input type="text" data-class="datepicker" data-calendar='{"from":"ex2"}' placeholder="2019-01-01"/&gt;
+&lt;span class="dash"&gt;&lt;/span&gt;
+&lt;input type="text" data-class="datepicker" data-calendar='{"to":"ex2"}' placeholder="2019-01-01"/&gt;</code></pre>
+
+	<h3>VIEW</h3>
+
+
+	<input type="text" data-class="datepicker" data-calendar='{"from":"ex1", "setDate":"2019-12-25", "minDate":"2019-12-05", "maxDate":"2019-12-27"}' placeholder="2019-01-01" title="기간조회 시작일 선택"/>
+	<span class="dash"></span>
+	<input type="text" data-class="datepicker" data-calendar='{"to":"ex1", "setDate":"2019-12-25", "minDate":"2019-12-05", "maxDate":"2019-12-27"}' placeholder="2019-01-01" title="기간조회 종료일 선택"/>
+	<br>
+	<br>
+	<input type="text" data-class="datepicker" data-calendar='{"from":"ex2", "minDate":"-1m", "maxDate":"0"}' placeholder="2019-01-01"/>
+	<span class="dash"></span>
+	<input type="text" data-class="datepicker" data-calendar='{"to":"ex2", "minDate":"-1m", "maxDate":"0"}' placeholder="2019-01-01"/>
+
+</div>
+</body>
+</html>

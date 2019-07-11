@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css"/>
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+</head>
+<body>
+<style>
+	table {max-width:1280px}
+	td {border:1px solid red;}
+</style>
+<table>
+	<colgroup>
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:10%">
+		<col style="width:auto">
+	</colgroup>
+	<tbody>
+	<tr>
+		<td colspan="5">
+			구분
+		</td>
+		<td colspan="2">
+			개인정보 수집항목
+		</td>
+		<td>
+			이용목적
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="15">
+			CJ더 마켓
+		</td>
+		<td colspan="3">
+			회원가입
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 생년월일, 성별, 휴대전화번호, 아이디, 비밀번호, 이메일, 전화번호, 개인식별정보(CI), 회원번호, CJONE 회원등급
+		</td>
+		<td>
+			회원가입 및 고객식별, 고지사항 전달 및 불만처리 등을 위한 의사소통 경로 확보
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			프라임 회원가입
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			회원-이름, 연락처, 이메일<br> 배송지-이름, 주소, 연락처1
+		</td>
+		<td>
+			회원가입/고객식별, 가입선물 배송
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			이벤트 참여
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 휴대전화번호, 전화번호
+		</td>
+		<td>
+			이벤트 응모결과 안내, 경품 배송 <br> ※ 경품 수령 시 제세공과금이 발생하는 경우 소득세법에 따라 고객님의 주민등록번호, 계좌번호, 배송지주소 정보를 추가로 수집 및 이용 할 수 있습니다.
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			주문배송
+		</td>
+		<td>
+			회원
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 주소, 연락처1
+		</td>
+		<td rowspan="2">
+			물품 배송 및 A/S, 불만처리
+		</td>
+	</tr>
+	<tr>
+		<td height="32">
+			비회원
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			주문자이름, 연락처, 이메일, 주문비밀번호,받는 분 이름, 주소, 연락처1
+		</td>
+	</tr>
+	<tr>
+		<td height="22">
+			결제
+		</td>
+		<td>
+			대금 결제
+		</td>
+		<td>
+			OK캐시백
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			카드번호
+		</td>
+		<td>
+			OK캐시백으로 결제
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			대량견적신청
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 휴대전화번호, 이메일
+		</td>
+		<td>
+			대용량 상품 대량 구매 시 견적 회신
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			CJ THE MARKET 기프트 카드
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			카드번호, 스크레치번호
+		</td>
+		<td>
+			CJ THE MARKET 기프트 카드 사용
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			선물하기
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			받는 분 성함, 휴대전화번호
+		</td>
+		<td>
+			선물 메시지 발송 및 수락 안내
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="2">
+			선물받기
+		</td>
+		<td rowspan="2">
+			필수
+		</td>
+		<td>
+			회원
+		</td>
+		<td>
+			이름, 주소, 연락처1
+		</td>
+		<td rowspan="2">
+			선물 수락 승인 및 배송
+		</td>
+	</tr>
+	<tr>
+		<td height="22">
+			비회원
+		</td>
+		<td>
+			이름, 주소, 연락처1
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			정기배송
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			정기결제 고유값
+		</td>
+		<td>
+			정기배송 상품 결제
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			앱 설치 주소 받기
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			휴대전화번호
+		</td>
+		<td>
+			앱 설치주소 문자 메시지 전송
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			재입고 알림 신청
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이메일
+		</td>
+		<td>
+			재입고 알림 받기
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			1:1문의
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이메일, 휴대전화번호
+		</td>
+		<td>
+			1:1 문의 상담 서비스 제공
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="4">
+			쿡킷
+		</td>
+		<td colspan="3">
+			회원가입/로그인
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 아이디, 휴대전화번호
+		</td>
+		<td>
+			회원가입 및 고객식별
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			회원/비회원 주문 및 배송정보
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 휴대전화번호, 주소
+		</td>
+		<td>
+			물품 배송 및 A/S, 불만처리
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			본인확인
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 생년월일, 휴대전화번호, 본인확인값
+		</td>
+		<td>
+			주문자 본인확인,부정이용 방지
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			회원 이벤트
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 휴대전화번호, 전화번호
+		</td>
+		<td>
+			이벤트 응모결과 안내, 경품 배송, 설문 참여
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="5">
+			텔레마케팅
+		</td>
+		<td colspan="3">
+			회원가입
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			휴대전화번호,전화번호,이름,주소
+		</td>
+		<td>
+			본인 확인 및 고객식별
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			배송정보
+		</td>
+		<td>
+			ARS/상담원
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			배송지 주소, 연락처
+		</td>
+		<td>
+			물품 배송 및 A/S, 불만처리
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			결제정보
+		</td>
+		<td>
+			무통장입금
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			휴대전화번호, 입금자명
+		</td>
+		<td rowspan="2">
+			상품 구매 결제
+		</td>
+	</tr>
+	<tr>
+		<td height="32">
+			신용카드
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			카드번호, 소유자명
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			상담예약
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 핸드폰번호,전화번호
+		</td>
+		<td>
+			상담예약 업무 처리
+		</td>
+	</tr>
+	<tr>
+		<td height="48">
+			CJ패밀리클럽
+		</td>
+		<td colspan="3">
+			주부평가단 운영
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름,주소,전화번호,핸드폰,이메일
+		</td>
+		<td>
+			합격자 선정 및 모임안내
+		</td>
+	</tr>
+	<tr>
+		<td height="64">
+			IR서비스
+		</td>
+		<td colspan="3">
+			IR 미팅 및 질의 답변, 메일링 서비스
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름,휴대전화번호,전화번호,주소,이메일
+		</td>
+		<td>
+			IR미팅 서비스, IR문의사항 안내, IR메일링서비스 신청자 확인 및 관리
+		</td>
+	</tr>
+	<tr>
+		<td height="32">
+			외식매장운영
+		</td>
+		<td colspan="3">
+			방문예약 서비스
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름,휴대전화번호
+		</td>
+		<td>
+			외식매장 방문예약 고객 서비스 이행 및 업무 처리
+		</td>
+	</tr>
+	<tr>
+		<td height="48">
+			제일제당홈페이지
+		</td>
+		<td colspan="3">
+			이벤트
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름,휴대전화번호, 이메일
+		</td>
+		<td>
+			이벤트 참여
+		</td>
+	</tr>
+	<tr>
+		<td height="64">
+			CJ블로썸 캠퍼스투어
+		</td>
+		<td colspan="3">
+			투어 예약 및 교육 신청
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 휴대전화 번호, 이메일, 주소
+		</td>
+		<td>
+			투어 참여자 선정 및 안내
+		</td>
+	</tr>
+	<tr>
+		<td height="48">
+			CJ더키친쿠킹클래스
+		</td>
+		<td colspan="3">
+			쿠킹클래스 운영
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 휴대폰 번호, 주소,
+		</td>
+		<td>
+			쿠킹클래스 참여자 선정
+		</td>
+	</tr>
+	<tr>
+		<td height="48">
+			대리점 모집
+		</td>
+		<td colspan="3">
+			대리점 모집
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			성명, 휴대폰번호, 이메일
+		</td>
+		<td>
+			대리점 개설신청 희망자 상담
+		</td>
+	</tr>
+	<tr>
+		<td height="32">
+			다시다마일리지
+		</td>
+		<td colspan="3">
+			마일리지 적립
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			성명, 휴대폰번호, ID
+		</td>
+		<td>
+			다시다 마일리지 CJ ONE 적립 목적
+		</td>
+	</tr>
+	<tr>
+		<td height="48">
+			고객상담
+		</td>
+		<td colspan="3">
+			문의사항 접수
+		</td>
+		<td>
+			필수
+		</td>
+		<td colspan="2">
+			이름, 이메일, 전화번호
+		</td>
+		<td>
+			문의접수 및 결과 회신, 서비스 만족도 조사 진행
+		</td>
+	</tr>
+	</tbody>
+</table>
+</body>
+</html>

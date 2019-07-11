@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/***** font *****/
+/* 2019-07-08 웹폰트삭제 */
+ /* @font-face {
+	font-family:'Noto Sans CJK KR';
+	src: url(/cjom/mobile/font/NotoSansKR-Regular.eot);
+	src:
+		local(※),
+		url(/cjom/mobile/font/NotoSansKR-Regular.woff) format('woff'),
+		url(/cjom/mobile/font/NotoSansKR-Regular.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family:'Noto Sans CJK KR';
+	src: url(/cjom/mobile/font/NotoSansKR-Medium.eot);
+	src:
+		local(※),
+		url(/cjom/mobile/font/NotoSansKR-Medium.woff) format('woff'),
+		url(/cjom/mobile/font/NotoSansKR-Medium.ttf) format('truetype');
+	font-style:normal;
+	font-weight:500;  
+}
+@font-face {
+	font-family:'Noto Sans CJK KR';
+	src: url(/cjom/mobile/font/NotoSansKR-Bold.eot);
+	src:
+		local(※),
+		url(/cjom/mobile/font/NotoSansKR-Bold.woff) format('woff'),
+		url(/cjom/mobile/font/NotoSansKR-Bold.ttf) format('truetype');
+	font-style:normal;
+	font-weight:700;
+} */
+
+@font-face {
+	font-family:'roboto';
+	src: url(/cjom/mobile/font/Roboto-Regular.eot);
+	src:
+		local(※),
+    	url(/cjom/mobile/font/Roboto-Regular.woff) format('woff'), /* 모던 브라우저 */
+		url(/cjom/mobile/font/Roboto-Regular.ttf) format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family:'roboto';
+	src: url(/cjom/mobile/font/Roboto-Medium.eot);
+	src:
+		local(※),
+		url(/cjom/mobile/font/Roboto-Medium.woff) format('woff'),
+		url(/cjom/mobile/font/Roboto-Medium.ttf) format('truetype');
+	font-style:normal;
+	font-weight:400; 
+}
+@font-face {
+	font-family:'roboto';
+	src: url(/cjom/mobile/font/Roboto-Bold.eot);
+	src:
+		local(※),
+		url(/cjom/mobile/font/Roboto-Bold.woff) format('woff'),
+		url(/cjom/mobile/font/Roboto-Bold.ttf) format('truetype');
+	font-style:normal;
+	font-weight:500;
+}

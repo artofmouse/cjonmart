@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>CJ제일제당 가정간편식 전문몰</title>
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/common.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+    <script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header header--sub">
+            <!--
+        * 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+        * /cjom/mobile/include/sub-header.html
+        -->
+        </div>
+        <div id="contents" class="contents">
+            <!-- section__title-box -->
+            <div class="section__title-box">
+                <a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+                <h1 class="section__title">타이틀명</h1>
+            </div>
+            <!-- //section__title-box -->
+
+            <div class="default-padding">
+                <button data-remodal-target="modal">로그인</button>
+            </div>
+        </div>
+        <div class="footer">
+            <!--
+        * footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+        * /cjom/mobile/include/footer.html
+        -->
+        </div>
+    </div>
+    <div class="modal-container" data-js="modal">
+        <!-- modal popup -->
+
+        <section id="modal" class="modal popup--login" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">로그인</h1>
+                </div>
+                <div class="modal__contents" data-js="tab" id="loginTab">
+                    <div class="tab tab--style1">
+                        <ul class="tab--style1__ul">
+                            <li class="tab--style1__li" data-js="tab__list">
+                                <a href="#" class="tab--style1__anchor" data-js="tab__anchor">회원</a>
+                            </li>
+                            <li class="tab--style1__li" data-js="tab__list">
+                                <a href="#" class="tab--style1__anchor" data-js="tab__anchor">비회원 (주문조회)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 2019-05-10 제거
+                <div class="popup--login__logo">
+                    <img class="popup--login__logo-image" src="/cjom/mobile/images/sub/member-logo.png" alt="CJ THE MARKET">
+                </div> -->
+                    <div class="popup--login__panel" data-js="tab__panel">
+                        <div class="popup--login__login-input login-input">
+                            <div class="form-element" data-js="form-ctrl">
+                                <label for="label01" class="blind">CJ ONE 통합 아이디</label>
+                                <input type="text" id="label01" class="form-element__input"
+                                    placeholder="CJ ONE 통합 아이디 6~12자" data-js="form-ctrl__input">
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                                <!-- 아이디 미입력시 노출 -->
+                                <span class="form-element__error">아이디를 입력해주세요.</span>
+                            </div>
+                            <div class="form-element" data-js="form-ctrl">
+                                <label for="label02" class="blind">CJ ONE 통합 비밀번호</label>
+                                <input type="password" id="label02" class="form-element__input"
+                                    placeholder="비밀번호 영문, 특수문자, 숫자혼합 8~12자" data-js="form-ctrl__input">
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                                <!-- 비밀번호 미입력시 노출 -->
+                                <span class="form-element__error">비밀번호를 입력해주세요.</span>
+
+                                <!--
+                                아이디 또는 비밀번호 틀릴 시 노출
+                                <span class="form-element__error">아이디 또는 비밀번호가 일치하지 않습니다.</span>
+                            -->
+                            </div>
+
+                            <div class="login-checkbox">
+                                <div class="checkbox" data-js="checkbox" data-options='{ "firstCheck": true }'>
+                                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                                        자동로그인
+                                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden"
+                                            tabindex="-1" />
+                                    </div>
+                                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                                        아이디저장
+                                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden"
+                                            tabindex="-1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup--login__login-error login-error">
+                            <p class="popup--login__login-error__text">자동입력 방지문자를 입력해 주세요.</p>
+                            <div class="popup--login__error-area">
+                                <div class="popup--login__error-area-number">
+                                    <img src="/cjom/mobile/images/temp/temp-member.png" alt="보안번호">
+                                </div>
+                                <div class="popup--login__error-area-btn">
+                                    <button><img class="refresh" src="/cjom/mobile/images/icon/ico-refresh.png"
+                                            alt="새로고침 아이콘">새로고침</button>
+                                    <button><img class="sound" src="/cjom/mobile/images/icon/ico-sound.png"
+                                            alt="음성듣기 아이콘">음성듣기</button>
+                                </div>
+                            </div>
+                            <div class="form-element" data-js="form-ctrl">
+                                <label for="label06" class="blind">자동입력 방지문자</label>
+                                <input type="text" id="label06" class="form-element__input" placeholder="자동입력 방지문자"
+                                    data-js="form-ctrl__input" />
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                                <!-- 자동입력 방지 문자 미입력 시 노출 -->
+                                <span class="form-element__error">자동입력 방지 문자를 입력해주세요</span>
+                                <!--
+                            자동입력 방지 문자 실패 시 노출
+                            <span class="form-element__error">자동입력 방지 문자를 입력해주세요</span>
+                            -->
+                            </div>
+                        </div>
+                        <div class="login-input">
+                            <div class="login-btn">
+                                <button class="btn btn--shape02 btn--style01">로그인</button>
+                                <!-- 2019-05-10 수정 -->
+                                <ul class="btn-box-bor">
+                                    <li>
+                                        <button class="btn-login01">아이디 찾기</button>
+                                    </li>
+                                    <li>
+                                        <button class="btn-login01">비밀번호 찾기</button>
+                                    </li>
+                                    <li>
+                                        <button class="btn-login02">회원가입</button>
+                                    </li>
+                                </ul>
+                                <!-- //2019-05-10 수정 -->
+                            </div>
+
+                            <h2>간편로그인</h2>
+                            <ul class="login-anybtn">
+                                <li>
+                                    <button class="popup--login__social-btn popup--login__social-btn--kakao">
+                                        카카오톡
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="popup--login__social-btn popup--login__social-btn--naver">
+                                        네이버
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="popup--login__social-btn popup--login__social-btn--facebook">
+                                        페이스북
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="popup--login__social-btn popup--login__social-btn--phone">
+                                        휴대폰
+                                    </button>
+                                </li>
+                                <!-- 2019-05-10 수정 -->
+                                <li class="login-anybtn__full">
+                                    <button class="popup--login__social-btn popup--login__social-btn--finger">
+                                        지문인증
+                                    </button>
+                                </li>
+                                <li class="login-anybtn__full">
+                                    <button class="popup--login__social-btn popup--login__social-btn--face">
+                                        페이스인증
+                                    </button>
+                                </li>
+                                <!-- //2019-05-10 수정 -->
+                            </ul>
+                        </div>
+                        <!-- 2019-05-10 추가 -->
+                        <div class="popup--login__prime">
+                            <strong class="popup--login__prime-title">CJ더마켓 the프라임으로 1년동안 특가찬스!</strong>
+                            <p class="popup--login__prime-description">the프라임 회원의 실속있는 혜택을 경험해보세요!</p>
+                            <a href="#" class="popup--login__prime-anchor">the프라임 서비스 둘러보기</a>
+                        </div>
+                        <!-- //2019-05-10 추가 -->
+                    </div>
+                    <div class="popup--login__panel" data-js="tab__panel">
+                        <div class="non-member-input">
+                            <div class="form-element" data-js="form-ctrl">
+                                <label for="label03" class="blind">주문번호</label>
+                                <input type="text" id="label03" class="form-element__input" placeholder="주문번호"
+                                    data-js="form-ctrl__input">
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                                <!-- 아이디 미입력시 노출 -->
+                                <span class="form-element__error">주문번호를 입력해주세요.</span>
+                            </div>
+                            <div class="form-element" data-js="form-ctrl">
+                                <label for="label04" class="blind">비밀번호</label>
+                                <input type="password" id="label04" class="form-element__input" placeholder="비밀번호"
+                                    data-js="form-ctrl__input">
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                                <!-- 비밀번호 미입력시 노출 -->
+                                <span class="form-element__error">비밀번호를 입력해주세요.</span>
+                                <!--
+                                주문번호가 없는 경우 or 비밀번호 불일치 시
+                                <span class="form-element__error">주문번호 또는 비밀번호가 일치하지 않습니다.</span>
+                            -->
+                            </div>
+                            <!-- 미이관시 노출될 버튼 -->
+                            <a href="#" class="component-button--link component-button--block mt15">
+                                2019년 7월 이전 비회원 주문(배송조회) 하기
+                            </a>
+                            <!-- //미이관시 노출될 버튼 -->
+                            <button class="btn btn--shape01 btn--style01 delivery">배송조회</button>
+                            <div class="non-members-notice">
+                                <p>주문번호 및 비밀번호를 잊어버리셨다면,<br />
+                                    CJ THE MARKET 고객센터 1668-1953로 문의해주세요.</p>
+                            </div>
+                        </div>
+                        <!-- 2019-05-10 추가 -->
+                        <div class="popup--login__prime popup--login__prime--type2">
+                            <strong class="popup--login__prime-title">CJ ONE 통합회원 신규가입 혜택</strong>
+                            <p class="popup--login__prime-description">CJ ONE 포인트 적립 및 다양한 쿠폰 혜택을 드립니다.</p>
+                            <a href="#" class="popup--login__prime-anchor">회원가입 하기</a>
+                        </div>
+                        <!-- //2019-05-10 추가 -->
+                    </div>
+                    <!-- 2019-05-10 제거
+                <div class="login-notice">
+                    <p class="title"></p>
+                    <p class="cont">
+                        CJ ONE 통합 회원으로 가입 하시면<br />
+                        CJ제일제당(CJ THE MARKET, COOKIT, CJ제일제당 홈페이지)에서<br />
+                        구매하신 금액에 따라 CJ ONE포인트 적립 및 쿠폰 등<br />
+                        다양한 혜택을 누리실 수 있습니다.
+                    </p>
+                    <a class="new-member bold" href="#"><span>CJ ONE 통합회원 신규가입</span></a>
+                </div> -->
+                </div>
+                <button class="modal__close" data-js="modal__close">
+                    <span class="blind">로그인 팝업 닫기</span>
+                </button>
+            </div>
+        </section>
+
+    </div>
+    <script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+    <script src="/cjom/mobile/js/plugins/slick.js"></script>
+    <script src="/cjom/mobile/js/common.js"></script>
+
+</body>
+
+</html>

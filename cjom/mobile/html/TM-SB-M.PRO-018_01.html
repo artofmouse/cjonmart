@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>CJ제일제당 가정간편식 전문몰</title>
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/common.css">
+    <link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="header header--sub">
+			<!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+		</div>
+		<div id="contents" class="contents">
+			<section class="sub">
+				<!-- section__title-box -->
+				<div class="section__floating-box" data-js="floating">
+					<div data-js="floating__target-parent">
+						<div class="section__title-box" data-js="floating__target">
+							<a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+							<h1 class="section__title">상품상세정보</h1>
+						</div>
+					</div>
+				</div>
+				<!-- //section__title-box -->
+
+
+				<!-- 상품평 -->
+				<section id="section-review-info" data-js="floating__focus-target">
+					<h1 class="blind">상품평</h1>
+					<!-- 상품평 없을 때 -->
+					<!-- <div class="product-detail__section">
+						<div class="none-display none-display--type2">
+							<p class="none-display__text">등록된 상품평이 없습니다.</p>
+						</div>
+						<div style="background:#ddd;min-height: 100px;">-----상품평 작성 후 혜택 내용 정책 (TBD)----</div>
+						<div class="btn-box product-detail__review-btn">
+							<button data-js="modal__button" data-modal-target="#modalPRO020" class="btn btn--shape02 btn--style01">상품평쓰기</button>
+						</div>
+					</div> -->
+					<!-- //상품평 없을 때 -->
+					<!-- 상품평 있을 때 -->
+					<div class="product-detail__section">
+						<!-- 상품편 옵션 선택 -->
+						<div class="form-element product-detail__review-option-select">
+							<label for="select01" class="blind">상품평 옵션 선택</label>
+							<select id="select01" class="form-element__select">
+								<option>텍스트</option>
+								<option>가나다라</option>
+								<option>마바사아</option>
+								<option>자차카타</option>
+							</select>
+						</div>
+						<!-- //상품편 옵션 선택 -->
+						<div class="product-detail__box product-detail__box--type-rating">
+							<div class="product-detail__box__rating">
+								<span class="product-detail__box__title">평균 평점</span>
+								<div class="rating-area rating-area--wd83">
+									<div class="rating-outer" style="width: 80%;">
+										<img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+									</div>
+								</div>
+								<span class="rating-count number">4.0</span>
+								<!-- <span class="rating-count__people number">(100명)</span> -->
+							</div>
+							<div class="product-detail__box__graph-div">
+								<div class="product-detail__box__graph">
+									<div class="product-detail__box__graph-inner">
+										<span class="product-detail__box__title">맛있어요</span>
+										<span class="product-detail__box__bar">
+											<span class="product-detail__box__bar__inner" style="width: 87%"></span>
+											<span class="blind">87%</span>
+										</span>
+									</div>
+									<span class="product-detail__box__percent number">87%</span>
+								</div>
+								<div class="product-detail__box__graph">
+									<div class="product-detail__box__graph-inner">
+										<span class="product-detail__box__title">추천해요</span>
+										<span class="product-detail__box__bar">
+											<span class="product-detail__box__bar__inner" style="width: 60%"></span>
+											<span class="blind">60%</span>
+										</span>
+									</div>
+									<span class="product-detail__box__percent number">60%</span>
+								</div>
+							</div>
+							<div class="product-detail__box__div">
+								<div class="component-recipe">
+									<span class="component-recipe__time">
+										<img  src="/cjom/mobile/images/icon/ico-component-recipe01.png" alt="조리시간">
+										저녁식사
+									</span>
+									<span class="component-recipe__volume">
+										<img  src="/cjom/mobile/images/icon/ico-component-recipe02.png" alt="음식양">
+										4인가족도 넉넉해요
+									</span>
+								</div>
+							</div>
+						</div>
+						<div id="reviewTab" class="product-detail__tab-wrap" data-js="tab">
+							<!-- 체험단 후기 있을 경우에만 -->
+							<ul class="border-tab product-detail__review-tab">
+								<li class="border-tab__li" data-js="tab__list">
+									<a href="#" class="border-tab__anchor" data-js="tab__anchor">
+										일반 상품평
+									</a>
+								</li>
+								<li class="border-tab__li" data-js="tab__list">
+									<a href="#" class="border-tab__anchor" data-js="tab__anchor">
+										체험단 후기
+									</a>
+								</li>
+							</ul>
+							<!-- //체험단 후기 있을 경우에만 -->
+							<!-- 일반 상품평 -->
+							<section data-js="tab__panel">
+								<h1 class="blind">일반 상품평</h1>
+								<div class="btn-box product-detail__review-btn">
+									<button data-js="modal__button" data-modal-target="#modalPRO020" class="btn btn--shape02 btn--style01">상품평쓰기</button>
+								</div>
+								<ul class="product-detail__review">
+									<li class="product-detail__review__item">
+										<div class="product-detail__review__rating">
+											<div class="rating-area">
+												<div class="rating-outer" style="width: 80%;">
+													<img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+												</div>
+											</div>
+											<ul class="product-detail__review__rating__ul">
+												<li class="product-detail__review__rating__li">맛 <span class="basic-color1">맛있어요</span></li>
+												<li class="product-detail__review__rating__li">추천 <span class="basic-color1">추천해요</span></li>
+											</ul>
+										</div>
+										<p class="product-detail__review__text">맛있네요!</p>
+										<p class="product-detail__reviewer">themark**<span class="div-line number">2018-12-31</span></p>
+									</li>
+									<li class="product-detail__review__item">
+										<div class="product-detail__review__rating">
+											<div class="rating-area">
+												<div class="rating-outer" style="width: 80%;">
+													<img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+												</div>
+											</div>
+											<ul class="product-detail__review__rating__ul">
+												<li class="product-detail__review__rating__li">맛 <span class="basic-color1">맛있어요</span></li>
+												<li class="product-detail__review__rating__li">추천 <span class="basic-color1">추천해요</span></li>
+											</ul>
+										</div>
+										<p class="product-detail__review__text">맛있네요!</p>
+										<p class="product-detail__reviewer">themark**<span class="div-line number">2018-12-31</span></p>
+									</li>
+									<li class="product-detail__review__item">
+										<div class="product-detail__review__rating">
+											<div class="rating-area">
+												<div class="rating-outer" style="width: 80%;">
+													<img class="rating-image" src="/cjom/mobile/images/icon/ico-rating-type1-on.png" alt="별점 총 5개중 4개 선택됨">
+												</div>
+											</div>
+											<ul class="product-detail__review__rating__ul">
+												<li class="product-detail__review__rating__li">맛 <span class="basic-color1">맛있어요</span></li>
+												<li class="product-detail__review__rating__li">추천 <span class="basic-color1">추천해요</span></li>
+											</ul>
+										</div>
+										<p class="product-detail__review__text">맛있네요!</p>
+										<p class="product-detail__reviewer">themark**<span class="div-line number">2018-12-31</span></p>
+									</li>
+								</ul>
+								<div class="btn-box btn-box--full-size">
+									<button class="btn btn__more">
+										더보기 <span class="number">(20/41)</span>
+									</button>
+								</div>
+							</section>
+							<!-- //일반 상품평 -->
+
+							<!-- 체험단 후기 -->
+							<section class="product-detail__experience-review" data-js="tab__panel">
+								<h1 class="blind">체험단 후기</h1>
+								<div class="image-box image-box--column">
+									<a href="#" class="image-box__anchor image-box__anchor--full" data-js="modal__button" data-modal-target="#modalPRO019">
+										<div class="image-box__image-container">
+											<img class="image-box__image" src="/cjom/mobile/images/main/main-temp01.jpg" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box image-box__text-box--border">
+											<h3 class="image-box__text">
+												[햇반]
+												<span class="image-box__text--bold image-box__text--block">
+													누룽지탕은 바삭 누룽지에는 요리로 부드러우면서 바삭한 식감
+												</span>
+											</h3>
+											<div class="image-box__text-box--bar">
+												<span class="image-box__text image-box__text--size11
+													image-box__text--color76">
+													themark**
+												</span>
+												<span class="image-box__text image-box__text--size11
+													image-box__text--color76 number">
+													2018-12-31
+												</span>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor image-box__anchor--full" data-js="modal__button" data-modal-target="#modalPRO019">
+										<div class="image-box__image-container">
+											<img class="image-box__image" src="/cjom/mobile/images/main/main-temp01.jpg" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box image-box__text-box--border">
+											<h3 class="image-box__text">
+												[햇반]
+												<span class="image-box__text--bold image-box__text--block">
+													누룽지탕은 바삭 누룽지에는 요리로 부드러우면서 바삭한 식감
+												</span>
+											</h3>
+											<div class="image-box__text-box--bar">
+												<span class="image-box__text image-box__text--size11
+													image-box__text--color76">
+													themark**
+												</span>
+												<span class="image-box__text image-box__text--size11
+													image-box__text--color76 number">
+													2018-12-31
+												</span>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="image-box__anchor image-box__anchor--full" data-js="modal__button" data-modal-target="#modalPRO019">
+										<div class="image-box__image-container">
+											<img class="image-box__image" src="/cjom/mobile/images/main/main-temp01.jpg" alt="대체 텍스트">
+										</div>
+										<div class="image-box__text-box image-box__text-box--border">
+											<h3 class="image-box__text">
+												[햇반]
+												<span class="image-box__text--bold image-box__text--block">
+													누룽지탕은 바삭 누룽지에는 요리로 부드러우면서 바삭한 식감
+												</span>
+											</h3>
+											<div class="image-box__text-box--bar">
+												<span class="image-box__text image-box__text--size11
+													image-box__text--color76">
+													themark**
+												</span>
+												<span class="image-box__text image-box__text--size11
+													image-box__text--color76 number">
+													2018-12-31
+												</span>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="btn-box btn-box--full-size">
+									<button class="btn btn__more">
+										더보기 <span class="number">(20/41)</span>
+									</button>
+								</div>
+							</section>
+							<!-- //체험단 후기 -->
+						</div>
+					</div>
+					<!-- //상품평 있을 때 -->
+				</section>
+				<!-- //상품평 -->
+			</section>
+		</div>
+	</div>
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/glider.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

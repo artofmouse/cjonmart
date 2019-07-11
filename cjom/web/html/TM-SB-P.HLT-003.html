@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css"/>
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+</head>
+<body>
+<form name="form" id="form">
+	<div class="modal winPop pop-scroll" id="freeCounselPop" style="width:700px;">
+		<input type="hidden" id="did_no" name="did_no" value="1002"><!-- DNIS코드 -->
+		<div class="modal-header">
+			<h2 class="modal-title">무료상담 신청</h2>
+		</div>
+		<div class="modal-contents">
+			<div class="table-form">
+				<table>
+					<caption>무료상담을 위한 개인정보 입력폼</caption>
+					<colgroup>
+						<col style="width:156px"/>
+						<col />
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="col"><label for="cust_name">이름</label></th>
+						<td>
+							<div class="cols">
+								<input type="text" id="cust_name" name="cust_name" maxlength="50">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col">성별</th>
+						<td>
+							<div class="radio-list">
+								<label>
+									<input type="radio" id="gender_cd" name="gender_cd" value="M">
+									남성
+								</label>
+								<label>
+									<input type="radio" id="gender_cd" name="gender_cd" value="F">
+									여성
+								</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col">나이</th>
+						<td>
+							<div class="radio-list">
+								<label>
+									<input type="radio" name="age_grp_cd" id="age_grp_cd" value="3">
+									40대 이하
+								</label>
+								<label>
+									<input type="radio" name="age_grp_cd" id="age_grp_cd" value="4">
+									40대
+								</label>
+								<label>
+									<input type="radio" name="age_grp_cd" id="age_grp_cd" value="5">
+									50대
+								</label><br>
+								<label>
+									<input type="radio" name="age_grp_cd" id="age_grp_cd" value="6">
+									60대
+								</label>
+								<label>
+									<input type="radio" name="age_grp_cd" id="age_grp_cd" value="7">
+									70대
+								</label>
+								<label>
+									<input type="radio" name="age_grp_cd" id="age_grp_cd" value="8">
+									80대
+								</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col">관심제품</th>
+						<td>
+							<div class="radio-list">
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_01" value="활력">
+									활력
+								</label>
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_02" value="전립선">
+									전립선
+								</label>
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_03" value="여성갱년기">
+									여성갱년기
+								</label>
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_04" value="뼈관절">
+									뼈 관절
+								</label><br>
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_05" value="눈건강">
+									눈 건강
+								</label>
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_06" value="소화">
+									소화
+								</label>
+								<label>
+									<input type="checkbox" name="int_prod" id="int_prod_07" value="유산균">
+									유산균
+								</label>
+								<div class="direct-input">
+									<label>
+										<input type="checkbox" name="int_prod" id="int_prod_99" value="기타">
+										기타
+									</label>
+									<input type="text" title="기타 직접 입력" name="int_prod_etc" id="int_prod_etc" placeholder="직접 입력" maxlength="100" disabled>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col"><label for="tel1">휴대폰번호</label></th>
+						<td>
+							<div class="number-form">
+								<select title="휴대폰번호 앞자리" id="tel1">
+									<option selected>010</option>
+									<option>019</option>
+									<option>018</option>
+									<option>016</option>
+									<option>011</option>
+									<option>017</option>
+								</select>
+								<span class="hyphen"></span>
+								<input type="tel" maxlength="4" id="tel2" name="tel2" data-cleave="number" title="휴대폰번호 중간자리" value=""/>
+								<span class="hyphen"></span>
+								<input type="tel" maxlength="4" id="tel3" name="tel3" data-cleave="number" title="휴대폰번호 끝자리" value=""/>
+							</div>
+							<span class="noti-text sub-text mt5">숫자만 입력 가능합니다.</span>
+						</td>
+					</tr>
+					<!--<tr>
+						<th scope="col" class="time"><label for="time">통화희망시간</label></th>
+						<td>
+							<select title="상담시간 선택" id="time" style="width:100%;">
+								<option>상담 시간을 선택해주세요.</option>
+							</select>
+							<div class="mt5">
+								<label class="text"><input type="checkbox"> 즉시상담</label>
+							</div>
+						</td>
+					</tr>-->
+					</tbody>
+				</table>
+			</div>
+			<ul class="agree-accordion mt40">
+				<li>
+					<div class="agree-head">
+						<label for="agree01"><input type="checkbox" id="agree01" value="1"/> <span class="required">(필수)</span> 개인정보 수집 이용 동의</label>
+						<a href="#agreeCont01" class="more" data-accordion><span>약관 내용 보기</span></a>
+					</div>
+					<div id="agreeCont01" class="agree-content" style="display:none;">
+						<ul class="desc-list2 mt0">
+							<li>수집항목 : 이름, 성별, 나이, 관심제품, 연락처(휴대폰번호)</li>
+							<li>수집 이용 및 목적 : CJ제일제당 주식회사에서 제공하는 상품 안내 및 무료상담 진행</li>
+							<li>보유 및 이용기간 :무료상담신청이 진행된 날로부터 90일까지 보유 및 이용하며,
+								고객이 개인정보 취급 동의 거부 또는 철회 의사를 밝히면 지체없이 파기 </li>
+							<li>개인정보 수집 이용에 동의하지 않을 수 있으나, 미동의 시 무료상담 신청이 불가합니다.</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="agree-head">
+						<label for="agree02"><input type="checkbox" id="agree02" value="1"/><span class="required">(필수)</span> 개인정보 취급 위탁 동의</label>
+						<a href="#agreeCont02" class="more" data-accordion><span>약관 내용 보기</span></a>
+					</div>
+					<div id="agreeCont02" class="agree-content" style="display:none;">
+						<ul class="desc-list2 mt0">
+							<li>처리 위탁 항목 : 이름, 성별, 나이, 관심제품, 연락처(휴대폰번호)</li>
+							<li>처리 위탁을 받는자(수탁자) : CJ엠디원 주식회사</li>
+							<li>처리 위탁 업무 내용 : 관심제품 무료상담업무</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			
+			<ul class="desc-list">
+				<li>무료상담은 접수일로부터 24시간내에 연락드릴 예정입니다. (휴일제외, 09시-18시)</li>
+				<li>무료상담신청일로부터 2일간 3회 이상 미연결시에는 상담이 어렵습니다.</li>
+			</ul>
+			
+			<div class="btn-area mt30">
+				<button class="btn-white-md" id="btn_cancle"><span>취소</span></button>
+				<a href="#" class="btn-default-md" id="btn_send"><span>무료상담 신청</span></a>
+			</div>
+		</div>
+	</div>
+</form>
+<script>
+	/* open window 예시
+	<a href='javascript:window.open("/cjom/web/html/TM-SB-P.HLT-003.html", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=100,left=100,width=720,height=850")'>TM-SB-P.HLT-003.html</a>
+	 */
+</script>
+</body>
+</html>

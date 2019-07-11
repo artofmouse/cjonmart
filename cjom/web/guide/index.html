@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script type="text/javascript" src="../js/library.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<script type="text/javascript" src="../js/ui.cjom.front.js"></script>
+	<style>
+		html {height:100%; overflow-y:hidden;}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1 class="headline"><span class="logo">CJ제일제당</span> <strong class="text">Markup Guide PC</strong></h1>
+	</div>
+	<div id="container">
+		<ul class="aside">
+			<li class="active">
+				<a href="slider.html">Slider</a>
+			</li>
+			<li>
+				<a href="tab.html">Tab</a>
+			</li>
+			<li>
+				<a href="checkbox.html">Checkbox</a>
+			</li>
+			<li>
+				<a href="radio.html">Radio</a>
+			</li>
+			<li>
+				<a href="input.html">Input</a>
+			</li>
+			<li>
+				<a href="file.html">File</a>
+			</li>
+			<li>
+				<a href="datepicker.html">Datepicker</a>
+			</li>
+			<li>
+				<a href="select.html">Select</a>
+			</li>
+			<li>
+				<a href="textarea.html">Textarea</a>
+			</li>
+			<li>
+				<a href="button.html">Button</a>
+			</li>
+			<li>
+				<a href="accordion.html">accordion</a>
+			</li>
+			<li>
+				<a href="modal.html">Modal</a>
+			</li>
+			<li>
+				<a href="scroll.html">Custom Scroll</a>
+			</li>
+			<li>
+				<a href="tooltip.html">Tooltip</a>
+			</li>
+			<li>
+				<a href="topButton.html">Top button</a>
+			</li>
+			<li>
+				<a href="font.html">Font</a>
+			</li>
+			<li>
+				<a href="table.html">Table</a>
+			</li>
+			<li>
+				<a href="paging.html">Paging</a>
+			</li>
+			<li>
+				<a href="nodata.html">No Data</a>
+			</li>
+			<li>
+				<a href="label-text.html">label-text</a>
+			</li>
+			<li>
+				<a href="product.html">Product</a>
+			</li>
+			<li>
+				<a href="video.html">Video</a>
+			</li>
+			<li>
+				<a href="sticky.html">Sticky</a>
+			</li>
+			<li>
+				<a href="#">2</a>
+			</li>
+		</ul>
+		<div class="contents">
+			<iframe src="input.html" id="page" frameborder="0"></iframe>
+		</div>
+	</div>
+</div>
+<div id="modal-wrap"></div>
+<script type="text/javascript">
+	var menu = $('.aside a');
+	menu.on('click', function() {
+		console.log('a');
+		$('.aside li').removeClass('active');
+		$(this).parents().addClass('active');
+	});
+</script>
+</body>
+</html>

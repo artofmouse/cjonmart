@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Paging</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;div class="paging"&gt;
+	&lt;ul&gt;
+		&lt;li class="active"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;button type="button" class="btn-next"&gt;&lt;span&gt;다음&lt;/span&gt;&lt;/button&gt;
+	&lt;button type="button" class="btn-last"&gt;&lt;span&gt;마지막&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+	</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="paging">
+		<ul>
+			<li class="active"><span>1</span></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+		<button type="button" class="btn-next"><span>다음</span></button>
+		<button type="button" class="btn-last"><span>마지막</span></button>
+	</div>
+
+	<h2>5개 이상</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;div class="paging"&gt;
+	&lt;button type="button" class="btn-first"&gt;&lt;span&gt;처음&lt;/span&gt;&lt;/button&gt;
+	&lt;button type="button" class="btn-prev"&gt;&lt;span&gt;이전&lt;/span&gt;&lt;/button&gt;
+	&lt;ul&gt;
+		&lt;li class="active"&gt;&lt;span&gt;6&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;button type="button" class="btn-next"&gt;&lt;span&gt;다음&lt;/span&gt;&lt;/button&gt;
+	&lt;button type="button" class="btn-last"&gt;&lt;span&gt;마지막&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+	</code></pre>
+
+	<h3>VIEW</h3>
+	<div class="paging">
+		<button type="button" class="btn-first"><span>처음</span></button>
+		<button type="button" class="btn-prev"><span>이전</span></button>
+		<ul>
+			<li class="active"><span>6</span></li>
+			<li><a href="#">7</a></li>
+			<li><a href="#">8</a></li>
+			<li><a href="#">9</a></li>
+			<li><a href="#">10</a></li>
+		</ul>
+		<button type="button" class="btn-next"><span>다음</span></button>
+		<button type="button" class="btn-last"><span>마지막</span></button>
+	</div>
+</div>
+</body>
+</html>

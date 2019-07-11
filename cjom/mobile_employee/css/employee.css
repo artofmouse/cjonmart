@@ -1,0 +1,221 @@
+@charset 'utf-8';
+
+/* 공통성 */
+.text-link {display: inline-block; position: relative; margin-left:2px; text-indent: 0;}
+.text-link:before {content:''; display: block; position: absolute; bottom:0; width:100%; height:1px}
+
+.text-link--blue {color:#0072bc;}
+.text-link--blue:before {background:#0072bc;}
+.text-link--green {color:#00893d}
+.text-link--green:before {background:#00893d;}
+
+.btn--shape14 {padding:11px 25px; min-height: 45px; line-height: 1.4; box-sizing: border-box; font-size: 14px;  font-weight:500; color: #fff; word-break: keep-all}
+.btn--shape15 {position: relative; padding:13px 18px 15px; min-height: 47px; line-height: 1.4; box-sizing: border-box; font-size: 14px;  font-weight:500; border:1px solid #c5b0a6; border-radius:2px; background-color: transparent; color: #fff; word-break: keep-all; text-align:left}
+.btn--shape15:before {content:''; position: absolute; top:50%; right:10px; width:6px; height:9px; background:url('/cjom/mobile_employee/images/employee/icon_arrow_right_white_14x18.png') no-repeat center;background-size:100% auto; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
+.btn-box .btn--color--organge {background-color:#af423f}
+.btn-box .btn--color--brown {color:#fff; background-color:#5c4743}
+
+.component-container--bottom-padding {padding-bottom:20px}
+
+/* header */
+.header.header--employee {position: relative; padding:10px 15px; border-bottom: 1px solid #ddd}
+.header.header--employee .header__top {height:auto}
+.header.header--employee .header__logo .cj-logo {display: inline-block; padding:0; margin:0; width:47px; height:32px; background: url('/cjom/mobile_employee/images/employee/logo_cj_cheiljedang.png') no-repeat center; background-size: contain}
+.header.header--employee .header__logo .campaign-logo {display: inline-block; padding:4px 0 0; margin:0; width:auto; height:auto; background:none; text-indent: 0}
+.header.header--employee .header__logo .campaign-logo img {width:121px}
+
+.header.header--employee .header__util-menu {position: absolute; right:15px; bottom:13px;}
+.header.header--employee .btn--change-employee {display: inline-block; position: relative; font-size:11px; font-weight:500; color:#00893d}
+.header.header--employee .btn--change-employee:before {content:''; display: block; position: absolute; bottom:0; width:100%; height: 1px; background:#00893d}
+
+/* floation-box style (신규 추가 정의) */
+.floating-box-container {padding-top:15px; background: #f8f8f8}
+.floating-box-container .section__contents {margin-top:15px}
+.floating-box-container .component-container {background-color:transparent}
+.floating-box-container .component-container__inner {margin-top:15px}
+.floating-box-container .product.product--bulk {padding-bottom:0}
+
+
+/* 사원선물신청 event */
+.employee-event-gift {}
+.employee-event-gift .gift-event {padding:0 4.6%; width:100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.employee-event-gift .gift-event-box {position: relative}
+.employee-event-gift .gift-event--end img {opacity: .4}
+.employee-event-gift .gift-event--end-mark {position: absolute; bottom:30%; left:50%; width:55.9375%; padding-bottom:55.9375%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: url('/cjom/mobile_employee/images/employee/img_event_close.png') no-repeat center; background-size: 100% auto;}
+
+.employee-event-gift .gift-event-1 {background-color:#1f2d41;}
+.employee-event-gift .gift-event-1 .gift-event-box {background-color:#355077}
+
+.employee-event-gift .gift-event-2 {background-color:#e5ecf5;}
+.employee-event-gift .gift-event-2 .gift-event-box:first-of-type:before {content:''; z-index:1; display: block; position: absolute; bottom:-4.5%; left:50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width:15%; padding-bottom:15%; background:url('/cjom/mobile_employee/images/employee/icon_content_plus.png') no-repeat center; background-size: 100% auto}
+.employee-event-gift .gift-event-2 .btn-box {position: absolute; bottom:6.34%; padding:0 13%; width:100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-align:center}
+
+/* 오늘의 럭키 임직원 공개 */
+.lucky-employee {}
+.lucky-employee__header {border-bottom:15px solid #f8f8f8; padding:7% 15%; text-align: center;}
+.lucky-employee__header-title {font-size:20px;font-weight:700;}
+.lucky-employee__header-description {margin-top: 6px; font-size:13px; font-weight:300; line-height: 1.4; color:#767676}
+.lucky-employee__header-description .break-line {display: inline-block}
+.lucky-employee__header-description .lucky-employee__point-text {font-weight: 700;font-style: normal; color:#00893d}
+
+.lucky-employee__content {padding:6px 15px 0; background: #fff;}
+.prizewinner__date {position: relative; height:44px; text-align: center}
+.prizewinner__date-bar * {font-size: 17px; font-weight: 700; color:#000; vertical-align: top; line-height:44px}
+.prizewinner__date-prev,
+.prizewinner__date-next {display: block; position: absolute; top:50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);  width:20px; height:44px;}
+
+.prizewinner__date-prev {left:0; background:url('/cjom/mobile_employee/images/icon/ico-arrow-left-14x24.png') no-repeat center; background-size:7px auto}
+.prizewinner__date-next {right:0; background:url('/cjom/mobile_employee/images/icon/ico-arrow-right-14x24.png') no-repeat center; background-size:7px auto}
+
+.prizewinner__date button:disabled {display: none}
+
+.prizewinner__list {border-top:1px solid #aaa; border-bottom:1px solid #aaa;}
+.prizewinner__list tbody th, .prizewinner__list tbody td {padding:0 10px; height:40px; font-size:12px; font-weight: 300; color:#767676; text-align: center; vertical-align: middle; word-break: keep-all}
+.prizewinner__list tbody tr {border-top:1px solid #eee;}
+.prizewinner__list tbody tr:first-of-type {border-top:0}
+
+/* 선물세트 - 서브 공통 */
+.sub-employee .floating__category .sc-tab-1__anchor.is-active {color:#b46b21}
+.sub-employee .floating__category .sc-tab-1__anchor.is-active::after {background-color:#b46b21}
+.employee-campaign .component-header {display: block; padding:40px 0 20px; background-color: transparent; text-align: center}
+.employee-campaign .component-header__title {font-size:27px; font-weight: 700}
+
+/* PAGE CODE_M.GFT-201 */
+
+.employee-campaign + .component-container {border-top:15px solid #f8f8f8}
+/* - 캠페인 소개 */
+.employee-campaign-intro {position: relative; }
+.employee-campaign-intro .btn-box {position: absolute; bottom:38%; padding:0 6.25%; width:100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: transparent}
+.employee-campaign-intro .btn-box .btn-gift {display: inline-block; width:43.75%; height:45px; background-color:#f9ce49; border:1px solid #000;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 14px; font-weight: 500; color:#000; text-align: center; line-height:45px;}
+/* - 캠페인 참여 방법 */
+.employee-campaign-participate .component-container {background-color: #ede4da;}
+.employee-campaign-participate .component-header__title {color: #af423f;}
+
+.participate-list {z-index:1; position: relative;}
+
+.participate-list .participate-step-inner {padding-bottom:20px;}
+.participate-list .participate-step-inner + .recommend-employee {border-top: 1px solid #ece3da}
+.participate-list .participate-step {padding:20px; background-color:#fff}
+.participate-list .participate-step + .participate-step {margin-top:15px}
+.participate-list .participate-step--title {position: relative; padding-top:25px; font-size: 21px; font-weight: 500; color:#5c4743; text-align: center}
+.participate-list .participate-step--title > span {z-index:1; position: relative; display: inline-block;}
+.participate-list .participate-step--title:before {content:''; z-index:0; display: block; position: absolute; bottom:13px; width:100%; height:35px}
+
+.participate-list .participate-step--description {margin-top: 10px; font-size: 14px; font-weight: 300; color:#82736a; line-height: 1.4; text-align: center}
+.participate-list .participate-step--description .break-line {display: block;}
+
+/* - participate-step-1 */
+.participate-list .participate-step-1 .participate-step--title:before {background:url('/cjom/mobile_employee/images/employee/bg_participate-step_number.png') no-repeat top center; background-size: 44px auto}
+.participate-list .recommend-employee {position: relative; padding:15px 25px 20px 0}
+.participate-list .recommend-employee .employee-id * {position: relative; display: inline-block; vertical-align: top}
+.participate-list .recommend-employee .employee-id span + span {margin-left:8px; padding-left:8px}
+.participate-list .recommend-employee .employee-id--title {font-weight: 700;}
+.participate-list .recommend-employee .employee-id--value:before {content: ''; display: block; position: absolute; top:50%; left:-1px;  -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width:1px; height:13px; background-color:#ccc }
+.participate-list .recommend-employee .employee-user {margin-top: 7px}
+.participate-list .recommend-employee .btn-box-unit {position: absolute; bottom:15px; right:-5px;}
+.participate-list .recommend-employee .btn-box-unit .btn-edit {display: inline-block; position: relative; padding:5px; font-size: 12px;font-weight: 300; color:#ff4000}
+.participate-list .recommend-employee .btn-box-unit .btn-edit:before {content:''; display: block; position: absolute; bottom:5px; left:50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width:calc(100% - 10px); height:1px; background-color:#ff4000;}
+
+/* - participate-step-2 */
+.participate-list .participate-step-2 .participate-step--title:before {background:url('/cjom/mobile_employee/images/employee/bg_participate-step_number.png') no-repeat center -36px; background-size: 44px auto}
+.participate-list .participate-step-2 .btn-box .btn--shape14 {width:100%}
+/* - participate-step-3 */
+.participate-list .participate-step-3 .participate-step--title:before {background:url('/cjom/mobile_employee/images/employee/bg_participate-step_number.png') no-repeat center -71px; background-size: 44px auto}
+
+/* - 캠페인용 gift set*/
+.campaign-giftset {background: #fcf7f2;border-bottom:1px solid #f3e5d2}
+.campaign-giftset .component-container {padding:12px 15px; background-color: transparent;}
+.campaign-giftset .campaign-giftset--list {}
+.campaign-giftset .campaign-giftset--list:after {content:''; clear:both; display: block}
+.campaign-giftset .campaign-giftset--item {float: left; width:25%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center}
+.campaign-giftset .campaign-giftset--anchor {display: block; position: relative; padding:0 10px;}
+.campaign-giftset .campaign-giftset--thumnail {display:inline-block; padding:0 7px}
+.campaign-giftset .campaign-giftset--name {display: block; margin-top:3px; min-height:30px; font-size: 11px; word-break: keep-all}
+
+.makers--discount {display:inline-block; position: absolute; top:0; left:10px; overflow: hidden; width:25px; height:25px; border-radius: 50%; background-color:#f45e29; color:#fff; line-height: 25px}
+.makers--discount em {display: inline-block; font-size:10px; font-style: normal; letter-spacing: 0}
+.makers--discount--rate {font-weight: 700;}
+
+/* - 인센티브 및 시상/랭킹 */
+.employee-campaign-award {}
+.employee-campaign-award .component-header__title {color:#5c4743}
+.employee-campaign-award .camapaign-award-detail {background: #f3f3f3 url('/cjom/mobile_employee/images/employee/bg_campaign_award.jpg') repeat-y left top}
+
+.camapaign-award-detail .award-detail--item {position: relative; padding:30px 15px 40px; text-align: center}
+.camapaign-award-detail .award-detail--item:before {content: ''; display: block; position: absolute; top:0; left:50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width:209px; height:1px; background-color:#d4d0cf}
+.camapaign-award-detail .award-detail--item:first-of-type:before {display: none}
+.camapaign-award-detail .award-detail--title {display: inline-block; padding:5px 10px 7px; min-width:110px; font-size: 15px; font-weight: 500; border-radius: 15px; color:#fff; background-color:#a38377;}
+.camapaign-award-detail .award-detail--emphasis {display: block; margin-top: 15px; font-size: 21px; color:#000; font-weight: 500}
+.camapaign-award-detail .award-detail--emphasis .point-text {display: inline-block; font-size: 22px; font-weight: 500; font-style: normal; color: #ff4000;}
+.camapaign-award-detail .award-detail--emphasis .point-text em {font-family: 'roboto'; font-size: inherit; font-weight: inherit; font-style: normal;}
+.camapaign-award-detail .award-detail--description {margin-top: 10px; font-size: 14px; color:#555; line-height: 1.4}
+.camapaign-award-detail .award-detail--description .break-line {display: block;}
+
+.camapaign-award-detail .ranking-reward {overflow: hidden; margin-top: 28px}
+.camapaign-award-detail .ranking-reward li {float:left; margin-top:20px; width:50%;}
+.camapaign-award-detail .ranking-reward li:nth-child(1),
+.camapaign-award-detail .ranking-reward li:nth-child(2) {margin-top:0;}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank {display: block; position: relative; padding-top:53px}
+.camapaign-award-detail .ranking-reward .ranking-reward--prize {display: block; margin-top:3px}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank span,
+.camapaign-award-detail .ranking-reward .ranking-reward--prize span {font-weight:300;}
+.camapaign-award-detail .ranking-reward--inwrap {font-size: 13px; color:#555;}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank:before {content: ''; display: block; position: absolute; top:0; left:50%; margin-left:-51.5px; width:103px; height:46px; background: url('/cjom/mobile_employee/images/employee/img_campaign_gift-card.png') no-repeat 0 0; background-size:103px auto}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank--1:before {background-position-y: 0}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank--2:before {background-position-y: -50.5px}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank--3:before {background-position-y: -101.5px}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank--4:before {background-position-y: -152px}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank--5:before {background-position-y: -202.5px}
+.camapaign-award-detail .ranking-reward .ranking-reward--rank--6:before {background-position-y: -253px}
+
+
+/* PAGE CODE_M.GFT-202 */
+.recommend-employee-box {padding:15px 20px 20px; border:1px solid #ddd;}
+.recommend-employee-box .employee-inwrap {position: relative; padding-right:30px;}
+.recommend-employee-box .employee-inwrap + .btn-box {margin-top:18px}
+.recommend-employee-box .employee-id * {position: relative; display: inline-block; vertical-align: top}
+.recommend-employee-box .employee-id span + span {margin-left:8px; padding-left:8px}
+.recommend-employee-box .employee-id--title {font-weight: 700;}
+.recommend-employee-box .employee-id--value:before {content: ''; display: block; position: absolute; top:50%; left:-1px;  -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width:1px; height:13px; background-color:#ccc }
+.recommend-employee-box .employee-user {margin-top: 7px}
+.recommend-employee-box .btn-box-unit {position: absolute; bottom:-5px; right:-5px;}
+.recommend-employee-box .btn-box-unit .btn-edit {display: inline-block; position: relative; padding:5px; font-size: 12px;font-weight: 300; color:#ff4000}
+.recommend-employee-box .btn-box-unit .btn-edit:before {content:''; display: block; position: absolute; bottom:5px; left:50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width:calc(100% - 10px); height:1px; background-color:#ff4000;}
+
+.campaign-giftset-unit {border-top:1px solid #f3e5d2;}
+
+.msg-area {margin:20px 0; display: table; width:100%; min-height:102.5px; font-size: 14px; color:#000; background-color:#f8f8f8;text-align: center}
+.msg-area .msg-area--inner {display: table-cell; padding:30px 0; vertical-align: middle; line-height: 1.4}
+.msg-area .break-line {display: block}
+.msg-area .text-link {margin-top:10px; font-weight:700; line-height:1.4}
+
+/* 204 */
+.employee-campaign--customer-center {}
+.employee-campaign--customer-center .btn-box {background: transparent}
+.employee-campaign--customer-center .btn-box + .btn-box {margin-top:15px}
+.employee-campaign--customer-center .component-header {z-index:1; position: relative; padding:0; color:#fff}
+.employee-campaign--customer-center .component-header__description {font-size:12px}
+.employee-campaign--customer-center .component-header__description .description--title {display: inline-block; font-weight: 700; color:#ece3da}
+.employee-campaign--customer-center .component-header__description .operating-hours > time {display: inline-block; margin:0 5px; font-size:13px}
+
+.employee-campaign--customer-center .component-container {position: relative; background: transparent}
+.employee-campaign--customer-center .component-container:before {content:''; z-index:0; display: block; position: absolute; bottom:0; left:0; width:100%; height:140%; background:url('/cjom/mobile_employee/images/employee/bg_campaign2.png') no-repeat left top; background-size:cover}
+
+
+
+.product-estimate {margin-top:15px}
+.product-estimate .component-header { border-bottom:1px solid #eee}
+
+.product-estimate-list{ display:block }
+.product-estimate-list__item { position:relative; display:table; width:100%; box-sizing:border-box; border-top:1px solid #eee;}
+.product-estimate-list__item:nth-child(1) {border-top: none}
+.product-estimate-list__thumnail{ display:table-cell; vertical-align:top; width:60px; padding:14px 15px 14px 14px }
+.product-estimate-list__content{ display:table-cell; vertical-align:middle; padding:19px 30px 15px 0 }
+.product-estimate-list__content--no-image{ padding-top:10px; padding-left:14px }
+.product-estimate-list__delete{ display:block; position:absolute; right:0; top:0; width:35px; height:35px; background:url(/cjom/mobile/images/icon/ico-close-23x23.png) no-repeat center; background-size:11.5px 11.5px }
+.product-estimate-list__number{ font-size:12px; line-height:22px; color:#000; font-weight:700 }
+.product-estimate-list__title{ font-size:14px; line-height:1.45; color:#000 }
+.product-estimate-list__date{ font-size:12px; color:#767676; margin-top:8px }
+.product-estimate-list .btn-box {overflow: hidden; margin-top:10px}
+.product-estimate-list .btn-box-unit {float:left}
+.product-estimate-list .btn--edit-count {display:inline-block; margin-left:15px; height:30px; line-height: 30px; background: transparent}

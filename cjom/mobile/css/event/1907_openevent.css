@@ -1,0 +1,76 @@
+@charset 'utf-8';
+
+.open-event02 {background-color:#e72351;}
+
+.open-event02 h2 {position:relative;height:270px;background:url('/cjom/mobile/images/event/201907_open/tit_timesale.png') no-repeat 50% 0;background-size:auto 270px;}
+.open-event02 h2 .today {position:absolute;left:0;top:34%;width:95%;text-align:center;padding-right:5%;color:#f4de21;font-size:38px;font-weight:bold;font-style:italic;z-index:10;}
+.open-event02 h2 .today span {font-size:54px;vertical-align:text-bottom;margin-right:2px;}
+
+.dill {padding:0 20px;}
+.dill.navelDill {margin-top:20px;}
+.dill .dill-top {display:table;width:100%;height:67px;padding:12px 10px;height:67px;color:#fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.dill .dill-top .time {display:table-cell;vertical-align:middle;width:80px;padding-left:35px;font-size:18px;border-radius:40px;background:url('/cjom/mobile/images/event/201907_open/icon_timer.png') no-repeat 10px 50%;background-size:20px;}
+.dill.timeDill .time {background-color:#7c5b32;}
+.dill.navelDill .time {background-color:#0c3920;}
+.dill .dill-top h3 {display:table-cell;vertical-align:middle;padding-left:8px;font-size:23px;font-weight:bold;}
+.dill .dill-top h3 span {display:block;font-size:11px;font-weight:normal;}
+.dill.timeDill .dill-top {background-color:#b18247; }
+.dill.navelDill .dill-top {background-color:#11512e; }
+.dill .dill-cont {position:relative;padding:0 10px 10px;background-color:#fff;}
+.dill .dill-cont .txt01 {display:block;color:#e72351;font-size:15px;font-weight:bold;}
+.dill .dill-cont .txt02 {display:block;margin-top:10px;color:#111;font-weight:bold;font-size:19px;}
+.dill .dill-cont .txt03 {display:block;margin-top:10px;color:#111;font-size:15px;}
+.dill .dill-cont .price01 {margin-top:10px;font-size:12px;color:#797979;}
+.dill .dill-cont .price01 span {padding-left:5px;font-family:tahoma;}
+.dill .dill-cont .price02 {display:block;line-height:35px;font-size:17px;color:#111;font-weight:bold;}
+.dill .dill-cont .price02 span {font-size:27px;color:#e72351;vertical-align:text-bottom;font-family:tahoma;}
+.dill .dill-cont .price01 em,
+.dill .dill-cont .price02 em {display:inline-block;width:70px;font-style:initial;}
+.dill .dill-cont .price02 .unit {display:inline-block;margin-left:2px;font-size:17px;vertical-align:middle;}
+.dill .dill-cont button {margin-top:10px;width:100%;height:45px;color:#fff;font-size:16px;border-radius:0;background-color:#000;}
+.dill .dill-cont .thumb {position:relative;width:250px;margin:0 auto;text-align:center;}
+.dill .dill-cont .thumb .label {position:absolute;right:15px;bottom:0;display:block;width:77px;height:78px;text-indent:-999999em;}
+.dill.timeDill .dill-cont .thumb .label {background:url('/cjom/mobile/images/event/201907_open/label_deal.png') no-repeat 0 0;background-size:77px 78px;}
+.dill.navelDill .dill-cont .thumb .label {background:url('/cjom/mobile/images/event/201907_open/label_navel.png') no-repeat 0 0;background-size:77px 78px;}
+.dill .dill-cont.soldout .soldoutBg {display:block;position:absolute;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0.7;filter: alpha(opacity=70);}
+.dill .dill-cont.soldout .soldoutMsg {position:absolute;left:50%;top:50%;margin:-85px 0 0 -85px;color:#fff;z-index:100;text-align:center;width:150px;height:150px;border:10px solid #fff;border-radius:300px;}
+.dill .dill-cont.soldout .soldoutMsg .msg01 {display:block;font-size:13px;line-height:18px;padding:20px 0 5px;}
+.dill .dill-cont.soldout .soldoutMsg .msg02 {display:block;font-size:40px;line-height:38px;font-weight:bold;font-family:tahoma;}
+
+
+.open-event02 .timesale {margin:25px 20px 0;background-color:#fff;}
+.open-event02 .timesale .timesale-top {text-align:center;color:#666;font-size:24px;font-weight:bold;padding:13px 0;line-height:35px;background-color:#f1f1f1;}
+.open-event02 .timesale .timesale-top em {display:inline-block;font-style:initial;margin-left:1px;width:35px;height:35px;line-height:35px;text-align:center;color:#fff;border-radius:100px;font-family:Arial;background-color:#666;}
+.open-event02 .timesale .timesale-top span {font-weight:bold;margin-left:10px;}
+.open-event02 .timesale .timesale-cont .timesale-cont-list {padding:10px 0;border-top:1px solid #e5e5e5;}
+.open-event02 .timesale .timesale-cont .timesale-cont-list:first-child{border-top:0;}
+.open-event02 .timesale .timesale-cont .timesale-cont-list h3 {display:block;width:100%;margin-bottom:20px;text-align:center;font-size:18px;font-weight:bold;}
+.open-event02 .timesale .timesale-cont .timesale-cont-list h3 {color:#b18247;}
+.open-event02 .timesale .timesale-cont .timesale-cont-list:last-child h3 {color:#11512e;}
+.open-event02 .timesale .timesale-cont dl {display:table;overflow:hidden;width:100%;padding:0 15px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.open-event02 .timesale .timesale-cont dl {border-left:1px solid #e5e5e5;}
+.open-event02 .timesale .timesale-cont dl .thumb {display:table-cell;vertical-align:middle;width:140px;height:180px;margin:0 30px 0 50px;}
+.open-event02 .timesale .timesale-cont dl .info {display:table-cell;vertical-align:middle;padding-left:10px;}
+.open-event02 .timesale .timesale-cont dl .info a {display:block;}
+.open-event02 .timesale .timesale-cont dl .txt01 {display:block;color:#e72351;font-size:12px;}
+.open-event02 .timesale .timesale-cont dl .txt02 {display:block;margin-top:3px;color:#111;font-weight:bold;font-size:14px;}
+.open-event02 .timesale .timesale-cont dl .txt03 {display:block;margin-top:10px;color:#111;font-size:12px;}
+.open-event02 .timesale .timesale-cont dl .price {display:block;margin-top:10px;color:#111;font-weight:bold;}
+.open-event02 .timesale .timesale-cont dl .price em {vertical-align:middle;font-size:12px;margin-right:2px;font-style:initial;}
+.open-event02 .timesale .timesale-cont dl .price span {font-size:16px;color:#e72351;font-family:tahoma;}
+.open-event02 .timesale .timesale-cont dl .price .unit {margin-left:1px;}
+
+.open-event02 .event-noti {padding:30px 20px;}
+.open-event02 .event-noti .event-noti-title {width:140px;text-align:center;margin:0 auto;border:2px solid #fff;color:#fff;border-radius:100px;font-size:16px;height:35px;line-height:35px;cursor:pointer;}
+.open-event02 .event-noti .event-noti-title span {position:relative;padding-right:20px;}
+.open-event02 .event-noti .event-noti-title span:after {position:absolute;right:0;top:50%;margin-top:-5px;width:13px;height:8px;display:inline-block;background:url('/cjom/mobile/images/event/201907_open/bul_arr_close.png') no-repeat 0 0;background-size:13px auto;content:'';}
+.open-event02 .event-noti.visible .event-noti-title span:after {background:url('/cjom/mobile/images/event/201907_open/bul_arr_open.png') no-repeat 0 0;background-size:13px auto;}
+.open-event02 .event-noti.visible .event-noti-cont {display:none;}
+.open-event02 .event-noti .event-noti-desc {padding:20px 0;}
+.open-event02 .event-noti .event-noti-desc:last-child {padding-bottom:0;}
+.open-event02 .event-noti .event-noti-tit {margin-bottom:10px;color:#fff;font-size:11px;}
+.open-event02  .event-noti .event-noti-tit + .event-noti-desc {padding-top:0;}
+.open-event02 .event-noti .event-noti-desc li {position:relative;padding-left:8px;font-size:11px;line-height:16px;color:#fff;}
+.open-event02 .event-noti .event-noti-desc li:before {position:absolute;width:3px;height:1px;background-color:#fff; top:7px;left: 0;content: '';}
+
+.open-event02 .naver-keyword {background-color:#fff;}

@@ -1,0 +1,153 @@
+Index: cjom/web/css/ui.cjom.front.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/css/ui.cjom.front.css	(revision 1190)
++++ cjom/web/css/ui.cjom.front.css	(date 1548649639731)
+@@ -82,3 +82,13 @@
+ .checkbox.disabled.on:after{opacity:0.3; background:#0e5232;}
+ .checkbox.disabled:after{background:#f8f8f8; opacity:1;}
+ .checkbox.focus:after{border-color:#000;}
++
++/* checkbox */
++.radio{position:relative; display:inline-block; width:22px; height:22px;}
++.radio input{position:relative; width:100%; height:100%; opacity:1; z-index:3;  -webkit-appearance:radio}
++.radio input:checked{background:blue;}
++.radio:after{content:''; display:block; width:100%; height:100%; border:1px solid #ccc; border-radius:2px; background:#fff; }
++.radio.on:after{border-color:#0e5232; background:#0e5232;}
++.radio.disabled.on:after{opacity:0.3; background:#0e5232;}
++.radio.disabled:after{background:#f8f8f8; opacity:1;}
++.radio.focus:after{border-color:#000;}
+Index: cjom/web/guide/checkbox.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/guide/checkbox.html	(revision 1190)
++++ cjom/web/guide/checkbox.html	(date 1548636047348)
+@@ -36,18 +36,19 @@
+ 	<label><input type="checkbox"/>라벨이 감싸고 있는데 아이디값이 없어요</label>
+ 
+ 	<br><br>
+-	<input type="checkbox" data-all="all" checked/>
+-	<input type="checkbox" data-check="all"/>
+-	<input type="checkbox" data-check="all"/>
+-	<input type="checkbox" data-check="all"/>
+-	<input type="checkbox" data-check="all"/>
++	<input type="checkbox" data-all="all"/><br>
++	<input type="checkbox"  data-all="all_ch01" data-check="all"/><br>
++	<input type="checkbox" data-check="all_ch01"/>
++	<input type="checkbox" data-check="all_ch01"/>
++	<input type="checkbox" data-check="all_ch01"/>
++	<input type="checkbox" data-check="all_ch01"/>
+ 
+ 	<br><br>
+-	<input type="checkbox" data-all="all2"/>
+-	<input type="checkbox" data-check="all2"/>
+-	<input type="checkbox" data-check="all2"/>
+-	<input type="checkbox" data-check="all2"/>
+-	<input type="checkbox" data-check="all2"/>
++	<input type="checkbox" data-all="all_ch02" data-check="all"/><br>
++	<input type="checkbox" data-check="all_ch02"/>
++	<input type="checkbox" data-check="all_ch02"/>
++	<input type="checkbox" data-check="all_ch02"/>
++	<input type="checkbox" data-check="all_ch02"/>
+ </div>
+ </body>
+ </html>
+Index: cjom/web/guide/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/guide/index.html	(revision 1190)
++++ cjom/web/guide/index.html	(date 1548635619173)
+@@ -48,6 +48,9 @@
+ 				<a href="button.html">Button</a>
+ 			</li>
+ 			<li>
++				<a href="checkbox.html">checkbox</a>
++			</li>
++			<li>
+ 				<a href="modal.html">Modal</a>
+ 			</li>
+ 		</ul>
+Index: cjom/web/guide/radio.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/guide/radio.html	(date 1548649874007)
++++ cjom/web/guide/radio.html	(date 1548649874007)
+@@ -0,0 +1,41 @@
++<!DOCTYPE html>
++<html lang="ko">
++<head>
++	<meta charset="UTF-8">
++	<meta name="viewport" content="width=1440" />
++	<meta http-equiv="X-UA-Compatible" content="ie=edge">
++	<title>CJ제일제당 가정간편식 전문몰</title>
++	<link rel="stylesheet" type="text/css" href="../css/ui.cjom.front.css" />
++	<script type="text/javascript" src="../js/library.js"></script>
++	<script type="text/javascript" src="../js/ui.cjom.front.js"></script>
++	<!-- guide -->
++	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
++	<link rel="stylesheet" type="text/css" href="guide.css" />
++	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
++	<script type="text/javascript" src="guide.js"></script>
++	<!-- //guide -->
++</head>
++<body>
++<div class="guide-wrap">
++	<h1>Input</h1>
++	<h2>Default</h2>
++	<h3>html</h3>
++	<pre><code class="html">&lt;span class="input"&gt;
++	&lt;input type="text" /&gt;
++&lt;/span&gt;</code></pre>
++	<h3>view</h3>
++	<label for="">
++	<input type="radio" name="name1" checked></label>
++	<label for="">
++	<input type="radio" name="name1"></label>
++	<label for="">
++	<input type="radio" name="name1"></label><br><br>
++	<label for="">
++		<input type="radio" name="name2"></label>
++	<label for="">
++		<input type="radio" name="name2"></label>
++	<label for="">
++		<input type="radio" name="name2"></label>
++</div>
++</body>
++</html>
+Index: cjom/web/js/ui.cjom.front.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cjom/web/js/ui.cjom.front.js	(revision 1190)
++++ cjom/web/js/ui.cjom.front.js	(date 1548649864510)
+@@ -111,7 +111,20 @@
+ 			});
+ 		},
+ 		radio: function () {
+-
++			$($('[type=radio]')).each(function() {
++				if (!$(this).closest("span").hasClass('radio')) {$(this).wrap("<span class='radio' />");}
++				var name = $(this).attr('name');
++				var $perent = $(this).closest('.radio');
++				$(this).on("change.checkbox", function () {
++					if($(this).prop("checked")) {
++						$('[name="' + name + '"]').closest('.radio').removeClass('on');
++						$perent.addClass('on');
++					}
++					if($(this).prop("disabled")){
++						$perent.addClass('disabled');
++					}
++				}).change();
++			});
+ 		},
+ 		select: function () {
+ 			$("[data-select]").each(function(){

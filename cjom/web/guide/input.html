@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>Input</h1>
+	<pre><code class="js">cjom.input.init() //ui.cjom.fornt.js 파일이 로드 된 이후에 생성 된 input 이 있을 경우 호출.</code></pre>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" placeholder="힌트 텍스트가 노출됩니다." data-class="lg" /&gt;
+&lt;input type="text" placeholder="힌트 텍스트가 노출됩니다." /&gt;
+&lt;input type="text" placeholder="힌트 텍스트가 노출됩니다." data-class="sm" /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" placeholder="힌트 텍스트가 노출됩니다." data-class="lg" /><br>
+	<input type="text" placeholder="힌트 텍스트가 노출됩니다." /><br>
+	<input type="text" placeholder="힌트 텍스트가 노출됩니다." data-class="sm" />
+
+	<hr>
+	
+	<h2>Placeholder</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" placeholder="힌트 텍스트가 노출됩니다." data-class="class1 class2" style="width:500px" /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" placeholder="힌트 텍스트가 노출됩니다." data-class="class1 class2" style="width:500px" />
+	
+	<hr>
+	
+	<h2>Value</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" value="CJONMART" placeholder="힌트 텍스트가 노출됩니다." /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" value="CJONMART" placeholder="힌트 텍스트가 노출됩니다." />
+	
+	<hr>
+	
+	<h2>Disabled</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" disabled placeholder="힌트 텍스트가 노출됩니다." /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" disabled placeholder="힌트 텍스트가 노출됩니다." />
+	
+	<hr>
+	
+	<h2>Value + Disabled</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" value="CJONMART" disabled placeholder="힌트 텍스트가 노출됩니다." /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" value="CJONMART" disabled placeholder="힌트 텍스트가 노출됩니다." />
+	<hr>
+
+	<h2>Value + Readonly</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" value="CJONMART" readonly placeholder="힌트 텍스트가 노출됩니다." /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" value="CJONMART" readonly placeholder="힌트 텍스트가 노출됩니다." />
+
+	<h2>Text Info Type</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;div class="form-input"&gt;
+	&lt;input type="number" id="account-number" placeholder="- 없이 입력" style="width:325px;"/&gt;
+	&lt;span class="info-text"&gt;본인명의 계좌만 등록/변경 가능합니다.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	<h3>basic</h3>
+	<div class="form-input">
+		<input type="number" id="account-number" placeholder="- 없이 입력" style="width:325px;"/>
+		<span class="info-text">본인명의 계좌만 등록/변경 가능합니다.</span>
+	</div>
+
+	<h2>Card Type</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="tel" data-cleave="card" placeholder="16자리 입력" /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="tel" data-cleave="card" placeholder="16자리 입력" />
+
+	<h2>scratch Type</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="tel" data-cleave="scratch" placeholder="6자리 입력" /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="tel" data-cleave="scratch" placeholder="6자리 입력" />
+
+	<h2>Delete Type</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="text" data-delete placeholder="힌트 텍스트가 노출됩니다." /&gt;</code></pre>
+	<h3>VIEW</h3>
+	<input type="text" data-delete placeholder="힌트 텍스트가 노출됩니다." data-class="lg" style="width:325px;" /><br>
+	<input type="text" data-delete placeholder="힌트 텍스트가 노출됩니다." style="width:325px;" /><br>
+	<input type="text" data-delete placeholder="힌트 텍스트가 노출됩니다." data-class="sm" style="width:325px;" />
+
+	<h2>Error Type</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">&lt;input type="password" placeholder="힌트 텍스트가 노출됩니다." /&gt;
+&lt;input type="password" placeholder="힌트 텍스트가 노출됩니다." /&gt;</code></pre>
+	<pre><code class="js">cjom.input.error('#testIpt', '비밀번호를 입력 하세요.') // 오류 발생
+cjom.inputError('#testIpt') // 오류 제거</code></pre>
+	<h3>basic</h3>
+	<button type="button" class="btn-default" onclick="cjom.input.error('#testIpt', '비밀번호를 입력 하세요.')"><span>오류 발생</span></button>
+	<button type="button" class="btn-default" onclick="cjom.input.error('#testIpt')"><span>오류 제거</span></button><br><br>
+	<input type="password" id="testIpt" placeholder="힌트 텍스트가 노출됩니다." />
+
+	<h3>left</h3>
+	<button type="button" class="btn-default" onclick="cjom.input.error('#testIpt2', '비밀번호를 입력 하세요.')"><span>오류 발생</span></button>
+	<button type="button" class="btn-default" onclick="cjom.input.error('#testIpt2')"><span>오류 제거</span></button><br><br>
+	<input type="password" id="testIpt2" data-error="right" placeholder="힌트 텍스트가 노출됩니다." />
+
+</div>
+</body>
+</html>

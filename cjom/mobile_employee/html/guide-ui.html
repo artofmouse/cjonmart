@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>퍼블리싱 가이드</title>
+    <link href="/cjom/mobile/css/lib/jquery-ui.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/lib/slick-theme.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/lib/slick.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/common.css" rel="stylesheet">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+    <style>
+        body {
+            padding: 20px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .common + .common {
+            margin-top: 30px;
+        }
+        .common .common__description {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .common .common__title,
+        .common .common__description {
+            padding: 20px 10px;
+        }
+        .common .common__sub-title {
+            padding: 15px 0 15px 15px;
+            background-color: #ccc;
+        }
+        .common .common__box {
+            border: 1px solid #000;
+        }
+        .common .common__box--code {
+
+        }
+        .common .common__box--result {
+
+        }
+        .common .common__code {
+            margin-left: -110px;
+        }
+        .common .common__result {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>공통 가이드</h1>
+<br><br>
+<div class="common">
+    <div class="common__box common__box--result">
+        <h3 class="common__sub-title">Icon</h3>
+        <div class="common__result">
+            <img class="ico-essential" src="/cjom/mobile/images/common/ico-essential.png" alt="필수입력">
+            <span class="ico-type1 ico-type1--plus"></span>&nbsp;&nbsp;
+            <span class="ico-type1 ico-type1--minus"></span>&nbsp;&nbsp;
+            <span class="ico-type1 ico-type1--equal"></span>&nbsp;&nbsp;
+            <span class="ico-type2 ico-type2--plus"></span>&nbsp;&nbsp;
+            <span class="ico-type2 ico-type2--minus"></span>&nbsp;&nbsp;
+            <span class="ico-type2 ico-type2--equal"></span>&nbsp;&nbsp;
+            <span class="ico-type4 ico-circle-black">\</span>&nbsp;&nbsp;
+            <br>
+            <p class="caution_text">100MB 이하만 첨부하실 수 있습니다.</p>
+
+
+        </div>
+    </div>
+</div>
+<div class="common">
+    <div class="common__box common__box--result">
+        <h3 class="common__sub-title">Tab</h3>
+        <div class="common__result">
+            <h3>.tab .tab--col-2</h3>
+            <div class="tab tab--col-2">
+                <div class="tab__table">
+                    <div class="tab__row">
+                        <a class="tab__col is-active" href="#">제품</a>
+                        <a class="tab__col" href="#">포인트/쿠폰</a>
+                    </div>
+                    <div class="tab__row">
+                        <a class="tab__col" href="#">배송</a>
+                        <a class="tab__col" href="#">교환/반품/환불</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>.tab .tab--col-3</h3>
+            <div class="tab tab--col-3">
+                <div class="tab__table">
+                    <div class="tab__row">
+                        <a class="tab__col is-active" href="#">제품</a>
+                        <a class="tab__col" href="#">포인트/쿠폰</a>
+                        <a class="tab__col" href="#">주문/결제/증빙</a>
+                    </div>
+                    <div class="tab__row">
+                        <a class="tab__col" href="#">배송</a>
+                        <a class="tab__col" href="#">교환/반품/환불</a>
+                        <a class="tab__col" href="#">회원</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>.tab .tab--col-4</h3>
+            <div class="tab tab--col-4">
+                <div class="tab__table">
+                    <div class="tab__row">
+                        <a class="tab__col is-active" href="#">제품</a>
+                        <a class="tab__col" href="#">포인트</a>
+                        <a class="tab__col" href="#">주문</a>
+                        <a class="tab__col" href="#">탭4</a>
+                    </div>
+                    <div class="tab__row">
+                        <a class="tab__col" href="#">배송</a>
+                        <a class="tab__col" href="#">교환</a>
+                        <a class="tab__col" href="#">회원</a>
+                        <a class="tab__col" href="#">탭4</a>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <h3>.tab .tab--type-2{ margin: 20px; height: 32px; }</h3>
+            <br>
+            <div class="tab tab--type-2 tab--col-4">
+                <div class="tab__table">
+                    <a class="tab__col is-active" href="#">1개월</a>
+                    <a class="tab__col" href="#">3개월</a>
+                    <a class="tab__col" href="#">6개월</a>
+                    <a class="tab__col" href="#">1년</a>
+                </div>
+            </div>
+            <br>
+            <div class="tab tab--type-2 tab--col-3">
+                <div class="tab__table">
+                    <a class="tab__col is-active" href="#">1개월</a>
+                    <a class="tab__col" href="#">3개월</a>
+                    <a class="tab__col" href="#">6개월</a>
+                </div>
+            </div>
+            <br><br><br>
+            <h3>.section__tab</h3>
+            <br>
+            <div class="section__tab">
+                <ul class="section__tab__inner" data-js="scrollx-positioning" data-options='{"tablemode":true}'>
+                    <li class="section__tab__item" data-js="scrollx-positioning__item">
+                        <a class="section__tab__link" href="#">주문내역/배송현황</a>
+                    </li>
+                    <li class="section__tab__item" data-js="scrollx-positioning__item">
+                        <a class="section__tab__link" href="#">취소/반품/교환신청</a>
+                    </li>
+                    <li class="section__tab__item" data-js="scrollx-positioning__item">
+                        <a class="section__tab__link" href="#">취소/반품/교환신청</a>
+                    </li>
+                    <li class="section__tab__item" data-js="scrollx-positioning__item">
+                        <a class="section__tab__link" href="#">취소/반품/교환신청</a>
+                    </li>
+                    <li class="section__tab__item is-active" data-js="scrollx-positioning__item">
+                        <a class="section__tab__link" href="#">영수증 신청발행</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br><br>
+
+            <h3>.sc-tab-1</h3>
+            <br>
+            <div class="sc-tab-1">
+                <ul class="sc-tab-1__inner" data-js="scrollx-positioning" data-options='{"tablemode":true,"minimum":4}'>
+                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item">
+                        <a class="sc-tab-1__anchor" href="#">주문내역/배송현황</a>
+                    </li>
+                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item">
+                        <a class="sc-tab-1__anchor" href="#">취소/반품/교환신청</a>
+                    </li>
+                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item">
+                        <a class="sc-tab-1__anchor is-active" href="#">취소/반품/교환신청</a>
+                    </li>
+                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item">
+                        <a class="sc-tab-1__anchor" href="#">취소/반품/교환신청</a>
+                    </li>
+                    <li class="sc-tab-1__item" data-js="scrollx-positioning__item">
+                        <a class="sc-tab-1__anchor is-active" href="#">영수증 신청발행</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <h3>.sc-tab-1--col-2</h3>
+            <br>
+            <div class="sc-tab-1 sc-tab-1--col-2">
+                <ul class="sc-tab-1__inner">
+                    <li class="sc-tab-1__item">
+                        <a class="sc-tab-1__anchor is-active" href="#">주문내역</a>
+                    </li>
+                    <li class="sc-tab-1__item">
+                        <a class="sc-tab-1__anchor" href="#">영수증 신청발행</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <h3>.sc-tab-1--col-3</h3>
+            <br>
+            <div class="sc-tab-1 sc-tab-1--col-3">
+                <ul class="sc-tab-1__inner">
+                    <li class="sc-tab-1__item">
+                        <a class="sc-tab-1__anchor is-active" href="#">주문내역</a>
+                    </li>
+                    <li class="sc-tab-1__item">
+                        <a class="sc-tab-1__anchor" href="#">취소</a>
+                    </li>
+                    <li class="sc-tab-1__item">
+                        <a class="sc-tab-1__anchor" href="#">영수증</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <h3>.sc-tab-2</h3>
+            <br>
+            <div class="sc-tab-2">
+                <ul class="sc-tab-2__inner">
+                    <li class="sc-tab-2__item">
+                        <a class="sc-tab-2__anchor is-active" href="#">스마트 추천</a>
+                    </li>
+                    <li class="sc-tab-2__item">
+                        <a class="sc-tab-2__anchor" href="#">직접선택하기</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <h3>.sc-tab-2--col-3</h3>
+            <br>
+            <div class="sc-tab-2 sc-tab-2--col-3">
+                <ul class="sc-tab-2__inner">
+                    <li class="sc-tab-2__item">
+                        <a class="sc-tab-2__anchor is-active" href="#">스마트 추천</a>
+                    </li>
+                    <li class="sc-tab-2__item">
+                        <a class="sc-tab-2__anchor" href="#">직접선택하기</a>
+                    </li>
+                    <li class="sc-tab-2__item">
+                        <a class="sc-tab-2__anchor" href="#">직접선택하기</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <h3>.sc-tab-3--col-3</h3>
+            <br>
+            <div class="sc-tab-3 sc-tab-3--col-3">
+                <ul class="sc-tab-3__inner">
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor is-active" href="#">주문상품</a>
+                    </li>
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor" href="#">장바구니</a>
+                    </li>
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor" href="#">찜하기</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+
+            <h3>.sc-tab-3--col-4</h3>
+            <br>
+            <div class="sc-tab-3 sc-tab-3--col-4">
+                <ul class="sc-tab-3__inner">
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor is-active" href="#">주문상품</a>
+                    </li>
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor" href="#">장바구니</a>
+                    </li>
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor" href="#">찜하기</a>
+                    </li>
+                    <li class="sc-tab-3__item">
+                        <a class="sc-tab-3__anchor" href="#">상품없음</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="common">
+        <div class="common__box common__box--result">
+            <h3 class="common__sub-title">Button</h3>
+            <div class="common__result">
+                <h3>btn--shape01{ height: 50px; (100px) }</h3>
+                <br>
+                <button class="btn btn--shape01 btn--style01">버튼명</button>
+                <button class="btn btn--shape01 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape01 btn--style02">버튼명</button>
+                <button class="btn btn--shape01 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape01 btn--style03">버튼명</button>
+                <button class="btn btn--shape01 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape01 btn--style04">버튼명</button>
+                <button class="btn btn--shape01 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape01 btn--style05">버튼명</button>
+                <button class="btn btn--shape01 btn--style05" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape01 btn--style07">버튼명</button>
+                <br><br>
+                <h3>btn--shape02 { height: 40px; (80px) }</h3>
+                <br>
+                <button class="btn btn--shape02 btn--style01">버튼명</button>
+                <button class="btn btn--shape02 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape02 btn--style02">버튼명</button>
+                <button class="btn btn--shape02 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape02 btn--style03">버튼명</button>
+                <button class="btn btn--shape02 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape02 btn--style04">버튼명</button>
+                <button class="btn btn--shape02 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape02 btn--style05">버튼명</button>
+                <button class="btn btn--shape02 btn--style05" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape02 btn--style07">버튼명</button>
+                <br><br>
+                <h3>btn--shape03 { height: 32px; (64px) } --old</h3>
+                <br>
+                <button class="btn btn--shape03 btn--style01">버튼명</button>
+                <button class="btn btn--shape03 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape03 btn--style02">버튼명</button>
+                <button class="btn btn--shape03 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape03 btn--style03">버튼명</button>
+                <button class="btn btn--shape03 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape03 btn--style04">버튼명</button>
+                <button class="btn btn--shape03 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape03 btn--style05">버튼명</button>
+                <button class="btn btn--shape03 btn--style05" disabled>버튼명 disabled</button>
+                <br><br>
+                <h3>btn--shape04 { height: 55px; (110px) } --old</h3>
+                <br>
+                <button class="btn btn--shape04 btn--style01">버튼명</button>
+                <button class="btn btn--shape04 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape04 btn--style02">버튼명</button>
+                <button class="btn btn--shape04 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape04 btn--style03">버튼명</button>
+                <button class="btn btn--shape04 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape04 btn--style04">버튼명</button>
+                <button class="btn btn--shape04 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape04 btn--style05">버튼명</button>
+                <button class="btn btn--shape04 btn--style05" disabled>버튼명 disabled</button>
+                <br><br>
+                <h3>btn--shape05 { height: 32px; (64px) width: 85px; } --old</h3>
+                <br>
+                <button class="btn btn--shape05 btn--style01">버튼명</button>
+                <button class="btn btn--shape05 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape05 btn--style02">버튼명</button>
+                <button class="btn btn--shape05 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape05 btn--style03">버튼명</button>
+                <button class="btn btn--shape05 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape05 btn--style04">버튼명</button>
+                <button class="btn btn--shape05 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape05 btn--style05">버튼명</button>
+                <button class="btn btn--shape05 btn--style05" disabled>버튼명 disabled</button>
+                <br><br><br><br>
+                <h3>btn--shape06 { height: 30px; (60px) width: 70px; }</h3>
+                <br>
+                <button class="btn btn--shape06 btn--style01">버튼명</button>
+                <button class="btn btn--shape06 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape06 btn--style02">버튼명</button>
+                <button class="btn btn--shape06 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape06 btn--style03">버튼명</button>
+                <button class="btn btn--shape06 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape06 btn--style04">버튼명</button>
+                <button class="btn btn--shape06 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape06 btn--style05">버튼명</button>
+                <button class="btn btn--shape06 btn--style05" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape06 btn--style07">버튼명</button>
+                <br><br><br><br>
+                <h3>btn--shape07 { height: 30px; (60px) width: 80px; }</h3>
+                <br>
+                <button class="btn btn--shape07 btn--style01">버튼명</button>
+                <button class="btn btn--shape07 btn--style01" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape07 btn--style02">버튼명</button>
+                <button class="btn btn--shape07 btn--style02" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape07 btn--style03">버튼명</button>
+                <button class="btn btn--shape07 btn--style03" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape07 btn--style04">버튼명</button>
+                <button class="btn btn--shape07 btn--style04" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape07 btn--style05">버튼명</button>
+                <button class="btn btn--shape07 btn--style05" disabled>버튼명 disabled</button>
+                <button class="btn btn--shape07 btn--style07">버튼명</button>
+                <br><br><br><br>
+
+                <h3>btn-box--col-2</h3>
+                <div class="btn-box btn-box--col-2">
+                    <button class="btn btn--shape01 btn--style02">취소</button>
+                    <button class="btn btn--shape01 btn--style01">등록</button>
+                </div>
+                <br><br><br><br>
+                <h3>팝업 내 버튼 : btn-box--col-2 + btn-box--none-margin > btn--style10 + btn--style01</h3>
+                <div class="btn-box btn-box--col-2 btn-box--none-margin">
+                    <button class="btn btn--shape04 btn--style10">취소</button>
+                    <button class="btn btn--shape04 btn--style01">등록</button>
+                </div>
+                <br><br>
+                <h3>팝업 내 버튼 : btn-box--col-2 + btn-btx--none-margin > btn--style07 + btn--style01</h3>
+                <div class="btn-box btn-box--col-2 btn-box--none-margin">
+                    <button class="btn btn--shape04 btn--style07">취소</button>
+                    <button class="btn btn--shape04 btn--style01">등록</button>
+                </div>
+                <br><br>
+                <h3>구매하기 + 선물 버튼</h3>
+                <div class="btn-box btn-box--none-margin btn-box--gift">
+                    <button class="btn btn--shape01 btn--style01">구매하기 (<span class="number">13,369</span>원)</button>
+                    <button class="btn btn--shape01 btn--style07 btn--ico05">선물</button>
+                </div>
+                <br><br>
+                <h3>link</h3>
+                <br>
+                .link-right-arrow
+                <br><br>
+                <a class="link-right-arrow" href="#">회원정보수정</a>
+                <br><br>
+                .link-right-arrow--type2
+                <br><br>
+                <a class="link-right-arrow link-right-arrow--type2" href="#">전체보기</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="common">
+        <div class="common__box common__box--result">
+            <h3 class="common__sub-title">Form</h3>
+            <style>
+                .form-element + .form-element {
+                    margin-top: 20px;
+                }
+            </style>
+            <div class="common__result">
+                <h3 style="margin: 20px 0;">.input </h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="text" class="form-element__input"
+                           placeholder="input[type=text]" data-js="form-ctrl__input">
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="password" class="form-element__input"
+                           placeholder="input[type=password]" data-js="form-ctrl__input">
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="number" class="form-element__input"
+                           placeholder="input[type=number]" data-js="form-ctrl__input">
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+
+                <h3 style="margin: 20px 0;">.input - disabled </h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="text" class="form-element__input"
+                           placeholder="input[type=text]" data-js="form-ctrl__input" disabled>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="password" class="form-element__input"
+                           placeholder="input[type=password]" data-js="form-ctrl__input" disabled>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="number" class="form-element__input"
+                           placeholder="input[type=number]" data-js="form-ctrl__input" disabled>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+
+                <h3 style="margin: 20px 0;">.input - info </h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="text" class="form-element__input"
+                           placeholder="input[type=text]" data-js="form-ctrl__input">
+                    <span class="form-element__alert">안내문구가 출력됩니다.</span>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="password" class="form-element__input"
+                           placeholder="input[type=password]" data-js="form-ctrl__input">
+                    <span class="form-element__alert">안내문구가 출력됩니다.</span>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="number" class="form-element__input"
+                           placeholder="input[type=number]" data-js="form-ctrl__input">
+                    <span class="form-element__alert">안내문구가 출력됩니다.</span>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+
+                <h3 style="margin: 20px 0;">.input - error </h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="text" class="form-element__input"
+                           placeholder="input[type=text]" data-js="form-ctrl__input">
+                    <span class="form-element__error">에러메세지가 노출됩니다.</span>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="password" class="form-element__input"
+                           placeholder="input[type=password]" data-js="form-ctrl__input">
+                    <span class="form-element__error">에러메세지가 노출됩니다.</span>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="number" class="form-element__input"
+                           placeholder="input[type=number]" data-js="form-ctrl__input">
+                    <span class="form-element__error">에러메세지가 노출됩니다.</span>
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+
+                <h3 style="margin: 20px 0;">.input text-align</h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="text" class="form-element__input form-element__input--text-center"
+                           placeholder="input[type=text]" data-js="form-ctrl__input">
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+                <div class="form-element" data-js="form-ctrl">
+                    <input type="text" class="form-element__input form-element__input--text-right"
+                           placeholder=".input.input--text-right" data-js="form-ctrl__input">
+                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                        <span class="blind">필드 내용 삭제</span>
+                    </button>
+                </div>
+
+                <h3 style="margin: 20px 0;">select</h3>
+
+                <div class="form-element">
+                    <select class="form-element__select">
+                        <option>텍스트</option>
+                        <option>가나다라</option>
+                        <option>마바사아</option>
+                        <option>자차카타</option>
+                    </select>
+                    <span class="form-element__error">에러메세지가 노출됩니다.</span>
+                </div>
+
+                <h3 style="margin: 20px 0;">select - disabled</h3>
+
+                <div class="form-element">
+                    <select class="form-element__select" disabled>
+                        <option>텍스트</option>
+                        <option>가나다라</option>
+                        <option>마바사아</option>
+                        <option>자차카타</option>
+                    </select>
+                </div>
+
+                <h3 style="margin: 20px 0;">textarea</h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <textarea class="form-element__textarea" placeholder="Placeholder 속성값 제공"
+                              data-js="form-ctrl__textarea"></textarea>
+                    <div class="form-element__count" data-js="form-ctrl__count" data-max-length="400">
+                        <span data-js="form-ctrl__count-current">0</span>/<span data-js="form-ctrl__count-total">400</span>
+                    </div>
+                </div>
+
+                <h3 style="margin: 20px 0;"> textarea - Has Value </h3>
+                <div class="form-element" data-js="form-ctrl">
+                    <textarea class="form-element__textarea" placeholder="Placeholder 속성값 제공"
+                              data-js="form-ctrl__textarea">텍스트</textarea>
+                    <div class="form-element__count" data-js="form-ctrl__count" data-max-length="400">
+                        <span data-js="form-ctrl__count-current">0</span>/<span data-js="form-ctrl__count-total">400</span>
+                    </div>
+                </div>
+
+                <h3 style="margin: 20px 0;"> textarea - Has error </h3>
+                <div class="form-element form-element--textarea" data-js="form-ctrl">
+                    <textarea class="form-element__textarea" placeholder="Placeholder 속성값 제공"
+                              data-js="form-ctrl__textarea">텍스트</textarea>
+                    <div class="form-element__count" data-js="form-ctrl__count" data-max-length="400">
+                        <span data-js="form-ctrl__count-current">0</span>/<span data-js="form-ctrl__count-total">400</span>
+                    </div>
+                    <span class="form-element__error">에러메세지가 노출됩니다.</span>
+                </div>
+
+                <h4>.checkbox</h4>
+                <br>
+                <div class="checkbox" data-js="checkbox" data-options='{ "firstCheck": true }'>
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                        Checkbox
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                        Checkbox
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                </div>
+                <br><br>
+                <div class="counting-number" data-js="numberCounting" data-options='{ "countingVal": 10 }'>
+                    <button class="counting-number__button counting-number__button--minus" data-js="numberCounting__minus">
+                        <span class="counting__ico counting__ico--minus"></span>
+                        <span class="blind">빼기</span>
+                    </button>
+                    <input type="number" class="counting-number__input" data-js="numberCounting__input" value="3">
+                    <button class="counting-number__button counting-number__button--plus" data-js="numberCounting__plus">
+                        <span class="counting__ico counting__ico--plus"></span>
+                        <span class="blind">추가</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="common">
+        <div class="common__box common__box--result">
+            <h3 class="common__sub-title">Form</h3>
+            <div class="common__result">
+                <h3>.form--half</h3>
+                <br>
+                <div class="form form--half">
+                    <div class="form__column">
+                        <div class="form-element">
+                            <select class="form-element__select">
+                                <option>.select</option>
+                                <option>가나다라</option>
+                                <option>마바사아</option>
+                                <option>자차카타</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form-element">
+                            <select class="form-element__select">
+                                <option>.select</option>
+                                <option>가나다라</option>
+                                <option>마바사아</option>
+                                <option>자차카타</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="form form--half">
+                    <div class="form__row">
+                        <div class="form__column">
+                            <div class="form-element" data-js="form-ctrl">
+                                <input type="text" class="form-element__input" data-js="form-ctrl__input">
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="form-element" data-js="form-ctrl">
+                                <input type="text" class="form-element__input" data-js="form-ctrl__input">
+                                <button class="form-element__delete" data-js="form-ctrl__delete">
+                                    <span class="blind">필드 내용 삭제</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form-element" data-js="form-ctrl">
+                            <input type="text" class="form-element__input" data-js="form-ctrl__input">
+                            <button class="form-element__delete" data-js="form-ctrl__delete">
+                                <span class="blind">필드 내용 삭제</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <h3>.form--has-button</h3>
+                <div class="form form--has-button">
+                    <div class="form__column">
+                        <div class="form-element" data-js="form-ctrl">
+                            <input type="text" class="form-element__input" data-js="form-ctrl__input">
+                            <button class="form-element__delete" data-js="form-ctrl__delete">
+                                <span class="blind">필드 내용 삭제</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn--shape02 btn--style05">찾아보기</button>
+                </div>
+                <br>
+
+                <h3>.form--has-button2</h3>
+                <div class="form form--has-button2">
+                    <div class="form__column">
+                        <div class="form-element" data-js="form-ctrl">
+                            <input type="text" class="form-element__input" data-js="form-ctrl__input">
+                            <button class="form-element__delete" data-js="form-ctrl__delete">
+                                <span class="blind">필드 내용 삭제</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn--shape02 btn--style01">찾아보기</button>
+                </div>
+
+                <h3>.form--phone</h3>
+                <div class="form form--phone">
+                    <div class="form__column">
+                        <div class="form-element">
+                            <input type="text" class="form-element__input" title="사업자등록 번호 입력">
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form-element">
+                            <input type="text" class="form-element__input" title="사업자등록 번호 입력">
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form-element">
+                            <input type="text" class="form-element__input" title="사업자등록 번호 입력">
+                        </div>
+                    </div>
+                </div>
+
+                <h3>.form__card-number</h3>
+                <div class="form">
+                    <div class="form__card-number">
+                        <div class="form__column">
+                            <div class="form-element">
+                                <input type="number" class="form-element__input" title="카드번호 입력">
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="form-element">
+                                <input type="password" class="form-element__input" title="카드번호 입력">
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="form-element">
+                                <input type="password" class="form-element__input" title="카드번호 입력">
+                            </div>
+                        </div>
+                        <div class="form__column">
+                            <div class="form-element">
+                                <input type="number" class="form-element__input" title="카드번호 입력">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <h3>.form--address</h3>
+                <br>
+                <div class="form">
+                    <div class="form__row form--address">
+                        <div class="form__column">
+                            <div class="form-element">
+                                <input type="text"
+                                    class="form-element__input"
+                                    placeholder="우편번호를 확인해주세요."
+                                    title="우편번호 입력">
+                            </div>
+                        </div>
+                        <button class="btn btn--shape02 btn--style05">우편번호 찾기</button>
+                    </div>
+                    <div class="form__row">
+                        <div class="form-element" data-js="form-ctrl">
+                            <input type="text"
+                                class="form-element__input"
+                                placeholder="입력해주세요."
+                                title="주소 입력"
+                                data-js="form-ctrl__input">
+                            <button class="form-element__delete" data-js="form-ctrl__delete">
+                                <span class="blind">필드 내용 삭제</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form-element" data-js="form-ctrl">
+                            <input type="text"
+                                class="form-element__input"
+                                placeholder="입력해주세요."
+                                title="주소 입력"
+                                data-js="form-ctrl__input">
+                            <button class="form-element__delete" data-js="form-ctrl__delete">
+                                <span class="blind">필드 내용 삭제</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <h3>.form__email</h3>
+                <br>
+                <div class="form">
+                    <div class="form__row">
+                        <div class="form__email">
+                            <div class="form__inner-row">
+                                <div class="form__column">
+                                    <div class="form-element">
+                                        <input id="label04" type="text" class="form-element__input" title="이메일 입력">
+                                    </div>
+                                </div>
+                                <div class="form__column form__column--atmark">@</div>
+                                <div class="form__column">
+                                    <div class="form-element">
+                                        <input id="input04" type="text" class="form-element__input" title="이메일 입력">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__inner-row">
+                                <!-- 2019-03-29 수정 -->
+                                <label for="selet-email" class="blind">이메일 직접 입력</label>
+                                <div class="form-element">
+                                    <select id="selet-email" class="form-element__select">
+                                        <option selected>직접입력</option>
+                                        <option>cj.net</option>
+                                    </select>
+                                </div>
+                                <!-- //2019-03-29 수정 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="common">
+        <div class="common__box common__box--result">
+            <h3 class="common__sub-title">Tooltip</h3>
+            <div class="common__result">
+                <div style="text-align: right;">
+                    Tooltip-right
+                    <div class="tooltip" data-js="tooltip">
+                        <button class="tooltip__anchore"  data-js="tooltip__button">
+                            <span class="blind">tooltip</span>
+                        </button>
+                        <div class="tooltip__pannel tooltip__pannel--right" data-js="tooltip__panel">
+                            <div class="tooltip__text">
+                                2004년 부터 부가가치세법의 변경에 따라 세금계산서와 영수증(신용카드)은
+                                이중 발행이 불가하오니 신중하게 선택하여 신청하시기 바랍니다.
+                                (부가세법 시행령 57조 2항)이에 신용카드로 결제시, 세금계산서 발급 요청이 전혀 불가합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    Tooltip-center
+                    <div class="tooltip" data-js="tooltip">
+                        <button class="tooltip__anchore"  data-js="tooltip__button">
+                            <span class="blind">tooltip</span>
+                        </button>
+                        <div class="tooltip__pannel tooltip__pannel--center" data-js="tooltip__panel">
+                            <div class="tooltip__text">
+                                2004년 부터 부가가치세법의 변경에 따라 세금계산서와 영수증(신용카드)은
+                                이중 발행이 불가하오니 신중하게 선택하여 신청하시기 바랍니다.
+                                (부가세법 시행령 57조 2항)이에 신용카드로 결제시, 세금계산서 발급 요청이 전혀 불가합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: left;">
+                    Tooltip-left
+                    <div class="tooltip" data-js="tooltip">
+                        <button class="tooltip__anchore"  data-js="tooltip__button">
+                            <span class="blind">tooltip</span>
+                        </button>
+                        <div class="tooltip__pannel tooltip__pannel--left" data-js="tooltip__panel">
+                            <div class="tooltip__text">
+                                2004년 부터 부가가치세법의 변경에 따라 세금계산서와 영수증(신용카드)은
+                                이중 발행이 불가하오니 신중하게 선택하여 신청하시기 바랍니다.
+                                (부가세법 시행령 57조 2항)이에 신용카드로 결제시, 세금계산서 발급 요청이 전혀 불가합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="common">
+        <div class="common__box common__box--result">
+            <h3 class="common__sub-title">Color Box</h3>
+            <div class="common__result">
+                <div class="color-box color-box--style01">
+                    <div class="color-box__text">color-box color-box--style01</div>
+                </div>
+                <br><br>
+                <div class="color-box color-box--style02">
+                    <div class="color-box__text">color-box color-box--style02</div>
+                </div>
+                <br><br>
+                <div class="color-box color-box--style03">
+                    <div class="color-box__text">color-box color-box--style03</div>
+                </div>
+                <br><br>
+                <div class="color-box color-box--style04">
+                    <div class="color-box__text">color-box color-box--style04 with border-radius 3px</div>
+                </div>
+                <br><br>
+                <div class="color-box color-box--style05">
+                    <div class="color-box__text">color-box color-box--style05</div>
+                </div>
+                <br><br>
+                <div class="color-box color-box--style06">
+                    <div class="color-box__text">color-box color-box--style06</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="common">
+        <div class="common__box common__box--result">
+            <h3 class="common__sub-title">Image Box</h3>
+            <div class="common__result">
+                <h3 style="margin: 15px 0;">default</h3>
+                <div class="image-box image-box--white">
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product09.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text image-box__text--size18">
+                                따뜻한 날씨에는 역시 국물요리
+                            </h3>
+                            <p class="image-box__text image-box__text--size11
+                                image-box__text--color555">
+                                최대50%할인 + 호떡 누르게 증정
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product09.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text image-box__text--size18">
+                                따뜻한 날씨에는 역시 국물요리
+                            </h3>
+                            <p class="image-box__text image-box__text--size11
+                                image-box__text--color555">
+                                최대50%할인 + 호떡 누르게 증정
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <h3 style="margin: 15px 0;">image-box--right</h3>
+                <div class="image-box image-box--right image-box--white">
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product09.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text image-box__text--size18">
+                                따뜻한 날씨에는 역시 국물요리
+                            </h3>
+                            <p class="image-box__text image-box__text--size11
+                                image-box__text--color555">
+                                최대50%할인 + 호떡 누르게 증정
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product09.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text image-box__text--size18">
+                                따뜻한 날씨에는 역시 국물요리
+                            </h3>
+                            <p class="image-box__text image-box__text--size11
+                                image-box__text--color555">
+                                최대50%할인 + 호떡 누르게 증정
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <h3 style="margin: 15px 0;">image-box--column</h3>
+                <div class="image-box image-box--column image-box--white">
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product09.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text">
+                                따뜻한 날씨에는 역시 국물요리
+                            </h3>
+                            <p class="image-box__text image-box__text--size12
+                                    image-box__text--color0e5232 image-box__text--bold">
+                                설문조사
+                            </p>
+                            <span class="image-box__text image-box__text--size12
+                                image-box__text--color555 number">
+                                2018-10-01 ~ 2018-10-31
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product10.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text">
+                                연말은 BYO와 함께!
+                            </h3>
+                            <p class="image-box__text image-box__text--size12
+                                    image-box__text--color0e5232 image-box__text--bold">
+                                설문조사
+                            </p>
+                            <span class="image-box__text image-box__text--size12
+                                image-box__text--color555 number">
+                                2018-10-01 ~ 2018-10-31
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product11.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text">
+                                입맛 돋우는 소문난 반찬메뉴
+                            </h3>
+                            <p class="image-box__text image-box__text--size12
+                                    image-box__text--color0e5232 image-box__text--bold">
+                                설문조사
+                            </p>
+                            <span class="image-box__text image-box__text--size12
+                                image-box__text--color555 number">
+                                2018-10-01 ~ 2018-10-31
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#" class="image-box__anchor">
+                        <img src="/cjom//mobile/images/temp/temp-product12.png" class="image-box__image" alt="대체 텍스트" />
+                        <div class="image-box__text-box">
+                            <h3 class="image-box__text">
+                                밥도둑 인정! 비비고 김자반
+                            </h3>
+                            <p class="image-box__text image-box__text--size12
+                                    image-box__text--color0e5232 image-box__text--bold">
+                                설문조사
+                            </p>
+                            <span class="image-box__text image-box__text--size12
+                                image-box__text--color555 number">
+                                2018-10-01 ~ 2018-10-31
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+<script src="/cjom/mobile/js/plugins/slick.js"></script>
+
+<script src="/cjom/mobile/js/common.js"></script>
+</body>
+</html>

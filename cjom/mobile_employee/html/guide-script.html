@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>퍼블리싱 가이드</title>
+    <link href="/cjom/mobile/css/lib/jquery-ui.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/lib/slick-theme.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/lib/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+    <link href="/cjom/mobile/css/lib/swiper.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/common.css" rel="stylesheet">
+    <link href="/cjom/mobile/css/main.css" rel="stylesheet">
+    <script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+    <style>
+        body {
+        padding: 20px;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .component {
+
+    }
+    .component .component__description {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .component .component__title,
+    .component .component__description {
+        padding: 20px 10px;
+    }
+    .component .component__sub-title {
+        padding: 15px 0 15px 15px;
+        background-color: #ccc;
+    }
+    .component .component__box {
+        border: 1px solid #000;
+    }
+    .component .component__box--code {
+
+    }
+    .component .component__box--result {
+
+    }
+    .component .component__code {
+        margin-left: -110px;
+    }
+    .component .component__result {
+        padding: 15px;
+    }
+    .component .component__code--method {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .component .component__code-ul {
+        padding: 10px 0;
+    }
+    .component .component__code-li + .component__code-li {
+        margin-top: 10px;
+    }
+    .component .component__code-title {
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    .component .component__code-info {
+        color: red;
+    }
+    .component .component__code-link {
+        padding: 5px 0;
+        display: block;
+        color: blue;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: auto;
+        padding: 0 10px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide a {
+        width: 100%;
+        display: block;
+        background-color: #000;
+        color: #fff;
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <h1>On Mart 컴포넌트 가이드</h1>
+
+    <!-- <div class="component">
+        <h2 class="component__title">Swiper</h2>
+        <div class="component__box component__box--result">
+            <div class="swiper-container" data-js="swiper">
+                <div class="swiper-wrapper" data-js="swiper__wrapper">
+                    <div class="swiper-slide" data-js="swiper__item">홈</div>
+                    <div class="swiper-slide" data-js="swiper__item">마켓핫딜</div>
+                    <div class="swiper-slide" data-js="swiper__item">테마존</div>
+                    <div class="swiper-slide" data-js="swiper__item">베스트</div>
+                    <div class="swiper-slide" data-js="swiper__item">건강</div>
+                    <div class="swiper-slide" data-js="swiper__item">정기배송</div>
+                    <div class="swiper-slide" data-js="swiper__item">선물하기</div>
+                    <div class="swiper-slide" data-js="swiper__item">신상품</div>
+                    <div class="swiper-slide" data-js="swiper__item">이벤트</div>
+                    <div class="swiper-slide" data-js="swiper__item">플레이</div>
+                    <div class="swiper-slide" data-js="swiper__item">쿠폰&혜택</div>
+                    <div class="swiper-slide" data-js="swiper__item">프라임</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="component">
+        <h2 class="component__title">Component - Tab</h2>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div data-js="tab">
+                        <ul>
+                            <li data-js="tab__list"><a href="#" data-js="tab__anchor">tab-anchor1</a></li>
+                            <li data-js="tab__list"><a href="#" data-js="tab__anchor">tab-anchor2</a></li>
+                            <li data-js="tab__list"><a href="#" data-js="tab__anchor">tab-anchor3</a></li>
+                        </ul>
+
+                        <div data-js="tab__panel"> tab-panel1 </div>
+                        <div data-js="tab__panel"> tab-panel2 </div>
+                        <div data-js="tab__panel"> tab-panel3 </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div data-js="tab">
+                    <ul>
+                        <li data-js="tab__list"><a href="#" data-js="tab__anchor">tab-anchor1</a></li>
+                        <li data-js="tab__list"><a href="#" data-js="tab__anchor">tab-anchor2</a></li>
+                        <li data-js="tab__list"><a href="#" data-js="tab__anchor">tab-anchor3</a></li>
+                    </ul>
+                    <div data-js="tab__panel"> tab-panel1 </div>
+                    <div data-js="tab__panel"> tab-panel2 </div>
+                    <div data-js="tab__panel"> tab-panel3 </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">Document</h3>
+            <div class="component__code component__code--method">
+                <h4 class="component__code-info">아래 $( uniqId )는 $('#Example')와 같이 유니크한 아이디 또는 클래스등을 넣어주세요</h4>
+                <ul class="component__code-ul">
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 원하는 탭 열기 .trigger( eventName, index )</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $( uniqId ).trigger('go', 0);</dd>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="component">
+        <h2 class="component__title">Component - Accordion</h2>
+        <p class="component__description"> ** 하나만 열리는 경우 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <ul data-js="accordion">
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor1</a>
+                            <div data-js="accordion__panel">accordion__panel1</div>
+                        </li>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor2</a>
+                            <div data-js="accordion__panel">accordion__panel2</div>
+                        </li>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor3</a>
+                            <div data-js="accordion__panel">accordion__panel3</div>
+                        </li>
+                    </ul>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <ul data-js="accordion" id="test011">
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor1</a>
+                        <div data-js="accordion__panel">accordion__panel1</div>
+                    </li>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor2</a>
+                        <div data-js="accordion__panel">accordion__panel2</div>
+                    </li>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor3</a>
+                        <div data-js="accordion__panel">accordion__panel3</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="component__description"> ** 여러개 열리는 경우 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <ul data-js="accordion" data-options='{"autoFold":false}'>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor1</a>
+                            <div data-js="accordion__panel">accordion__panel1</div>
+                        </li>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor2</a>
+                            <div data-js="accordion__panel">accordion__panel2</div>
+                        </li>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor3</a>
+                            <div data-js="accordion__panel">accordion__panel3</div>
+                        </li>
+                    </ul>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <ul data-js="accordion" data-options='{"autoFold":false}'>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor1</a>
+                        <div data-js="accordion__panel">accordion__panel1</div>
+                    </li>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor2</a>
+                        <div data-js="accordion__panel">accordion__panel2</div>
+                    </li>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor3</a>
+                        <div data-js="accordion__panel">accordion__panel3</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="component__description"> ** 슬라이드 오픈 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <ul data-js="accordion" data-options='{"mode":"slide"}'>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor1</a>
+                            <div data-js="accordion__panel">accordion__panel1</div>
+                        </li>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor2</a>
+                            <div data-js="accordion__panel">accordion__panel2</div>
+                        </li>
+                        <li data-js="accordion__item">
+                            <a href="#" data-js="accordion__anchor">accordion__anchor3</a>
+                            <div data-js="accordion__panel">accordion__panel3</div>
+                        </li>
+                    </ul>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <ul data-js="accordion" data-options='{"mode":"slide"}'>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor1</a>
+                        <div data-js="accordion__panel">accordion__panel1</div>
+                    </li>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor2</a>
+                        <div data-js="accordion__panel">accordion__panel2</div>
+                    </li>
+                    <li data-js="accordion__item">
+                        <a href="#" data-js="accordion__anchor">accordion__anchor3</a>
+                        <div data-js="accordion__panel">accordion__panel3</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">Document</h3>
+            <div class="component__code component__code--method">
+                <h4 class="component__code-info">아래 $( uniqId )는 $('#Example')와 같이 유니크한 아이디 또는 클래스등을 넣어주세요</h4>
+                <ul class="component__code-ul">
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 원하는 탭 열기 .trigger( eventName, index )</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $( uniqId ).trigger('go', 0);</dd>
+                    </li>
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 아코디언 동적으로 가져온 경우 </dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $('[data-js=accordion]').accordion();</dd>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="component">
+        <h2 class="component__title">Component - Checkbox</h2>
+
+        <p class="component__description"> ** default : 체크해제 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div class="checkbox" data-js="checkbox">
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div id="checkboxTest01" class="checkbox" data-js="checkbox">
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                        <!-- 개발시 체크박스 컨트롤이 필요한 경우 id 추가 후 $('#example').trigger('checked') || $('#example').trigger('unchecked') -->
+                        Remember my preferences
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                        <!-- 개발시 체크박스 컨트롤이 필요한 경우 id 추가 후 $('#example').trigger('checked') || $('#example').trigger('unchecked') -->
+                        Remember my preferences
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="component__description"> ** default : 체크선택 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div class="checkbox" data-js="checkbox" data-options='{ "firstCheck": true }'>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div class="checkbox" data-js="checkbox" data-options='{ "firstCheck": true }'>
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                        <!-- 개발시 체크박스 컨트롤이 필요한 경우 id 추가 후 $('#example').trigger('checked') || $('#example').trigger('unchecked') -->
+                        Remember my preferences
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                        <!-- 개발시 체크박스 컨트롤이 필요한 경우 id 추가 후 $('#example').trigger('checked') || $('#example').trigger('unchecked') -->
+                        Remember my preferences
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="component__description"> ** Grouping Checkbox - default : 체크 미선택 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div id="id-group-label01">카테고리 중복선택</div>
+                    <div role="group" aria-labelledby="id-group-label01">
+                        <div class="checkbox" data-js="checkbox" data-options='{ "firstCheck": true }'>
+                            <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                                Remember my preferences
+                                <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                            </div>
+                            <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                                Remember my preferences
+                                <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div id="id-group-label01">카테고리 중복선택</div>
+                <div role="group" aria-labelledby="id-group-label01">
+                    <div class="checkbox" data-js="checkbox" data-options='{ "firstCheck": true }'>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="component__description"> ** Grouping Checkbox Mixed - 전체 선택, 해제 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div data-js="checkbox" data-options='{"allCheckCtrl": "true"}'>
+                    <div class="checkbox__input" role="checkbox" data-js="checkbox__all">
+                        카테고리 전체선택, 해제
+                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                    </div>
+                    <div data-js="checkbox__list">
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="component__description"> ** Grouping Checkbox Mixed - 전체 선택, 해제 </p>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div data-js="checkbox">
+                    <div data-js="checkbox__list">
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                        <div class="checkbox__input" role="checkbox" data-js="checkbox__input">
+                            Remember my preferences
+                            <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" tabindex="-1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">Document</h3>
+            <div class="component__code component__code--method">
+                <h4 class="component__code-info">아래 $( uniqId )는 $('#Example')와 같이 유니크한 아이디 또는 클래스등을 넣어주세요</h4>
+                <ul class="component__code-ul">
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 체크박스 선택 .trigger( eventName )</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $( uniqId ).trigger('checked');</dd>
+                    </li>
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 체크박스 선택해제 .trigger( eventName )</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $( uniqId ).trigger('unchecked');</dd>
+                    </li>
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 체크박스 마크업 동적으로 가져온 경우 </dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $('[data-js=checkbox]').checkBox();</dd>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="component">
+        <h2 class="component__title">Component - Radio</h2>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div class="radio" role="radiogroup" data-js="radio">
+                        <div class="radio__group-title" data-js="radio__title">카테고리 선택</div>
+                        <div class="radio__wrap">
+                            <div class="radio__input" role="radio" data-js="radio__input">
+                                카테고리1 카테고리1
+                                <input type="radio" name="category1" class="radio__hidden" data-js="radio__hidden"/>
+                            </div>
+                            <div class="radio__input" role="radio" data-js="radio__input">
+                                카테고리2 카테고리2
+                                <input type="radio" name="category2" class="radio__hidden" data-js="radio__hidden"/>
+                            </div>
+                            <div class="radio__input" role="radio" data-js="radio__input">
+                                카테고리3 카테고리3
+                                <input type="radio" name="category3" class="radio__hidden" data-js="radio__hidden"/>
+                            </div>
+                            <div class="radio__input" role="radio" data-js="radio__input">
+                                카테고리4 카테고리4
+                                <input type="radio" name="category4" class="radio__hidden" data-js="radio__hidden"/>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div id="radioTest01" class="radio" role="radiogroup" data-js="radio">
+                    <div class="radio__group-title" data-js="radio__title">카테고리 선택</div>
+                    <div class="radio__wrap">
+                        <div id="test0101" class="radio__input" role="radio" data-js="radio__input">
+                            카테고리1 카테고리1
+                            <input type="radio" name="category1" class="radio__hidden" data-js="radio__hidden" checked />
+                            <!-- 개발시 라디오 컨트롤이 필요한 경우 id 추가 후  $('#exampleId').trigger('checked') -->
+                        </div>
+                        <div class="radio__input" role="radio" data-js="radio__input">
+                            카테고리2 카테고리2
+                            <input type="radio" name="category2" class="radio__hidden" data-js="radio__hidden" />
+                            <!-- 개발시 라디오 컨트롤이 필요한 경우 id 추가 후  $('#exampleId').trigger('checked') -->
+                        </div>
+                        <div class="radio__input" role="radio" data-js="radio__input">
+                            카테고리3 카테고리3
+                            <input type="radio" name="category3" class="radio__hidden" data-js="radio__hidden" />
+                            <!-- 개발시 라디오 컨트롤이 필요한 경우 id 추가 후  $('#exampleId').trigger('checked') -->
+                        </div>
+                        <div class="radio__input" role="radio" data-js="radio__input">
+                            카테고리4 카테고리4
+                            <input type="radio" name="category4" class="radio__hidden" data-js="radio__hidden" />
+                            <!-- 개발시 라디오 컨트롤이 필요한 경우 id 추가 후  $('#exampleId').trigger('checked') -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">Document</h3>
+            <div class="component__code component__code--method">
+                <h4 class="component__code-info">아래 $( uniqId )는 $('#Example')와 같이 유니크한 아이디 또는 클래스등을 넣어주세요</h4>
+                <ul class="component__code-ul">
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 라디오 선택 .trigger( eventName )</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $( uniqId ).trigger('checked');</dd>
+                    </li>
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 라디오 동적으로 가져온 경우 </dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $('[data-js=radio]').radio();</dd>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="component">
+        <h2 class="component__title">Component - Datepicker</h2>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div data-js="datepicker"></div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <input type="text" class="form-element__input" data-js="datepicker" />
+            </div>
+        </div>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title"> Document </h3>
+            <div class="component__code component__code--method">
+                <h4 class="component__code-info">아래 $( uniqId )는 $('#datePickerExample')와 같이 유니크한 아이디 또는 클래스등을 넣어주세요</h4>
+                <ul class="component__code-ul">
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 원하는 날짜로 변경하고 싶은 경우</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> $( uniqId ).datepicker( "setDate", "2018-01-11" );</dd>
+                    </li>
+                    <li class="component__code-li">
+                        <p class="component__code-title">* 선택된 날짜를 가져오고 싶은 경우</dt>
+                        <p class="component__code-method"> <strong>ex)</strong> var currentDate = $( uniqId ).datepicker( "getDate" );</dd>
+                    </li>
+                </ul>
+                <a href="http://api.jqueryui.com/datepicker/" class="component__code-link"> http://api.jqueryui.com/datepicker/ 더 많은 Method 및 option 보기 </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="component">
+        <h2 class="component__title">Component - Slick</h2>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div class="main__visual" data-js="slick" data-options='{ "status": true, "arrows": false }'>
+                        <div class="main__visual-track" data-js="slick__track">
+                            <a href="#" class="main__visual-item" data-js="slick__item">
+                                <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                            </a>
+                            <a href="#" class="main__visual-item" data-js="slick__item">
+                                <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                            </a>
+                            <a href="#" class="main__visual-item" data-js="slick__item">
+                                <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                            </a>
+                            <a href="#" class="main__visual-item" data-js="slick__item">
+                                <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                            </a>
+                        </div>
+                        <div class="main__visual-ctrl">
+                            <div class="main__visual-status" data-js="slick__status">
+                                <span class="main__visual-status__current" data-js="slick__status-current">1</span>
+                                <span class="main__visual-status__total">/<em data-js="slick__status-total">0</em></span>
+                                <a href="#" class="main__visual-status__all"><span class="blind">슬라이드 전체보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div class="main__visual" data-js="slick" data-options='{ "status": true, "arrows": false }'
+                    style=" max-width: 200px; ">
+                    <div class="main__visual-track" data-js="slick__track">
+                        <a href="#" class="main__visual-item" data-js="slick__item">
+                            <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                        </a>
+                        <a href="#" class="main__visual-item" data-js="slick__item">
+                            <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                        </a>
+                        <a href="#" class="main__visual-item" data-js="slick__item">
+                            <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                        </a>
+                        <a href="#" class="main__visual-item" data-js="slick__item">
+                            <img src="/cjom/mobile/images/main/main-banner01.jpg" alt="가을진미 입맛 잡기 딱 좋아! 최대 48% + 더블혜택쿠폰까지">
+                        </a>
+                    </div>
+                    <div class="main__visual-ctrl">
+                        <div class="main__visual-status" data-js="slick__status">
+                            <span class="main__visual-status__current" data-js="slick__status-current">1</span>
+                            <span class="main__visual-status__total">/<em data-js="slick__status-total">0</em></span>
+                            <a href="#" class="main__visual-status__all"><span class="blind">슬라이드 전체보기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component__box component__box--code">
+            <h3 class="component__sub-title">예제 Code</h3>
+            <div class="component__code">
+                <xmp>
+                    <div class="gift__slick slick" data-js="slick"
+                        data-options='{ "slidesToShow": 1, "slidesToScroll": 1, "dots": true, "arrows": false, "autoplay": true }'>
+                        <div data-js="slick__track">
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                        </div>
+                    </div>
+                </xmp>
+            </div>
+        </div>
+        <div class="component__box component__box--result">
+            <h3 class="component__sub-title">예제 Result</h3>
+            <div class="component__result">
+                <div style="max-width: 300px">
+                    <div class="gift__slick slick" data-js="slick"
+                        data-options='{ "slidesToShow": 1, "slidesToScroll": 1, "dots": true, "arrows": false, "autoplay": true }'>
+                        <div data-js="slick__track">
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                            <a href="#">
+                                <img src="/cjom/mobile/images/main/bg-main-banner05.jpg" alt="집중력이 떨어졌을때 기분좋게 즐기는 과일디저트">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+    <script src="/cjom/mobile/js/plugins/slick.js"></script>
+    <script src="/cjom/mobile/js/plugins/swiper.js"></script>
+
+    <script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+	<h1>ACCORDION</h1>
+	<h2>Default</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;a href="#acd1" data-accordion>아코디언1&lt;/a&gt;
+&lt;div id="acd1"&gt;아코디언1 컨텐츠&lt;/div&gt;
+&lt;a href="#acd2" data-accordion&gt;아코디언2&lt;/a&gt;
+&lt;div id="acd2"&gt;아코디언2  컨텐츠&lt;/div&gt;
+&lt;a href="#acd3" data-accordion&gt;아코디언3&lt;/a&gt;
+&lt;div id="acd3"&gt;아코디언3 컨텐츠&lt;/div&gt;
+&lt;a href="#acd4" data-accordion&gt;아코디언4&lt;/a&gt;
+&lt;div id="acd4"&gt;아코디언4 컨텐츠&lt;/div&gt;
+
+</code></pre>
+	<h3>VIEW</h3>
+	<a href="#acd1" data-accordion>아코디언1</a>
+	<div id="acd1" style="display:none;">아코디언1 컨텐츠</div>
+	<a href="#acd2" data-accordion>아코디언2</a>
+	<div id="acd2" style="display:none;">아코디언2  컨텐츠</div>
+	<a href="#acd3" data-accordion>아코디언3</a>
+	<div id="acd3" style="display:none;">아코디언3 컨텐츠</div>
+	<a href="#acd4" data-accordion>아코디언4</a>
+	<div id="acd4" style="display:none;">아코디언4 컨텐츠</div>
+	<hr>
+
+	<h2>Type2</h2>
+	<h3>HTML</h3>
+	<pre><code class="html">
+&lt;a href="#acd1" data-accordion="type2">아코디언1&lt;/a&gt;
+&lt;div id="acd1"&gt;아코디언1 컨텐츠&lt;/div&gt;
+&lt;a href="#acd2" data-accordion="type2"&gt;아코디언2&lt;/a&gt;
+&lt;div id="acd2"&gt;아코디언2  컨텐츠&lt;/div&gt;
+&lt;a href="#acd3" data-accordion="type2"&gt;아코디언3&lt;/a&gt;
+&lt;div id="acd3"&gt;아코디언3 컨텐츠&lt;/div&gt;
+&lt;a href="#acd4" data-accordion="type2"&gt;아코디언4&lt;/a&gt;
+&lt;div id="acd4"&gt;아코디언4 컨텐츠&lt;/div&gt;
+
+</code></pre>
+	<h3>VIEW</h3>
+	<a href="#acd1_1" data-accordion data-accordion-group="aco1">아코디언1</a>
+	<div id="acd1_1" style="display:none;">아코디언1 컨텐츠</div>
+	<a href="#acd1_2" data-accordion data-accordion-group="aco1">아코디언2</a>
+	<div id="acd1_2" style="display:none;">아코디언2  컨텐츠</div>
+	<a href="#acd1_3" data-accordion data-accordion-group="aco1">아코디언3</a>
+	<div id="acd1_3" style="display:none;">아코디언3 컨텐츠</div>
+	<a href="#acd1_4" data-accordion data-accordion-group="aco1">아코디언4</a>
+	<div id="acd1_4" style="display:none;">아코디언4 컨텐츠</div>
+	<a href="#acd2_1" data-accordion data-accordion-group="aco2">아코디언1</a>
+	<div id="acd2_1" style="display:none;">아코디언1 컨텐츠</div>
+	<a href="#acd2_2" data-accordion data-accordion-group="aco2">아코디언2</a>
+	<div id="acd2_2" style="display:none;">아코디언2  컨텐츠</div>
+	<a href="#acd2_3" data-accordion data-accordion-group="aco2">아코디언3</a>
+	<div id="acd2_3" style="display:none;">아코디언3 컨텐츠</div>
+	<a href="#acd2_4" data-accordion data-accordion-group="aco2">아코디언4</a>
+	<div id="acd2_4" style="display:none;">아코디언4 컨텐츠</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/common.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+	<script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+        <div class="header header--sub">
+            <!--
+            * 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+            * /cjom/mobile/include/sub-header.html
+            -->
+        </div>
+		<div id="contents" class="contents">
+				<section class="section">
+					<!-- section__title-box -->
+					<div class="section__floating-box" data-js="floating">
+                        <div data-js="floating__target-parent">
+                            <div class="section__title-box" data-js="floating__target">
+                                <a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+                                <h1 class="section__title">주문결제</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //section__title-box -->
+					<div class="section__content order">
+						<br><br>
+						<button data-js="modal__button" data-modal-target="#modalORD108">TM-SB-M.ORD-108_OK캐쉬백 조회</button>
+						<br><br>
+					</div>
+				</section>
+		</div>
+		<div class="footer">
+				<!--# include file="/cjom/mobile/include/footer.html" -->
+		</div>
+	</div>
+	<!-- #wrap -->
+	<div class="modal-container" data-js="modal">
+		<!--
+				비동기통신을 이용하여 Modal 마크업을 가져온 경우 아래와 같이 실행해주세요.
+				* Modal Init
+				$('[data-js=modal]').modal();
+
+				* Modal Initialized 후 Modal 컨트롤 방법 #modal은 유니크한 ID 사용 부탁드립니다.
+
+				* Modal Open
+				$('[data-js=modal]').trigger('open', $('#modal'));
+				* Modal Close
+				$('[data-js=modal]').trigger('close', $('#modal'));
+		-->
+
+		<!-- modal popup : OK캐쉬백 조회 팝업 -->
+		<section id="modalORD108" class="modal" data-js="modal__element">
+            <div class="modal__mask" data-js="modal__mask"></div>
+            <div class="modal__container modal__container--white" data-js="modal__container">
+                <div class="modal__header">
+                    <h1 class="modal__header-title">OK캐쉬백 조회</h1>
+                </div>
+                <div class="modal__contents modal__contents--with-btn">
+                    <div class="order__modal-contents">
+                        <div class="form">
+                            <div class="form__row">
+                                <label for="label1081" class="form-label form-label--block">카드번호</label>
+                                <div class="form__card-number">
+                                    <div class="form__column">
+                                        <div class="form-element">
+                                            <input type="number" class="form-element__input" title="카드번호 첫번째 4자리 입력" maxlength="4" id="label1081">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form-element">
+                                            <input type="number" class="form-element__input" title="카드번호 두번째 4자리 입력" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form-element">
+                                            <input type="number" class="form-element__input" title="카드번호 세번째 4자리 입력" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form-element">
+                                            <input type="number" class="form-element__input" title="카드번호 네번째 4자리 입력" maxlength="4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="label1082" class="form-label form-label--block">비밀번호</label>
+                                <div class="form__has-button">
+                                    <div class="form__column">
+                                        <div class="form-element" data-js="form-ctrl">
+                                            <input type="password" id="label1082" class="form-element__input" placeholder="비밀번호 입력" data-js="form-ctrl__input">
+                                            <button class="form-element__delete" data-js="form-ctrl__delete">
+                                                    <span class="blind">필드 내용 삭제</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--shape02 btn--style05">조회</button>
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="order__point-title-box">
+                                    <label for="label1083" class="form-label form-label--block">사용할 금액</label>
+                                    <!-- 조회 완료 후 노출 .is-acitve-->
+                                    <span class="order__point-balance is-active">잔액 <span class="point-color1"><span class="number">1,000</span>원</span></span>
+                                    <!-- //조회 완료 후 노출 .is-acitve -->
+                                </div>
+                                <div class="form-element" data-js="form-ctrl">
+                                    <input type="number" id="label1083" class="form-element__input" placeholder="0" data-js="form-ctrl__input">
+                                    <span class="form-element__inner-text">원</span>
+                                    <button class="form-element__delete" data-js="form-ctrl__delete">
+                                        <span class="blind">필드 내용 삭제</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box info-box--bg mt15">
+                            <ul class="info-box__list">
+                                <li class="info-box__list__item info-box__list__item--type2">OK캐쉬백 카드 비밀번호는 OK캐쉬백 홈페이지(또는 앱)에서 조회/변경이 가능합니다.</li>
+                                <li class="info-box__list__item info-box__list__item--type2">OK캐쉬백은 10원 단위로 사용 가능하며 보유하신 잔액 내에서 제한없이 사용 가능합니다.</li>
+                            </ul>
+                        </div>
+
+                        <div class="agree-box agree-box--single">
+                            <div class="agree-box__container">
+                                <div class="checkbox" data-js="checkbox">
+                                    <div class="checkbox__input" role="checkbox" data-js="checkbox__input" aria-checked="true" tabindex="0">
+                                        개인정보 수집 이용 동의(필수)
+                                        <input type="checkbox" class="checkbox__hidden" data-js="checkbox__hidden" checked="" tabindex="-1">
+                                    </div>
+                                </div>
+                                <div class="info-box info-box--bg mt15">
+                                    <ul class="info-box__list">
+                                        <li class="info-box__list__item info-box__list__item--type2">개인정보의 수집, 이용목적 :  OK캐쉬백 포인트 사용 시 본인 확인</li>
+                                        <li class="info-box__list__item info-box__list__item--type2">수집하는 개인정보 항목 : OK캐쉬백 카드번호, 온라인 비밀번호</li>
+                                        <li class="info-box__list__item info-box__list__item--type2">개인정보의 보유, 이용기간 : OK캐쉬백 포인트 서비스 탈퇴시까지 </li>
+                                        <li class="info-box__list__item info-box__list__item--type2">동의하지 않을 경우 OK캐쉬백 포인트 적립 및 사용이 불가</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__btn-box btn-box btn-box--col-2 btn-box--none-margin">
+                    <a href="#" class="btn btn--shape04 btn--style10" data-js="modal__close">취소</a>
+                    <a href="#" class="btn btn--shape04 btn--style01">사용하기</a>
+                </div>
+                <button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+            </div>
+		</section>
+		<!-- //modal popup : OK캐쉬백 조회 팝업 -->
+
+	</div>
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+</html>

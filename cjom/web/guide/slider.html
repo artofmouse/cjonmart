@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1440" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" type="text/css" href="/cjom/web/css/ui.cjom.front.css" />
+	<script type="text/javascript" src="/cjom/web/js/library.js"></script>
+	<script type="text/javascript" src="/cjom/web/js/ui.cjom.front.js"></script>
+	<!-- guide -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" type="text/css" href="guide.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script type="text/javascript" src="guide.js"></script>
+	<style>
+		.slider {position:relative;}
+		.slick-prev {z-index:1; position:absolute; left:0; top:0; padding:5px; background:Red;}
+		.slick-next {z-index:1; position:absolute; right:0; top:0; padding:5px; background:Red;}
+		.slider .slick-slide {text-align:center; box-sizing:border-box; font-size:40px; height:200px; border:10px solid #fee;}
+		.slider .slick-slide:before {content:''; display:inline-block; height:100%; vertical-align:middle;}
+		.slick-dots {margin-top:10px; text-align:center;}
+		.slick-dots li {display:inline-block;}
+		.slick-dots li button {padding:0 10px;}
+	</style>
+	<!-- //guide -->
+</head>
+<body>
+<div class="guide-wrap">
+<h1>Slick Slider</h1>
+<h2>Default</h2>
+<h3>HTML</h3>
+<pre><code class="html">&lt;div class="slide" data-slider&gt;
+	&lt;div&gt;1&lt;/div&gt;
+	&lt;div&gt;2&lt;/div&gt;
+	&lt;div&gt;3&lt;/div&gt;
+	&lt;div&gt;4&lt;/div&gt;
+	&lt;div&gt;5&lt;/div&gt;
+	&lt;div&gt;6&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>VIEW</h3>
+<div class="slider" data-slider>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+</div>
+
+<hr>
+
+<h2>Option</h2>
+<h3>HTML</h3>
+<pre><code class="html">&lt;div class="slider" data-slider='{"infinite":true, "slidesToShow": 3, "slidesToScroll": 3, "count" : true}'&gt;
+	&lt;div&gt;1&lt;/div&gt;
+	&lt;div&gt;2&lt;/div&gt;
+	&lt;div&gt;3&lt;/div&gt;
+	&lt;div&gt;4&lt;/div&gt;
+	&lt;div&gt;5&lt;/div&gt;
+	&lt;div&gt;6&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>VIEW</h3>
+<div class="slider" data-slider='{"infinite":true, "slidesToShow": 3, "slidesToScroll": 3, "count" : true'>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+</div>
+
+<hr>
+
+<h2>Option</h2>
+<h3>HTML</h3>
+<pre><code class="html">&lt;div class="slider" data-slider='{"infinite":true, "slidesToShow": 3, "slidesToScroll": 3, "count" : true}'&gt;
+	&lt;div&gt;1&lt;/div&gt;
+	&lt;div&gt;2&lt;/div&gt;
+	&lt;div&gt;3&lt;/div&gt;
+	&lt;div&gt;4&lt;/div&gt;
+	&lt;div&gt;5&lt;/div&gt;
+	&lt;div&gt;6&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>VIEW</h3>
+<div class="slider" data-slider='{"infinite":true, "count" : true, "dots" : false}'>
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+</div>
+
+<hr>
+
+<pre><code class="js">slider: function () {
+var defaults = {
+	dots:true,
+	infinite:false,
+	speed:200,
+};
+$("[data-slider]").each(function(){
+	var options = $.extend(false, defaults, $(this).data("slider"));
+	$(this).slick(options);
+});
+},
+</code></pre>
+<h2>비동기</h2>
+<pre><code class="js">cjom.slider();</code></pre>
+
+</div>
+</body>
+</html>

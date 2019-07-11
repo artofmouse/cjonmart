@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/glider.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/common.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+	<script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="header header--main">
+			<!--
+            * 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+            * /cjom/mobile/include/main-header.html
+            -->
+		</div>
+		<div id="contents" class="contents">
+			<section class="section">
+				<button data-js="modal__button" data-modal-target="#modal-alert1">the prime 다다익선 안내 팝업1</button>
+				<br><br>
+				<button data-js="modal__button" data-modal-target="#modal-alert2">the prime 다다익선 안내 팝업2</button>
+				<br><br>
+				<button data-js="modal__button" data-modal-target="#modal-alert3">the prime 다다익선 안내 팝업3</button>
+			</section>
+		</div>
+		<div class="footer">
+			<!--
+            * footer는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+            * /cjom/mobile/include/footer.html
+            -->
+		</div>
+	</div>
+
+	<div class="modal-container" data-js="modal">
+		<!--
+            비동기통신을 이용하여 Modal 마크업을 가져온 경우 아래와 같이 실행해주세요.
+            * Modal Init
+            $('[data-js=modal]').modal();
+
+            * Modal Initialized 후 Modal 컨트롤 방법 #modal은 유니크한 ID 사용 부탁드립니다.
+
+            * Modal Open
+            $('[data-js=modal]').trigger('open', $('#modal'));
+            * Modal Close
+            $('[data-js=modal]').trigger('close', $('#modal'));
+		-->
+
+		<!-- the prime 다다익선 안내 팝업1 -->
+		<section id="modal-alert1" class="modal modal--alert" data-js="modal__element">
+			<div class="modal__mask" data-js="modal__mask"></div>
+			<div class="modal__container modal__container--white" data-js="modal__container">
+				<div class="modal__contents">
+					<img class="the-prime__alert-img" src="/cjom/mobile/images/sub/img-thePrime09.png" alt="대체 텍스트">
+					<h1 class="modal-alert__title">구매할수록 the(더) 드리는 혜택!</h1>
+					<!-- 2019-03-27 수정 -->
+					<p class="modal-alert__text">
+						<span class="point-color1">박진영님 MM월 중</span> 
+						<br><span class="point-color1">3회</span> 구매하시면 <span class="point-color1">기프트 카드 5,000원권 & 무료배송 쿠폰</span>증정!<br><span class="modal-alert__text-comment">(주문번호당 실결제금액 4만원 이상 구매 시)</span>
+					</p>
+					<!-- //2019-03-27 수정 -->
+
+					<div class="btn-box btn-box--mt20">
+						<button class="btn btn--shape02 btn--style01" data-js="modal__close">확인</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //the prime 다다익선 안내 팝업1 -->
+
+		<!-- the prime 다다익선 안내 팝업2 -->
+		<section id="modal-alert2" class="modal modal--alert" data-js="modal__element">
+			<div class="modal__mask" data-js="modal__mask"></div>
+			<div class="modal__container modal__container--white" data-js="modal__container">
+				<div class="modal__contents">
+					<img class="the-prime__alert-img" src="/cjom/mobile/images/sub/img-thePrime09.png" alt="대체 텍스트">
+					<h1 class="modal-alert__title">구매할수록 the(더) 드리는 혜택!</h1>
+					<!-- 2019-03-26 수정 -->
+					<p class="modal-alert__text">
+						<span class="point-color1">박진영님 MM월 중</span> 
+						<br><span class="point-color1">2회 더</span> 구매하시면 <span class="point-color1">기프트 카드 5,000원권 & 무료배송 쿠폰</span>증정!<br><span class="modal-alert__text-comment">(주문번호당 실결제금액 4만원 이상 구매 시)</span>
+					</p>
+					<!-- //2019-03-26 수정 -->
+
+					<div class="btn-box btn-box--mt20">
+						<button class="btn btn--shape02 btn--style01" data-js="modal__close">확인</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //the prime 다다익선 안내 팝업2 -->
+
+		<!-- the prime 다다익선 안내 팝업3 -->
+		<section id="modal-alert3" class="modal modal--alert" data-js="modal__element">
+			<div class="modal__mask" data-js="modal__mask"></div>
+			<div class="modal__container modal__container--white" data-js="modal__container">
+				<div class="modal__contents">
+					<img class="the-prime__alert-img" src="/cjom/mobile/images/sub/img-thePrime09.png" alt="대체 텍스트">
+					<h1 class="modal-alert__title">구매할수록 the(더) 드리는 혜택!</h1>
+					<!-- 2019-03-26 수정 -->
+					<p class="modal-alert__text">
+						<span class="point-color1">박진영님 MM월 중</span> 
+						<br><span class="point-color1">1회 더</span> 구매하시면 <span class="point-color1">기프트 카드 5,000원권 & 무료배송 쿠폰</span>증정!<br><span class="modal-alert__text-comment">(주문번호당 실결제금액 4만원 이상 구매 시)</span>
+					</p>
+					<!-- //2019-03-26 수정 -->
+
+					<div class="btn-box btn-box--mt20">
+						<button class="btn btn--shape02 btn--style01" data-js="modal__close">확인</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //the prime 다다익선 안내 팝업3 -->
+	</div>
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/plugins/jquery.lazy.min.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+
+</html>

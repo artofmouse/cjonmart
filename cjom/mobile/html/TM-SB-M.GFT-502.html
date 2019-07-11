@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>CJ제일제당 가정간편식 전문몰</title>
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/jquery-ui.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/lib/slick.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/common.css">
+	<link rel="stylesheet" href="/cjom/mobile/css/sub.css">
+	<script src="/cjom/mobile/js/jquery/jquery-1.12.0.min.js"></script>
+	<script src="/cjom/mobile/js/include-file.js"></script><!-- 서버에서 헤더 확인용 스크립트 입니다. 개발시 지워주세요 -->
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<div class="header header--sub">
+			<!--
+			* 헤더는 아래 URL에 있는 HTML로 적용 부탁드립니다.
+			* /cjom/mobile/include/sub-header.html
+			-->
+		</div>
+		<div id="contents" class="contents">
+				<section class="section">
+					<!-- section__title-box -->
+					<div class="section__floating-box" data-js="floating">
+								<div data-js="floating__target-parent">
+									<div class="section__title-box" data-js="floating__target">
+										<a href="#" class="section__previus"><span class="blind">이전 페이지</span></a>
+										<h1 class="section__title">주문결제</h1>
+									</div>
+								</div>
+						</div>
+						<!-- //section__title-box -->
+					<div class="section__content order">
+						<button data-js="modal__button" data-modal-target="#modalGFT502">선물 신청 안내</button>
+					</div>
+				</section>
+		</div>
+		<div class="footer">
+				<!--# include file="/cjom/mobile/include/footer.html" -->
+		</div>
+	</div>
+	<!-- #wrap -->
+	<div class="modal-container" data-js="modal">
+		<!--
+				비동기통신을 이용하여 Modal 마크업을 가져온 경우 아래와 같이 실행해주세요.
+				* Modal Init
+				$('[data-js=modal]').modal();
+
+				* Modal Initialized 후 Modal 컨트롤 방법 #modal은 유니크한 ID 사용 부탁드립니다.
+
+				* Modal Open
+				$('[data-js=modal]').trigger('open', $('#modal'));
+				* Modal Close
+				$('[data-js=modal]').trigger('close', $('#modal'));
+		-->
+
+		<!-- modal popup : 선물 신청 안내 -->
+		<section id="modalGFT502" class="modal" data-js="modal__element">
+			<div class="modal__mask" data-js="modal__mask"></div>
+			<div class="modal__container modal__container--white" data-js="modal__container">
+				<div class="modal__header">
+					<h1 class="modal__header-title">선물 신청 안내</h1>
+				</div>
+				<div class="modal__contents">
+					<section class="terms-popup">
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">신청기간</h2>
+							<p class="terms-popup__text">4월 17일~4월 20일(금) 24:00까지</p>
+						</article>
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">신청대상</h2>
+							<p class="terms-popup__text">CJ그룹 임직원</p>
+						</article>
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">상품종류</h2>
+							<ul class="info-box__list info-box__list--in-terms">
+								<li class="info-box__list__item">[가정의 달행사] 유산균 선물세트</li>
+								<li class="info-box__list__item">[가정의 달행사] 발효효소 선물세트</li>
+								<li class="info-box__list__item">[가정의 달행사] 홍삼정 골드 선물세트</li>
+								<li class="info-box__list__item">[가정의 달행사] 뚜레주르 선물세트</li>
+							</ul>
+						</article>
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">신청방법</h2>
+							<p class="terms-popup__text">
+								신청기간내 임직원 정보 조회 후 신청서 작성 완료 1인당 4개까지 신청가능 (신청한 선물 중 1개는 회사에서 부담하며, 추가 주문한 상품의 결제는 익월 급여에서 공제됩니다.
+								<br>(상품가격 각 : 21,000원)
+							</p>
+						</article>
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">상품수령 예상일</h2>
+							<p class="terms-popup__text">5월 2일(수)~4일(금)까지 순차 배송 (단, 도서 산간 지역은 배송이 지연 될 수 있습니다.) 접수기간 이후에는 배송지 정보 및 주문 수량 수정이 불가합니다.</p>
+						</article>
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">유의사항</h2>
+							<ul class="info-box__list info-box__list--in-terms">
+								<li class="info-box__list__item">
+									4월 20일 (금) 이후에는 배송지 및 주문 수량 수정이 불가합니다.
+								</li>
+								<li class="info-box__list__item">
+									주소지 오류 및 고객 부재로 인한 반품은 불가합니다. (정확한 주소 입력 및 ‘부재시 요청사항 필수 입력)
+								</li>
+								<li class="info-box__list__item">
+									상품 인수 후 단순 변심에 의한 반품은 불가합니다. (상품불량 및 배송 오류로 인한 반품만 가능)
+								</li>
+								<li class="info-box__list__item">
+									감사카드의 문구는 변경할 수 없습니다.
+								</li>
+								<li class="info-box__list__item">
+									신청한 선물은 순차 배송 되며, 배송일 지정은 불가합니다. (배송 현황은 5월 2일 부터 본 페이지에서 확인 가능)
+								</li>
+							</ul>
+						</article>
+						<article class="terms-popup__detail">
+							<h2 class="terms-popup__h2">문의</h2>
+							<p class="terms-popup__text">임직원 정보 및 문의사항은 각 계열사 인사팀(조직문화담당)으로 연락주시기 바랍니다.</p>
+						</article>
+					</section>
+				</div>
+				<button class="modal__close" data-js="modal__close"><span class="blind">모달 닫기 버튼</span></button>
+			</div>
+		</section>
+		<!-- //modal popup : 선물 신청 안내 -->
+	</div>
+
+	<script src="/cjom/mobile/js/plugins/jquery-ui.js"></script>
+	<script src="/cjom/mobile/js/plugins/slick.js"></script>
+	<script src="/cjom/mobile/js/plugins/swiper.js"></script>
+	<script src="/cjom/mobile/js/common.js"></script>
+</body>
+</html>
